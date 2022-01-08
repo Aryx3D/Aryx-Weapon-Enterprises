@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+		<Definition>
+			<Id>
+				<TypeId>CubeBlock</TypeId>
+				<SubtypeId>ARYX_KingswordBase</SubtypeId>
+			</Id>
+			<DisplayName>DisplayName_ARYX_KingswordBase</DisplayName>
+			<Description>Description_ARYX_KingswordBase</Description>
+			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="9" z="61"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\AWE_Kingsword\ARYX_KingswordBase.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="10"/>
+			</Components>
+			<CriticalComponent Subtype="SteelPlate" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="9.00"/>
+				<MountPoint Side="Left" StartX="44.00" StartY="0.27" EndX="61.00" EndY="8.73"/>
+				<MountPoint Side="Left" StartX="9.00" StartY="2.00" EndX="44.00" EndY="7.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.27" EndX="17.00" EndY="8.73"/>
+				<MountPoint Side="Right" StartX="17.00" StartY="2.00" EndX="52.00" EndY="7.00"/>
+				<MountPoint Side="Top" StartX="0.25" StartY="0.29" EndX="4.75" EndY="57.71"/>
+				<MountPoint Side="Bottom" StartX="0.25" StartY="3.29" EndX="4.75" EndY="60.71"/>
+			</MountPoints>
+			<BlockPairName>ARYX_KingswordBase</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+		</Definition>
+	</CubeBlocks>
+</Definitions>
