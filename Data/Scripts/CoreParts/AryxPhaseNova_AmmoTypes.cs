@@ -712,8 +712,8 @@ namespace Scripts
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 16f,
-                        Width = 0.025f,
+                        Length = 8,
+                        Width = 0.0125f,
                         Color = Color(red: 16, green: 21, blue: 25, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
