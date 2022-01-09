@@ -57,7 +57,7 @@
 		<string>ConveyorSorter/ARYXKingswordSupercannon</string>
 		<string>ConveyorSorter/ARYX_FocusBeam_CompactSG</string>		
 		<string>LargeMissileTurret/ARYX_FocusBeam_CompactTurret</string>			
-
+		<string>ConveyorSorter/ARYX_Small_Sidekick_Hangar</string>
 
       </ItemIds>
     </Category> 
@@ -113,7 +113,8 @@
 		<string>ConveyorSorter/ARYXBurstTurretSlanted</string>			
 		<string>ConveyorSorter/ARYXKingswordSupercannon</string> 
 		<string>ConveyorSorter/ARYX_FocusBeam_CompactSG</string>		
-		<string>LargeMissileTurret/ARYX_FocusBeam_CompactTurret</string>		
+		<string>LargeMissileTurret/ARYX_FocusBeam_CompactTurret</string>
+		<string>ConveyorSorter/ARYX_Small_Sidekick_Hangar</string>		
 	  </ItemIds>
     </Category>
 	
@@ -170,7 +171,8 @@
 		<string>ConveyorSorter/ARYXBurstTurretSlanted</string>			
 		<string>ConveyorSorter/ARYXKingswordSupercannon</string>
 		<string>ConveyorSorter/ARYX_FocusBeam_CompactSG</string>
-		<string>LargeMissileTurret/ARYX_FocusBeam_CompactTurret</string>		
+		<string>LargeMissileTurret/ARYX_FocusBeam_CompactTurret</string>	
+		<string>ConveyorSorter/ARYX_Small_Sidekick_Hangar</string>		
 	</ItemIds>
     </Category> 
 
@@ -225,7 +227,8 @@
 		<string>ConveyorSorter/ARYXTacticalModule</string>			
 		<string>ConveyorSorter/ARYXBurstTurretSlanted</string>	
 		<string>ConveyorSorter/ARYXKingswordSupercannon</string>
-		<string>LargeMissileTurret/ARYX_FocusBeam_CompactTurret</string>		
+		<string>LargeMissileTurret/ARYX_FocusBeam_CompactTurret</string>
+		<string>ConveyorSorter/ARYX_Small_Sidekick_Hangar</string>		
       </ItemIds>
     </Category>  	
 

@@ -709,5 +709,80 @@
         </AmmoMagazine>		
 				
 		
-    </AmmoMagazines>
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>AWE_SidekickDroneMag</SubtypeId>
+            </Id>
+            <DisplayName>"Sidekick" Machine Gun Drone</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\AWE_Drone_Sidekick.dds</Icon>
+            <Size>
+                <X>1</X>
+                <Y>2</Y>
+                <Z>0.5</Z>
+            </Size>
+            <Mass>300</Mass>
+            <Volume>500</Volume>
+            <Model>Models\AWE_Ammo\ARYX_SidekickDroneItem.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="AryxAtlasAmmo" />
+
+            <MinimumOfferAmount>6</MinimumOfferAmount>
+            <MaximumOfferAmount>12</MaximumOfferAmount>
+            <MinimumOrderAmount>3</MinimumOrderAmount>
+            <MaximumOrderAmount>24</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>	
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>AWE_FalconDroneMag</SubtypeId>
+            </Id>
+            <DisplayName>"Falcon" Cannon Drone</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\AWE_Drone_Falcon.dds</Icon>
+            <Size>
+                <X>1</X>
+                <Y>2</Y>
+                <Z>0.5</Z>
+            </Size>
+            <Mass>350</Mass>
+            <Volume>500</Volume>
+            <Model>Models\AWE_Ammo\ARYX_SidekickDroneItem.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="AryxAtlasAmmo" />
+
+            <MinimumOfferAmount>6</MinimumOfferAmount>
+            <MaximumOfferAmount>12</MaximumOfferAmount>
+            <MinimumOrderAmount>3</MinimumOrderAmount>
+            <MaximumOrderAmount>24</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>	
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>AWE_StormriderDroneMag</SubtypeId>
+            </Id>
+            <DisplayName>"Stormrider" Plasma Drone</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\AWE_Drone_Stormrider.dds</Icon>
+            <Size>
+                <X>1</X>
+                <Y>2</Y>
+                <Z>0.5</Z>
+            </Size>
+            <Mass>290</Mass>
+            <Volume>500</Volume>
+            <Model>Models\AWE_Ammo\ARYX_SidekickDroneItem.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="AryxAtlasAmmo" />
+
+            <MinimumOfferAmount>6</MinimumOfferAmount>
+            <MaximumOfferAmount>12</MaximumOfferAmount>
+            <MinimumOrderAmount>3</MinimumOrderAmount>
+            <MaximumOrderAmount>24</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>		    
+	</AmmoMagazines>
 </Definitions>

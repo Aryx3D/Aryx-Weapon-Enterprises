@@ -14,6 +14,15 @@
 	<Entry Class="Consumables" BlueprintSubtypeId="AWESabreMissileBP" />	
 	<Entry Class="Consumables" BlueprintSubtypeId="AWELancerMissileBP" />
 
+	<Entry Class="Consumables" BlueprintSubtypeId="AWEStormriderDroneBP" />		
+	<Entry Class="Consumables" BlueprintSubtypeId="AWESidekickDroneBP" />	
+	<Entry Class="Consumables" BlueprintSubtypeId="AWEFalconDroneBP" />
+
+
+
+
+
+
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="54mmAutocannonBP" />
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="60mmFlakBP" />
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="GaussAmmoBP" />
@@ -42,6 +51,14 @@
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AryxCoilgunAmmoBP" />	
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEKingSwordAmmoBP" />
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEStrikerMissileBP" />			
+
+
+
+
+
+
+
+
 
 		<!--BLOCKS-->
     <Entry Class="LargeBlocks" BlueprintSubtypeId="SmallMissileLauncher/ARYXFlechetteLauncher" />		

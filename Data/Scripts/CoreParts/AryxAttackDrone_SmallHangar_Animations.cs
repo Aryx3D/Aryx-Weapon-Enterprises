@@ -20,7 +20,7 @@ namespace Scripts
                     SubpartId = Names("hangar_upper_door"),
                     BarrelId = "muzzle_projectile_1", //only used for firing, use "Any" for all muzzles
                     StartupFireDelay = 0,
-                    AnimationDelays = Delays(FiringDelay : 0, ReloadingDelay: 0, OverheatedDelay: 0, TrackingDelay: 0, LockedDelay: 0, OnDelay: 0, OffDelay: 0, BurstReloadDelay: 0, OutOfAmmoDelay: 0, PreFireDelay: 0),//Delay before animation starts
+                    AnimationDelays = Delays(FiringDelay : 0, ReloadingDelay: 30, OverheatedDelay: 0, TrackingDelay: 0, LockedDelay: 0, OnDelay: 0, OffDelay: 0, BurstReloadDelay: 0, OutOfAmmoDelay: 0, PreFireDelay: 0),//Delay before animation starts
                     Reverse = Events(),
                     Loop = Events(Firing),
                     TriggerOnce = Events(PreFire,Firing,StopFiring),
@@ -39,7 +39,7 @@ namespace Scripts
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
                                 },
                             },
-                        [BurstReload] =
+                        [Reloading] =
                             new[]
                             {
                                 new RelMove
@@ -59,7 +59,7 @@ namespace Scripts
                     SubpartId = Names("hangar_lower_door"),
                     BarrelId = "muzzle_projectile_1", //only used for firing, use "Any" for all muzzles
                     StartupFireDelay = 0,
-                    AnimationDelays = Delays(FiringDelay : 0, ReloadingDelay: 0, OverheatedDelay: 0, TrackingDelay: 0, LockedDelay: 0, OnDelay: 0, OffDelay: 0, BurstReloadDelay: 0, OutOfAmmoDelay: 0, PreFireDelay: 0),//Delay before animation starts
+                    AnimationDelays = Delays(FiringDelay : 0, ReloadingDelay: 30, OverheatedDelay: 0, TrackingDelay: 0, LockedDelay: 0, OnDelay: 0, OffDelay: 0, BurstReloadDelay: 0, OutOfAmmoDelay: 0, PreFireDelay: 0),//Delay before animation starts
                     Reverse = Events(),
                     Loop = Events(Firing),
                     TriggerOnce = Events(PreFire,Firing,StopFiring),
@@ -78,7 +78,7 @@ namespace Scripts
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
                                 },
                             },
-                        [BurstReload] =
+                        [Reloading] =
                             new[]
                             {
                                 new RelMove
@@ -88,6 +88,141 @@ namespace Scripts
                                     MovementType = Linear, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
                                     LinearPoints = new XYZ[0],
                                     Rotation = Transformation(90, 0, 0), //degrees
+                                    RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
+                                },
+                            },
+                    }
+                },
+                new PartAnimationSetDef()
+                {
+                    SubpartId = Names("drone_1"),
+                    BarrelId = "muzzle_projectile_1", //only used for firing, use "Any" for all muzzles
+                    StartupFireDelay = 0,
+                    AnimationDelays = Delays(FiringDelay : 0, ReloadingDelay: 60, OverheatedDelay: 0, TrackingDelay: 0, LockedDelay: 0, OnDelay: 0, OffDelay: 0, BurstReloadDelay: 60, OutOfAmmoDelay: 0, PreFireDelay: 0),//Delay before animation starts
+                    Reverse = Events(),
+                    Loop = Events(Firing),
+                    TriggerOnce = Events(PreFire,Firing,StopFiring),
+                    EventMoveSets = new Dictionary<PartAnimationSetDef.EventTriggers, RelMove[]>
+                    {
+                        [Firing] =
+                            new[]
+                            {
+                                new RelMove
+                                {
+                                    CenterEmpty = "",//Specifiy an empty on the subpart to rotate around
+                                    TicksToMove = 1, //number of ticks to complete motion, 60 = 1 second
+                                    MovementType = Hide, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
+                                    LinearPoints = new[]
+                                    {
+                                        Transformation(0f, 0, 1f), //linear movement in XYZ axes.
+                                    },
+                                    Rotation = Transformation(0, 0, 0), //degrees
+                                    RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
+                                },
+                            },
+                        [Reloading] =
+                            new[]
+                            {
+                                new RelMove
+                                {
+                                    CenterEmpty = "",//Specifiy an empty on the subpart to rotate around
+                                    TicksToMove = 1, //number of ticks to complete motion, 60 = 1 second
+                                    MovementType = Show, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
+                                    LinearPoints = new[]
+                                    {
+                                        Transformation(0f, 0, -1f), //linear movement in XYZ axes.
+                                    },
+                                    Rotation = Transformation(0, 0, 0), //degrees
+                                    RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
+                                },
+                            },
+                    }
+                },
+                new PartAnimationSetDef()
+                {
+                    SubpartId = Names("drone_2"),
+                    BarrelId = "muzzle_projectile_2", //only used for firing, use "Any" for all muzzles
+                    StartupFireDelay = 0,
+                    AnimationDelays = Delays(FiringDelay : 0, ReloadingDelay: 60, OverheatedDelay: 0, TrackingDelay: 0, LockedDelay: 0, OnDelay: 0, OffDelay: 0, BurstReloadDelay: 60, OutOfAmmoDelay: 0, PreFireDelay: 0),//Delay before animation starts
+                    Reverse = Events(),
+                    Loop = Events(Firing),
+                    TriggerOnce = Events(PreFire,Firing,StopFiring),
+                    EventMoveSets = new Dictionary<PartAnimationSetDef.EventTriggers, RelMove[]>
+                    {
+                        [Firing] =
+                            new[]
+                            {
+                                new RelMove
+                                {
+                                    CenterEmpty = "",//Specifiy an empty on the subpart to rotate around
+                                    TicksToMove = 1, //number of ticks to complete motion, 60 = 1 second
+                                    MovementType = Hide, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
+                                    LinearPoints = new[]
+                                    {
+                                        Transformation(0f, 0, 1f), //linear movement in XYZ axes.
+                                    },
+                                    Rotation = Transformation(0, 0, 0), //degrees
+                                    RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
+                                },
+                            },
+                        [Reloading] =
+                            new[]
+                            {
+                                new RelMove
+                                {
+                                    CenterEmpty = "",//Specifiy an empty on the subpart to rotate around
+                                    TicksToMove = 1, //number of ticks to complete motion, 60 = 1 second
+                                    MovementType = Show, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
+                                    LinearPoints = new[]
+                                    {
+                                        Transformation(0f, 0, -1f), //linear movement in XYZ axes.
+                                    },
+                                    Rotation = Transformation(0, 0, 0), //degrees
+                                    RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
+                                },
+                            },
+                    }
+                },
+                new PartAnimationSetDef()
+                {
+                    SubpartId = Names("drone_3"),
+                    BarrelId = "muzzle_projectile_3", //only used for firing, use "Any" for all muzzles
+                    StartupFireDelay = 0,
+                    AnimationDelays = Delays(FiringDelay : 0, ReloadingDelay: 60, OverheatedDelay: 0, TrackingDelay: 0, LockedDelay: 0, OnDelay: 0, OffDelay: 0, BurstReloadDelay: 60, OutOfAmmoDelay: 0, PreFireDelay: 0),//Delay before animation starts
+                    Reverse = Events(),
+                    Loop = Events(Firing),
+                    TriggerOnce = Events(PreFire,Firing,StopFiring),
+                    EventMoveSets = new Dictionary<PartAnimationSetDef.EventTriggers, RelMove[]>
+                    {
+                        [Firing] =
+                            new[]
+                            {
+                                new RelMove
+                                {
+                                    CenterEmpty = "",//Specifiy an empty on the subpart to rotate around
+                                    TicksToMove = 1, //number of ticks to complete motion, 60 = 1 second
+                                    MovementType = Hide, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
+                                    LinearPoints = new[]
+                                    {
+                                        Transformation(0f, 0, 1f), //linear movement in XYZ axes.
+                                    },
+                                    Rotation = Transformation(0, 0, 0), //degrees
+                                    RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
+                                },
+                            },
+                        [Reloading] =
+                            new[]
+                            {
+                                new RelMove
+                                {
+                                    CenterEmpty = "",//Specifiy an empty on the subpart to rotate around
+                                    TicksToMove = 1, //number of ticks to complete motion, 60 = 1 second
+                                    MovementType = Show, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
+                                    LinearPoints = new[]
+                                    {
+                                        Transformation(0f, 0, -1f), //linear movement in XYZ axes.
+                                    },
+                                    Rotation = Transformation(0, 0, 0), //degrees
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
                                 },
                             },

@@ -526,5 +526,69 @@
       <BaseProductionTimeInSeconds>6</BaseProductionTimeInSeconds>
     </Blueprint>		
 	
+	
+	
+	
+			<!-- COMPONENTS ABOVE, DRONES BELOW -->
+			
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AWESidekickDroneBP</SubtypeId>
+      </Id>
+      <DisplayName>"Sidekick" Machine Gun Drone</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\AWE_Drone_Sidekick.dds</Icon>
+      <Prerequisites>
+        <Item Amount="40" TypeId="Component" SubtypeId="SteelPlate" />
+        <Item Amount="60" TypeId="Component" SubtypeId="Computer" />		
+        <Item Amount="20" TypeId="Component" SubtypeId="SmallTube" />
+        <Item Amount="24" TypeId="Component" SubtypeId="Motor" />		
+	    <Item Amount="8" TypeId="Component" SubtypeId="PowerCell" />	
+        <Item Amount="10" TypeId="Component" SubtypeId="Thrust" />
+        <Item Amount="4" TypeId="AmmoMagazine" SubtypeId="ATLASAmmoMagazine" />						
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE_SidekickDroneMag" />
+      <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+    </Blueprint>			
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AWEFalconDroneBP</SubtypeId>
+      </Id>
+      <DisplayName>"Falcon" Cannon Drone</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\AWE_Drone_Falcon.dds</Icon>
+      <Prerequisites>
+        <Item Amount="40" TypeId="Component" SubtypeId="SteelPlate" />
+        <Item Amount="80" TypeId="Component" SubtypeId="Computer" />		
+        <Item Amount="4" TypeId="Component" SubtypeId="LargeTube" />
+        <Item Amount="24" TypeId="Component" SubtypeId="Motor" />			
+	    <Item Amount="5" TypeId="Component" SubtypeId="PowerCell" />	
+        <Item Amount="10" TypeId="Component" SubtypeId="Thrust" />
+        <Item Amount="8" TypeId="AmmoMagazine" SubtypeId="AWE120mmCannonMag" />						
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE_FalconDroneMag" />
+      <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+    </Blueprint>		
+	
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AWEStormriderDroneBP</SubtypeId>
+      </Id>
+      <DisplayName>"Stormrider" Cannon Drone</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\AWE_Drone_Stormrider.dds</Icon>
+      <Prerequisites>
+        <Item Amount="40" TypeId="Component" SubtypeId="SteelPlate" />
+        <Item Amount="80" TypeId="Component" SubtypeId="Computer" />		
+        <Item Amount="20" TypeId="Component" SubtypeId="Superconductor" />
+        <Item Amount="24" TypeId="Component" SubtypeId="Motor" />			
+	    <Item Amount="20" TypeId="Component" SubtypeId="PowerCell" />	
+        <Item Amount="10" TypeId="Component" SubtypeId="Thrust" />						
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE_StormriderDroneMag" />
+      <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+    </Blueprint>				
+			
   </Blueprints>
 </Definitions>

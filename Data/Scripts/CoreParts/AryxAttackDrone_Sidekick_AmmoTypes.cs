@@ -30,7 +30,7 @@ namespace Scripts
 
         private AmmoDef AryxSidekickDrone => new AmmoDef
         {
-            AmmoMagazine = "Energy", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
+            AmmoMagazine = "AWE_SidekickDroneMag", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
             AmmoRound = "M55-AE Sidekick Combat Drone", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
@@ -267,7 +267,7 @@ namespace Scripts
                 MaxTrajectoryTime = 0, // How long the weapon must fire before it reaches MaxTrajectory.
                 Smarts = new SmartsDef
                 {
-                    Inaccuracy = 4000, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
+                    Inaccuracy = 8000, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
                     Aggressiveness = 0.25, // controls how responsive tracking is.
                     MaxLateralThrust = 0.35f, // controls how sharp the trajectile may turn
                     TrackingDelay = 10, // Measured in Shape diameter units traveled.
@@ -427,8 +427,8 @@ namespace Scripts
 
         private AmmoDef AryxStormwingDrone => new AmmoDef
         {
-            AmmoMagazine = "Energy", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
-            AmmoRound = "M20E-L Stormwing Combat Drone", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
+            AmmoMagazine = "AWE_StormriderDroneMag", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
+            AmmoRound = "M20E-L Stormrider Combat Drone", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
             BaseDamage = 1f, // Direct damage; one steel plate is worth 100.
@@ -664,7 +664,7 @@ namespace Scripts
                 MaxTrajectoryTime = 0, // How long the weapon must fire before it reaches MaxTrajectory.
                 Smarts = new SmartsDef
                 {
-                    Inaccuracy = 4000, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
+                    Inaccuracy = 8000, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
                     Aggressiveness = 0.25, // controls how responsive tracking is.
                     MaxLateralThrust = 0.35f, // controls how sharp the trajectile may turn
                     TrackingDelay = 10, // Measured in Shape diameter units traveled.
@@ -822,10 +822,9 @@ namespace Scripts
         };
 
 
-
         private AmmoDef AryxFalconDrone => new AmmoDef
         {
-            AmmoMagazine = "Energy", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
+            AmmoMagazine = "AWE_FalconDroneMag", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
             AmmoRound = "M80C-D Falcon Combat Drone", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
@@ -1062,7 +1061,7 @@ namespace Scripts
                 MaxTrajectoryTime = 0, // How long the weapon must fire before it reaches MaxTrajectory.
                 Smarts = new SmartsDef
                 {
-                    Inaccuracy = 4000, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
+                    Inaccuracy = 8000, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
                     Aggressiveness = 0.25, // controls how responsive tracking is.
                     MaxLateralThrust = 0.35f, // controls how sharp the trajectile may turn
                     TrackingDelay = 10, // Measured in Shape diameter units traveled.
