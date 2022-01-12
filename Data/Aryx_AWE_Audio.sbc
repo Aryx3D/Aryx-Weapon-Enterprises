@@ -495,7 +495,7 @@
       <PreventSynchronization>1</PreventSynchronization>
       <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
       <DynamicMusicAmount>3</DynamicMusicAmount>
-      <Volume>1</Volume>
+      <Volume>2</Volume>
 	  <DistantSounds>
 		<DistantSound DistanceCrossFade="10" Distance="500" Sound = "ArcWepShipARYXCyclone_DistantFire" />
 	  </DistantSounds>	  
@@ -539,7 +539,7 @@
       <PreventSynchronization>1</PreventSynchronization>
       <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
       <DynamicMusicAmount>3</DynamicMusicAmount>
-      <Volume>1</Volume>
+      <Volume>2</Volume>
 	  <DistantSounds>
 		<DistantSound DistanceCrossFade="10" Distance="500" Sound = "ArcWepShipARYXHurricane_DistantFire" />
 	  </DistantSounds>		  
@@ -582,7 +582,7 @@
       <PreventSynchronization>1</PreventSynchronization>
       <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
       <DynamicMusicAmount>3</DynamicMusicAmount>
-      <Volume>1</Volume>
+      <Volume>2</Volume>
 	  <DistantSounds>
 		<DistantSound DistanceCrossFade="10" Distance="500" Sound = "ArcWepShipARYXTyphoon_DistantFire" />
 	  </DistantSounds>		  
@@ -602,6 +602,26 @@
     <Sound>
       <Id>
         <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcWepShipARYXMonsoon_Fire</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>1000</MaxDistance>
+      <PreventSynchronization>1</PreventSynchronization>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>3</DynamicMusicAmount>
+      <Volume>2</Volume>
+	  <DistantSounds>
+		<DistantSound DistanceCrossFade="10" Distance="500" Sound = "ArcWepShipARYXTyphoon_DistantFire" />
+	  </DistantSounds>		  
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Aryx\heavy_cannons\aryx_monsoon_fire_01.wav</Start>
+        </Wave>		
+      </Waves>
+    </Sound>	
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
         <SubtypeId>ArcWepShipARYXTridentFire</SubtypeId>
       </Id>
       <Category>SHOT</Category>
@@ -609,7 +629,7 @@
       <PreventSynchronization>0</PreventSynchronization>
       <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
       <DynamicMusicAmount>3</DynamicMusicAmount>
-      <Volume>2</Volume>
+      <Volume>1</Volume>
       <Waves>
         <Wave Type="D3">
           <Start>Audio\Aryx\misc\aryx_trident_fire_01.wav</Start>
@@ -621,7 +641,8 @@
           <Start>Audio\Aryx\misc\aryx_trident_fire_03.wav</Start>
         </Wave>	
       </Waves>
-    </Sound>		
+    </Sound>	
+	
     <Sound>
       <Id>
         <TypeId>MyObjectBuilder_AudioDefinition</TypeId>

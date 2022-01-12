@@ -2206,9 +2206,9 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXCatalystCannon</SubtypeId>
 		</Id>
-		<Public>false</Public>
+		<Public>true</Public>
 		<DisplayName>Obliterator Antimatter Catalyst Cannon</DisplayName>
-		<Icon>Textures\GUI\Icons\AryxGaussCannon.dds</Icon>
+		<Icon>Textures\GUI\Icons\Oppenheimer.dds</Icon>
 		<Description>A manmade horror beyond comprehension; The destroyer of worlds.</Description>	
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
