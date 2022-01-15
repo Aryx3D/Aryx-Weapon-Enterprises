@@ -1,0 +1,146 @@
+Running from: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas 
+Command: C:\Users\Erin\Desktop\SEUT\Tools\MWMBuilder\MwmBuilder.exe /f /s:C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas /m:LG_AtlasGatlingBase*.fbx /o:C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas /x:C:\Users\Erin\Desktop\SEUT\Materials 
+C:\Users\Erin\Desktop\SEUT\Materials\Armors.xml: 
+    Materialslib
+C:\Users\Erin\Desktop\SEUT\Materials\Character.xml: 
+    Materialslib
+C:\Users\Erin\Desktop\SEUT\Materials\enenra.xml: 
+    Materialslib
+C:\Users\Erin\Desktop\SEUT\Materials\Foliage.xml: 
+    Materialslib
+C:\Users\Erin\Desktop\SEUT\Materials\Items.xml: 
+    Materialslib
+C:\Users\Erin\Desktop\SEUT\Materials\LODs.xml: 
+    Materialslib
+C:\Users\Erin\Desktop\SEUT\Materials\Materials.xml: 
+    Materialslib
+Material Libraries: 
+    Material libraries were successfully loaded from path: C:\Users\Erin\Desktop\SEUT\Materials
+: 
+    **FileName: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase.fbx
+: 
+    **Filename (without extension): LG_AtlasGatlingBase
+: 
+    **Directory Name: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas
+: 
+    **Number of characters to cull: 74
+: 
+    **Culled Path: Models\AWE_Atlas
+Meshes: 
+    Found 16 meshe(s).
+Animations: 
+    Found 0 animation(s).
+C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase.fbx: 
+    : Finished in 0.2s
+: 
+    **FileName: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase_BS3.fbx
+: 
+    **Filename (without extension): LG_AtlasGatlingBase_BS3
+: 
+    **Directory Name: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas
+: 
+    **Number of characters to cull: 74
+: 
+    **Culled Path: Models\AWE_Atlas
+Meshes: 
+    Found 1 meshe(s).
+Animations: 
+    Found 0 animation(s).
+C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase_BS3.fbx: 
+    : Finished in 0.2s
+: 
+    **FileName: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase_LOD1.fbx
+: 
+    **Filename (without extension): LG_AtlasGatlingBase_LOD1
+: 
+    **Directory Name: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas
+: 
+    **Number of characters to cull: 74
+: 
+    **Culled Path: Models\AWE_Atlas
+Meshes: 
+    Found 11 meshe(s).
+Animations: 
+    Found 0 animation(s).
+C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase_LOD1.fbx: 
+    : Finished in 0.3s
+: 
+    **FileName: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase_BS2.fbx
+: 
+    **Filename (without extension): LG_AtlasGatlingBase_BS2
+: 
+    **Directory Name: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas
+: 
+    **Number of characters to cull: 74
+: 
+    **Culled Path: Models\AWE_Atlas
+Meshes: 
+    Found 1 meshe(s).
+Animations: 
+    Found 0 animation(s).
+C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase_BS2.fbx: 
+    : Finished in 0.3s
+: 
+    **FileName: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase_LOD2.fbx
+: 
+    **Filename (without extension): LG_AtlasGatlingBase_LOD2
+: 
+    **Directory Name: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas
+: 
+    **Number of characters to cull: 74
+: 
+    **Culled Path: Models\AWE_Atlas
+Meshes: 
+    Found 9 meshe(s).
+Animations: 
+    Found 0 animation(s).
+C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase_LOD2.fbx: 
+    : Finished in 0.3s
+: 
+    **FileName: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase_BS1.fbx
+: 
+    **Filename (without extension): LG_AtlasGatlingBase_BS1
+: 
+    **Directory Name: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas
+: 
+    **Number of characters to cull: 74
+: 
+    **Culled Path: Models\AWE_Atlas
+Meshes: 
+    Found 1 meshe(s).
+Animations: 
+    Found 0 animation(s).
+C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase_BS1.fbx: 
+    : Finished in 0.3s
+: 
+    **FileName: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase_LOD3.fbx
+: 
+    **Filename (without extension): LG_AtlasGatlingBase_LOD3
+: 
+    **Directory Name: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas
+: 
+    **Number of characters to cull: 74
+: 
+    **Culled Path: Models\AWE_Atlas
+Meshes: 
+    Found 2 meshe(s).
+Animations: 
+    Found 0 animation(s).
+C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase_LOD3.fbx: 
+    : Finished in 0.3s
+: 
+    **FileName: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase.hkt.fbx
+: 
+    **Filename (without extension): LG_AtlasGatlingBase.hkt
+: 
+    **Directory Name: C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas
+: 
+    **Number of characters to cull: 74
+: 
+    **Culled Path: Models\AWE_Atlas
+Meshes: 
+    Found 3 meshe(s).
+Animations: 
+    Found 0 animation(s).
+C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase.hkt.fbx: 
+    : Finished in 0.3s

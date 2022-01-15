@@ -256,7 +256,7 @@ namespace Scripts
                 Guidance = Smart, // None, Remote, TravelTo, Smart, DetectTravelTo, DetectSmart, DetectFixed, DroneAdvanced
                 TargetLossDegree = 0f,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                MaxLifeTime = 3900, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 100f,
                 DesiredSpeed = 100, // voxel phasing if you go above 5100
                 MaxTrajectory = 100000,
@@ -653,7 +653,7 @@ namespace Scripts
                 Guidance = Smart, // None, Remote, TravelTo, Smart, DetectTravelTo, DetectSmart, DetectFixed, DroneAdvanced
                 TargetLossDegree = 0f,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                MaxLifeTime = 3900, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 100f,
                 DesiredSpeed = 100, // voxel phasing if you go above 5100
                 MaxTrajectory = 100000,
@@ -1050,7 +1050,7 @@ namespace Scripts
                 Guidance = Smart, // None, Remote, TravelTo, Smart, DetectTravelTo, DetectSmart, DetectFixed, DroneAdvanced
                 TargetLossDegree = 0f,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                MaxLifeTime = 3900, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 100f,
                 DesiredSpeed = 100, // voxel phasing if you go above 5100
                 MaxTrajectory = 100000,

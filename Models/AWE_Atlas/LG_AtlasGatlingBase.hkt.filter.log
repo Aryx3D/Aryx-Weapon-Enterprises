@@ -1,0 +1,13 @@
+Command: C:\Users\Erin\Desktop\SEUT\Tools\Havok\HavokContentTools\hctStandAloneFilterManager.exe -t -s C:\Users\Erin\AppData\Local\Temp\space_engineers_3qbssj_2.hko -p C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase.hkt C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase.hkt 
+[ Processing All Configurations... ]
+    
+    ========== Started: Thu Jan 13 20:53:53 2022, Configuration: default ==========
+    
+    [ [Physics 2012] Create Rigid Bodies Filter ]
+        [0xabba873d] Warning : Degenerate Capsule (caps): Using Sphere Shape Instead
+        Created 3 rigid bodies.
+    [ Prune Types Filter ]
+    [ Write to Platform Filter ]
+        Wrote layout for [Tagfile] to file [C:\Users\Erin\AppData\Roaming\SpaceEngineers\Mods\Aryx Weapon Enterprises\Models\AWE_Atlas\LG_AtlasGatlingBase.hkt].
+    
+    ========== Finished in 00:00:00, 0 Errors, 1 Warnings ==========

@@ -186,7 +186,10 @@ namespace Scripts {
                 AryxEnergyTorpAmmoWCDef,
                 AryxTorpFullSpeed,
                 AryxEnergyTorpEWARField,
-                AryxEnergyTorpLaunchedAmmoWCDef, // Must list all primary, shrapnel, and pattern ammos.
+                AryxEnergyTorpLaunchedAmmoWCDef,
+                AryxAntimatterTorpWCDef,
+                AryxAntimatterTorpFullSpeed,
+                AryxAntimatterTorpShrap,// Must list all primary, shrapnel, and pattern ammos.
             },
             //Animations = AryxFlechetteAnims,
             //Upgrades = UpgradeModules,

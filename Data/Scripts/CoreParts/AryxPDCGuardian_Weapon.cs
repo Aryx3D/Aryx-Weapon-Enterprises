@@ -185,7 +185,7 @@ namespace Scripts
             Ammos = new[] {
                 AryxATLASAmmoWC,
             },
-            //Animations = AdvancedAnimation,
+            Animations = AryxGuardianAnims,
             // Don't edit below this line
         };
     }
