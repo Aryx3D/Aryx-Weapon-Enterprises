@@ -139,13 +139,13 @@ namespace Scripts
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "",
-                    FiringSound = "ArcWepShipARYXATLAS_Fire", // WepShipGatlingShot
-                    FiringSoundPerShot = true,
+                    FiringSound = "ArcWepShipARYXATLAS_LoopFire", // WepShipGatlingShot
+                    FiringSoundPerShot = false,
                     ReloadSound = "",
                     NoAmmoSound = "",
                     HardPointRotationSound = "",
                     BarrelRotationSound = "",
-                    FireSoundEndDelay = 150, // Measured in game ticks(6 = 100ms, 60 = 1 seconds, etc..).
+                    FireSoundEndDelay = 60, // Measured in game ticks(6 = 100ms, 60 = 1 seconds, etc..).
                 },
                 Graphics = new HardPointParticleDef
                 {

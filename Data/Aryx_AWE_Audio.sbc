@@ -67,9 +67,8 @@
       <Waves>
         <Wave Type="D3">
 			<Loop>Audio\Aryx\gatlings\aryx_guardian_gatling_loop_01.wav</Loop>
-			<Stop>Audio\Aryx\gatlings\aryx_guardian_gatling_stop_01.wav</Stop>
-        </Wave>	
-		
+			<End>Audio\Aryx\gatlings\aryx_guardian_gatling_stop_01.wav</End>
+        </Wave>		
       </Waves>
     </Sound>	
     <Sound>
