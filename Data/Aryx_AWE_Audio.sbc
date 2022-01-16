@@ -57,13 +57,11 @@
       </Id>
       <Category>SHOT</Category>
       <MaxDistance>400</MaxDistance>
-      <PreventSynchronization>0</PreventSynchronization>
       <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
       <DynamicMusicAmount>3</DynamicMusicAmount>
       <Volume>1</Volume>
       <Loopable>true</Loopable>
-      <PreventSynchronization>3</PreventSynchronization>	  
-      <SoundLimit>10</SoundLimit>	  
+      <PreventSynchronization>0</PreventSynchronization>	   
       <Waves>
         <Wave Type="D3">
 			<Loop>Audio\Aryx\gatlings\aryx_guardian_gatling_loop_01.wav</Loop>
