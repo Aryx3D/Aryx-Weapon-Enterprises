@@ -31,8 +31,8 @@ namespace Scripts
             AmmoMagazine = "AryxReaperPulseCell",
             AmmoRound = "AryxReaperAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 5f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 8750f,
+            EnergyCost = 10f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            BaseDamage = 1000,
             Mass = 200, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 30f,
@@ -148,8 +148,8 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 4, // Meters
-                    Damage = 25000,
-                    Depth = 1f,
+                    Damage = 8000,
+                    Depth = 5f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius

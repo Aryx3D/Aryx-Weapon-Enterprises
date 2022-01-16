@@ -510,6 +510,7 @@ namespace Scripts
                     [ProtoMember(6)] internal bool FiringSoundPerShot;
                     [ProtoMember(7)] internal string PreFiringSound;
                     [ProtoMember(8)] internal uint FireSoundEndDelay;
+                    [ProtoMember(9)] internal bool FireSoundNoBurst;
                 }
 
                 [ProtoContract]
@@ -796,7 +797,8 @@ namespace Scripts
                     [ProtoMember(9)] internal float Offset;
                     [ProtoMember(10)] internal int MaxChildren;
                     [ProtoMember(11)] internal TimedSpawnDef TimedSpawns;
-                    [ProtoMember(12)] internal bool FireSound;
+                    [ProtoMember(12)] internal bool FireSound; // not used, can remove
+                    [ProtoMember(13)] internal Vector3D AdvOffset;
 
                     [ProtoContract]
                     public struct TimedSpawnDef
@@ -824,6 +826,14 @@ namespace Scripts
                 [ProtoContract]
                 public struct PatternDef
                 {
+                    public enum PatternModes
+                    {
+                        Never,
+                        Weapon,
+                        Fragment,
+                        Both,
+                    }
+
                     [ProtoMember(1)] internal string[] Patterns;
                     [ProtoMember(2)] internal bool Enable;
                     [ProtoMember(3)] internal float TriggerChance;
@@ -832,6 +842,7 @@ namespace Scripts
                     [ProtoMember(6)] internal int RandomMin;
                     [ProtoMember(7)] internal int RandomMax;
                     [ProtoMember(8)] internal int PatternSteps;
+                    [ProtoMember(9)] internal PatternModes Mode;
                 }
 
                 [ProtoContract]
@@ -1098,6 +1109,7 @@ namespace Scripts
                     [ProtoMember(6)] internal string PlayerHitSound;
                     [ProtoMember(7)] internal string FloatingHitSound;
                     [ProtoMember(8)] internal string ShieldHitSound;
+                    [ProtoMember(9)] internal string FragmentSound;
                 }
 
                 [ProtoContract]
