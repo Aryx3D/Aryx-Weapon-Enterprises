@@ -2582,7 +2582,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DisplayName>VLX-5000 Reaper Pulse Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AWEReaperPulseCannon.dds</Icon>
 	  <!--"The Reaper is the ultimate heavy weapons platform; Three quantum accelerators rigged to a a series of heavy pulse capacitors, giving the weapon unbridled destructive power. 5 second spin up, followed by a crushing volley of 12 devastatingly-powerful shots, shredding shield and armour alike" -->
-      <Description>The Reaper Pulse Cannon is the ultimate heavy weapon; A gigantic gauss accelerator rigged to fire highly energised shots of supercharged plasma, able to cleave through armour then explode inside a target's delicate internals. A truly monstrous weapon for the most truly monstrous of ships.[10KM RANGE - Accepts High Density Energy Cells.]</Description>
+      <Description>The Reaper is an experimental weapon platform designed as the sister project of the Typhoon and Magnetar. Rather than fire ballistic rounds or plasma bolts, the Reaper fires globules of Antimatter, able to crack enemy armour with frightening firepower. [5KM RANGE - Accepts High Density Energy Cells.]</Description>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="7" y="4" z="7"/>

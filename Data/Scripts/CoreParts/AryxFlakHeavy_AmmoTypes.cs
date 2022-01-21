@@ -150,7 +150,7 @@ namespace Scripts
                     Enable = true,
                     Radius = 2f, // Meters
                     Damage = 1500,
-                    Depth = 1f,
+                    Depth = 3f, //idk lmao
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -159,7 +159,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 1, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1,
@@ -410,11 +410,11 @@ namespace Scripts
 
         private AmmoDef AryxHeavyFlakShrapWC => new AmmoDef
         {
-            AmmoMagazine = "60mmFlakMagazine",
+            AmmoMagazine = "Energy",
             AmmoRound = "AryxHeavyFlakShrapWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 25f,
+            BaseDamage = 50f,
             Mass = 25, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 25f,

@@ -6,6 +6,8 @@ using static Scripts.Structure.WeaponDefinition.AmmoDef.ShapeDef.Shapes;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.DamageScaleDef.CustomScalesDef;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.DamageScaleDef.CustomScalesDef.SkipMode;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.GraphicDef;
+using static Scripts.Structure.WeaponDefinition.AmmoDef.FragmentDef;
+using static Scripts.Structure.WeaponDefinition.AmmoDef.FragmentDef.TimedSpawnDef.PointTypes;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.TrajectoryDef;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.TrajectoryDef.GuidanceType;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.DamageScaleDef;
@@ -1899,7 +1901,7 @@ namespace Scripts
 
         private AmmoDef AryxAntimatterTorpWCDef => new AmmoDef
         {
-            AmmoMagazine = "AryxTorpMagDef", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
+            AmmoMagazine = "AryxAntimatterTorpMagDef", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
             AmmoRound = "Annihilator Antimatter Torpedo", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
@@ -2120,7 +2122,7 @@ namespace Scripts
                     Inaccuracy = 0, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
                     Aggressiveness = 2, // controls how responsive tracking is.
                     MaxLateralThrust = 0.3f, // controls how sharp the trajectile may turn
-                    TrackingDelay = 0, // Measured in Shape diameter units traveled.
+                    TrackingDelay = 10, // Measured in Shape diameter units traveled.
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
                     MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
@@ -2302,8 +2304,27 @@ namespace Scripts
             {
                 AmmoRound = "Small Antimatter Bolt", // AmmoRound field of the ammo to spawn.
                 Fragments = 1, // Number of projectiles to spawn.
-                Degrees = 1, // Cone in which to randomise direction of spawned projectiles.
+                Degrees = 1, // Cone in which to randomize direction of spawned projectiles.
                 Reverse = false, // Spawn projectiles backward instead of forward.
+                DropVelocity = false, // fragments will not inherit velocity from parent.
+                Offset = 0f, // Offsets the fragment spawn by this amount, in meters (positive forward, negative for backwards).
+                Radial = 0f, // Determines starting angle for Degrees of spread above.  IE, 0 degrees and 90 radial goes perpendicular to travel path
+                MaxChildren = 0, // number of maximum branches for fragments from the roots point of view, 0 is unlimited
+                IgnoreArming = true, // If true, ignore ArmOnHit or MinArmingTime in EndOfLife definitions
+
+                TimedSpawns = new TimedSpawnDef // disables FragOnEnd in favor of info specified below
+                {
+                    Enable = false, // Enables TimedSpawns mechanism
+                    Interval = 5, // Time between spawning fragments, in ticks
+                    StartTime = 0, // Time delay to start spawning fragments, in ticks, of total projectile life
+                    MaxSpawns = 900, // Max number of fragment children to spawn
+                    Proximity = 1000, // Starting distance from target bounding sphere to start spawning fragments, 0 disables this feature.  No spawning outside this distance
+                    ParentDies = false, // Parent dies once after it spawns its last child.
+                    PointAtTarget = false, // Start fragment direction pointing at Target
+                    PointType = Direct, // Point accuracy, Direct, Lead (always fire), Predict (only fire if it can hit)
+                    GroupSize = 1, // Number of spawns in each group
+                    GroupDelay = 1, // Delay between each group.
+                },
 
             },
             Pattern = new PatternDef
@@ -2410,10 +2431,10 @@ namespace Scripts
                     MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
-                    ParticleScale = 0.35f,
-                    CustomParticle = "", // Particle SubtypeID, from your Particle SBC
+                    ParticleScale = 0.4f,
+                    CustomParticle = "AryxAntimatterTorpedoBlast", // Particle SubtypeID, from your Particle SBC
                     CustomSound = "ArcWepShipARYXExplosionLarge", // SubtypeID from your Audio SBC, not a filename
-                    Shape = Round, // Round or Diamond
+                    Shape = Diamond, // Round or Diamond
                 },
             },
             Ewar = new EwarDef
@@ -2496,7 +2517,7 @@ namespace Scripts
                     Inaccuracy = 5, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
                     Aggressiveness = 1, // controls how responsive tracking is.
                     MaxLateralThrust = 0.05f, // controls how sharp the trajectile may turn
-                    TrackingDelay = 0, // Measured in Shape diameter units traveled.
+                    TrackingDelay = 10, // Measured in Shape diameter units traveled.
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
                     MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
@@ -2524,7 +2545,7 @@ namespace Scripts
                 {
                     Ammo = new ParticleDef
                     {
-                        Name = "AryxLargeMissileTrail", //ShipWelderArc
+                        Name = "AryxAntimatterTorpedoTrail", //ShipWelderArc
                         ShrinkByDistance = false,
                         Color = Color(red: 5, green: 5, blue: 20, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 1.25f),
@@ -2532,14 +2553,14 @@ namespace Scripts
                         {
                             Loop = true,
                             Restart = false,
-                            MaxDistance = 1000,
+                            MaxDistance = 2000,
                             MaxDuration = 0,
                             Scale = 1f,
                         },
                     },
                     Hit = new ParticleDef
                     {
-                        Name = "AryxAWETorpedoBlast",
+                        Name = "",
                         ApplyToShield = true,
                         ShrinkByDistance = false,
                         Color = Color(red: 10f, green: 10f, blue: 25f, alpha: 0),
@@ -2674,14 +2695,14 @@ namespace Scripts
             },
             Fragment = new FragmentDef
             {
-                AmmoRound = "Antimatter Bolt", // AmmoRound field of the ammo to spawn.
+                AmmoRound = "Small Antimatter Bolt", // AmmoRound field of the ammo to spawn.
                 Fragments = 2, // Number of projectiles to spawn.
                 Degrees = 360, // Cone in which to randomize direction of spawned projectiles.
                 Reverse = false, // Spawn projectiles backward instead of forward.
                 DropVelocity = true, // fragments will not inherit velocity from parent.
                 Offset = 0f, // Offsets the fragment spawn by this amount, in meters (positive forward, negative for backwards).
                 Radial = 0f, // Determines starting angle for Degrees of spread above.  IE, 0 degrees and 90 radial goes perpendicular to travel path
-                MaxChildren = 64,
+                MaxChildren = 16,
                 IgnoreArming = false, //Whether shrapnel should spawn regardless of whether the projectile is armed or not.
             },
 

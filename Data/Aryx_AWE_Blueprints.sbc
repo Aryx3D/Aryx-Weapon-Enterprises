@@ -97,13 +97,13 @@
       <DisplayName>5200mm Ferrous-Tungsten Cluster Ballistic Projectile</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEKingswordAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="6000" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="4000" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="3000" TypeId="Ingot" SubtypeId="Cobalt" />
-        <Item Amount="1200" TypeId="Ingot" SubtypeId="Uranium" />		
-        <Item Amount="300" TypeId="Ingot" SubtypeId="Platinum" />			
-        <Item Amount="600" TypeId="Ingot" SubtypeId="Gold" />		
-        <Item Amount="400" TypeId="Ingot" SubtypeId="Silver" />		
+        <Item Amount="12000" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="8000" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="4000" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="2000" TypeId="Ingot" SubtypeId="Uranium" />
+        <Item Amount="2000" TypeId="Ingot" SubtypeId="Silver" />			
+        <Item Amount="800" TypeId="Ingot" SubtypeId="Platinum" />			
+        <Item Amount="600" TypeId="Ingot" SubtypeId="Gold" />			
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWEKingswordMagazine" />
@@ -464,6 +464,27 @@
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AryxEnergyTorpMagDef" />
       <BaseProductionTimeInSeconds>45</BaseProductionTimeInSeconds>
     </Blueprint>	
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>900mmAntimatterTorpedoBP</SubtypeId>
+      </Id>
+      <DisplayName>Annihilator Antimatter Torpedo</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\AWEAntimatterMissile.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1500" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="1000" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="750" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="100" TypeId="Ingot" SubtypeId="Gold" />		
+        <Item Amount="100" TypeId="Ingot" SubtypeId="Uranium" />		
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Platinum" />	
+		
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AryxAntimatterTorpMagDef" />
+      <BaseProductionTimeInSeconds>45</BaseProductionTimeInSeconds>
+    </Blueprint>	
+	
 	
     <Blueprint>
       <Id>
@@ -539,13 +560,13 @@
       <DisplayName>"Sidekick" Machine Gun Drone</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWE_Drone_Sidekick.dds</Icon>
       <Prerequisites>
-        <Item Amount="40" TypeId="Component" SubtypeId="SteelPlate" />
-        <Item Amount="60" TypeId="Component" SubtypeId="Computer" />		
-        <Item Amount="20" TypeId="Component" SubtypeId="SmallTube" />
-        <Item Amount="24" TypeId="Component" SubtypeId="Motor" />		
-	    <Item Amount="8" TypeId="Component" SubtypeId="PowerCell" />	
-        <Item Amount="10" TypeId="Component" SubtypeId="Thrust" />
-        <Item Amount="4" TypeId="AmmoMagazine" SubtypeId="ATLASAmmoMagazine" />						
+        <Item Amount="80" TypeId="Component" SubtypeId="SteelPlate" />
+        <Item Amount="120" TypeId="Component" SubtypeId="Computer" />		
+        <Item Amount="40" TypeId="Component" SubtypeId="SmallTube" />
+        <Item Amount="48" TypeId="Component" SubtypeId="Motor" />		
+	    <Item Amount="16" TypeId="Component" SubtypeId="PowerCell" />	
+        <Item Amount="24" TypeId="Component" SubtypeId="Thrust" />
+        <Item Amount="8" TypeId="AmmoMagazine" SubtypeId="ATLASAmmoMagazine" />						
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE_SidekickDroneMag" />
       <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
@@ -559,13 +580,13 @@
       <DisplayName>"Falcon" Cannon Drone</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWE_Drone_Falcon.dds</Icon>
       <Prerequisites>
-        <Item Amount="40" TypeId="Component" SubtypeId="SteelPlate" />
-        <Item Amount="80" TypeId="Component" SubtypeId="Computer" />		
-        <Item Amount="4" TypeId="Component" SubtypeId="LargeTube" />
-        <Item Amount="24" TypeId="Component" SubtypeId="Motor" />			
-	    <Item Amount="5" TypeId="Component" SubtypeId="PowerCell" />	
-        <Item Amount="10" TypeId="Component" SubtypeId="Thrust" />
-        <Item Amount="8" TypeId="AmmoMagazine" SubtypeId="AWE120mmCannonMag" />						
+        <Item Amount="80" TypeId="Component" SubtypeId="SteelPlate" />
+        <Item Amount="120" TypeId="Component" SubtypeId="Computer" />		
+        <Item Amount="8" TypeId="Component" SubtypeId="LargeTube" />
+        <Item Amount="48" TypeId="Component" SubtypeId="Motor" />			
+	    <Item Amount="16" TypeId="Component" SubtypeId="PowerCell" />	
+        <Item Amount="24" TypeId="Component" SubtypeId="Thrust" />
+        <Item Amount="16" TypeId="AmmoMagazine" SubtypeId="AWE120mmCannonMag" />						
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE_FalconDroneMag" />
       <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
@@ -579,12 +600,12 @@
       <DisplayName>"Stormrider" Cannon Drone</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWE_Drone_Stormrider.dds</Icon>
       <Prerequisites>
-        <Item Amount="40" TypeId="Component" SubtypeId="SteelPlate" />
-        <Item Amount="80" TypeId="Component" SubtypeId="Computer" />		
-        <Item Amount="20" TypeId="Component" SubtypeId="Superconductor" />
-        <Item Amount="24" TypeId="Component" SubtypeId="Motor" />			
-	    <Item Amount="20" TypeId="Component" SubtypeId="PowerCell" />	
-        <Item Amount="10" TypeId="Component" SubtypeId="Thrust" />						
+        <Item Amount="80" TypeId="Component" SubtypeId="SteelPlate" />
+        <Item Amount="160" TypeId="Component" SubtypeId="Computer" />		
+        <Item Amount="32" TypeId="Component" SubtypeId="Superconductor" />
+        <Item Amount="48" TypeId="Component" SubtypeId="Motor" />			
+	    <Item Amount="48" TypeId="Component" SubtypeId="PowerCell" />	
+        <Item Amount="24" TypeId="Component" SubtypeId="Thrust" />						
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE_StormriderDroneMag" />
       <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>

@@ -589,8 +589,8 @@
                 <Y>0.5</Y>
                 <Z>0.5</Z>
             </Size>
-            <Mass>150</Mass>
-            <Volume>10</Volume>
+            <Mass>200</Mass>
+            <Volume>100</Volume>
             <Model>Models\AWE_Ammo\AryxDevastatorMissile.mwm</Model>
             <PhysicalMaterial>Ammo</PhysicalMaterial>
             <Capacity>1</Capacity>
@@ -614,8 +614,8 @@
                 <Y>0.5</Y>
                 <Z>0.5</Z>
             </Size>
-            <Mass>160</Mass>
-            <Volume>10</Volume>
+            <Mass>200</Mass>
+            <Volume>100</Volume>
             <Model>Models\AWE_Ammo\AryxEqualiserMissile.mwm</Model>
             <PhysicalMaterial>Ammo</PhysicalMaterial>
             <Capacity>1</Capacity>
@@ -627,7 +627,31 @@
             <MaximumOrderAmount>300</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
         </AmmoMagazine>			
-		
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>AryxAntimatterTorpMagDef</SubtypeId>
+            </Id>
+            <DisplayName>Annihilator Antimatter Torpedo</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\AWEAntimatterMissile.dds</Icon>
+            <Size>
+                <X>2.5</X>
+                <Y>0.5</Y>
+                <Z>0.5</Z>
+            </Size>
+            <Mass>300</Mass>
+            <Volume>200</Volume>
+            <Model>Models\AWE_Ammo\AryxAntimatterMissile.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="900EnergyTorpAmmoDef" />
+
+            <MinimumOfferAmount>1</MinimumOfferAmount>
+            <MaximumOfferAmount>100</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>300</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>				
 		
         <AmmoMagazine>
             <Id>

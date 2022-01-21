@@ -91,6 +91,8 @@ namespace Scripts
                     MaxAzimuth = 180,
                     MinElevation = -10,
                     MaxElevation = 90,
+                    HomeAzimuth = 0, // Default resting rotation angle
+                    HomeElevation = 20, // Default resting elevation
                     FixedOffset = false,
                     InventorySize = 0.2f,
                     Offset = Vector(x: 0, y: 0, z: 0),

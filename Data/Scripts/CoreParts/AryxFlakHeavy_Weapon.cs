@@ -38,7 +38,7 @@ namespace Scripts
             Targeting = new TargetingDef
             {
                 Threats = new[] {
-                    Grids,
+                    Grids, Projectiles,
                 },
                 SubSystems = new[] {
                     Thrust, Utility, Offense, Power, Production, Any,
@@ -156,7 +156,7 @@ namespace Scripts
                             Restart = false,
                             MaxDistance = 1000,
                             MaxDuration = 0,
-                            Scale = 2f,
+                            Scale = 5f,
                         },
                     },
                     Effect2 = new ParticleDef
@@ -171,7 +171,7 @@ namespace Scripts
                             Restart = false,
                             MaxDistance = 1000,
                             MaxDuration = 0,
-                            Scale = 1f,
+                            Scale = 0.7f,
                         },
                     },
                 },

@@ -37,7 +37,7 @@ namespace Scripts
             Targeting = new TargetingDef
             {
                 Threats = new[] {
-                    Grids,
+                    Grids, Projectiles,
                 },
                 SubSystems = new[] {
                     Thrust, Utility, Offense, Power, Production, Any,
@@ -56,7 +56,7 @@ namespace Scripts
             HardPoint = new HardPointDef
             {
                 PartName = "Riptide Flak", // name of weapon in terminal
-                DeviateShotAngle = 0.7f,
+                DeviateShotAngle = 0.04f,
                 AimingTolerance = 1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).

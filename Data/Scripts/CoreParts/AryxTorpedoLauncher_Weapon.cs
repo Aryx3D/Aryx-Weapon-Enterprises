@@ -187,6 +187,7 @@ namespace Scripts {
                 AryxTorpFullSpeed,
                 AryxEnergyTorpEWARField,
                 AryxEnergyTorpLaunchedAmmoWCDef,
+
                 AryxAntimatterTorpWCDef,
                 AryxAntimatterTorpFullSpeed,
                 AryxAntimatterTorpShrap,// Must list all primary, shrapnel, and pattern ammos.
