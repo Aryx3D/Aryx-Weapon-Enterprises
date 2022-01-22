@@ -131,7 +131,8 @@ namespace Scripts
                     NoAmmoSound = "",
                     HardPointRotationSound = "",
                     BarrelRotationSound = "",
-                    FireSoundEndDelay = 0, // Measured in game ticks(6 = 100ms, 60 = 1 seconds, etc..).
+                    FireSoundEndDelay = 600, // Measured in game ticks(6 = 100ms, 60 = 1 seconds, etc..).
+                    FireSoundNoBurst = false,
                 },
                 Graphics = new HardPointParticleDef {
                     Effect1 = new ParticleDef
