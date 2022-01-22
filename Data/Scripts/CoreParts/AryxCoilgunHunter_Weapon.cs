@@ -118,7 +118,7 @@ namespace Scripts
                     Cooldown = .95f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
                     HeatSinkRate = 9000, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
-                    ShotsInBurst = 1,
+                    ShotsInBurst = 0,
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     FireFull = false,
                     GiveUpAfter = false,
@@ -131,12 +131,12 @@ namespace Scripts
                     NoAmmoSound = "",
                     HardPointRotationSound = "",
                     BarrelRotationSound = "",
-                    FireSoundEndDelay = 300, // Measured in game ticks(6 = 100ms, 60 = 1 seconds, etc..).
+                    FireSoundEndDelay = 0, // Measured in game ticks(6 = 100ms, 60 = 1 seconds, etc..).
                 },
                 Graphics = new HardPointParticleDef {
                     Effect1 = new ParticleDef
                     {
-                        Name = "",//Muzzle_Flash_Large
+                        Name = "AryxHunterMuzzleBlast",//Muzzle_Flash_Large
                         Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
 
