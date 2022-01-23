@@ -96,7 +96,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>500</PCU>      
     </Definition>
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -302,9 +301,7 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
-    </Definition>	
-	
-	
+    </Definition>			
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -615,7 +612,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
     </Definition>	
-	
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -714,7 +710,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>300</PCU>      
     </Definition>	
-	
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -760,8 +755,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>     		
 	</Definition>
-
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -814,7 +807,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
     </Definition>	
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeGatlingTurret</TypeId>
@@ -863,7 +855,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
     </Definition>	
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeGatlingTurret</TypeId>
@@ -910,7 +901,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
     </Definition>	
-
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -1007,7 +997,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
     </Definition>	
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeGatlingTurret</TypeId>
@@ -1054,8 +1043,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
     </Definition>
-
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -1215,7 +1202,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
     </Definition>	
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -1265,7 +1251,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
     </Definition>	
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -1314,7 +1299,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
     </Definition>	
-	
 	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
       <Id>
         <TypeId>SmallMissileLauncher</TypeId>
@@ -1360,7 +1344,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
     </Definition>
-
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -1402,7 +1385,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
     </Definition>
-
     <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
       <Id>
         <TypeId>SmallGatlingGun</TypeId>
@@ -1549,7 +1531,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
     </Definition>
-
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -1598,12 +1579,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
     </Definition>
-
-
-
-
-
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -1650,8 +1625,6 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>150</PCU>      
     </Definition>
-
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
 		<Id>
 			<TypeId>LargeMissileTurret</TypeId>
@@ -1792,7 +1765,6 @@
 		<MaxFov>1.04719755</MaxFov>
 	    <PCU>100</PCU>   	
 	</Definition>
-
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -1847,7 +1819,6 @@
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
 	    <PCU>150</PCU>   	
 	</Definition>
-
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -1995,10 +1966,7 @@
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
 	    <PCU>200</PCU>   	
 	</Definition>
-
-
-
-		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 			<Id>
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>ARYXPlasmaPulser</SubtypeId>
@@ -2198,9 +2166,6 @@
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
       <PCU>1500</PCU>   		
 	</Definition>
-
-
-
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -2255,9 +2220,6 @@
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
       <PCU>1500</PCU>   		
 	</Definition>
-
-
-
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -2313,8 +2275,6 @@
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
       <PCU>750</PCU>   		
 	</Definition>
-	
-	
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -2425,7 +2385,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
       <PCU>2500</PCU>   		
 	</Definition>
-	
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -2478,7 +2437,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>1000</PCU>      
     </Definition>
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -2524,7 +2482,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>500</PCU>      
     </Definition>
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -2572,8 +2529,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
     </Definition>
-
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -2626,7 +2581,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>1500</PCU>      
     </Definition>
-
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -2676,7 +2630,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
       <PCU>200</PCU>   		
 	</Definition>
-	
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -2731,7 +2684,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>1500</PCU>
     </Definition>
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -2782,8 +2734,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>150</PCU>      
     </Definition>
-
-
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -2837,7 +2787,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>1500</PCU>
     </Definition>
-
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -2881,7 +2830,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>50</PCU>      
     </Definition>
-
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -2928,7 +2876,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>50</PCU>      
     </Definition>
-
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -2983,9 +2930,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>500</PCU>      
     </Definition>
-
-
-
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
