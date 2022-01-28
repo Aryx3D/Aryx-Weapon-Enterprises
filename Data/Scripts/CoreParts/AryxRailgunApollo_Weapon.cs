@@ -89,7 +89,7 @@ namespace Scripts {
                     HomeAzimuth = 0, // Default resting rotation angle
                     HomeElevation = 0, // Default resting elevation
                     InventorySize = 1f, // Inventory capacity in kL.
-                    IdlePower = 0.05f, // Constant base power draw in MW.
+                    IdlePower = 5f, // Constant base power draw in MW.
                     FixedOffset = false, // Deprecated.
                     Offset = Vector(x: 0, y: 0, z: 0), // Offsets the aiming/firing line of the weapon, in metres.
                     Type = BlockWeapon, // What type of weapon this is; BlockWeapon, HandWeapon, Phantom 
@@ -151,7 +151,7 @@ namespace Scripts {
                 {
                     Effect1 = new ParticleDef
                     {
-                        Name = "", // SubtypeId of muzzle particle effect.
+                        Name = "Aryx_Railgun_firing_effect", // SubtypeId of muzzle particle effect.
                         Color = Color(red: 25, green: 25, blue: 10, alpha: 1), // Deprecated, set color in particle sbc.
                         Offset = Vector(x: 0, y: 0, z: 0), // Offsets the effect from the muzzle empty.
 
@@ -159,7 +159,7 @@ namespace Scripts {
                         {
                             Loop = false, // Set this to the same as in the particle sbc!
                             Restart = false, // Whether to end a looping effect instantly when firing stops.
-                            MaxDistance = 150, // Max distance at which this effect should be visible. NOTE: This will use whichever MaxDistance value is higher across Effect1 and Effect2!
+                            MaxDistance = 1000, // Max distance at which this effect should be visible. NOTE: This will use whichever MaxDistance value is higher across Effect1 and Effect2!
                             MaxDuration = 0, // Deprecated.
                             Scale = 1f, // Scale of effect.
                         },

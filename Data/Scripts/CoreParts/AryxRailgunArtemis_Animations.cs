@@ -29,7 +29,7 @@ namespace Scripts
                                Extras = new ParticleOptionDef
                                {
                                    Loop = true,
-                                   Restart = false,
+                                   Restart = true,
                                    MaxDistance = 1000, //meters
                                    MaxDuration = 0, //ticks 60 = 1 second
                                    Scale = 1,

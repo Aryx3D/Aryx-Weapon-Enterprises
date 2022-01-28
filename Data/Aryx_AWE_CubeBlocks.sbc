@@ -2166,12 +2166,60 @@
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
       <PCU>1500</PCU>   		
 	</Definition>
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXGaussTurret</SubtypeId>
+      </Id>
+      <DisplayName>ZS-1200 Ariadne Heavy Railgun Turret</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_GaussTurret.dds</Icon>
+      <Description>A heavy and extremely powerful rail cannon mounted onto a rotary frame, capable of dispatching targets from long range with devastating firepower. [10KM RANGE - ACCEPTS 1200MM FERROUS - REQUIRES LOCKON]</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="9" y="6" z="29"/>
+      <ModelOffset x="0" y="0" z="0" />
+	  <Model>Models\Gauss\ARYX_GaussTurretBase.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="2250" />
+			<Component Subtype="Construction" Count="1200" />
+			<Component Subtype="MetalGrid" Count="500" />
+			<Component Subtype="PowerCell" Count="240" />	
+			<Component Subtype="Superconductor" Count="600" />				
+			<Component Subtype="SmallTube" Count="500" />
+			<Component Subtype="Motor" Count="250" />		
+			<Component Subtype="ElectromagnetAWE" Count ="400" />	
+			<Component Subtype="Computer" Count="1240" />
+			<Component Subtype="Construction" Count="1400" />
+			<Component Subtype="SteelPlate" Count="1750" />
+		</Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="18.00" EndX="9.00" EndY="27.00"/>
+			</MountPoints>
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
+      <BlockPairName>AryxGaussTurret</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>240</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxFlakTurretWepDef" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+	  <InventoryMaxVolume>1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>2000</PCU>      
+    </Definition>	
+	
+	
+	
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXCatalystCannon</SubtypeId>
 		</Id>
-		<Public>true</Public>
+		<Public>false</Public>
 		<DisplayName>Obliterator Antimatter Catalyst Cannon</DisplayName>
 		<Icon>Textures\GUI\Icons\Oppenheimer.dds</Icon>
 		<Description>A manmade horror beyond comprehension; The destroyer of worlds.</Description>	
@@ -2212,13 +2260,13 @@
 			<MirroringZ>Y</MirroringZ>
 
 		<EdgeType>Light</EdgeType>
-		<BuildTimeSeconds>240</BuildTimeSeconds>
+		<BuildTimeSeconds>99999</BuildTimeSeconds>
 		<InventoryMaxVolume>6</InventoryMaxVolume>
 		<DamageEffectId>213</DamageEffectId>
 		<DamagedSound>ParticleWeapExpl</DamagedSound>
 		<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
-      <PCU>1500</PCU>   		
+        <PCU>99999</PCU>   		
 	</Definition>
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
@@ -2233,7 +2281,7 @@
 		<Size x="1" y="1" z="5"/>
 		<Center x="0" y="0" z="4" />	
 		<ModelOffset x="0" y="0" z="0"/>
-		<Model>Models\AWERailgun\LG_Railgun.mwm</Model>
+		<Model>Models\AWERailgun\ARYX_Railgun.mwm</Model>
 		<Components>
 			<Component Subtype="SteelPlate" Count="250" />
 			<Component Subtype="Construction" Count="180" />
@@ -2257,9 +2305,9 @@
 			</MountPoints>
 
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.33" File="Models\AWERailgun\LG_Railgun_BS1.mwm"/>
-				<Model BuildPercentUpperBound="0.66" File="Models\AWERailgun\LG_Railgun_BS2.mwm"/>
-				<Model BuildPercentUpperBound="1.0" File="Models\AWERailgun\LG_Railgun_BS3.mwm"/>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWERailgun\ARYX_Railgun_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\AWERailgun\ARYX_Railgun_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\AWERailgun\ARYX_Railgun_BS3.mwm"/>
 			</BuildProgressModels>
 
 			<BlockPairName>AWERailgun</BlockPairName>
@@ -2336,7 +2384,7 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXKingswordSupercannon</SubtypeId>
 		</Id>
-		<DisplayName>S12A-3KS Kingsword Ultraheavy Coilcannon</DisplayName>
+		<DisplayName>S12A-3KS Kingsword Ultraheavy Coilcannon</DisplayName>t
 		<Description>Designated the S12A-3KS KING SWORD, or more commonly, the Boomstick, is a superheavy calibre coilgun, firing 5200mm ferrous-tungsten ballistics at near relativistic velocities, guaranteed to tear through any form of armour or energy shielding fielded. At an approximate 153.5m long, it is the largest ship-mounted weapon on the market designated for civilian use.
 
 Wrought forth from the forges of divinity, bring the ultimate arbiter of destruction; Cast down into eternal perdition ye shall send.</Description>	

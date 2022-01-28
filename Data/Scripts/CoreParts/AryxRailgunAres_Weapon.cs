@@ -135,16 +135,16 @@ namespace Scripts
                 Graphics = new HardPointParticleDef {
                     Effect1 = new ParticleDef
                     {
-                        Name = "",//Muzzle_Flash_Large
+                        Name = "Aryx_Gauss_firing_effect",//Muzzle_Flash_Large
                         Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
 
                         Extras = new ParticleOptionDef
                         {
-                            Loop = true,
+                            Loop = false,
                             Restart = false,
                             MaxDistance = 2500,
-                            MaxDuration = 480,
+                            MaxDuration = 0,
                             Scale = 1f,
                         },
                     },

@@ -56,7 +56,7 @@ namespace Scripts {
                 PartName = "Artemis 250mm Railgun", // Name of the weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons).
                 DeviateShotAngle = 0f, // Projectile inaccuracy in degrees.
                 AimingTolerance = 1f, // How many degrees off target a turret can fire at. 0 - 180 firing angle.
-                AimLeadingPrediction = Accurate, // Level of turret aim prediction; Off, Basic, Accurate, Advanced
+                AimLeadingPrediction = Off, // Level of turret aim prediction; Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 120, // Measured in game ticks (6 = 100ms, 60 = 1 second, etc..). Length of time the weapon continues firing after trigger is released.
                 AddToleranceToTracking = false, // Allows turret to track to the edge of the AimingTolerance cone instead of dead centre.
                 CanShootSubmerged = false, // Whether the weapon can be fired underwater when using WaterMod.
@@ -70,7 +70,7 @@ namespace Scripts {
                 },
                 Ai = new AiDef
                 {
-                    TrackTargets = true, // Whether this weapon tracks its own targets, or (for multiweapons) relies on the weapon with PrimaryTracking enabled for target designation.
+                    TrackTargets = false, // Whether this weapon tracks its own targets, or (for multiweapons) relies on the weapon with PrimaryTracking enabled for target designation.
                     TurretAttached = false, // Whether this weapon is a turret and should have the UI and API options for such.
                     TurretController = false, // Whether this weapon can physically control the turret's movement.
                     PrimaryTracking = false, // For multiweapons: whether this weapon should designate targets for other weapons on the platform without their own tracking.
@@ -89,7 +89,7 @@ namespace Scripts {
                     HomeAzimuth = 0, // Default resting rotation angle
                     HomeElevation = 0, // Default resting elevation
                     InventorySize = 1f, // Inventory capacity in kL.
-                    IdlePower = 0.05f, // Constant base power draw in MW.
+                    IdlePower = 1f, // Constant base power draw in MW.
                     FixedOffset = false, // Deprecated.
                     Offset = Vector(x: 0, y: 0, z: 0), // Offsets the aiming/firing line of the weapon, in metres.
                     Type = BlockWeapon, // What type of weapon this is; BlockWeapon, HandWeapon, Phantom 
@@ -151,7 +151,7 @@ namespace Scripts {
                 {
                     Effect1 = new ParticleDef
                     {
-                        Name = "", // SubtypeId of muzzle particle effect.
+                        Name = "Aryx_Railgun_firing_effect", // SubtypeId of muzzle particle effect.
                         Color = Color(red: 25, green: 25, blue: 10, alpha: 1), // Deprecated, set color in particle sbc.
                         Offset = Vector(x: 0, y: 0, z: 0), // Offsets the effect from the muzzle empty.
 
@@ -159,7 +159,7 @@ namespace Scripts {
                         {
                             Loop = false, // Set this to the same as in the particle sbc!
                             Restart = false, // Whether to end a looping effect instantly when firing stops.
-                            MaxDistance = 150, // Max distance at which this effect should be visible. NOTE: This will use whichever MaxDistance value is higher across Effect1 and Effect2!
+                            MaxDistance = 1000, // Max distance at which this effect should be visible. NOTE: This will use whichever MaxDistance value is higher across Effect1 and Effect2!
                             MaxDuration = 0, // Deprecated.
                             Scale = 1f, // Scale of effect.
                         },

@@ -60,7 +60,8 @@ namespace Scripts
             AryxFocusBeamTurret,
             AryxSmallFlechetteLauncher,
 
-            AryxSmallFighterHangar
+            AryxSmallFighterHangar,
+            AryxGaussTurret
             );
           
         }

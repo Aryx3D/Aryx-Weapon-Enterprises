@@ -18,7 +18,9 @@
 	<Entry Class="Consumables" BlueprintSubtypeId="AWESidekickDroneBP" />	
 	<Entry Class="Consumables" BlueprintSubtypeId="AWEFalconDroneBP" />
 
-
+	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEStormriderDroneBP" />		
+	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWESidekickDroneBP" />	
+	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEFalconDroneBP" />
 
 
 
