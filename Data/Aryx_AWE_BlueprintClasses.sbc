@@ -107,7 +107,8 @@
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXBurstTurretSlanted" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXKingswordSupercannon" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYX_FocusBeam_CompactTurret" />
-
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXInterceptorPDGun" />	
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXGaussTurret" />
 
     <Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncher/ARYX_Fixed_Chord_auto" />			
     <Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXSmallRadar" />	

@@ -516,6 +516,55 @@
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
+        <SubtypeId>ARYXInterceptorPDGun</SubtypeId>
+      </Id>
+      <DisplayName>R1-S Interceptor Rocket Pod</DisplayName>
+      <Icon>Textures\GUI\Icons\AWEInterceptor.dds</Icon>	  
+      <Description>The Interceptor is a guided point defence weapon that takes down incoming missiles and drones via counterbattery rocket action. [3KM RANGE - Accepts Interceptor Rockets]</Description>
+ 		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="1" y="2" z="1"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_Interceptor\ARYX_InterceptorPod.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="75" />
+			<Component Subtype="Construction" Count="25" />
+			<Component Subtype="LargeTube" Count="6" />
+			<Component Subtype="Motor" Count="20" />
+			<Component Subtype="Detector" Count="10" />			
+			<Component Subtype="Computer" Count="180" />
+			<Component Subtype="SteelPlate" Count="25" />		
+		</Components>
+		<CriticalComponent Index="0" Subtype="Computer"/>
+		<MountPoints>
+			<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+		</MountPoints>
+		<BuildProgressModels>
+			<Model BuildPercentUpperBound="0.33" File="Models\AWE_Interceptor\ARYX_InterceptorPod_BS1.mwm"/>
+			<Model BuildPercentUpperBound="0.67" File="Models\AWE_Interceptor\ARYX_InterceptorPod_BS2.mwm"/>
+			<Model BuildPercentUpperBound="1.00" File="Models\AWE_Interceptor\ARYX_InterceptorPod_BS3.mwm"/>
+		</BuildProgressModels>
+		<BlockPairName>ARYX_INTERCEPTOR</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+      <EdgeType>Light</EdgeType>  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.24</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>150</PCU>      
+    </Definition>	
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+      <Id>
+        <TypeId>ConveyorSorter</TypeId>
         <SubtypeId>ARYXTacticalModule</SubtypeId>
       </Id>
       <DisplayName>Aegis Tactical Field Module</DisplayName>

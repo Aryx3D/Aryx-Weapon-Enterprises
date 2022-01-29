@@ -58,6 +58,8 @@
 		<string>ConveyorSorter/ARYX_FocusBeam_CompactSG</string>		
 		<string>LargeMissileTurret/ARYX_FocusBeam_CompactTurret</string>			
 		<string>ConveyorSorter/ARYX_Small_Sidekick_Hangar</string>
+		<string>LargeMissileTurret/ARYXGaussTurret</string>			
+		<string>ConveyorSorter/ARYXInterceptorPDGun</string>
 
       </ItemIds>
     </Category> 
@@ -115,6 +117,8 @@
 		<string>ConveyorSorter/ARYX_FocusBeam_CompactSG</string>		
 		<string>LargeMissileTurret/ARYX_FocusBeam_CompactTurret</string>
 		<string>ConveyorSorter/ARYX_Small_Sidekick_Hangar</string>		
+		<string>LargeMissileTurret/ARYXGaussTurret</string>			
+		<string>ConveyorSorter/ARYXInterceptorPDGun</string>	  
 	  </ItemIds>
     </Category>
 	
@@ -173,6 +177,8 @@
 		<string>ConveyorSorter/ARYX_FocusBeam_CompactSG</string>
 		<string>LargeMissileTurret/ARYX_FocusBeam_CompactTurret</string>	
 		<string>ConveyorSorter/ARYX_Small_Sidekick_Hangar</string>		
+		<string>LargeMissileTurret/ARYXGaussTurret</string>			
+		<string>ConveyorSorter/ARYXInterceptorPDGun</string>	
 	</ItemIds>
     </Category> 
 
@@ -229,7 +235,9 @@
 		<string>ConveyorSorter/ARYXKingswordSupercannon</string>
 		<string>LargeMissileTurret/ARYX_FocusBeam_CompactTurret</string>
 		<string>ConveyorSorter/ARYX_Small_Sidekick_Hangar</string>		
-      </ItemIds>
+ 		<string>LargeMissileTurret/ARYXGaussTurret</string>			
+		<string>ConveyorSorter/ARYXInterceptorPDGun</string>     
+	  </ItemIds>
     </Category>  	
 
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
