@@ -105,7 +105,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 50,
+                    Modifier = 25,
                     Type = Default,
                     BypassModifier = -1f,
                 },
@@ -397,7 +397,7 @@ namespace Scripts
             AmmoRound = "AryxLightCoilgunPiercingAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 155000,
+            BaseDamage = 135000,
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 500f,

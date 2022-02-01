@@ -60,7 +60,8 @@
 		<string>ConveyorSorter/ARYX_Small_Sidekick_Hangar</string>
 		<string>LargeMissileTurret/ARYXGaussTurret</string>			
 		<string>ConveyorSorter/ARYXInterceptorPDGun</string>
-
+		<string>ConveyorSorter/ARYXSmallPulseLaser_Fixed</string>
+		<string>ConveyorSorter/ARYXFocusLance</string>
       </ItemIds>
     </Category> 
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -118,7 +119,9 @@
 		<string>LargeMissileTurret/ARYX_FocusBeam_CompactTurret</string>
 		<string>ConveyorSorter/ARYX_Small_Sidekick_Hangar</string>		
 		<string>LargeMissileTurret/ARYXGaussTurret</string>			
-		<string>ConveyorSorter/ARYXInterceptorPDGun</string>	  
+		<string>ConveyorSorter/ARYXInterceptorPDGun</string>	
+		<string>ConveyorSorter/ARYXSmallPulseLaser_Fixed</string>	
+		<string>ConveyorSorter/ARYXFocusLance</string>		
 	  </ItemIds>
     </Category>
 	
@@ -178,7 +181,9 @@
 		<string>LargeMissileTurret/ARYX_FocusBeam_CompactTurret</string>	
 		<string>ConveyorSorter/ARYX_Small_Sidekick_Hangar</string>		
 		<string>LargeMissileTurret/ARYXGaussTurret</string>			
-		<string>ConveyorSorter/ARYXInterceptorPDGun</string>	
+		<string>ConveyorSorter/ARYXInterceptorPDGun</string>
+		<string>ConveyorSorter/ARYXSmallPulseLaser_Fixed</string>
+		<string>ConveyorSorter/ARYXFocusLance</string>		
 	</ItemIds>
     </Category> 
 
@@ -236,7 +241,8 @@
 		<string>LargeMissileTurret/ARYX_FocusBeam_CompactTurret</string>
 		<string>ConveyorSorter/ARYX_Small_Sidekick_Hangar</string>		
  		<string>LargeMissileTurret/ARYXGaussTurret</string>			
-		<string>ConveyorSorter/ARYXInterceptorPDGun</string>     
+		<string>ConveyorSorter/ARYXInterceptorPDGun</string>
+		<string>ConveyorSorter/ARYXFocusLance</string>		
 	  </ItemIds>
     </Category>  	
 
@@ -254,7 +260,8 @@
 		<string>ConveyorSorter/ARYXSmallRadar</string>
 		<string>SmallGatlingGun/ARYX_FixedAtlasGatling</string>	
 		<string>SmallGatlingGun/ARYX_SmallChaingun</string>		
-		<string>ConveyorSorter/ARYX_FocusBeam_CompactSG</string>		
+		<string>ConveyorSorter/ARYX_FocusBeam_CompactSG</string>
+		<string>ConveyorSorter/ARYXSmallPulseLaser_Fixed</string>		
       </ItemIds>
     </Category>  	
 	

@@ -266,7 +266,7 @@
                 <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>AryxReaperPulseCell</SubtypeId>
             </Id>
-            <DisplayName>High Density Energy Cell</DisplayName>
+            <DisplayName>Reaper Antimatter Cell</DisplayName>
             <Icon>Textures\GUI\Icons\ammo\AWEReaperAmmo.dds</Icon>
             <Size>
                 <X>0.5</X>
@@ -277,7 +277,7 @@
             <Volume>4</Volume>
             <Model>Models\AWE_Ammo\AryxReaperAmmo.mwm</Model>
             <PhysicalMaterial>Ammo</PhysicalMaterial>
-            <Capacity>18</Capacity>
+            <Capacity>6</Capacity>
             <AmmoDefinitionId Subtype="aryxPulseCellAmmo" />
 
             <MinimumOfferAmount>1</MinimumOfferAmount>
@@ -292,7 +292,7 @@
                 <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>70mmBurstMag</SubtypeId>
             </Id>
-            <DisplayName>70mm AP/HE Spitfire Cartridge</DisplayName>
+            <DisplayName>70mm AP/HE Punisher Cartridge</DisplayName>
             <Icon>Textures\GUI\Icons\ammo\AWEJudgeAmmo.dds</Icon>
             <Size>
                 <X>0.6</X>

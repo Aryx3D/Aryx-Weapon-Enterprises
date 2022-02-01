@@ -174,7 +174,7 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>70mmBurstBP</SubtypeId>
       </Id>
-      <DisplayName>70mm AP/HE Spitfire Cartridge</DisplayName>
+      <DisplayName>70mm AP/HE Punisher Cartridge</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEJudgeAmmo.dds</Icon>
       <Prerequisites>
         <Item Amount="3" TypeId="Ingot" SubtypeId="Iron" />
@@ -497,7 +497,7 @@
         <Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="2.5" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="0.75" TypeId="Ingot" SubtypeId="Uranium" />
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Silver" />		
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Magnesium" />		
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="ATLASAmmoMagazine" />
@@ -514,7 +514,7 @@
       <Prerequisites>
         <Item Amount="2.5" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="1.0" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="0.25" TypeId="Ingot" SubtypeId="Silver" />		
+        <Item Amount="0.25" TypeId="Ingot" SubtypeId="Magnesium" />		
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="CODEXAmmoMagazine" />

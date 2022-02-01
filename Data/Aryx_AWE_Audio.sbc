@@ -791,16 +791,18 @@
         <SubtypeId>ArcWepShipARYXReaper_Fire</SubtypeId>
       </Id>
       <Category>SHOT</Category>
-      <MaxDistance>600</MaxDistance>
+      <MaxDistance>800</MaxDistance>
       <PreventSynchronization>0</PreventSynchronization>
       <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
       <DynamicMusicAmount>3</DynamicMusicAmount>
-      <Volume>0.8</Volume>
+      <Volume>1</Volume>
       <Waves>
         <Wave Type="D3">
-          <Start>Audio\Aryx\aryx_reaper_fire_01.wav</Start>
+          <Start>Audio\Aryx\misc\aryx_reaper_fire_01.wav</Start>
         </Wave>
-
+        <Wave Type="D3">
+          <Start>Audio\Aryx\misc\aryx_reaper_fire_02.wav</Start>
+        </Wave>
       </Waves>
     </Sound> 	
 	

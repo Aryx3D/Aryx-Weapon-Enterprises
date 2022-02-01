@@ -26,20 +26,18 @@ namespace Scripts
 {
     partial class Parts
     {
-        private AmmoDef AryxAuroraAmmoWC => new AmmoDef
+        private AmmoDef AryxSmallRedLaserAmmo => new AmmoDef
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "AryxAuroraAmmo",
+            AmmoRound = "Type-II Pulse Laser",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 2f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 275f,
-            Mass = 0, // in kilograms
+            EnergyCost = 0.5f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            BaseDamage = 100f,
+            Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
             DecayPerShot = 0,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
-            EnergyMagazineSize = 100,
-			IgnoreWater = false,
 
             Shape = new ShapeDef //defines the collision shape of projectile, defaults line and visual Line Length if set to 0
             {
@@ -54,8 +52,8 @@ namespace Scripts
             Fragment = new FragmentDef
             {
                 AmmoRound = "",
-                Fragments = 0,
-                Degrees = 360,
+                Fragments = 100,
+                Degrees = 15,
                 Reverse = false,
                 
             },
@@ -70,36 +68,35 @@ namespace Scripts
                 RandomMin = 1,
                 RandomMax = 1,
                 SkipParent = false,
-				PatternSteps = 1,
             },
             DamageScales = new DamageScaleDef
             {
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
-                HealthHitModifier = 0.5f, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
+                HealthHitModifier = 1.5f, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
                 VoxelHitModifier = 1,
-                Characters = 15f,
+                Characters = 8f,
                 FallOff = new FallOffDef
                 {
-                    Distance = 1000f, // Distance at which max damage begins falling off.
-                    MinMultipler = 1f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    Distance = 1200, // Distance at which max damage begins falling off.
+                    MinMultipler = 0.1f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
-                    Small = -1f,
+                    Small = 2f,
                 },
                 Armor = new ArmorDef
                 {
                     Armor = 0.5f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 3f,
+                    NonArmor = 1.5f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 10f,
+                    Modifier = 5f,
                     Type = Default,
                     BypassModifier = -1f,
                 },
@@ -109,7 +106,7 @@ namespace Scripts
                     AreaEffect = Energy,
                     Detonation = Energy,
                     Shield = Energy,
-                },				
+                },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
                 {
@@ -134,8 +131,8 @@ namespace Scripts
                 ByBlockHit = new ByBlockHitDef
                 {
                     Enable = false,
-                    Radius = 0f, // Meters
-                    Damage = 0f,
+                    Radius = 5f, // Meters
+                    Damage = 5f,
                     Depth = 1f, // Meters
                     MaxAbsorb = 0f,
                     Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
@@ -149,8 +146,8 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = false,
-                    Radius = 0f, // Meters
-                    Damage = 0f,
+                    Radius = 5f, // Meters
+                    Damage = 5f,
                     Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Squeeze, //.NoFalloff applies the same damage to all blocks in radius
@@ -238,7 +235,7 @@ namespace Scripts
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
                 DesiredSpeed = 30000,
-                MaxTrajectory = 3000f,
+                MaxTrajectory = 3000,
                 FieldTime = 0, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
