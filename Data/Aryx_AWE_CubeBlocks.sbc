@@ -1737,7 +1737,7 @@
         <TypeId>ConveyorSorter</TypeId>
         <SubtypeId>ARYXSmallFlechetteLauncher</SubtypeId>
       </Id>
-      <DisplayName>Flechette Launcher</DisplayName>
+      <DisplayName>Small Flechette Launcher</DisplayName>
       <Icon>Textures\GUI\Icons\AWESmallFlechetteLauncher.dds</Icon>
       <Description>Flechette Launchers fire rockets that track and aim towards targets at high speeds and explode on impact, dealing decent explosive damage. [5KM RANGE - Accepts Flechette or Disruptor Rockets]</Description>
       <CubeSize>Small</CubeSize>

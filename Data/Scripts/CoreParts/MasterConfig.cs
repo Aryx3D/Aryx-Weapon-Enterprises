@@ -25,7 +25,7 @@ namespace Scripts
             AryxLongbowLauncher,
             AryxHydraTurret,
             AryxFlechetteLauncher,
-            AryxSmallFlechetteLauncher,
+            AryxSmallGridFlechetteLauncher,
             AryxFlakTurret,
             AryxHeavyFlakTurret,
             AryxEyeballLaser,
