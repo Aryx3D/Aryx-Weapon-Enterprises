@@ -56,7 +56,7 @@ namespace Scripts
             HardPoint = new HardPointDef
             {
                 PartName = "Reaper Pulse Cannon", // name of weapon in terminal
-                DeviateShotAngle = 0.3f,
+                DeviateShotAngle = 0.45f,
                 AimingTolerance = 1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -106,12 +106,12 @@ namespace Scripts
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 900, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 1800, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 1000, //heat generated per shot
                     MaxHeat = 6000, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = 0f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
-                    HeatSinkRate = 300, //amount of heat lost per second
+                    HeatSinkRate = 150, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
                     ShotsInBurst = 6,
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).

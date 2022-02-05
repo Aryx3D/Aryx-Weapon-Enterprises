@@ -63,7 +63,8 @@ namespace Scripts
             AryxSmallFighterHangar,
             AryxGaussTurret,
             AryxSmallPulseLaser,
-            AryxFocusLance
+            AryxFocusLance,
+            AryxInlineTorpLauncher
             );
           
         }

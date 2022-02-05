@@ -167,7 +167,7 @@ namespace Scripts {
 
                     Effect1 = new ParticleDef
                     {
-                        Name = "Aryx_120_muzzleflash", // Smoke_LargeGunShot
+                        Name = "Muzzle_Flash_Autocannon", // Smoke_LargeGunShot
                         Color = Color(red: 25, green: 5, blue: 0.625f, alpha: 1),
                         Offset = Vector(x: 0, y: -1, z: 0),
 
@@ -176,19 +176,19 @@ namespace Scripts {
                             Restart = true,
                             MaxDistance = 500,
                             MaxDuration = 0,
-                            Scale = 1.1f,
+                            Scale = 1f,
                         },
                     },
                     Effect2 = new ParticleDef
                     {
-                        Name = "",//Muzzle_Flash_Large
+                        Name = "Muzzle_Flash_MediumCalibre",//Muzzle_Flash_Large
                         Color = Color(red: 0, green: 0, blue: 0, alpha: 1),
                         Offset = Vector(x: 0, y: -1, z: 0),
 
                         Extras = new ParticleOptionDef
                         {
                             Restart = false,
-                            MaxDistance = 150,
+                            MaxDistance = 500,
                             MaxDuration = 0,
                             Scale = 1f,
                         },

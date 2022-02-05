@@ -161,9 +161,9 @@ namespace Scripts
                     },
                     Effect2 = new ParticleDef
                     {
-                        Name = "AWE_Cyclone_Muzzleblast", // Smoke_LargeGunShot
+                        Name = "Muzzle_Flash_MediumCalibre", // Smoke_LargeGunShot
                         Color = Color(red: 0, green: 0, blue: 0, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: -0.25f),
+                        Offset = Vector(x: 0, y: 0, z: 0f),
 
                         Extras = new ParticleOptionDef
                         {
@@ -171,7 +171,7 @@ namespace Scripts
                             Restart = false,
                             MaxDistance = 1000,
                             MaxDuration = 0,
-                            Scale = 0.7f,
+                            Scale = 1f,
                         },
                     },
                 },

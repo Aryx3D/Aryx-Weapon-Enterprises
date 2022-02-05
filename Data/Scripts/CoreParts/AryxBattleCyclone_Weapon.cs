@@ -165,7 +165,7 @@ namespace Scripts
                     },
                     Effect2 = new ParticleDef
                     {
-                        Name = "",//Muzzle_Flash_Large
+                        Name = "Muzzle_Flash_LargeCalibre",//Muzzle_Flash_Large
                         Color = Color(red: 25, green: 5, blue: 0.625f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
 
@@ -173,7 +173,7 @@ namespace Scripts
                         {
                             Loop = false,
                             Restart = true,
-                            MaxDistance = 300,
+                            MaxDistance = 500,
                             MaxDuration = 1,
                             Scale = 1f,
                         },

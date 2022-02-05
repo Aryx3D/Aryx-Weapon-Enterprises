@@ -421,7 +421,7 @@ namespace Scripts
             AmmoRound = "Reaper Antimatter Bolt",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 1000,
+            BaseDamage = 250,
             Mass = 500, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 200f,
@@ -486,7 +486,7 @@ namespace Scripts
                     Armor = 1f,
                     Light = 1f,
                     Heavy = 2.5f,
-                    NonArmor = 10f,
+                    NonArmor = 2,
                 },
                 Shields = new ShieldDef
                 {

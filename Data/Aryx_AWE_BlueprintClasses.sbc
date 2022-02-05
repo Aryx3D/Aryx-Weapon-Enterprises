@@ -84,6 +84,7 @@
     <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXGaussCannon" />		
     <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXRailgun" />		
     <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXTorpLauncher" />	
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXInlineTorpLauncher" />		
     <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXHeavyMissileSalvoLauncher" />		
     <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXPlasmaPulser" />
     <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXSlantedCodexPDC" />	

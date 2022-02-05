@@ -195,6 +195,7 @@ namespace Scripts {
                 AryxSabreAmmoLaunchWC,
                 AryxLancerAmmoWC,
                 AryxLancerAmmoLaunchWC,
+                AryxMissileFrags,
             },
             Animations = AryxLongbowAnims,
             //Upgrades = UpgradeModules,

@@ -211,7 +211,7 @@ namespace Scripts
             Trajectory = new TrajectoryDef
             {
                 Guidance = None,
-                TargetLossDegree = 80f,
+                TargetLossDegree = 0f,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,

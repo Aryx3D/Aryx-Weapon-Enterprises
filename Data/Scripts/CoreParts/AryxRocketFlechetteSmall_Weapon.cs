@@ -17,7 +17,7 @@ namespace Scripts {
             {
                 MountPoints = new[] {
                     new MountPointDef {
-                        SubtypeId = "AryxSmallFlechetteLauncher",
+                        SubtypeId = "ARYXSmallFlechetteLauncher",
                         SpinPartId = "None", // For weapons with a spinning barrel such as Gatling Guns.
                         MuzzlePartId = "None", // The subpart where your muzzle empties are located.
                         AzimuthPartId = "None",

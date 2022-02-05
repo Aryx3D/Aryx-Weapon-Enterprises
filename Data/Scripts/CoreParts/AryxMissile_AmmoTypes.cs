@@ -431,9 +431,9 @@ namespace Scripts
             },
             Fragment = new FragmentDef // Formerly known as Shrapnel. Spawns specified ammo fragments on projectile death (via hit or detonation).
             {
-                AmmoRound = "", // AmmoRound field of the ammo to spawn.
-                Fragments = 100, // Number of projectiles to spawn.
-                Degrees = 15, // Cone in which to randomise direction of spawned projectiles.
+                AmmoRound = "Missile Frags", // AmmoRound field of the ammo to spawn.
+                Fragments = 50, // Number of projectiles to spawn.
+                Degrees = 60, // Cone in which to randomise direction of spawned projectiles.
                 Reverse = false, // Spawn projectiles backward instead of forward.
                 
             },
@@ -615,7 +615,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 6000, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 400f,
-                DesiredSpeed = 200, // voxel phasing if you go above 5100
+                DesiredSpeed = 550, // voxel phasing if you go above 5100
                 MaxTrajectory = 7500,
                 FieldTime = 0, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 1f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -1371,7 +1371,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 6000, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 400f,
-                DesiredSpeed = 200, // voxel phasing if you go above 5100
+                DesiredSpeed = 550, // voxel phasing if you go above 5100
                 MaxTrajectory = 7500,
                 FieldTime = 0, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 1f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.

@@ -35,7 +35,7 @@ namespace Scripts
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
             BaseDamage = 1, // Direct damage; one steel plate is worth 100.
             Mass = 75f, // In kilograms; how much force the impact will apply to the target.
-            Health = 10, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
+            Health = 1, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 0f, // Recoil.
             DecayPerShot = 0f, // Damage to the firing weapon itself.
             HardPointUsable = true, // Whether this is a primary ammo type fired directly by the turret. Set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
@@ -44,8 +44,8 @@ namespace Scripts
 
             Shape = new ShapeDef // Defines the collision shape of the projectile, defaults to LineShape and uses the visual Line Length if set to 0.
             {
-                Shape = LineShape, // LineShape or SphereShape. Do not use SphereShape for fast moving projectiles if you care about precision.
-                Diameter = 1, // Diameter is minimum length of LineShape or minimum diameter of SphereShape.
+                Shape = SphereShape, // LineShape or SphereShape. Do not use SphereShape for fast moving projectiles if you care about precision.
+                Diameter = 2, // Diameter is minimum length of LineShape or minimum diameter of SphereShape.
             },
             ObjectsHit = new ObjectsHitDef
             {
@@ -278,7 +278,7 @@ namespace Scripts
                 {
                     Ammo = new ParticleDef
                     {
-                        Name = "AryxSmallMissileTrail", //ShipWelderArc
+                        Name = "AryxInterceptorRocketTrail", //ShipWelderArc
                         ShrinkByDistance = false,
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
@@ -333,7 +333,7 @@ namespace Scripts
                         Enable = true,
                         Length = 2f,
                         Width = 0.005f,
-                        Color = Color(red: 25, green: 18, blue: 2, alpha: 1),
+                        Color = Color(red: 25, green: 10, blue: 10, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
@@ -365,7 +365,7 @@ namespace Scripts
                         },
                         TextureMode = Normal,
                         DecayTime = 60,
-                        Color = Color(red: 10, green: 6, blue: 1, alpha: 1),
+                        Color = Color(red: 25, green: 3, blue: 2, alpha: 1),
                         Back = false,
                         CustomWidth = 0.1f,
                         UseWidthVariance = false,

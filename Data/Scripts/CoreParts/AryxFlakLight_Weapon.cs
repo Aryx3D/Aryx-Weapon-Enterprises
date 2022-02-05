@@ -154,12 +154,12 @@ namespace Scripts
                             Restart = false,
                             MaxDistance = 1000,
                             MaxDuration = 0,
-                            Scale = 1f,
+                            Scale = 3f,
                         },
                     },
                     Effect2 = new ParticleDef
                     {
-                        Name = "AWE_Small_Muzzleblast", // Smoke_LargeGunShot
+                        Name = "Smoke_Autocannon", // Smoke_LargeGunShot
                         Color = Color(red: 0, green: 0, blue: 0, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: -0.25f),
 

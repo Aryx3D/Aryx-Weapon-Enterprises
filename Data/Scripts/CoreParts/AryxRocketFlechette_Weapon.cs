@@ -185,6 +185,7 @@ namespace Scripts
                 AryxDisruptorAmmoWC,
                 AryxFlechetteAmmoFullSpeed,
                 AryxDisruptorAmmoFullSpeed,
+                AryxMissileFrags,
             },
             Animations = AryxFlechetteAnims,
             // Don't edit below this line

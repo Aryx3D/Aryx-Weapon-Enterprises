@@ -26,6 +26,7 @@
 		<string>LargeMissileTurret/ARYXRailgunTurret</string>
 		<string>LargeMissileTurret/ARYXAuroraLaser</string>		
 		<string>LargeMissileTurret/ARYXReaperPulseCannon</string>	
+		<string>ConveyorSorter/ARYXInlineTorpLauncher</string>			
 		<string>LargeMissileTurret/ARYXCycloneCannon</string>
 		<string>LargeMissileTurret/ARYXHurricaneCannon</string>	
 		<string>LargeMissileTurret/ARYXTyphoonCannon</string>			
@@ -82,6 +83,7 @@
 		<string>LargeMissileTurret/ARYXMagnetarCannon</string>			
 		<string>ConveyorSorter/ARYXRailgun</string>			
 		<string>ConveyorSorter/ARYXTorpLauncher</string>
+		<string>ConveyorSorter/ARYXInlineTorpLauncher</string>		
 		<string>ConveyorSorter/ARYXPlasmaPulser</string>
 		<string>ConveyorSorter/ARYXHeavyMissileSalvoLauncher</string>			
 		<string>LargeGatlingTurret/ARYXAtlasPDC</string>
@@ -140,7 +142,8 @@
 		<string>LargeMissileTurret/ARYXPulseTurret</string>	
 		<string>LargeMissileTurret/ARYXCompactPulseTurret</string>	
 		<string>SmallMissileLauncher/ARYX_Fixed_Chord_auto</string>
-		<string>LargeMissileTurret/ARYXMagnetarCannon</string>			
+		<string>LargeMissileTurret/ARYXMagnetarCannon</string>
+		<string>ConveyorSorter/ARYXInlineTorpLauncher</string>			
 		<string>ConveyorSorter/ARYXGaussCannon</string>	
 		<string>ConveyorSorter/ARYXRailgun</string>			
 		<string>ConveyorSorter/ARYXTorpLauncher</string>
@@ -203,7 +206,8 @@
 		<string>ConveyorSorter/ARYXGaussCannon</string>
 		<string>LargeMissileTurret/ARYXCompactPulseTurret</string>
 		<string>LargeMissileTurret/ARYXMagnetarCannon</string>			
-		<string>ConveyorSorter/ARYXRailgun</string>			
+		<string>ConveyorSorter/ARYXRailgun</string>
+		<string>ConveyorSorter/ARYXInlineTorpLauncher</string>			
 		<string>ConveyorSorter/ARYXTorpLauncher</string>
 		<string>ConveyorSorter/ARYXPlasmaPulser</string>
 		<string>ConveyorSorter/ARYXHeavyMissileSalvoLauncher</string>			

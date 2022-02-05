@@ -47,7 +47,10 @@
       <DamagedSound>ParticleWeapExpl</DamagedSound>
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>500</PCU>      
+      <PCU>500</PCU>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -95,6 +98,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>500</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -146,7 +152,10 @@
       <DamagedSound>ParticleWeapExpl</DamagedSound>
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>600</PCU>      
+      <PCU>500</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -199,6 +208,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>500</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
       <Id>
@@ -250,6 +262,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
       <Id>
@@ -301,7 +316,10 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
-    </Definition>			
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>		
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -354,6 +372,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -407,7 +428,10 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
-    </Definition>	
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -460,6 +484,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>	
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
@@ -512,6 +539,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
@@ -561,7 +591,10 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>150</PCU>      
-    </Definition>	
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -613,7 +646,10 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
-    </Definition>	
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -660,6 +696,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>	
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
@@ -709,6 +748,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>300</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -758,7 +800,10 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>300</PCU>      
-    </Definition>	
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -803,7 +848,10 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>     		
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -855,7 +903,10 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
-    </Definition>	
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeGatlingTurret</TypeId>
@@ -903,6 +954,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>	
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -949,6 +1003,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>	
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
@@ -997,7 +1054,10 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
-    </Definition>	
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -1045,6 +1105,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>	
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -1091,6 +1154,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -1146,6 +1212,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -1195,6 +1264,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -1250,7 +1322,10 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
-    </Definition>	
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -1299,7 +1374,10 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
-    </Definition>	
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -1347,10 +1425,13 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>	
-	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
-        <TypeId>SmallMissileLauncher</TypeId>
+        <TypeId>ConveyorSorter</TypeId>
         <SubtypeId>ARYXFlechetteLauncher</SubtypeId>
       </Id>
       <DisplayName>Flechette Launcher</DisplayName>
@@ -1384,7 +1465,6 @@
 		<MirroringZ>Y</MirroringZ>
       <BuildTimeSeconds>45</BuildTimeSeconds>
       <EdgeType>Light</EdgeType>
-      <WeaponDefinitionId Subtype="FlechetteMissileWeaponDef" />
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <InventoryMaxVolume>0.06</InventoryMaxVolume>
       <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
@@ -1392,6 +1472,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
@@ -1433,6 +1516,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
     <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
       <Id>
@@ -1483,6 +1569,9 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>
       <InventoryFillFactorMin>.6</InventoryFillFactorMin>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
     <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
       <Id>
@@ -1532,6 +1621,9 @@
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>
       <InventoryFillFactorMin>.6</InventoryFillFactorMin>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
@@ -1579,6 +1671,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>80</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>	
 	
 	
@@ -1633,6 +1728,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
@@ -1681,6 +1779,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>100</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -1727,6 +1828,9 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>150</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
 		<Id>
@@ -1797,7 +1901,10 @@
 		<MinFov>0.1</MinFov>
 		<MaxFov>1.04719755</MaxFov>
 	    <PCU>100</PCU>   	
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
 		<Id>
 			<TypeId>LargeMissileTurret</TypeId>
@@ -1867,7 +1974,10 @@
 		<MinFov>0.1</MinFov>
 		<MaxFov>1.04719755</MaxFov>
 	    <PCU>100</PCU>   	
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -1921,7 +2031,62 @@
 		<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
 	    <PCU>150</PCU>   	
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXInlineTorpLauncher</SubtypeId>
+		</Id>
+		<DisplayName>TL-150-B Astraeus Inline Torpedo Launcher</DisplayName>
+		<Description>Fires heavy torpedoes capable of demolishing armoured targets. Whilst sluggish on the maneuvering side and being susceptible to point defence, these missiles are extremely deadly if they land a direct hit. Yes I am aware the projectile model differs at launch, stfu. [10KM RANGE - Accepts Devastator and Equaliser torpedoes.]</Description>
+		<Icon>Textures\GUI\Icons\AryxInlineTorpLauncher.dds</Icon>
+		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="3" y="1" z="4"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_InlineTorpedo\AryxInlineTorpLauncher.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="700" />
+			<Component Subtype="Construction" Count="220" />
+			<Component Subtype="MetalGrid" Count="200" />				
+			<Component Subtype="LargeTube" Count="180" />
+			<Component Subtype="Motor" Count="400" />
+			<Component Subtype="Computer" Count="350" />
+			<Component Subtype="Construction" Count="280" />
+			<Component Subtype="SteelPlate" Count="350" />
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0" />	
+		<MountPoints>
+			<MountPoint Side="Front" StartX="1.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+			<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+			<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="4.00" EndY="1.00"/>
+			<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="2.00" EndY="4.00"/>
+			<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="4.00"/>
+		</MountPoints>
+		<BuildProgressModels>
+			<Model BuildPercentUpperBound="0.33" File="Models\AWE_InlineTorpedo\AryxInlineTorpLauncher_BS1.mwm"/>
+			<Model BuildPercentUpperBound="0.67" File="Models\AWE_InlineTorpedo\AryxInlineTorpLauncher_BS2.mwm"/>
+			<Model BuildPercentUpperBound="1.00" File="Models\AWE_InlineTorpedo\AryxInlineTorpLauncher_BS3.mwm"/>
+		</BuildProgressModels>
+		<BlockPairName>AryxInlineTorpLauncher</BlockPairName>
+		<MirroringX>Z</MirroringX>
+		<MirroringZ>X</MirroringZ>
+
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>120</BuildTimeSeconds>
+		<InventoryMaxVolume>0.16</InventoryMaxVolume>
+		<DamageEffectId>213</DamageEffectId>
+		<DamagedSound>ParticleWeapExpl</DamagedSound>
+		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		<EmissiveColorPreset>Default</EmissiveColorPreset>
+	    <PCU>150</PCU>   	
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -1970,7 +2135,10 @@
 		<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
 	    <PCU>150</PCU>   	
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -2019,7 +2187,10 @@
 		<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
 	    <PCU>150</PCU>   	
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -2059,7 +2230,11 @@
 		<BlockPairName>LG_AryxSalvoLauncher</BlockPairName>
 		<MirroringY>Z</MirroringY>
 		<MirroringZ>Y</MirroringZ>
-
+		<BuildProgressModels>
+			<Model BuildPercentUpperBound="0.33" File="Models\AWE_Fenrir\LG_AryxFenrirLauncher_BS1.mwm"/>
+			<Model BuildPercentUpperBound="0.67" File="Models\AWE_Fenrir\LG_AryxFenrirLauncher_BS2.mwm"/>
+			<Model BuildPercentUpperBound="1.00" File="Models\AWE_Fenrir\LG_AryxFenrirLauncher_BS3.mwm"/>
+		</BuildProgressModels>
 		<EdgeType>Light</EdgeType>
 		<BuildTimeSeconds>240</BuildTimeSeconds>
 		<InventoryMaxVolume>0.08</InventoryMaxVolume>
@@ -2068,7 +2243,10 @@
 		<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
 	    <PCU>200</PCU>   	
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 			<Id>
 				<TypeId>ConveyorSorter</TypeId>
@@ -2122,7 +2300,10 @@
 			<ResourceSinkGroup>Defense</ResourceSinkGroup>
 			<EmissiveColorPreset>Default</EmissiveColorPreset>			
 			<PCU>100</PCU>   			
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -2170,7 +2351,10 @@
 		<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>			
 		<PCU>100</PCU>   			
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
 		<Id>
 			<TypeId>LargeMissileTurret</TypeId>
@@ -2215,7 +2399,10 @@
 		<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>			
 		<PCU>100</PCU>   			
-	</Definition>	
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -2266,7 +2453,10 @@
 		<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
       <PCU>400</PCU>   		
-	</Definition>		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
 	
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
@@ -2320,7 +2510,10 @@
 		<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
       <PCU>1500</PCU>   		
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -2365,7 +2558,10 @@
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>2000</PCU>      
-    </Definition>	
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	
 	
 	
@@ -2422,7 +2618,10 @@
 		<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
         <PCU>99999</PCU>   		
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -2477,7 +2676,10 @@
 		<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
       <PCU>750</PCU>   		
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -2533,7 +2735,10 @@
 		<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
       <PCU>750</PCU>   		
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -2587,7 +2792,10 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 		<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
       <PCU>2500</PCU>   		
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -2639,6 +2847,9 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>1000</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -2684,6 +2895,9 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>500</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -2731,6 +2945,9 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -2783,6 +3000,9 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>1500</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
@@ -2832,7 +3052,10 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 		<ResourceSinkGroup>Defense</ResourceSinkGroup>
 		<EmissiveColorPreset>Default</EmissiveColorPreset>
       <PCU>200</PCU>   		
-	</Definition>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -2886,6 +3109,9 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>1500</PCU>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -2936,6 +3162,9 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>150</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
@@ -2989,6 +3218,9 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>1500</PCU>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
@@ -3032,6 +3264,9 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>50</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
@@ -3078,6 +3313,9 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>50</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
@@ -3132,6 +3370,9 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>500</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
@@ -3176,6 +3417,9 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
       <PCU>500</PCU>
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>
 
 

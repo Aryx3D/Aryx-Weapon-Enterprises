@@ -45,7 +45,7 @@
             <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="AWEBurstCannons" />
 			<Icon>Textures\GUI\Icons\AryxJudgeCannon.dds</Icon>
             <DisplayName>Burst Cannon</DisplayName>
-            <Description>Variants of the Spitfire Burst Cannon.</Description>
+            <Description>Variants of the Punisher Burst Cannon.</Description>
             <Blocks>
 				<Block Type="LargeMissileTurret" Subtype="ARYXBurstTurretSlanted" />
 				<Block Type="ConveyorSorter" Subtype="ARYXBurstTurretSlanted" />				
@@ -57,7 +57,7 @@
 		
         <BlockVariantGroup>
             <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="AWERadars" />
-			<Icon>Textures\GUI\Icons\ARYX_SmallRadar.dds</Icon>
+			<Icon>Textures\GUI\Icons\ARYX_LargeRadar.dds</Icon>
             <DisplayName>Radar Systems</DisplayName>
             <Description>Long-range radars.</Description>
             <Blocks>
