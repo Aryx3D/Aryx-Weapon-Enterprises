@@ -289,13 +289,13 @@
         <PhysicalMaterial>Missile</PhysicalMaterial>
       </BasicProperties>
       <MissileProperties>
-        <MissileMass>25</MissileMass>
-        <MissileExplosionRadius>3</MissileExplosionRadius>
-        <MissileModelName>Models\AWE_Ammo\AryxFlechetteMissile.mwm</MissileModelName>
+        <MissileMass>60</MissileMass>
+        <MissileExplosionRadius>5</MissileExplosionRadius>
+        <MissileModelName>Models\AWE_Ammo\AryxSabreMissile.mwm</MissileModelName>
         <MissileAcceleration>800</MissileAcceleration>
         <MissileInitialSpeed>100</MissileInitialSpeed>
         <MissileSkipAcceleration>false</MissileSkipAcceleration>
-        <MissileExplosionDamage>250</MissileExplosionDamage>
+        <MissileExplosionDamage>2700</MissileExplosionDamage>
       </MissileProperties>
     </Ammo>	
 	<Ammo xsi:type="MyObjectBuilder_MissileAmmoDefinition">

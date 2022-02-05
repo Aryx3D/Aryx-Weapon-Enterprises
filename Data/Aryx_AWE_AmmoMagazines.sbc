@@ -458,7 +458,7 @@
             <Model>Models\AWE_Ammo\AryxFlechetteMissile.mwm</Model>
             <PhysicalMaterial>Ammo</PhysicalMaterial>
             <Capacity>1</Capacity>
-            <AmmoDefinitionId Subtype="Flechette84mmAmmoDef" />
+            <AmmoDefinitionId Subtype="Disruptor84mmAmmoDef" />
 
             <MinimumOfferAmount>1</MinimumOfferAmount>
             <MaximumOfferAmount>100</MaximumOfferAmount>
