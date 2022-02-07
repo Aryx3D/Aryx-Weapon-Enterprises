@@ -438,6 +438,9 @@ namespace Scripts
                     [ProtoMember(18)] internal bool SpinFree;
                     [ProtoMember(19)] internal bool StayCharged;
                     [ProtoMember(20)] internal int MagsToLoad;
+                    [ProtoMember(21)] internal int MaxActiveProjectiles;
+                    [ProtoMember(22)] internal int MaxReloads;
+
                 }
 
 
@@ -564,6 +567,7 @@ namespace Scripts
                 [ProtoMember(25)] internal EwarDef Ewar;
                 [ProtoMember(26)] internal bool IgnoreVoxels;
                 [ProtoMember(27)] internal bool Synchronize;
+                [ProtoMember(28)] internal double HeatModifier;
 
                 [ProtoContract]
                 public struct DamageScaleDef
@@ -820,6 +824,7 @@ namespace Scripts
                         [ProtoMember(8)] internal int GroupSize;
                         [ProtoMember(9)] internal int GroupDelay;
                         [ProtoMember(10)] internal PointTypes PointType;
+                        [ProtoMember(11)] internal float DirectAimCone;
                     }
                 }
 
@@ -1109,7 +1114,7 @@ namespace Scripts
                     [ProtoMember(6)] internal string PlayerHitSound;
                     [ProtoMember(7)] internal string FloatingHitSound;
                     [ProtoMember(8)] internal string ShieldHitSound;
-                    [ProtoMember(9)] internal string FragmentSound;
+                    [ProtoMember(9)] internal string ShotSound;
                 }
 
                 [ProtoContract]
@@ -1133,7 +1138,7 @@ namespace Scripts
                     [ProtoMember(4)] internal float TargetLossDegree;
                     [ProtoMember(5)] internal int TargetLossTime;
                     [ProtoMember(6)] internal int MaxLifeTime;
-                    [ProtoMember(7)] internal int FieldTime;
+                    [ProtoMember(7)] internal int DeaccelTime;
                     [ProtoMember(8)] internal Randomize SpeedVariance;
                     [ProtoMember(9)] internal Randomize RangeVariance;
                     [ProtoMember(10)] internal GuidanceType Guidance;
@@ -1157,6 +1162,7 @@ namespace Scripts
                         [ProtoMember(10)] internal bool KeepAliveAfterTargetLoss;
                         [ProtoMember(11)] internal float OffsetRatio;
                         [ProtoMember(12)] internal int OffsetTime;
+                        [ProtoMember(13)] internal bool CheckFutureIntersection;
                     }
 
                     [ProtoContract]

@@ -234,7 +234,7 @@ namespace Scripts
             },
             HardPoint = new HardPointDef
             {
-                PartName = "Small M3 Flechette Launcher", // name of weapon in terminal
+                PartName = "Small Flechette Launcher", // name of weapon in terminal
                 DeviateShotAngle = 5f,
                 AimingTolerance = 30f, // 0 - 180 firing angle
                 AimLeadingPrediction = Off, // Off, Basic, Accurate, Advanced

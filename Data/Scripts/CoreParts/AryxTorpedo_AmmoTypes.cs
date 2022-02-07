@@ -2747,7 +2747,7 @@ namespace Scripts
                 {
                     Modifier = -1,
                     Type = Default,
-                    BypassModifier = 0.2f,
+                    BypassModifier = -1f,
                 },
                 DamageType = new DamageTypes
                 {

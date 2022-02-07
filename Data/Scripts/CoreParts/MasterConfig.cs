@@ -58,7 +58,6 @@ namespace Scripts
             AryxGaussCannon,
             AryxRadar,
             AryxFocusBeamTurret,
-            AryxSmallFlechetteLauncher,
             AryxInterceptorTurret,
             AryxSmallFighterHangar,
             AryxGaussTurret,

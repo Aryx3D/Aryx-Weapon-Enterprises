@@ -1636,7 +1636,7 @@
       <Description>Pulse Lasers are light, rapid-fire laser weapons designed for combat usage aboard small strike craft. Whilst less efficient against armour, they are much more effective against shields and exposed components. [1.2KM RANGE - ENERGY WEAPON]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-	  <Size x="1" y="1" z="2"/>
+	  <Size x="1" y="1" z="3"/>
       <ModelOffset x="0" y="0" z="0" />
 	  <Model>Models\PulseLaser\ARYXSmallPulseLaser.mwm</Model>
       <Components>
