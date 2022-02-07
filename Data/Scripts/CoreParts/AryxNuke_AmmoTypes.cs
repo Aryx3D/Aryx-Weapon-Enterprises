@@ -236,7 +236,7 @@ namespace Scripts
                 AccelPerSec = 0f, //acceleration in ms/s
                 DesiredSpeed = 25, //zoom
                 MaxTrajectory = 50, //how far the torp goes before committing sudoku
-                FieldTime = 0, // time in ticks to stop and spawn a field (I think)
+                //FieldTime was here, it's dead now time in ticks to stop and spawn a field (I think)
                 GravityMultiplier = 0f, /*Gravity
                        When the feeling's gone and you can't go on
                        It's gravity
@@ -604,7 +604,7 @@ namespace Scripts
                 AccelPerSec = 40f, //acceleration in ms/s
                 DesiredSpeed = 800, //zoom
                 MaxTrajectory = 50000, //how far the torp goes before committing sudoku
-                FieldTime = 0, // time in ticks to stop and spawn a field (I think)
+                //FieldTime was here, it's dead now time in ticks to stop and spawn a field (I think)
                 GravityMultiplier = 0f, /*Gravity
                        When the feeling's gone and you can't go on
                        It's gravity
@@ -972,7 +972,7 @@ namespace Scripts
                 AccelPerSec = 0f, //acceleration in ms/s
                 DesiredSpeed = 25, //zoom
                 MaxTrajectory = 50, //how far the torp goes before committing sudoku
-                FieldTime = 0, // time in ticks to stop and spawn a field (I think)
+                //FieldTime was here, it's dead now time in ticks to stop and spawn a field (I think)
                 GravityMultiplier = 0f, /*Gravity
                        When the feeling's gone and you can't go on
                        It's gravity
@@ -1340,7 +1340,7 @@ namespace Scripts
                 AccelPerSec = 40f, //acceleration in ms/s
                 DesiredSpeed = 800, //zoom
                 MaxTrajectory = 10000, //how far the torp goes before committing sudoku
-                FieldTime = 0, // time in ticks to stop and spawn a field (I think)
+                //FieldTime was here, it's dead now time in ticks to stop and spawn a field (I think)
                 GravityMultiplier = 0f, /*Gravity
                        When the feeling's gone and you can't go on
                        It's gravity
@@ -1710,7 +1710,7 @@ namespace Scripts
                 AccelPerSec = 0f, //acceleration in ms/s
                 DesiredSpeed = 25, //zoom
                 MaxTrajectory = 50, //how far the torp goes before committing sudoku
-                FieldTime = 0, // time in ticks to stop and spawn a field (I think)
+                //FieldTime was here, it's dead now time in ticks to stop and spawn a field (I think)
                 GravityMultiplier = 0f, /*Gravity
                        When the feeling's gone and you can't go on
                        It's gravity
@@ -2078,7 +2078,7 @@ namespace Scripts
                 AccelPerSec = 40f, //acceleration in ms/s
                 DesiredSpeed = 800, //zoom
                 MaxTrajectory = 50000, //how far the torp goes before committing sudoku
-                FieldTime = 0, // time in ticks to stop and spawn a field (I think)
+                //FieldTime was here, it's dead now time in ticks to stop and spawn a field (I think)
                 GravityMultiplier = 0f, /*Gravity
                        When the feeling's gone and you can't go on
                        It's gravity
@@ -2448,7 +2448,7 @@ namespace Scripts
                 AccelPerSec = 100f, //acceleration in ms/s
                 DesiredSpeed = 1600, //zoom
                 MaxTrajectory = 50000, //how far the torp goes before committing sudoku
-                FieldTime = 0, // time in ticks to stop and spawn a field (I think)
+                //FieldTime was here, it's dead now time in ticks to stop and spawn a field (I think)
                 GravityMultiplier = 1f, /*Gravity
                        When the feeling's gone and you can't go on
                        It's gravity
@@ -2816,7 +2816,7 @@ namespace Scripts
                 AccelPerSec = 0f, //acceleration in ms/s
                 DesiredSpeed = 25, //zoom
                 MaxTrajectory = 50, //how far the torp goes before committing sudoku
-                FieldTime = 0, // time in ticks to stop and spawn a field (I think)
+                //FieldTime was here, it's dead now time in ticks to stop and spawn a field (I think)
                 GravityMultiplier = 0f, /*Gravity
                        When the feeling's gone and you can't go on
                        It's gravity
@@ -3184,7 +3184,7 @@ namespace Scripts
                 AccelPerSec = 40f, //acceleration in ms/s
                 DesiredSpeed = 800, //zoom
                 MaxTrajectory = 50000, //how far the torp goes before committing sudoku
-                FieldTime = 0, // time in ticks to stop and spawn a field (I think)
+                //FieldTime was here, it's dead now time in ticks to stop and spawn a field (I think)
                 GravityMultiplier = 0f, /*Gravity
                        When the feeling's gone and you can't go on
                        It's gravity
@@ -3552,7 +3552,7 @@ namespace Scripts
                 AccelPerSec = 0f, //acceleration in ms/s
                 DesiredSpeed = 25, //zoom
                 MaxTrajectory = 50, //how far the torp goes before committing sudoku
-                FieldTime = 0, // time in ticks to stop and spawn a field (I think)
+                //FieldTime was here, it's dead now time in ticks to stop and spawn a field (I think)
                 GravityMultiplier = 0f, /*Gravity
                        When the feeling's gone and you can't go on
                        It's gravity
@@ -3920,7 +3920,7 @@ namespace Scripts
                 AccelPerSec = 40f, //acceleration in ms/s
                 DesiredSpeed = 800, //zoom
                 MaxTrajectory = 50000, //how far the torp goes before committing sudoku
-                FieldTime = 0, // time in ticks to stop and spawn a field (I think)
+                //FieldTime was here, it's dead now time in ticks to stop and spawn a field (I think)
                 GravityMultiplier = 0f, /*Gravity
                        When the feeling's gone and you can't go on
                        It's gravity
@@ -4287,7 +4287,7 @@ namespace Scripts
                 AccelPerSec = 0f,
                 DesiredSpeed = 0f,
                 MaxTrajectory = 1,
-                FieldTime = 900, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
+                //FieldTime = 900, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
                 RangeVariance = Random(start: 0, end: 0), // subtracts value from MaxTrajectory
@@ -4650,7 +4650,7 @@ namespace Scripts
                 AccelPerSec = 0f,
                 DesiredSpeed = 0f,
                 MaxTrajectory = 1,
-                FieldTime = 1800, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
+                //FieldTime = 1800, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
                 RangeVariance = Random(start: 0, end: 0), // subtracts value from MaxTrajectory
