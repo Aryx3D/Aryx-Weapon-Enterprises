@@ -32,10 +32,10 @@ namespace Scripts
             AmmoRound = "Punisher AP 70mm", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 760,
-            Mass = 10f, // in kilograms
+            BaseDamage = 800,
+            Mass = 25f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 25f,
+            BackKickForce = 125f,
             DecayPerShot = 0f,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             EnergyMagazineSize = 0,
@@ -93,14 +93,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 2f,
-                    Light = 2f,
-                    Heavy = 2f,
-                    NonArmor = 0.2f,
+                    Armor = 3f,
+                    Light = 1f,
+                    Heavy = 1f,
+                    NonArmor = 0.5f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 4f,
+                    Modifier = 8f,
                     Type = Default, // Default, Heal
                     BypassModifier = -1f,
                 },
@@ -429,7 +429,7 @@ namespace Scripts
             Fragment = new FragmentDef
             {
                 AmmoRound = "AryxFlakShrapWC",
-                Fragments = 10,
+                Fragments = 25,
                 Degrees = 180,
                 Reverse = false,
                 
@@ -525,7 +525,7 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 3f, // Meters
+                    Radius = 4f, // Meters
                     Damage = 2500,
                     Depth = 1f,
                     MaxAbsorb = 0f,

@@ -15,7 +15,8 @@
 		<string>LargeMissileTurret/ARYXFlakTurret</string>		
 		<string>LargeMissileTurret/ARYXPulseTurret</string>	
 		<string>LargeMissileTurret/ARYXCompactPulseTurret</string>	
-		<string>LargeMissileTurret/ARYXMagnetarCannon</string>		
+		<string>LargeMissileTurret/ARYXMagnetarCannon</string>	
+		<string>LargeMissileTurret/ARYXQuasarCannon</string>		
 		<string>ConveyorSorter/ARYXGaussCannon</string>	
 		<string>ConveyorSorter/ARYXRailgun</string>			
 		<string>ConveyorSorter/ARYXTorpLauncher</string>
@@ -123,7 +124,8 @@
 		<string>LargeMissileTurret/ARYXGaussTurret</string>			
 		<string>ConveyorSorter/ARYXInterceptorPDGun</string>	
 		<string>ConveyorSorter/ARYXSmallPulseLaser_Fixed</string>	
-		<string>ConveyorSorter/ARYXFocusLance</string>		
+		<string>ConveyorSorter/ARYXFocusLance</string>
+		<string>LargeMissileTurret/ARYXQuasarCannon</string>			
 	  </ItemIds>
     </Category>
 	
@@ -186,7 +188,8 @@
 		<string>LargeMissileTurret/ARYXGaussTurret</string>			
 		<string>ConveyorSorter/ARYXInterceptorPDGun</string>
 		<string>ConveyorSorter/ARYXSmallPulseLaser_Fixed</string>
-		<string>ConveyorSorter/ARYXFocusLance</string>		
+		<string>ConveyorSorter/ARYXFocusLance</string>
+		<string>LargeMissileTurret/ARYXQuasarCannon</string>			
 	</ItemIds>
     </Category> 
 
@@ -246,7 +249,8 @@
 		<string>ConveyorSorter/ARYX_Small_Sidekick_Hangar</string>		
  		<string>LargeMissileTurret/ARYXGaussTurret</string>			
 		<string>ConveyorSorter/ARYXInterceptorPDGun</string>
-		<string>ConveyorSorter/ARYXFocusLance</string>		
+		<string>ConveyorSorter/ARYXFocusLance</string>
+		<string>LargeMissileTurret/ARYXQuasarCannon</string>			
 	  </ItemIds>
     </Category>  	
 

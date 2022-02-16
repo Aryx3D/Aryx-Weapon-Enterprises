@@ -50,6 +50,7 @@ namespace Scripts
             AryxTyphoonTurret,
             AryxTempestCannon,
             AryxMagnetarTurret,
+            AryxQuasarTurret,
             AryxNukeLauncher,
             AryxKingswordCannon,
             AryxObliteratorCannon,

@@ -1311,13 +1311,32 @@
       </Waves>
     </Sound> 
 
-
-
-
-
-
-
-
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcWepShipARYXQuasar_Fire</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>700</MaxDistance>
+      <PreventSynchronization>1</PreventSynchronization>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>3</DynamicMusicAmount>
+      <Volume>1</Volume>
+	  <DistantSounds>
+		<DistantSound DistanceCrossFade="10" Distance="500" Sound = "ArcWepShipARYXShockCannon_DistantFire" />
+	  </DistantSounds>		  
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Aryx\shock_cannons\aryx_quasar_fire_01.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Aryx\shock_cannons\aryx_quasar_fire_02.wav</Start>
+        </Wave>	
+        <Wave Type="D3">
+          <Start>Audio\Aryx\shock_cannons\aryx_quasar_fire_03.wav</Start>
+        </Wave>			
+      </Waves>
+    </Sound>
     <Sound>
       <Id>
         <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
@@ -1343,7 +1362,7 @@
           <Start>Audio\Aryx\shock_cannons\aryx_magnetar_fire_03.wav</Start>
         </Wave>			
       </Waves>
-    </Sound>			
+    </Sound>	
     <Sound>
       <Id>
         <TypeId>MyObjectBuilder_AudioDefinition</TypeId>

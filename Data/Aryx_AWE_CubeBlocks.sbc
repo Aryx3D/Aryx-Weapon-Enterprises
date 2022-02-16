@@ -9,7 +9,7 @@
       </Id>
       <DisplayName>240mm Cyclone Heavy Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>
-      <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells.]</Description>
+      <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="2" z="3" />
@@ -59,7 +59,7 @@
       </Id>
       <DisplayName>240mm Cyclone Heavy Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>	  
-      <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells.]</Description>
+      <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="15" y="10" z="15" />
@@ -109,7 +109,7 @@
       </Id>
       <DisplayName>480mm Hurricane Heavy Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxHurricaneCannon.dds</Icon>	  
-      <Description>The Hurricane is a turreted, double barrel artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells.]</Description>
+      <Description>The Hurricane is a turreted, double barrel artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="5" y="3" z="5"/>
@@ -164,7 +164,7 @@
       </Id>
       <DisplayName>600mm Typhoon Heavy Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxTyphoonCannon.dds</Icon>	  
-      <Description>The Typhoon is a gargantuan armoured triple barrel artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells.]</Description>
+      <Description>The Typhoon is a gargantuan armoured triple barrel artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="7" y="4" z="7"/>
@@ -219,7 +219,7 @@
       </Id>
       <DisplayName>600mm Tempest Heavy Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_TempestCannon.dds</Icon>	  
-      <Description>The Tempest is a large fixed-mount artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells.]</Description>
+      <Description>The Tempest is a large fixed-mount artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="9"/>
@@ -273,7 +273,7 @@
       </Id>
       <DisplayName>600mm Tempest Heavy Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_TempestCannon.dds</Icon>	  
-      <Description>The Tempest is a large fixed-mount artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells.]</Description>
+      <Description>The Tempest is a large fixed-mount artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="5" y="5" z="45"/>
@@ -327,7 +327,7 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxJudgeCannon.dds</Icon>	  
-      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. [2KM RANGE - Accepts 70mm Punisher Rounds.]</Description>
+      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. [2KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP - Energy HE).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="2" z="3" />
@@ -383,7 +383,7 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxJudgeCannon.dds</Icon>  
-      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. [2KM RANGE - Accepts 70mm Punisher Rounds.]</Description>
+      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. [2KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP - Energy HE).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="15" y="10" z="15" />
@@ -439,7 +439,7 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Slanted Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_SlantedBurstCannon.dds</Icon>	  
-      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. This variant is slanted for 2x1 slopes. [2KM RANGE - Accepts 70mm Punisher Rounds.]</Description>
+      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. This variant is slanted for 2x1 slopes. [2KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP / Energy HE).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="3" />
@@ -495,7 +495,7 @@
       </Id>
       <DisplayName>RL6 Hydra Rocket Battery</DisplayName>
       <Icon>Textures\GUI\Icons\AryxHydraTurret.dds</Icon>	  
-      <Description>The Hydra is an armoured rocket pod that fires rapid volleys of 6 guided rockets, with high tracking and a long reload, designed to overwhelm enemy PD and destroy small grids. [5KM RANGE - Accepts Flechette or Disruptor Rockets]</Description>
+      <Description>The Hydra is an armoured rocket pod that fires rapid volleys of 6 guided rockets, with high tracking and a long reload, designed to overwhelm enemy PD and destroy small grids. [5KM RANGE - Accepts Flechette (Kinetic) or Disruptor (Energy) Rockets]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="3" y="3" z="3"/>
@@ -550,7 +550,7 @@
       </Id>
       <DisplayName>R1-S Interceptor Rocket Pod</DisplayName>
       <Icon>Textures\GUI\Icons\AWEInterceptor.dds</Icon>	  
-      <Description>The Interceptor is a guided point defence weapon that takes down incoming missiles and drones via counterbattery rocket action. [3KM RANGE - Accepts Interceptor Rockets]</Description>
+      <Description>The Interceptor is a guided point defence weapon that takes down incoming missiles and drones via counterbattery rocket action. [3KM RANGE - Accepts Interceptor Rockets (Kinetic)]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="1" y="2" z="1"/>
@@ -657,7 +657,7 @@
       </Id>
       <DisplayName>F4-GL Thrasher Heavy Flak Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_HeavyFlak.dds</Icon>	  
-      <Description>The Thrasher is a heavy flak cannon designed to punch through fighter formations and clear the skies of strike craft at long range, using a hailstorm of steel shards. [2KM RANGE - Accepts 135mm Thrasher Flak Shells.]</Description>
+      <Description>The Thrasher is a heavy flak cannon designed to punch through fighter formations and clear the skies of strike craft at long range, using a hailstorm of steel shards. [2KM RANGE - Accepts 135mm Thrasher Flak Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="3" />
@@ -707,7 +707,7 @@
       </Id>
       <DisplayName>M8G-LS4 Longsword Missile Battery</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMissileBattery.dds</Icon>	  
-      <Description>The Longsword is a heavy missile battery designed for capital ship combat and base defence, firing 8 powerful rockets in quick succession. [7.5KM RANGE - Accepts Sabre or Lancer Missiles]</Description>
+      <Description>The Longsword is a heavy missile battery designed for capital ship combat and base defence, firing 8 powerful rockets in quick succession. [7.5KM RANGE - Accepts Sabre (Kinetic) or Lancer Missiles (Energy)]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="5" y="5" z="5"/>
@@ -858,7 +858,7 @@
         <SubtypeId>ARYXJuryCannon</SubtypeId>
       </Id>
       <DisplayName>120mm Whirlwind Heavy Cannon</DisplayName>
-	  <Description>The Whirlwind is a compact artillery piece capable of dealing decent ballistic damage to targets from long-range. [800m/s muzzle velocity, 3.5km range - Accepts 120mm Heavy Shells.]</Description>
+	  <Description>The Whirlwind is a compact artillery piece capable of dealing decent ballistic damage to targets from long-range. [800m/s muzzle velocity, 3.5km range - Accepts 120mm Heavy Shells (Kinetic).]</Description>
 	  <Icon>Textures\GUI\Icons\AryxJurycannon.dds</Icon>  
 	  <CubeSize>Large</CubeSize>
 	  <BlockTopology>TriangleMesh</BlockTopology>
@@ -914,7 +914,7 @@
       </Id> 		<!-- subpart_RotorBarrel -->
       <DisplayName>MG50 "Guardian" Point Defence Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxAtlasPDC.dds</Icon>	  
-      <Description>Guardian PDCs are point defence cannons designed to shoot down incoming torpedoes, missiles and small strike craft. A high rate of fire and high tracking allows this turret to easily intercept incoming threats. [ 1.2KM RANGE - Accepts 40mm GUARDIAN ammo.]</Description>
+      <Description>Guardian PDCs are point defence cannons designed to shoot down incoming torpedoes, missiles and small strike craft. A high rate of fire and high tracking allows this turret to easily intercept incoming threats. [ 1.2KM RANGE - Accepts 40mm GUARDIAN ammo (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -965,7 +965,7 @@
       </Id>
       <DisplayName>MG25 "Avalanche" Heavy Machine Gun</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCodexPDC.dds</Icon>	  
-      <Description>Avalanche MGs are medium-weight gatling cannons designed to shoot down incoming missiles, strike craft, and act as an anti armour. Extremely high rate of fire. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo.]</Description>
+      <Description>Avalanche MGs are medium-weight gatling cannons designed to shoot down incoming missiles, strike craft, and act as an anti armour. Extremely high rate of fire. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1014,7 +1014,7 @@
       </Id>
       <DisplayName>MG25 "Avalanche" Slanted Heavy Machine Gun</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Avalanche.dds</Icon>	  
-      <Description>Avalanche MGs are medium-weight gatling cannons designed to shoot down incoming missiles, strike craft, and act as an anti armour. Extremely high rate of fire. This version is embedded into a slanted armour plate. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo.]</Description>
+      <Description>Avalanche MGs are medium-weight gatling cannons designed to shoot down incoming missiles, strike craft, and act as an anti armour. Extremely high rate of fire. This version is embedded into a slanted armour plate. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1065,7 +1065,7 @@
       </Id>
       <DisplayName>MG25 "Avalanche" Slanted Heavy Machine Gun</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Avalanche_Inv.dds</Icon>	  
-      <Description>Avalanche MGs are medium-weight gatling cannons designed to shoot down incoming missiles, strike craft, and act as an anti armour. Extremely high rate of fire. This version is embedded into a slanted armour plate. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo.]</Description>
+      <Description>Avalanche MGs are medium-weight gatling cannons designed to shoot down incoming missiles, strike craft, and act as an anti armour. Extremely high rate of fire. This version is embedded into a slanted armour plate. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1116,7 +1116,7 @@
       </Id>
       <DisplayName>MG25 "Avalanche" Heavy Machine Gun</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCodexPDC.dds</Icon>	  
-      <Description>Avalanche MGs are medium-weight gatling cannons designed to shoot down incoming missiles, strike craft, and act as an anti armour. Extremely high rate of fire. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo.]</Description>
+      <Description>Avalanche MGs are medium-weight gatling cannons designed to shoot down incoming missiles, strike craft, and act as an anti armour. Extremely high rate of fire. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="3" />
@@ -1165,7 +1165,7 @@
       </Id>
       <DisplayName>Aurora Combat Laser</DisplayName>
       <Icon>Textures\GUI\Icons\AryxLaserGatling.dds</Icon>		  
-      <Description>The Aurora is a compact laser gatling weapon, able to dish out surprising damage to strike craft and shields with its high fire rates. Whilst susceptible to overheating, the weapon is an effective anti-component gun.[1200m range Energy Weapon]</Description>
+      <Description>The Aurora is a compact laser gatling weapon, able to dish out surprising damage to strike craft and shields with its high fire rates. Whilst susceptible to overheating, the weapon is an effective anti-component gun.[1200M RANGE - ENERGY WEAPON]</Description>
 	  <CubeSize>Large</CubeSize>
 	  <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="2" z="1"/>
@@ -1223,7 +1223,7 @@
       </Id>
       <DisplayName>LS5-MG100 Warrior Heavy Gatling</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Warrior.dds</Icon>	  
-      <Description>The Warrior is a large armoured casemate gatling turret designed for broadside combat and base defence, firing 100mm shells of varying payload at a respectable rate of fire. Whilst low in traversal, deals devastating damage in its firing period. [RETRACTABLE - 1.5K RANGE - ACCEPTS 100MM WARRIOR]</Description>
+      <Description>The Warrior is a large armoured casemate gatling turret designed for broadside combat and base defence, firing 100mm shells of varying payload at a respectable rate of fire. Whilst low in traversal, deals devastating damage in its firing period. [RETRACTABLE - 1.5K RANGE - ACCEPTS 100MM WARRIOR (Kinetic)]</Description>
 	  <CubeSize>Large</CubeSize>
 	  <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="4" y="3" z="6"/>
@@ -1436,7 +1436,7 @@
       </Id>
       <DisplayName>Flechette Launcher</DisplayName>
       <Icon>Textures\GUI\Icons\AWEFlechetteLauncher.dds</Icon>  
-      <Description>Flechette Launchers fire guided rockets that track and aim towards targets at high speeds and explode on impact, dealing decent explosive damage. [5KM RANGE - Accepts Flechette or Disruptor Rockets]</Description>
+      <Description>Flechette Launchers fire guided rockets that track and aim towards targets at high speeds and explode on impact, dealing decent explosive damage. [5KM RANGE - Accepts Flechette (Kinetic) or Disruptor (Energy) Rockets]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1527,7 +1527,7 @@
       </Id>
       <DisplayName>MG50 Coaxial Guardian Gatling gun</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_FixedAtlas.dds</Icon>
-      <Description>Guardian Gatling guns are compact rotary cannons designed to tear apart opposing strike craft. A high rate of fire and large magazine allows this weapon to easily intercept incoming threats. [ 1.2KM RANGE - Accepts 40mm GUARDIAN ammo.]</Description>
+      <Description>Guardian Gatling guns are compact rotary cannons designed to tear apart opposing strike craft. A high rate of fire and large magazine allows this weapon to easily intercept incoming threats. [ 1.2KM RANGE - Accepts 40mm GUARDIAN ammo. (Kinetic)]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="3" z="9"/>
@@ -1580,7 +1580,7 @@
       </Id>
       <DisplayName>MG22-S Prowler Chaingun</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Chaingun.dds</Icon>
-      <Description>Prowlers are light chainguns designed for usage on small drones and interceptor craft with the intention of ship-to-ship combat between small ships. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo.]</Description>
+      <Description>Prowlers are light chainguns designed for usage on small drones and interceptor craft with the intention of ship-to-ship combat between small ships. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="1" z="4"/>
@@ -1689,7 +1689,7 @@
       </Id>
       <DisplayName>AC54 Chord Autocannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_FixedChord.dds</Icon>
-      <Description>The Chord is a medium-weight autocannon firing ballistic slugs at targets. This is a fixed-mount version for strike craft. [4KM RANGE - Accepts 54mm AC.]</Description>
+      <Description>The Chord is a medium-weight autocannon firing ballistic slugs at targets. This is a fixed-mount version for strike craft. [4KM RANGE - Accepts 54mm AC (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="2" y="1" z="6"/>
@@ -1739,12 +1739,12 @@
       </Id>
       <DisplayName>Small Flechette Launcher</DisplayName>
       <Icon>Textures\GUI\Icons\AWESmallFlechetteLauncher.dds</Icon>
-      <Description>Flechette Launchers fire rockets that track and aim towards targets at high speeds and explode on impact, dealing decent explosive damage. [5KM RANGE - Accepts Flechette or Disruptor Rockets]</Description>
+      <Description>Flechette Launchers fire high-speed rockets that track and aim towards targets at high speeds and explode on impact, dealing explosive damage. [5KM RANGE - Accepts Flechette (Kinetic) or Disruptor Rockets (Energy)]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="1" z="5"/>
       <ModelOffset x="0" y="0" z="0" />
-	  <Model>Models\Flechette\SG_ARYX_FLECHETTE.mwm</Model>
+	  <Model>Models\Flechette\ARYX_SG_FLECHETTE.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="5" />
         <Component Subtype="Construction" Count="10" />
@@ -1755,17 +1755,18 @@
         <Component Subtype="SteelPlate" Count="5" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
-	<MountPoints>
-		<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
-		<MountPoint Side="Left" StartX="1.0" StartY="0.0" EndX="5.0" EndY="1"/>
-		<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="4.0" EndY="1"/>
-		<MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="1.0" EndY="4.0"/>
-		<MountPoint Side="Bottom" StartX="0.0" StartY="1.0" EndX="1.0" EndY="5.0"/>
-	</MountPoints>
-	<BuildProgressModels>
-		<Model BuildPercentUpperBound="0.5" File="Models\Flechette\SG_ARYX_FLECHETTE_BS1.mwm"/>
-		<Model BuildPercentUpperBound="1.0" File="Models\Flechette\SG_ARYX_FLECHETTE_BS2.mwm"/>
-	</BuildProgressModels>
+		<MountPoints>
+			<MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0"/>
+			<MountPoint Side="Left" StartX="1.0" StartY="0.0" EndX="5.0" EndY="1"/>
+			<MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="4.0" EndY="1"/>
+			<MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="1.0" EndY="4.0"/>
+			<MountPoint Side="Bottom" StartX="0.0" StartY="1.0" EndX="1.0" EndY="5.0"/>
+		</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Flechette\ARYX_SG_FLECHETTE_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Flechette\ARYX_SG_FLECHETTE_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Flechette\ARYX_SG_FLECHETTE_BS3.mwm"/>
+			</BuildProgressModels>
 			
       <BlockPairName>AryxFlechetteMissileLauncher</BlockPairName>
 		<MirroringY>Z</MirroringY>
@@ -1790,7 +1791,7 @@
       </Id>
       <DisplayName>70mm Riptide Flak Turret</DisplayName>
       <Icon>Textures\GUI\Icons\AryxRiptideFlak.dds</Icon>
-      <Description>Riptide FT's fire heavy flak shells that deal massive explosive damage to lightly armoured ships and strike craft, but poor damage against armoured targets. [800M RANGE - Accepts 70mm Riptide Shells.]</Description>
+      <Description>Riptide FT's fire heavy flak shells that deal massive explosive damage to lightly armoured ships and strike craft, but poor damage against armoured targets. [800M RANGE - Accepts 70mm Riptide Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1838,7 +1839,7 @@
 			<SubtypeId>ARYX_ChordAutocannon</SubtypeId>
 		</Id>
 		<DisplayName>AC54 Chord</DisplayName>
-        <Description>The Chord is a medium-weight autocannon firing ballistic slugs at targets. Whilst not the best against heavy armour, these autocannons are extremely strong in numbers, and excel against smaller craft at long range. [4KM RANGE - Accepts 54mm AC.]</Description>
+        <Description>The Chord is a medium-weight autocannon firing ballistic slugs at targets. Whilst not the best against heavy armour, these autocannons are extremely strong in numbers, and excel against smaller craft at long range. [4KM RANGE - Accepts 54mm AC (Kinetic).]</Description>
 		<Icon>Textures\GUI\Icons\AryxChordCannon.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -1911,7 +1912,7 @@
 			<SubtypeId>ARYX_ChordAutocannon_SG</SubtypeId>
 		</Id>
 		<DisplayName>AC54 Chord</DisplayName>
-        <Description>The Chord is a medium-weight autocannon firing ballistic slugs at targets. Whilst not the best against heavy armour, these autocannons are extremely strong in numbers, and excel against smaller craft at long range. [4KM RANGE - Accepts 54mm AC.]</Description>
+        <Description>The Chord is a medium-weight autocannon firing ballistic slugs at targets. Whilst not the best against heavy armour, these autocannons are extremely strong in numbers, and excel against smaller craft at long range. [4KM RANGE - Accepts 54mm AC (Kinetic).]</Description>
 		<Icon>Textures\GUI\Icons\AryxChordCannon.dds</Icon>
 		<CubeSize>Small</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -1984,7 +1985,7 @@
 			<SubtypeId>ARYXTorpLauncher</SubtypeId>
 		</Id>
 		<DisplayName>TL-150 Astraeus Torpedo Launcher</DisplayName>
-		<Description>Fires heavy torpedoes capable of demolishing armoured targets. Whilst sluggish on the maneuvering side and being susceptible to point defence, these missiles are extremely deadly if they land a direct hit. [10KM RANGE - Accepts Devastator and Equaliser torpedoes.]</Description>
+		<Description>Fires heavy torpedoes capable of demolishing armoured targets. Whilst sluggish on the maneuvering side and being susceptible to point defence, these missiles are extremely deadly if they land a direct hit. [10KM RANGE - Accepts Devastator (Kinetic) and Equaliser (Energy) torpedoes.]</Description>
 		<Icon>Textures\GUI\Icons\AryxTorpLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2041,7 +2042,7 @@
 			<SubtypeId>ARYXInlineTorpLauncher</SubtypeId>
 		</Id>
 		<DisplayName>TL-150-B Astraeus Inline Torpedo Launcher</DisplayName>
-		<Description>Fires heavy torpedoes capable of demolishing armoured targets. Whilst sluggish on the maneuvering side and being susceptible to point defence, these missiles are extremely deadly if they land a direct hit. Yes I am aware the projectile model differs at launch, stfu. [10KM RANGE - Accepts Devastator and Equaliser torpedoes.]</Description>
+		<Description>Fires heavy torpedoes capable of demolishing armoured targets. Whilst sluggish on the maneuvering side and being susceptible to point defence, these missiles are extremely deadly if they land a direct hit. Yes I am aware the projectile model differs at launch, stfu. [10KM RANGE - Accepts Devastator (Kinetic) and Equaliser (Energy) torpedoes.]</Description>
 		<Icon>Textures\GUI\Icons\AryxInlineTorpLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2093,7 +2094,7 @@
 			<SubtypeId>ARYXLongbowLauncher</SubtypeId>
 		</Id>
 		<DisplayName>ML-70 Longbow Missile Launcher</DisplayName>
-		<Description>Fires medium-weight missiles capable of performing all-around ship-to-ship combat. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [7.5KM RANGE - Accepts Sabre or Lancer Missiles.]</Description>
+		<Description>Fires medium-weight missiles capable of performing all-around ship-to-ship combat. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [7.5KM RANGE - Accepts Sabre (Kinetic) or Lancer (Energy) Missiles.]</Description>
 		<Icon>Textures\GUI\Icons\AWELongbowLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2145,7 +2146,7 @@
 			<SubtypeId>ARYXLongbowLauncher_SG</SubtypeId>
 		</Id>
 		<DisplayName>ML-70 Longbow Missile Launcher</DisplayName>
-		<Description>Fires medium-weight missiles capable of performing all-around ship-to-ship combat. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [7.5KM RANGE - Accepts Sabre or Lancer Missiles.]</Description>
+		<Description>Fires medium-weight missiles capable of performing all-around ship-to-ship combat. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [7.5KM RANGE - Accepts Sabre (Kinetic) or Lancer (Energy) Missiles.]</Description>
 		<Icon>Textures\GUI\Icons\AWELongbowLauncher.dds</Icon>
 		<CubeSize>Small</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2197,7 +2198,7 @@
 			<SubtypeId>ARYXHeavyMissileSalvoLauncher</SubtypeId>
 		</Id>
 		<DisplayName>HA-4ML2 Poseidon Salvo Launcher</DisplayName>
-		<Description>The Poseidon launches powerful missiles in volleys of four, designed for suppression of targets and dealing deadly explosive damage. [8KM RANGE - Accepts Striker Missiles.]</Description>
+		<Description>The Poseidon launches powerful missiles in volleys of four, designed for suppression of targets and dealing deadly explosive damage. [8KM RANGE - Accepts Striker Missiles. (Kinetic)]</Description>
 		<Icon>Textures\GUI\Icons\AryxFenrirLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2361,7 +2362,7 @@
 			<SubtypeId>ARYX_FocusBeam_CompactTurret</SubtypeId>
 		</Id>
 		<DisplayName>M98-T Focus Beam Turret</DisplayName>
-		<Description>Originally a cutting laser, retooled as a devastating energy weapon; Focus Beams are laser weapons that fire a beam of energy at targets, which ends in a high-intensity pulse dealing much more damage. Excellent against shields and small grids. [1.5KM RANGE - ENERGY WEAPON]</Description>
+		<Description>Originally a cutting laser, retooled as a devastating energy weapon; Focus Beams are laser weapons that fire a beam of energy at targets, which ends in a high-intensity pulse dealing much more damage. Excellent against shields and small grids. [1.5KM RANGE - ENERGY WEAPON (Energy)]</Description>
 		<Icon>Textures\GUI\Icons\ARYX_AWE_FocusBeamTurret.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2410,7 +2411,7 @@
 		</Id>
 		<DisplayName>M-100V Prometheus Focus Beam Lance</DisplayName>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_FocusBeamLance.dds</Icon>
-		<Description>A heavy drilling laser converted for battle via advanced modification (we upped the voltage). Fires a 1-second T2 equivalent pulse that builds upto a final charge, which delivers a pulse that deals 400% damage. [5KM RANGE - ENERGY WEAPON]</Description>	
+		<Description>A heavy drilling laser converted for battle via advanced modification (we upped the voltage). Fires a 1-second T2 equivalent pulse that builds upto a final charge, which delivers a pulse that deals 400% damage. [5KM RANGE - ENERGY WEAPON (Energy)]</Description>	
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="1" y="1" z="6"/>
@@ -2463,9 +2464,9 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXGaussCannon</SubtypeId>
 		</Id>
-		<DisplayName>S11A-5PX Superheavy Ares Gauss Cannon</DisplayName>
+		<DisplayName>ZS-1200-S Ares Heavy Railgun</DisplayName>
 		<Icon>Textures\GUI\Icons\AryxGaussCannon.dds</Icon>
-		<Description>Ares Gauss cannons are advanced precision ballistic weapons that fire 1200mm Ferrous Slugs, each penetrating a straight line of their impact site. These devastating weapons are bulky and heavy, but pack a huge punch, and can potentially disable or destroy a ship in one shot. It is advisable to limit these weapons to 1-per-grid, as it is a precision sniper weapon, and thus battery installation does not improve its combat effectiveness. [50KM TRAVEL - Accepts 1200 Ferrous.]</Description>	
+		<Description>Ares Railguns are advanced precision ballistic weapons that fire 1200mm Ferrous Slugs, each penetrating a straight line of their impact site. These devastating weapons are bulky and heavy, but pack a huge punch, and can potentially disable a ship in one shot. [50KM TRAVEL - Accepts 1200 Ferrous. (Kinetic)]</Description>	
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="3" y="2" z="9"/>
@@ -2521,10 +2522,11 @@
       </Id>
       <DisplayName>ZS-1200 Ariadne Heavy Railgun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_GaussTurret.dds</Icon>
-      <Description>A heavy and extremely powerful rail cannon mounted onto a rotary frame, capable of dispatching targets from long range with devastating firepower. [10KM RANGE - ACCEPTS 1200MM FERROUS - REQUIRES LOCKON]</Description>
+      <Description>A heavy and extremely powerful rail cannon mounted onto a rotary frame, capable of dispatching targets from long range with devastating firepower. [10KM RANGE - ACCEPTS 1200MM FERROUS. (Kinetic)]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="9" y="6" z="29"/>
+	  <Center x="4" y="0" z="22" />
       <ModelOffset x="0" y="0" z="0" />
 	  <Model>Models\Gauss\ARYX_GaussTurretBase.mwm</Model>
 		<Components>
@@ -2544,6 +2546,11 @@
 			<MountPoints>
 				<MountPoint Side="Bottom" StartX="0.00" StartY="18.00" EndX="9.00" EndY="27.00"/>
 			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Gauss\ARYX_GaussTurretBase_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\Gauss\ARYX_GaussTurretBase_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\Gauss\ARYX_GaussTurretBase_BS3.mwm"/>
+			</BuildProgressModels>			
 	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>
       <BlockPairName>AryxGaussTurret</BlockPairName>
 		<MirroringY>Z</MirroringY>
@@ -2573,7 +2580,7 @@
 		<Public>false</Public>
 		<DisplayName>Obliterator Antimatter Catalyst Cannon</DisplayName>
 		<Icon>Textures\GUI\Icons\Oppenheimer.dds</Icon>
-		<Description>A manmade horror beyond comprehension; The destroyer of worlds.</Description>	
+		<Description>A manmade horror beyond comprehension; The destroyer of worlds. (Energy)</Description>	
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="3" y="2" z="9"/>
@@ -2628,7 +2635,7 @@
 			<SubtypeId>ARYXRailgun</SubtypeId>
 		</Id>
 		<DisplayName>Artemis-250 Railgun</DisplayName>
-		<Description>A midweight railgun designed to perforate enemy hulls and strike critical components. Firing a 250mm ferrous slug after a short charge, the weapon is able to strike and penetrate up to 3 blocks of reinforced heavy armour. [10KM TRAVEL - Accepts 250mm Ferrous.]</Description>	
+		<Description>A midweight railgun designed to perforate enemy hulls and strike critical components. Firing a 250mm ferrous slug after a short charge, the weapon is able to strike and penetrate up to 3 blocks of reinforced heavy armour. [10KM TRAVEL - Accepts 250mm Ferrous. (Kinetic)]</Description>	
 		<Icon>Textures\GUI\Icons\AWERailgun.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2686,7 +2693,7 @@
 			<SubtypeId>ARYXLightCoilgun</SubtypeId>
 		</Id>
 		<DisplayName>LC-C7 Hunter-405 Coilgun</DisplayName>
-		<Description>Coilguns are high-velocity ballistic weapons that serve as heavy piercers, punching holes through hulls with little resistance. Unlike railguns, coilguns are instant-fire and have an almost relativistic-speed muzzle velocity. [25KM TRAVEL - Accepts 405mm Ferrous.]</Description>	
+		<Description>Coilguns are high-velocity ballistic weapons that serve as heavy piercers, punching holes through hulls with little resistance. Unlike railguns, coilguns are instant-fire and have an almost relativistic-speed muzzle velocity. [25KM TRAVEL - Accepts 405mm Ferrous. (Kinetic)]</Description>	
 		<Icon>Textures\GUI\Icons\Aryx_AWE_LightCoilgun.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2747,7 +2754,7 @@
 		<DisplayName>S12A-3KS Kingsword Ultraheavy Coilcannon</DisplayName>t
 		<Description>Designated the S12A-3KS KING SWORD, or more commonly, the Boomstick, is a superheavy calibre coilgun, firing 5200mm ferrous-tungsten ballistics at near relativistic velocities, guaranteed to tear through any form of armour or energy shielding fielded. At an approximate 153.5m long, it is the largest ship-mounted weapon on the market designated for civilian use.
 
-Wrought forth from the forges of divinity, bring the ultimate arbiter of destruction; Cast down into eternal perdition ye shall send.</Description>	
+Wrought forth from the forges of divinity, bring the ultimate arbiter of destruction; Cast down into eternal perdition ye shall send. [Accepts 5200mm Ferrous - 50km range (Kinetic)]</Description>	
 		<Icon>Textures\GUI\Icons\Aryx_AWE_Kingsword.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2803,7 +2810,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       </Id>
       <DisplayName>Apollo-250 Railgun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\AWERailgunTurret.dds</Icon>
-      <Description>A turreted version of the Artemis railgun, sporting an armoured base and automatic aiming system. Whilst limited in elevation, the Apollo has full 360 traversal, allowing ship captains to focus on other threats. [2.5KM RANGE - Accepts 250mm Ferrous.]</Description>
+      <Description>A turreted version of the Artemis railgun, sporting an armoured base and automatic aiming system. Whilst limited in elevation, the Apollo has full 360 traversal, allowing ship captains to focus on other threats. [2.5KM RANGE - Accepts 250mm Ferrous. (Kinetic)]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="2" z="5"/>
@@ -2858,7 +2865,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       </Id>
       <DisplayName>Athena-115 Picket Railgun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_PicketRailgun.dds</Icon>
-      <Description>The Athena is a medium-weight long range point defence weapon, utilising a revolver drum to fire three shots in rapid succession (Lawsuit from MA pending). Placing multiple in close proximity will cause interference with targeting.[5KM RANGE - Accepts 115mm Ferrous.]</Description>
+      <Description>The Athena is a medium-weight long range point defence weapon, utilising a revolver drum to fire three shots in rapid succession (Lawsuit from MA pending). Placing multiple in close proximity will cause interference with targeting.[5KM RANGE - Accepts 115mm Ferrous. (Kinetic)]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="2" z="3"/>
@@ -2906,7 +2913,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       </Id>
       <DisplayName>SR-75 Sentinel Smartgun</DisplayName>
       <Icon>Textures\GUI\Icons\AryxSmartGun.dds</Icon>
-      <Description>Fires volleys of smart projectiles, which are advanced ballistic shells capable of tracking their target in flight. [1.2KM RANGE - Accepts 50mm SMART Shells and their variants.]</Description>
+      <Description>Fires volleys of smart projectiles, which are advanced ballistic shells capable of tracking their target in flight. [1.2KM RANGE - Accepts 50mm SMART Shells (Kinetic / Energy)]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -2957,7 +2964,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DisplayName>VLX-5000 Reaper Pulse Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AWEReaperPulseCannon.dds</Icon>
 	  <!--"The Reaper is the ultimate heavy weapons platform; Three quantum accelerators rigged to a a series of heavy pulse capacitors, giving the weapon unbridled destructive power. 5 second spin up, followed by a crushing volley of 12 devastatingly-powerful shots, shredding shield and armour alike" -->
-      <Description>The Reaper is an experimental weapon platform designed as the sister project of the Typhoon and Magnetar. Rather than fire ballistic rounds or plasma bolts, the Reaper fires globules of Antimatter, able to crack enemy armour with frightening firepower. [5KM RANGE - Accepts High Density Energy Cells.]</Description>
+      <Description>The Reaper is an experimental weapon platform designed as the sister project of the Typhoon and Magnetar. Rather than fire ballistic rounds or plasma bolts, the Reaper fires globules of Antimatter, able to crack enemy armour with frightening firepower. [5KM RANGE - Accepts High Density Energy Cells. (Energy)]</Description>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="7" y="4" z="7"/>
@@ -3010,7 +3017,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 			<SubtypeId>ARYXMace</SubtypeId>
 		</Id>
 		<DisplayName>L82 Mace Combat Shotgun</DisplayName>
-		<Description>The Mace is a heavy combat shotgun that fires 150mm Buckshot rounds, dealing unfathomable damage to close-up enemies. This fire comes at the cost of substantial falloff beyond 100m range, however. [Accepts 150mm Buckshot.]</Description>	
+		<Description>The Mace is a heavy combat shotgun that fires 150mm Buckshot rounds, dealing unfathomable damage to close-up enemies. This fire comes at the cost of substantial falloff beyond 100m range, however. [Accepts 150mm Buckshot (Kinetic).]</Description>	
 		<Icon>Textures\GUI\Icons\AWEMaceShotgun.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -3173,7 +3180,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       </Id>
       <DisplayName>Mark-V Atlas Superlaser</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMarkVAtlasLaser.dds</Icon>
-      <Description>The Atlas is a heavy energy superweapon capable of overloading shields and destroying entire ships if it is allowed to fire. This comes at a monstrous energy cost, and extraordinarily long charge time. [Energy Weapon]</Description>
+      <Description>The Mark-V ATLAS laser is a pinnacle in energy weapon technology, adapting high-power charge coils and an extended projector array. Unlike its predecessor, this weapon fires a manmade phased energy pulse, able to cut through even the strongest hulls.[Energy Weapon]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="9"/>
@@ -3322,9 +3329,9 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXMagnetarCannon</SubtypeId>
       </Id>
-      <DisplayName>K8A-3SC Magnetar Laser Cannon</DisplayName>
+      <DisplayName>K8A-3SC Magnetar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMagnetarCannon.dds</Icon>
-      <Description>The Magnetar is a gigantic triple barrel laser cannon designed to punch through shields and just about everything behind them.  [800m/s muzzle velocity, 3.5km range - Energy Weapon]</Description>
+      <Description>The Magnetar is a gigantic triple barrel shock cannon designed to punch through shields and just about everything behind them.  [1.2km/s muzzle velocity, 5km range - Energy Weapon]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="7" y="4" z="7"/>
@@ -3374,6 +3381,63 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXQuasarCannon</SubtypeId>
+      </Id>
+      <DisplayName>G4A-2SC Quasar Shock Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\AryxQuasarCannon.dds</Icon>
+      <Description>The Quasar is a sister weapon to the Hurricane, designed to deal damage to shields in order for the heavy hitters to rip hulls to shreds.  [1.2km/s muzzle velocity, 5km range - Energy Weapon]</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="4" z="5"/>
+      <ModelOffset x="0" y="0" z="0" />
+	  <Model>Models\AWE_ShockCannon\ARYX_QuasarCannonBase.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="700" />
+        <Component Subtype="Construction" Count="200" />
+        <Component Subtype="MetalGrid" Count="200" />
+        <Component Subtype="LargeTube" Count="50" />
+        <Component Subtype="ElectromagnetAWE" Count="200" />		
+        <Component Subtype="Superconductor" Count="100" />
+        <Component Subtype="GravityGenerator" Count="50" />			
+        <Component Subtype="Motor" Count="200" />
+        <Component Subtype="Computer" Count="250" />
+        <Component Subtype="Construction" Count="100" />		
+        <Component Subtype="SteelPlate" Count="500" />	
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="5.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_ShockCannon\ARYX_QuasarCannonBase_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\AWE_ShockCannon\ARYX_QuasarCannonBase_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\AWE_ShockCannon\ARYX_QuasarCannonBase_BS3.mwm"/>
+			</BuildProgressModels>	
+      <BlockPairName>AryxQuasarCannon</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>100</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxTyphoonWepDef" />
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.9</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>500</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -3381,7 +3445,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       </Id>
       <DisplayName>Small Hangar Bay</DisplayName>
       <Icon>Textures\GUI\Icons\AryxSmallHangar.dds</Icon>
-      <Description>A compact hangar bay capable of launching Aryx-brand drones. These drones orbit targets and pelt it with cannon fire. [10KM RANGE - ACCEPTS SIDEKICK, FALCON OR STORMWING DRONES.]</Description>
+      <Description>A compact hangar bay capable of launching Aryx-brand drones. These drones orbit targets and pelt it with cannon fire. [10KM RANGE - ACCEPTS SIDEKICK (Rapid kinetic), FALCON (Cannon kinetic) OR STORMWING DRONES (Burst energy).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="1" z="3" />

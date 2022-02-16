@@ -130,10 +130,10 @@ namespace Scripts
             {
                 ByBlockHit = new ByBlockHitDef
                 {
-                    Enable = false,
-                    Radius = 0f, // Meters
-                    Damage = 0f,
-                    Depth = 1f, // Meters
+                    Enable = true,
+                    Radius = 1.2f, // Meters
+                    Damage = 10000f,
+                    Depth = 3f, // Meters
                     MaxAbsorb = 0f,
                     Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius

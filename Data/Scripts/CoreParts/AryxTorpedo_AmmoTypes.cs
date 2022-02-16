@@ -2676,7 +2676,7 @@ namespace Scripts
             AmmoRound = "Small Antimatter Bolt",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 1000,
+            BaseDamage = 250,
             Mass = 500, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 200f,

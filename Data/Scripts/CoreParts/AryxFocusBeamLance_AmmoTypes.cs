@@ -66,8 +66,8 @@ namespace Scripts
             DamageScales = new DamageScaleDef
             {
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
-                DamageVoxels = true, // true = voxels are vulnerable to this weapon
-                VoxelHitModifier = 10000,
+                DamageVoxels = false, // true = voxels are vulnerable to this weapon
+                VoxelHitModifier = 1,
                 SelfDamage = false, // true = allow self damage.
                 DamageType = new DamageTypes
                 {
@@ -398,7 +398,7 @@ namespace Scripts
             {
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = true, // true = voxels are vulnerable to this weapon
-                VoxelHitModifier = 10000,
+                VoxelHitModifier = 0.05f,
                 SelfDamage = false, // true = allow self damage.
                 DamageType = new DamageTypes
                 {

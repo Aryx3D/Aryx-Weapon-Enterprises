@@ -98,7 +98,8 @@
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXPicketRailgun" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXScorpionLauncher" />
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXLargeRadar" />
-	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXMagnetarCannon" />			
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXMagnetarCannon" />	
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXQuasarCannon" />		
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXPlasmaBeamCannon" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXHeavyFlakTurret" />
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXWarriorGatling" />	

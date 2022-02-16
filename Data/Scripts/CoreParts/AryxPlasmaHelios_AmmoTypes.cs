@@ -33,7 +33,7 @@ namespace Scripts
             AmmoRound = "ZS-2H Energy Bolt",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.25f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 3125,
+            BaseDamage = 4000,
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 60f,
@@ -98,7 +98,7 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.25f,
+                    Armor = 0.5f,
                     Light = 1f,
                     Heavy = 1f,
                     NonArmor = 1f,

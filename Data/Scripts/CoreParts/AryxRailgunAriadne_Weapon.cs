@@ -55,7 +55,7 @@ namespace Scripts
             {
                 PartName = "Ariadne 1200mm Gauss Turret", // name of weapon in terminal
                 DeviateShotAngle = 0,
-                AimingTolerance = 1f, // 0 - 180 firing angle
+                AimingTolerance = 45f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 600, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,

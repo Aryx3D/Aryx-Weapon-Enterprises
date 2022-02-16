@@ -32,10 +32,10 @@ namespace Scripts
             AmmoRound = "AryxShotgunAmmoWC", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = 2000, // Direct damage; one steel plate is worth 100.
+            BaseDamage = 6000, // Direct damage; one steel plate is worth 100.
             Mass = 20f, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
-            BackKickForce = 10f, // Recoil.
+            BackKickForce = 100f, // Recoil.
             DecayPerShot = 0f, // Damage to the firing weapon itself.
             HardPointUsable = true, // Whether this is a primary ammo type fired directly by the turret. Set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             EnergyMagazineSize = 0, // For energy weapons, how many shots to fire before reloading.
@@ -100,7 +100,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 1f, // Multiplier for damage against shields.
+                    Modifier = 5f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
                     BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
