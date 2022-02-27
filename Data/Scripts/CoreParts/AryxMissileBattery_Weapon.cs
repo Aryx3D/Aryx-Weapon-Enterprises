@@ -37,7 +37,7 @@ namespace Scripts {
                     "muzzle_missile_8",
                 },
                 Ejector = "", // Optional; empty from which to eject "shells" if specified.
-                Scope = "", // Where line of sight checks are performed from. Must be clear of block collision.
+                Scope = "dummy_camera", // Where line of sight checks are performed from. Must be clear of block collision.
             },
             Targeting = new TargetingDef
             {
@@ -105,7 +105,7 @@ namespace Scripts {
                         Enable = false, // Enables Warhead behaviour.
                         DefaultArmedTimer = 120, // Sets default countdown duration.
                         PreArmed = false, // Whether the warhead is armed by default when placed. Best left as false.
-                        TerminalControls = true, // Whether the warhead should have terminal controls for arming and detonation.
+                        TerminalControls = false, // Whether the warhead should have terminal controls for arming and detonation.
                         AmmoRound = "40m", // Optional. If specified, the warhead will always use this ammo on detonation rather than the currently selected ammo.
                     },
                 },

@@ -51,11 +51,12 @@
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWE135mmFlakBP" />
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWE100mmWarrorBP" />
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWE100mmWarrorBP" />
-	<Entry Class="EliteConsumables" BlueprintSubtypeId="AryxCoilgunAmmoBP" />	
+	<Entry Class="EliteConsumables" BlueprintSubtypeId="AryxCoilgunAmmoBP" />
+	<Entry Class="EliteConsumables" BlueprintSubtypeId="AryxHeavyCoilgunAmmoBP" />	
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEKingSwordAmmoBP" />
-	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEStrikerMissileBP" />			
-
-
+	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEStrikerMissileBP" />	
+	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEHyperionTorpedoBP" />	
+	
 
 
 
@@ -64,7 +65,7 @@
 
 
 		<!--BLOCKS-->
-    <Entry Class="LargeBlocks" BlueprintSubtypeId="SmallMissileLauncher/ARYXFlechetteLauncher" />		
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXFlechetteLauncher" />		
     <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYX_ChordAutocannon" />
     <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXBurstTurret" />
     <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXFlakTurret" />
@@ -112,8 +113,10 @@
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXInterceptorPDGun" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXGaussTurret" />
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXFocusLance" />	
-
-
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXTsunamiCannon" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXHeavyTorpedoLauncher" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXHeavyCoilgun" />
+	
     <Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncher/ARYX_Fixed_Chord_auto" />			
     <Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXSmallRadar" />	
     <Entry Class="SmallBlocks" BlueprintSubtypeId="LargeGatlingTurret/ARYXCodexPDC_SG" />

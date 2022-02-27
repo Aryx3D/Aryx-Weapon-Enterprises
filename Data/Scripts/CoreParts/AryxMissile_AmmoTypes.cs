@@ -542,7 +542,7 @@ namespace Scripts
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1f,
-                    CustomParticle = "AWESabreBlast", // Particle SubtypeID, from your Particle SBC
+                    CustomParticle = "AWENewSabreBlast", // Particle SubtypeID, from your Particle SBC
                     CustomSound = "WepSmallWarheadExpl", // SubtypeID from your Audio SBC, not a filename
                     Shape = Diamond, // Round or Diamond
                 }, 

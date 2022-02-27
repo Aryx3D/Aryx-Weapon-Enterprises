@@ -162,7 +162,7 @@ namespace Scripts
                     MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
-                    ParticleScale = 1,
+                    ParticleScale = 5,
                     CustomParticle = "AryxAWEKingswordBlast", // Particle SubtypeID, from your Particle SBC
                     CustomSound = "ArcWepShipARYXExplosionLarge", // SubtypeID from your Audio SBC, not a filename
                     Shape = Round, // Round or Diamond
@@ -288,7 +288,7 @@ namespace Scripts
                     },
                     Hit = new ParticleDef
                     {
-                        Name = "ArcWepSmallMissileExplShip",
+                        Name = "MaterialHit_Metal_GatlingGun",
                         ApplyToShield = true,
                         ShrinkByDistance = false,
                         Color = Color(red: 25, green: 10f, blue: 1f, alpha: 1),
@@ -298,8 +298,8 @@ namespace Scripts
                             Loop = false,
                             Restart = false,
                             MaxDistance = 5000,
-                            MaxDuration = 30,
-                            Scale = 5,
+                            MaxDuration = 0,
+                            Scale = 10,
                             HitPlayChance = 1f,
                         },
                     },

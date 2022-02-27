@@ -160,6 +160,61 @@
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXTsunamiCannon</SubtypeId>
+      </Id>
+      <DisplayName>480mm Tsunami Heavy Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\AryxTsunamiCannon.dds</Icon>	  
+      <Description>The Tsunami is a casemate single-barrel barrel artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="7"/>
+      <ModelOffset x="0" y="0" z="0" />
+	  <Model>Models\AWE_HeavyCannon\ARYX_TsunamiCannon.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="550" />
+        <Component Subtype="Construction" Count="320" />
+        <Component Subtype="MetalGrid" Count="400" />
+        <Component Subtype="LargeTube" Count="60" />	
+        <Component Subtype="Motor" Count="200" />
+        <Component Subtype="Computer" Count="250" />
+        <Component Subtype="Construction" Count="100" />		
+        <Component Subtype="SteelPlate" Count="450" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Left" StartX="5.00" StartY="0.00" EndX="7.00" EndY="3.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="3.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="4.00" EndX="3.00" EndY="7.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_HeavyCannon\ARYX_TsunamiCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_HeavyCannon\ARYX_TsunamiCannon_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_HeavyCannon\ARYX_TsunamiCannon_BS3.mwm"/>
+			</BuildProgressModels>		
+      <BlockPairName>AryxTsunamiCannon</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>100</BuildTimeSeconds>
+	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxHurricaneWepDef" />
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.576</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>500</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXTyphoonCannon</SubtypeId>
       </Id>
       <DisplayName>600mm Typhoon Heavy Cannon</DisplayName>
@@ -1223,7 +1278,7 @@
       </Id>
       <DisplayName>LS5-MG100 Warrior Heavy Gatling</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Warrior.dds</Icon>	  
-      <Description>The Warrior is a large armoured casemate gatling turret designed for broadside combat and base defence, firing 100mm shells of varying payload at a respectable rate of fire. Whilst low in traversal, deals devastating damage in its firing period. [RETRACTABLE - 1.5K RANGE - ACCEPTS 100MM WARRIOR (Kinetic)]</Description>
+      <Description>The Warrior is a large armoured casemate gatling turret designed for broadside combat and base defence, firing 100mm shells of varying payload at a respectable rate of fire. Whilst low in traversal, deals devastating damage in its firing period. [ 1.5K RANGE - ACCEPTS 100MM WARRIOR (Kinetic)]</Description>
 	  <CubeSize>Large</CubeSize>
 	  <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="4" y="3" z="6"/>
@@ -1481,9 +1536,10 @@
         <TypeId>ConveyorSorter</TypeId>
         <SubtypeId>ARYXVariableLauncher</SubtypeId>
       </Id>
+	  <Public>false</Public>
       <DisplayName>Variable Warhead Single-use Launcher</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_ScorpionNuke.dds</Icon>
-      <Description>The VWSL is a hull-mounted nuclear missile capable of dealing massive damage to targets, with a highly configurable warhead. The launcher is single-shot, and must be rebuilt in order to be re-fired. [ 10KM RANGE - BUILT-IN AMMO ].</Description>
+      <Description>WC broke this thing so uhhhh yeah it's here ig</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="5"/>
@@ -1985,7 +2041,7 @@
 			<SubtypeId>ARYXTorpLauncher</SubtypeId>
 		</Id>
 		<DisplayName>TL-150 Astraeus Torpedo Launcher</DisplayName>
-		<Description>Fires heavy torpedoes capable of demolishing armoured targets. Whilst sluggish on the maneuvering side and being susceptible to point defence, these missiles are extremely deadly if they land a direct hit. [10KM RANGE - Accepts Devastator (Kinetic) and Equaliser (Energy) torpedoes.]</Description>
+		<Description>The Astraeus fires torpedoes capable of demolishing armoured targets. Whilst slow and very vulnerable to point defence, these missiles are extremely deadly if they land a direct hit. [10KM RANGE - Accepts Devastator (Kinetic) and Equaliser (Energy) torpedoes.]</Description>
 		<Icon>Textures\GUI\Icons\AryxTorpLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2035,14 +2091,14 @@
       <TargetingGroups>
 		<string>Weapons</string>
       </TargetingGroups>      
-    </Definition>
+    </Definition>	
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXInlineTorpLauncher</SubtypeId>
 		</Id>
 		<DisplayName>TL-150-B Astraeus Inline Torpedo Launcher</DisplayName>
-		<Description>Fires heavy torpedoes capable of demolishing armoured targets. Whilst sluggish on the maneuvering side and being susceptible to point defence, these missiles are extremely deadly if they land a direct hit. Yes I am aware the projectile model differs at launch, stfu. [10KM RANGE - Accepts Devastator (Kinetic) and Equaliser (Energy) torpedoes.]</Description>
+		<Description>The Astraeus fires torpedoes capable of demolishing armoured targets. Whilst slow and very vulnerable to point defence, these missiles are extremely deadly if they land a direct hit. Yes I am aware the projectile model differs at launch, stfu. [10KM RANGE - Accepts Devastator (Kinetic) and Equaliser (Energy) torpedoes.]</Description>
 		<Icon>Textures\GUI\Icons\AryxInlineTorpLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2091,10 +2147,63 @@
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXHeavyTorpedoLauncher</SubtypeId>
+		</Id>
+		<DisplayName>TL-350A Hyperion Heavy Torpedo Launcher</DisplayName>
+		<Description>The Hyperion is massive autoloading torpedo tube designed for heavy capital ship combat, bringing tactical options to the table such as plasma warheads, conventional nukes, desolator fields and other superheavy explosives. [12KM RANGE - Requires target lock - Accepts Hyperion Variable Torpedoes.]</Description>
+		<Icon>Textures\GUI\Icons\AryxHeavyTorpLauncher.dds</Icon>
+		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="3" y="2" z="7"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_Hyperion\ARYX_HyperionLauncher.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="1250" />
+			<Component Subtype="Construction" Count="250" />
+			<Component Subtype="MetalGrid" Count="250" />				
+			<Component Subtype="LargeTube" Count="250" />
+			<Component Subtype="Motor" Count="600" />
+			<Component Subtype="Computer" Count="700" />
+			<Component Subtype="Construction" Count="500" />
+			<Component Subtype="SteelPlate" Count="600" />
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0" />
+	
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="1.00" StartY="0.00" EndX="7.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="6.00" EndY="2.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="6.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="1.00" EndX="3.00" EndY="7.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Hyperion\ARYX_HyperionLauncher_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Hyperion\ARYX_HyperionLauncher_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Hyperion\ARYX_HyperionLauncher_BS3.mwm"/>
+			</BuildProgressModels>
+		<BlockPairName>AryxHeavyTorpedoLauncher</BlockPairName>
+		<MirroringX>Z</MirroringX>
+		<MirroringZ>X</MirroringZ>
+
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>150</BuildTimeSeconds>
+		<InventoryMaxVolume>1.28</InventoryMaxVolume>
+		<DamageEffectId>213</DamageEffectId>
+		<DamagedSound>ParticleWeapExpl</DamagedSound>
+		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		<EmissiveColorPreset>Default</EmissiveColorPreset>
+	    <PCU>300</PCU>   	
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXLongbowLauncher</SubtypeId>
 		</Id>
 		<DisplayName>ML-70 Longbow Missile Launcher</DisplayName>
-		<Description>Fires medium-weight missiles capable of performing all-around ship-to-ship combat. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [7.5KM RANGE - Accepts Sabre (Kinetic) or Lancer (Energy) Missiles.]</Description>
+		<Description>The Longbow fires medium-weight missiles capable of performing all-around ship-to-ship combat, working in anti-fighter or anti-warship roles. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [7.5KM RANGE - Accepts Sabre (Kinetic) or Lancer (Energy) Missiles.]</Description>
 		<Icon>Textures\GUI\Icons\AWELongbowLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2255,7 +2364,7 @@
 			</Id>
 			<!--Highly Energised Lance Integrated Offensive System-->	
 			<DisplayName>M5D-4E HELIOS Plasma Pulser</DisplayName>
-			<Description>The Helios fires disruptive bolts of highly energised, white hot plasma. Extremely effective against shields, struggles against armour. Warranty void if used as a thruster and/or cooking appliance. [2KM TRAVEL - Energy Weapon.]</Description>
+			<Description>The Helios fires disruptive bolts of highly energised, white hot plasma. Extremely effective against shields, struggles against armour. Warranty void if used as a thruster and/or cooking appliance. [10KM TRAVEL - Energy Weapon.]</Description>
 			<Icon>Textures\GUI\Icons\AryxPlasmaGun.dds</Icon>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
@@ -2578,7 +2687,7 @@
 			<SubtypeId>ARYXCatalystCannon</SubtypeId>
 		</Id>
 		<Public>false</Public>
-		<DisplayName>Obliterator Antimatter Catalyst Cannon</DisplayName>
+		<DisplayName>AL16-MV50 Izanami Antimatter Catalyst Cannon</DisplayName>
 		<Icon>Textures\GUI\Icons\Oppenheimer.dds</Icon>
 		<Description>A manmade horror beyond comprehension; The destroyer of worlds. (Energy)</Description>	
 		<CubeSize>Large</CubeSize>
@@ -2693,7 +2802,7 @@
 			<SubtypeId>ARYXLightCoilgun</SubtypeId>
 		</Id>
 		<DisplayName>LC-C7 Hunter-405 Coilgun</DisplayName>
-		<Description>Coilguns are high-velocity ballistic weapons that serve as heavy piercers, punching holes through hulls with little resistance. Unlike railguns, coilguns are instant-fire and have an almost relativistic-speed muzzle velocity. [25KM TRAVEL - Accepts 405mm Ferrous. (Kinetic)]</Description>	
+		<Description>Coilguns are high-velocity ballistic weapons that serve as heavy piercers, punching holes through hulls with little resistance. Unlike railguns, Coilguns have explosive impact and an almost relativistic-speed muzzle velocity. [25KM TRAVEL - Accepts 405mm Ferrous. (Kinetic)]</Description>	
 		<Icon>Textures\GUI\Icons\Aryx_AWE_LightCoilgun.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2749,10 +2858,73 @@
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXHeavyCoilgun</SubtypeId>
+		</Id>
+		<DisplayName>EDR-0F Predator-850 Coilgun</DisplayName>
+		<Description>The Predator Coilgun is a heavy kinetic artillery weapon designed for long range strikes on armoured targets. Much like its smaller sister, the Predator has a relativistic-speed muzzle velocity, but consumes large amounts of power. - Accepts 850mm Ferrous. (Kinetic)]</Description>	
+		<Icon>Textures\GUI\Icons\Aryx_AWE_HeavyCoilgun.dds</Icon>
+		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="3" y="2" z="21"/>	
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_Coilgun\ARYX_HeavyCoilgun.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="3500" />
+			<Component Subtype="Construction" Count="750" />
+			<Component Subtype="MetalGrid" Count="350" />
+			<Component Subtype="PowerCell" Count="400" />	
+			<Component Subtype="Superconductor" Count="600" />				
+			<Component Subtype="LargeTube" Count="400" />
+			<Component Subtype="Motor" Count="500" />		
+			<Component Subtype="ElectromagnetAWE" Count ="300" />	
+			<Component Subtype="Computer" Count="700" />
+			<Component Subtype="MetalGrid" Count="600" />
+			<Component Subtype="SteelPlate" Count="1250" />
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="1.00" StartY="0.00" EndX="4.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="4.00" StartY="0.50" EndX="18.00" EndY="1.50"/>
+				<MountPoint Side="Left" StartX="18.00" StartY="0.00" EndX="21.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="3.00" StartY="0.50" EndX="17.00" EndY="1.50"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="17.00" StartY="0.00" EndX="20.00" EndY="2.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="17.00" EndX="3.00" EndY="20.00"/>
+				<MountPoint Side="Top" StartX="1.00" StartY="3.00" EndX="2.00" EndY="17.00"/>
+				<MountPoint Side="Bottom" StartX="1.00" StartY="4.00" EndX="2.00" EndY="18.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="18.00" EndX="3.00" EndY="21.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="1.00" EndX="3.00" EndY="4.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Coilgun\ARYX_HeavyCoilgun_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Coilgun\ARYX_HeavyCoilgun_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Coilgun\ARYX_HeavyCoilgun_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>AWEHeavyCoilgun</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>180</BuildTimeSeconds>
+		<InventoryMaxVolume>1</InventoryMaxVolume>
+		<DamageEffectId>213</DamageEffectId>
+		<DamagedSound>ParticleWeapExpl</DamagedSound>
+		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		<EmissiveColorPreset>Default</EmissiveColorPreset>
+      <PCU>750</PCU>   		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
+	
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXKingswordSupercannon</SubtypeId>
 		</Id>
-		<DisplayName>S12A-3KS Kingsword Ultraheavy Coilcannon</DisplayName>t
-		<Description>Designated the S12A-3KS KING SWORD, or more commonly, the Boomstick, is a superheavy calibre coilgun, firing 5200mm ferrous-tungsten ballistics at near relativistic velocities, guaranteed to tear through any form of armour or energy shielding fielded. At an approximate 153.5m long, it is the largest ship-mounted weapon on the market designated for civilian use.
+		<DisplayName>S12A-3KS Kingsword Ultraheavy Gauss Cannon</DisplayName>t
+		<Description>Designated the S12A-3KS KING SWORD, or more commonly, the Boomstick, is a superheavy calibre gauss cannon, firing 5200mm ferrous-tungsten ballistics at near relativistic velocities, guaranteed to tear through any form of armour or energy shielding fielded. At an approximate 153.5m long, it is the largest ship-mounted weapon on the market designated for civilian use.
 
 Wrought forth from the forges of divinity, bring the ultimate arbiter of destruction; Cast down into eternal perdition ye shall send. [Accepts 5200mm Ferrous - 50km range (Kinetic)]</Description>	
 		<Icon>Textures\GUI\Icons\Aryx_AWE_Kingsword.dds</Icon>
@@ -3063,7 +3235,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+    <!--<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
         <SubtypeId>AWE_WL_SuperLaser_Large_CB</SubtypeId>
@@ -3119,7 +3291,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <TargetingGroups>
 		<string>Weapons</string>
       </TargetingGroups>      
-    </Definition>
+    </Definition>-->
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -3178,16 +3350,16 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
         <TypeId>ConveyorSorter</TypeId>
         <SubtypeId>AWE_MarkV_SuperLaser_Large_CB</SubtypeId>
       </Id>
-      <DisplayName>Mark-V Atlas Superlaser</DisplayName>
+      <DisplayName>M5-WT0 Atlas Laser</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMarkVAtlasLaser.dds</Icon>
-      <Description>The Mark-V ATLAS laser is a pinnacle in energy weapon technology, adapting high-power charge coils and an extended projector array. Unlike its predecessor, this weapon fires a manmade phased energy pulse, able to cut through even the strongest hulls.[Energy Weapon]</Description>
+      <Description>The Mark-V ATLAS laser is an apex of energy weapon technology, adapting high-power charge coils and an extended projector array. Unlike its predecessor, this weapon fires a manmade phased energy pulse, able to cut through even the strongest hulls. [Energy Weapon]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="9"/>
       <ModelOffset x="0" y="0" z="0" />
       <Model>Models\AWE_Superlaser\ARYX_AtlasLaser.mwm</Model>
       <Components>
-        <Component Subtype="SteelPlate" Count="4500" />
+        <Component Subtype="SteelPlate" Count="3500" />
         <Component Subtype="Construction" Count="1000" />
         <Component Subtype="Superconductor" Count="4000" />
         <Component Subtype="ElectromagnetAWE" Count="1500" />		

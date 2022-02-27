@@ -40,7 +40,6 @@ namespace Scripts
             AryxMaceShotgun,
             AryxSentinelGun,
             AryxPerditionLancer,
-            AryxMarkVAtlasLaser,
             AryxTacticalModule,
             AryxPlasmaBeamCannon,
             AryxWarriorGatling,
@@ -51,7 +50,7 @@ namespace Scripts
             AryxTempestCannon,
             AryxMagnetarTurret,
             AryxQuasarTurret,
-            AryxNukeLauncher,
+            AryxHyperionLauncher,
             AryxKingswordCannon,
             AryxObliteratorCannon,
             AryxReaperTurret,
@@ -64,7 +63,9 @@ namespace Scripts
             AryxGaussTurret,
             AryxSmallPulseLaser,
             AryxFocusLance,
-            AryxInlineTorpLauncher
+            AryxInlineTorpLauncher,
+            AryxTsunamiTurret,
+            AryxHeavyCoilgun
             );
           
         }

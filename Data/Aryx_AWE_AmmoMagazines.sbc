@@ -208,6 +208,31 @@
             <CanPlayerOrder>true</CanPlayerOrder>
         </AmmoMagazine>	
 
+		<AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>AryxHeavyCoilgunAmmo</SubtypeId>
+            </Id>
+            <DisplayName>850mm Ferrous Ammo</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\AWEPredatorAmmo.dds</Icon>
+            <Size>
+                <X>8</X>
+                <Y>4</Y>
+                <Z>4</Z>
+            </Size>
+            <Mass>900</Mass>
+            <Volume>540</Volume>
+            <Model>Models\AWE_Ammo\Aryx850mmFerrous.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="AryxRailgunAmmo" />
+
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>100</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>	
 
         <AmmoMagazine>
             <Id>
@@ -449,9 +474,9 @@
             <DisplayName>Flechette Rocket</DisplayName>
             <Icon>Textures\GUI\Icons\ammo\AWEFlechetteMissile.dds</Icon>
             <Size>
-                <X>2</X>
-                <Y>1</Y>
-                <Z>1</Z>
+                <X>0.25</X>
+                <Y>0.125</Y>
+                <Z>0.125</Z>
             </Size>
             <Mass>24</Mass>
             <Volume>2</Volume>
@@ -559,9 +584,9 @@
             <DisplayName>Disruptor Rocket</DisplayName>
             <Icon>Textures\GUI\Icons\ammo\AWEDisruptorMissile.dds</Icon>
             <Size>
-                <X>2</X>
-                <Y>1</Y>
-                <Z>1</Z>
+                <X>0.25</X>
+                <Y>0.125</Y>
+                <Z>0.125</Z>
             </Size>
             <Mass>30</Mass>
             <Volume>2</Volume>
@@ -652,7 +677,32 @@
             <MaximumOrderAmount>300</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
         </AmmoMagazine>				
-		
+
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>AryxHyperionTorpedo</SubtypeId>
+            </Id>
+            <DisplayName>Hyperion Variable-core Torpedo</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\AWEHyperionTorpedo.dds</Icon>
+            <Size>
+                <X>2.5</X>
+                <Y>0.5</Y>
+                <Z>0.5</Z>
+            </Size>
+            <Mass>900</Mass>
+            <Volume>320</Volume>
+            <Model>Models\AWE_Ammo\ARYX_HyperionMissile.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="900EnergyTorpAmmoDef" />
+
+            <MinimumOfferAmount>1</MinimumOfferAmount>
+            <MaximumOfferAmount>100</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>300</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>			
         <AmmoMagazine>
             <Id>
                 <TypeId>AmmoMagazine</TypeId>

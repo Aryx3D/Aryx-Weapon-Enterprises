@@ -75,8 +75,8 @@ namespace Scripts
                     LockOnFocus = false,
                 },
                 HardWare = new HardwareDef {
-                    RotateRate = 0.001f,
-                    ElevateRate = 0.001f,
+                    RotateRate = 0.002f,
+                    ElevateRate = 0.002f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -5,

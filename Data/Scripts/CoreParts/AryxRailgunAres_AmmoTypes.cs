@@ -31,9 +31,9 @@ namespace Scripts
             AmmoMagazine = "GaussAmmoMagDef",
             AmmoRound = "AryxGaussAmmoWC",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 0.4f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 0.6f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = 1000000,
-            Mass = 2, // in kilograms
+            Mass = 200, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 100000f,
             DecayPerShot = 0,
@@ -87,7 +87,7 @@ namespace Scripts
                 FallOff = new FallOffDef
                 {
                     Distance = 100000f, // Distance at which max damage begins falling off.
-                    MinMultipler = 0.1f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    MinMultipler = 1f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -103,9 +103,9 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 0.0000001f,
+                    Modifier = 0.00000000001f,
                     Type = Default,
-                    BypassModifier = 0f,
+                    BypassModifier = -1f,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef

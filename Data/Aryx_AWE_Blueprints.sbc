@@ -140,6 +140,25 @@
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AryxLightCoilgunAmmo" />
       <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
     </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AryxHeavyCoilgunAmmoBP</SubtypeId>
+      </Id>
+      <DisplayName>850mm Ferrous Slug</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\AWEPredatorAmmo.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1500" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="400" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="150" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="30" TypeId="Ingot" SubtypeId="Uranium" />		
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Platinum" />			
+		
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AryxHeavyCoilgunAmmo" />
+      <BaseProductionTimeInSeconds>40</BaseProductionTimeInSeconds>
+    </Blueprint>
+
 
     <Blueprint>
       <Id>
@@ -464,7 +483,7 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>900mmAntimatterTorpedoBP</SubtypeId>
       </Id>
-      <DisplayName>Annihilator Antimatter Torpedo</DisplayName>
+      <DisplayName>Annihilator Torpedo</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEAntimatterMissile.dds</Icon>
       <Prerequisites>
         <Item Amount="1500" TypeId="Ingot" SubtypeId="Iron" />
@@ -479,6 +498,25 @@
       <BaseProductionTimeInSeconds>45</BaseProductionTimeInSeconds>
     </Blueprint>	
 	
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AWEHyperionTorpedoBP</SubtypeId>
+      </Id>
+      <DisplayName>Hyperion Variable Torpedo</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\AWEHyperionTorpedo.dds</Icon>
+      <Prerequisites>
+        <Item Amount="3000" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="1200" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="1000" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Gold" />		
+        <Item Amount="125" TypeId="Ingot" SubtypeId="Uranium" />		
+        <Item Amount="75" TypeId="Ingot" SubtypeId="Platinum" />	
+		
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AryxHyperionTorpedo" />
+      <BaseProductionTimeInSeconds>60</BaseProductionTimeInSeconds>
+    </Blueprint>	
 	
     <Blueprint>
       <Id>

@@ -9,7 +9,7 @@
       <DisplayName>AryxErin Weapon Enterprises</DisplayName>
       <Name>ARYXWeapons</Name>
       <ItemIds>
-		<string>SmallMissileLauncher/ARYXFlechetteLauncher</string>
+		<string>ConveyorSorter/ARYXFlechetteLauncher</string>
 		<string>LargeMissileTurret/ARYX_ChordAutocannon</string>
 		<string>LargeMissileTurret/ARYXBurstTurret</string>		
 		<string>LargeMissileTurret/ARYXFlakTurret</string>		
@@ -52,7 +52,8 @@
 		<string>LargeMissileTurret/ARYXPlasmaBeamCannon</string>
 		<string>LargeMissileTurret/ARYXHeavyFlakTurret</string>	
 		<string>LargeMissileTurret/ARYXWarriorGatling</string>
-		<string>ConveyorSorter/ARYXLightCoilgun</string>		
+		<string>ConveyorSorter/ARYXLightCoilgun</string>	
+		<string>ConveyorSorter/ARYXHeavyCoilgun</string>			
 		<string>SmallMissileLauncher/ARYXTempestCannon</string>
 		<string>ConveyorSorter/ARYXTacticalModule</string>
 		<string>ConveyorSorter/ARYXBurstTurretSlanted</string>			
@@ -64,6 +65,8 @@
 		<string>ConveyorSorter/ARYXInterceptorPDGun</string>
 		<string>ConveyorSorter/ARYXSmallPulseLaser_Fixed</string>
 		<string>ConveyorSorter/ARYXFocusLance</string>
+		<string>LargeMissileTurret/ARYXTsunamiCannon</string>
+		<string>ConveyorSorter/ARYXHeavyTorpedoLauncher</string>			
       </ItemIds>
     </Category> 
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -74,7 +77,7 @@
 	  <DisplayName>DisplayName_Category_ShipWeapons</DisplayName>
 	  <Name>Weapons</Name>
       <ItemIds>
-		<string>SmallMissileLauncher/ARYXFlechetteLauncher</string>
+		<string>ConveyorSorter/ARYXFlechetteLauncher</string>
 		<string>LargeMissileTurret/ARYX_ChordAutocannon</string>
 		<string>LargeMissileTurret/ARYXBurstTurret</string>		
 		<string>LargeMissileTurret/ARYXFlakTurret</string>		
@@ -125,7 +128,10 @@
 		<string>ConveyorSorter/ARYXInterceptorPDGun</string>	
 		<string>ConveyorSorter/ARYXSmallPulseLaser_Fixed</string>	
 		<string>ConveyorSorter/ARYXFocusLance</string>
-		<string>LargeMissileTurret/ARYXQuasarCannon</string>			
+		<string>LargeMissileTurret/ARYXQuasarCannon</string>
+		<string>LargeMissileTurret/ARYXTsunamiCannon</string>
+		<string>ConveyorSorter/ARYXHeavyCoilgun</string>
+		<string>ConveyorSorter/ARYXHeavyTorpedoLauncher</string>			
 	  </ItemIds>
     </Category>
 	
@@ -137,7 +143,7 @@
       <DisplayName>DisplayName_Category_ShipWeapons</DisplayName>
       <Name>ShipWeapons</Name>
       <ItemIds>
-		<string>SmallMissileLauncher/ARYXFlechetteLauncher</string>
+		<string>ConveyorSorter/ARYXFlechetteLauncher</string>
 		<string>LargeMissileTurret/ARYX_ChordAutocannon</string>
 		<string>LargeMissileTurret/ARYXBurstTurret</string>		
 		<string>LargeMissileTurret/ARYXFlakTurret</string>		
@@ -189,7 +195,10 @@
 		<string>ConveyorSorter/ARYXInterceptorPDGun</string>
 		<string>ConveyorSorter/ARYXSmallPulseLaser_Fixed</string>
 		<string>ConveyorSorter/ARYXFocusLance</string>
-		<string>LargeMissileTurret/ARYXQuasarCannon</string>			
+		<string>LargeMissileTurret/ARYXQuasarCannon</string>
+		<string>LargeMissileTurret/ARYXTsunamiCannon</string>
+		<string>ConveyorSorter/ARYXHeavyCoilgun</string>
+		<string>ConveyorSorter/ARYXHeavyTorpedoLauncher</string>			
 	</ItemIds>
     </Category> 
 
@@ -201,7 +210,7 @@
       <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
       <Name>LargeBlocks</Name>
       <ItemIds>
-		<string>SmallMissileLauncher/ARYXFlechetteLauncher</string>
+		<string>ConveyorSorter/ARYXFlechetteLauncher</string>
 		<string>LargeMissileTurret/ARYX_ChordAutocannon</string>
 		<string>LargeMissileTurret/ARYXBurstTurret</string>		
 		<string>LargeMissileTurret/ARYXFlakTurret</string>		
@@ -250,7 +259,11 @@
  		<string>LargeMissileTurret/ARYXGaussTurret</string>			
 		<string>ConveyorSorter/ARYXInterceptorPDGun</string>
 		<string>ConveyorSorter/ARYXFocusLance</string>
-		<string>LargeMissileTurret/ARYXQuasarCannon</string>			
+		<string>LargeMissileTurret/ARYXQuasarCannon</string>
+		<string>LargeMissileTurret/ARYXTsunamiCannon</string>
+		<string>ConveyorSorter/ARYXHeavyCoilgun</string>		
+		<string>ConveyorSorter/ARYXHeavyTorpedoLauncher</string>		
+
 	  </ItemIds>
     </Category>  	
 
