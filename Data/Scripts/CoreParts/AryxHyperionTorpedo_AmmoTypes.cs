@@ -157,7 +157,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only occurs after an impact when this is true. e.g. if shot down it won't explode.
-                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 2f,
@@ -232,11 +232,11 @@ namespace Scripts
                 Guidance = Smart, //can't do maths tho
                 TargetLossDegree = 0,
                 TargetLossTime = 0, // | || |/ |_
-                MaxLifeTime = 30, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                MaxLifeTime = 60, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f, //acceleration in ms/s
                 DesiredSpeed = 25, //zoom
                 MaxTrajectory = 12500, //how far the torp goes before committing sudoku
-                //FieldTime was here, it's dead now time in ticks to stop and spawn a field (I think)
+                //FieldTime was here, it's dead now times in ticks to stop and spawn a field (I think)
                 GravityMultiplier = 0f, /*Gravity
                        When the feeling's gone and you can't go on
                        It's gravity
@@ -254,7 +254,7 @@ namespace Scripts
                     TrackingDelay = 0.001f, // doesn't actually work
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss                       
                 },
@@ -514,9 +514,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 750000, // Meters
-                    Damage = 20,
-                    Depth = 1f,
+                    Radius = 50, // Meters
+                    Damage = 7500000,
+                    Depth = 30f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -525,7 +525,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1.5f,
@@ -598,8 +598,8 @@ namespace Scripts
             Trajectory = new TrajectoryDef
             {
                 Guidance = Smart, //can't do maths tho
-                TargetLossDegree = 359f,
-                TargetLossTime = 720, // | || |/ |_
+                TargetLossDegree = 0,
+                TargetLossTime = 0, // | || |/ |_
                 MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 40f, //acceleration in ms/s
                 DesiredSpeed = 800, //zoom
@@ -621,8 +621,8 @@ namespace Scripts
                     MaxLateralThrust = 0.30f, // controls how sharp the trajectile may turn
                     TrackingDelay = 0.01f, // doesn't actually work
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    OverideTarget = true, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
+                    OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss                   
                 },
@@ -893,7 +893,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 2f,
@@ -966,9 +966,9 @@ namespace Scripts
             Trajectory = new TrajectoryDef
             {
                 Guidance = Smart, //can't do maths tho
-                TargetLossDegree = 80f,
+                TargetLossDegree = 0,
                 TargetLossTime = 0, // | || |/ |_
-                MaxLifeTime = 30, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                MaxLifeTime = 60, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f, //acceleration in ms/s
                 DesiredSpeed = 25, //zoom
                 MaxTrajectory = 12500, //how far the torp goes before committing sudoku
@@ -990,7 +990,7 @@ namespace Scripts
                     TrackingDelay = 0.001f, // doesn't actually work
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss                       
                 },
@@ -1261,7 +1261,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 2f,
@@ -1334,8 +1334,8 @@ namespace Scripts
             Trajectory = new TrajectoryDef
             {
                 Guidance = Smart, //dumb
-                TargetLossDegree = 359f,
-                TargetLossTime = 720, // | || |/ |_
+                TargetLossDegree = 0,
+                TargetLossTime = 0, // | || |/ |_
                 MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 40f, //acceleration in ms/s
                 DesiredSpeed = 800, //zoom
@@ -1358,7 +1358,7 @@ namespace Scripts
                     TrackingDelay = 0.001f, // doesn't actually work
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss                    
                 },
@@ -1629,7 +1629,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 2f,
@@ -1702,9 +1702,9 @@ namespace Scripts
             Trajectory = new TrajectoryDef
             {
                 Guidance = Smart, //can't do maths tho
-                TargetLossDegree = 80f,
+                TargetLossDegree = 0,
                 TargetLossTime = 0, // | || |/ |_
-                MaxLifeTime = 30, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                MaxLifeTime = 60, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f, //acceleration in ms/s
                 DesiredSpeed = 25, //zoom
                 MaxTrajectory = 12500, //how far the torp goes before committing sudoku
@@ -1726,7 +1726,7 @@ namespace Scripts
                     TrackingDelay = 0.001f, // doesn't actually work
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss                       
                 },
@@ -1931,15 +1931,15 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = 1f,
-                    Small = 1f,
+                    Large = -1f,
+                    Small = -1f,
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f,
-                    Light = 5f,
-                    Heavy = 5f,
-                    NonArmor = 0.5f,
+                    Armor = 5000,
+                    Light = -1f,
+                    Heavy = -1f,
+                    NonArmor = 0.00001f,
                 },
                 Shields = new ShieldDef
                 {
@@ -1986,9 +1986,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 750000, // Meters
-                    Damage = 20,
-                    Depth = 1f,
+                    Radius = 50, // Meters
+                    Damage = 75000,
+                    Depth = 30,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -1997,7 +1997,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1f,
@@ -2070,8 +2070,8 @@ namespace Scripts
             Trajectory = new TrajectoryDef
             {
                 Guidance = Smart, //can't do maths tho
-                TargetLossDegree = 359f,
-                TargetLossTime = 720, // | || |/ |_
+                TargetLossDegree = 0,
+                TargetLossTime = 0, // | || |/ |_
                 MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 40f, //acceleration in ms/s
                 DesiredSpeed = 800, //zoom
@@ -2093,8 +2093,8 @@ namespace Scripts
                     MaxLateralThrust = 0.30f, // controls how sharp the trajectile may turn
                     TrackingDelay = 0.01f, // doesn't actually work
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    OverideTarget = true, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
+                    OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss                   
                 },
@@ -2365,7 +2365,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 2f,
@@ -2438,8 +2438,8 @@ namespace Scripts
             Trajectory = new TrajectoryDef
             {
                 Guidance = Smart, //can't do maths tho
-                TargetLossDegree = 359f,
-                TargetLossTime = 720, // | || |/ |_
+                TargetLossDegree = 0,
+                TargetLossTime = 0, // | || |/ |_
                 MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 100f, //acceleration in ms/s
                 DesiredSpeed = 1600, //zoom
@@ -2461,8 +2461,8 @@ namespace Scripts
                     MaxLateralThrust = 0.30f, // controls how sharp the trajectile may turn
                     TrackingDelay = 0.01f, // doesn't actually work
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    OverideTarget = true, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
+                    OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss                       
                 },
@@ -2733,7 +2733,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 2f,
@@ -2806,9 +2806,9 @@ namespace Scripts
             Trajectory = new TrajectoryDef
             {
                 Guidance = Smart, //can't do maths tho
-                TargetLossDegree = 80f,
+                TargetLossDegree = 0,
                 TargetLossTime = 0, // | || |/ |_
-                MaxLifeTime = 30, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                MaxLifeTime = 60, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f, //acceleration in ms/s
                 DesiredSpeed = 25, //zoom
                 MaxTrajectory = 12500, //how far the torp goes before committing sudoku
@@ -2830,7 +2830,7 @@ namespace Scripts
                     TrackingDelay = 0.01f, // doesn't actually work
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss                    
                 },
@@ -3090,9 +3090,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 750000, // Meters
-                    Damage = 20,
-                    Depth = 1f,
+                    Radius = 50, // Meters
+                    Damage = 7500,
+                    Depth = 50f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -3101,7 +3101,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1f,
@@ -3174,8 +3174,8 @@ namespace Scripts
             Trajectory = new TrajectoryDef
             {
                 Guidance = Smart, //can't do maths tho
-                TargetLossDegree = 359f,
-                TargetLossTime = 720, // | || |/ |_
+                TargetLossDegree = 0,
+                TargetLossTime = 0, // | || |/ |_
                 MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 40f, //acceleration in ms/s
                 DesiredSpeed = 800, //zoom
@@ -3198,7 +3198,7 @@ namespace Scripts
                     TrackingDelay = 0.01f, // doesn't actually work
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss                       
                 },
@@ -3469,7 +3469,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 2f,
@@ -3542,9 +3542,9 @@ namespace Scripts
             Trajectory = new TrajectoryDef
             {
                 Guidance = Smart, //can't do maths tho
-                TargetLossDegree = 80f,
+                TargetLossDegree = 0,
                 TargetLossTime = 0, // | || |/ |_
-                MaxLifeTime = 30, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                MaxLifeTime = 60, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f, //acceleration in ms/s
                 DesiredSpeed = 25, //zoom
                 MaxTrajectory = 12500, //how far the torp goes before committing sudoku
@@ -3566,7 +3566,7 @@ namespace Scripts
                     TrackingDelay = 0.01f, // doesn't actually work
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss                    
                 },
@@ -3826,9 +3826,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 5000, // Meters
-                    Damage = 25,
-                    Depth = 1f,
+                    Radius = 50, // Meters
+                    Damage = 5000,
+                    Depth = 25f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -3837,7 +3837,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1f,
@@ -3910,8 +3910,8 @@ namespace Scripts
             Trajectory = new TrajectoryDef
             {
                 Guidance = Smart, //can't do maths tho
-                TargetLossDegree = 359f,
-                TargetLossTime = 720, // | || |/ |_
+                TargetLossDegree = 0,
+                TargetLossTime = 0, // | || |/ |_
                 MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 40f, //acceleration in ms/s
                 DesiredSpeed = 800, //zoom
@@ -3934,7 +3934,7 @@ namespace Scripts
                     TrackingDelay = 0.01f, // doesn't actually work
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss                       
                 },
@@ -4204,7 +4204,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 2f,
@@ -4277,7 +4277,7 @@ namespace Scripts
             Trajectory = new TrajectoryDef
             {
                 Guidance = Smart,
-                TargetLossDegree = 80f,
+                TargetLossDegree = 0,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
@@ -4296,7 +4296,7 @@ namespace Scripts
                     TrackingDelay = 0.05f, // Measured in Shape diameter units traveled.
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss                       
                 },
@@ -4567,7 +4567,7 @@ namespace Scripts
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
                     ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 100, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
+                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 2f,
@@ -4640,7 +4640,7 @@ namespace Scripts
             Trajectory = new TrajectoryDef
             {
                 Guidance = Smart,
-                TargetLossDegree = 80f,
+                TargetLossDegree = 0,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
@@ -4659,7 +4659,7 @@ namespace Scripts
                     TrackingDelay = 0.05f, // Measured in Shape diameter units traveled.
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss                       
                 },

@@ -67,7 +67,7 @@ namespace Scripts
                     EnableOverload = false,
                 },
                 Ai = new AiDef {
-                    TrackTargets = true,
+                    TrackTargets = false,
                     TurretAttached = false,
                     TurretController = false,
                     PrimaryTracking = false,
