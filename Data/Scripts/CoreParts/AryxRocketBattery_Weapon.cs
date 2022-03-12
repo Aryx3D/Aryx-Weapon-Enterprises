@@ -29,12 +29,12 @@ namespace Scripts
                     },
                 },
                 Muzzles = new[] {
-                    "muzzle_missile_1",
-                    "muzzle_missile_2",
-                    "muzzle_missile_3",
-                    "muzzle_missile_4",
-                    "muzzle_missile_5",
-                    "muzzle_missile_6",
+                    "muzzle_projectile_1",
+                    "muzzle_projectile_2",
+                    "muzzle_projectile_3",
+                    "muzzle_projectile_4",
+                    "muzzle_projectile_5",
+                    "muzzle_projectile_6",
                 },
                 Ejector = "", // Optional; empty from which to eject "shells" if specified.
                 Scope = "", // Where line of sight checks are performed from. Must be clear of block collision.
@@ -52,18 +52,18 @@ namespace Scripts
                 LockedSmartOnly = false, // Only fire at smart projectiles that are locked on to parent grid.
                 MinimumDiameter = 0, // Minimum radius of threat to engage.
                 MaximumDiameter = 0, // Maximum radius of threat to engage; 0 = unlimited.
-                MaxTargetDistance = 5000, // Maximum distance at which targets will be automatically shot at; 0 = unlimited.
+                MaxTargetDistance = 10000, // Maximum distance at which targets will be automatically shot at; 0 = unlimited.
                 MinTargetDistance = 0, // Minimum distance at which targets will be automatically shot at.
                 TopTargets = 4, // Maximum number of targets to randomize between; 0 = unlimited.
                 TopBlocks = 4, // Maximum number of blocks to randomize between; 0 = unlimited.
-                StopTrackingSpeed = 1000, // Do not track threats traveling faster than this speed; 0 = unlimited.
+                StopTrackingSpeed = 0, // Do not track threats traveling faster than this speed; 0 = unlimited.
             },
             HardPoint = new HardPointDef
             {
                 PartName = "Hydra MLRS", // Name of the weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons).
-                DeviateShotAngle = 10f, // Projectile inaccuracy in degrees.
-                AimingTolerance = 60f, // How many degrees off target a turret can fire at. 0 - 180 firing angle.
-                AimLeadingPrediction = Accurate, // Level of turret aim prediction; Off, Basic, Accurate, Advanced
+                DeviateShotAngle = 5f, // Projectile inaccuracy in degrees.
+                AimingTolerance = 30, // How many degrees off target a turret can fire at. 0 - 180 firing angle.
+                AimLeadingPrediction = Off, // Level of turret aim prediction; Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 second, etc..). Length of time the weapon continues firing after trigger is released.
                 AddToleranceToTracking = false, // Allows turret to only track to the edge of the AimingTolerance cone instead of dead centre.
                 CanShootSubmerged = false, // Whether the weapon can be fired underwater when using WaterMod.
@@ -87,12 +87,12 @@ namespace Scripts
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.013f, // Max traversal speed of azimuth subpart in radians per tick (0.1 is approximately 360 degrees per second).
-                    ElevateRate = 0.013f, // Max traversal speed of elevation subpart in radians per tick.
+                    RotateRate = 0.018f, // Max traversal speed of azimuth subpart in radians per tick (0.1 is approximately 360 degrees per second).
+                    ElevateRate = 0.018f, // Max traversal speed of elevation subpart in radians per tick.
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -5,
-                    MaxElevation = 24,
+                    MaxElevation = 90,
                     HomeAzimuth = 0, // Default resting rotation angle
                     HomeElevation = 0, // Default resting elevation
                     InventorySize = 0.24f, // Inventory capacity in kL.
@@ -194,7 +194,7 @@ namespace Scripts
                 AryxFlechetteAmmoFullSpeed,
                 AryxDisruptorAmmoFullSpeed,
             },
-            //Animations = AdvancedAnimation,
+            Animations = AryxHydraAnims,
             // Don't edit below this line
         };
     }

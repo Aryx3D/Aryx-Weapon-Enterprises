@@ -1606,7 +1606,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 0.0001f, // Multiplier for damage against shields.
+                    Modifier = 0.01f, // Multiplier for damage against shields.
                     Type = Default, // Damage vs healing against shields; Default, Heal
                     BypassModifier = -1f, // If greater than zero, the percentage of damage that will penetrate the shield.
                 },
@@ -1680,10 +1680,10 @@ namespace Scripts
             {
                 Enable = true, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
                 Type = Emp, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
-                Mode = Field, // Effect , Field
+                Mode = Effect, // Effect , Field
                 Strength = 100000000f,
                 Radius = 25, // Meters
-                Duration = 480, // In Ticks
+                Duration = 600, // In Ticks
                 StackDuration = false, // Combined Durations
                 Depletable = false,
                 MaxStacks = 2, // Max Debuffs at once

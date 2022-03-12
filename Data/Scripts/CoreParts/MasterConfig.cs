@@ -65,7 +65,9 @@ namespace Scripts
             AryxFocusLance,
             AryxInlineTorpLauncher,
             AryxTsunamiTurret,
-            AryxHeavyCoilgun
+            AryxHeavyCoilgun,
+            AryxTeslaLance,
+            AryxEchoAutocannon
             );
           
         }

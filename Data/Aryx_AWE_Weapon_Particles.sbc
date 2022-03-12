@@ -15211,6 +15211,98 @@
         </ParticleGeneration>	
 	
 		</ParticleGenerations>
+      <ParticleLights>
+        <ParticleLight Name="TrailLight" Version="0">
+          <Properties>
+            <Property Name="Position" AnimationType="Animated" Type="Vector3">
+              <Keys>
+                <Key>
+                  <Time>0</Time>
+                  <ValueVector3>
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                  </ValueVector3>
+                  <Value2D />
+                </Key>
+              </Keys>
+            </Property>
+            <Property Name="Position var" AnimationType="Animated" Type="Vector3">
+              <Keys />
+            </Property>
+            <Property Name="Color" AnimationType="Animated" Type="Vector4">
+              <Keys>
+                <Key>
+                  <Time>0</Time>
+                  <ValueVector4>
+                    <X>0.6</X>
+                    <Y>0.8</Y>
+                    <Z>1</Z>
+                    <W>1</W>
+                  </ValueVector4>
+                  <Value2D />
+                </Key>
+              </Keys>
+            </Property>
+            <Property Name="Color var" AnimationType="Animated" Type="Float">
+              <Keys />
+            </Property>
+            <Property Name="Range" AnimationType="Animated" Type="Float">
+              <Keys>
+                <Key>
+                  <Time>0</Time>
+                  <ValueFloat>24</ValueFloat>
+                  <Value2D />
+                </Key>
+              </Keys>
+            </Property>
+            <Property Name="Range var" AnimationType="Animated" Type="Float">
+              <Keys />
+            </Property>
+            <Property Name="Intensity" AnimationType="Animated" Type="Float">
+              <Keys>
+                <Key>
+                  <Time>0</Time>
+                  <ValueFloat>800</ValueFloat>
+                  <Value2D />
+                </Key>
+                <Key>
+                  <Time>1</Time>
+                  <ValueFloat>800</ValueFloat>
+                  <Value2D />
+                </Key>				
+              </Keys>
+            </Property>
+            <Property Name="Intensity var" AnimationType="Animated" Type="Float">
+              <Keys>
+                <Key>
+                  <Time>0</Time>
+                  <ValueFloat>0.5</ValueFloat>
+                  <Value2D />
+                </Key>
+                <Key>
+                  <Time>1</Time>
+                  <ValueFloat>0.5</ValueFloat>
+                  <Value2D />
+                </Key>				
+              </Keys>
+            </Property>
+            <Property Name="Enabled" AnimationType="Const" Type="Bool">
+              <ValueBool>true</ValueBool>
+            </Property>
+            <Property Name="Gravity Displacement" AnimationType="Const" Type="Float">
+              <ValueFloat>0</ValueFloat>
+            </Property>
+            <Property Name="Falloff" AnimationType="Const" Type="Float">
+              <ValueFloat>0.3</ValueFloat>
+            </Property>
+            <Property Name="Variance Timeout" AnimationType="Const" Type="Float">
+              <ValueFloat>0.1</ValueFloat>
+            </Property>
+          </Properties>
+        </ParticleLight>
+      </ParticleLights>
+ 
 	  <DistanceMax>3000</DistanceMax>
       <Priority>1</Priority>	
     </ParticleEffect>	
@@ -15253,9 +15345,9 @@
                       <Key>
                         <Time>0</Time>
                         <ValueVector4>
-                          <X>0.4736151</X>
-                          <Y>0.1747409</Y>
-                          <Z>0.02422294</Z>
+                          <X>1</X>
+                          <Y>0.35</Y>
+                          <Z>0.1</Z>
                           <W>1</W>
                         </ValueVector4>
                         <Value2D />
@@ -15263,9 +15355,9 @@
                       <Key>
                         <Time>0.5865133</Time>
                         <ValueVector4>
-                          <X>0.003697239</X>
-                          <Y>0.003697239</Y>
-                          <Z>0.003697239</Z>
+                          <X>0.5</X>
+                          <Y>0.175</Y>
+                          <Z>0.05</Z>
                           <W>1</W>
                         </ValueVector4>
                         <Value2D />
@@ -15293,12 +15385,17 @@
                     <Keys>
                       <Key>
                         <Time>0</Time>
-                        <ValueFloat>2</ValueFloat>
+                        <ValueFloat>200</ValueFloat>
                         <Value2D />
                       </Key>
                       <Key>
-                        <Time>0.5567172</Time>
-                        <ValueFloat>0.6</ValueFloat>
+                        <Time>0.1</Time>
+                        <ValueFloat>200</ValueFloat>
+                        <Value2D />
+                      </Key>					  
+                      <Key>
+                        <Time>0.25</Time>
+                        <ValueFloat>5</ValueFloat>
                         <Value2D />
                       </Key>
                       <Key>
@@ -15448,7 +15545,7 @@
               <ValueFloat>2</ValueFloat>
             </Property>
             <Property Name="Streak multiplier" AnimationType="Const" Type="Float">
-              <ValueFloat>4</ValueFloat>
+              <ValueFloat>5</ValueFloat>
             </Property>
             <Property Name="Animation frame time" AnimationType="Const" Type="Float">
               <ValueFloat>0.06</ValueFloat>
@@ -15506,7 +15603,7 @@
               <ValueBool>true</ValueBool>
             </Property>
             <Property Name="Motion inheritance" AnimationType="Const" Type="Float">
-              <ValueFloat>0</ValueFloat>
+              <ValueFloat>0.25</ValueFloat>
             </Property>
             <Property Name="Life var" AnimationType="Const" Type="Float">
               <ValueFloat>1</ValueFloat>

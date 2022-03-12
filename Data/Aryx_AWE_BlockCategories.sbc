@@ -11,6 +11,7 @@
       <ItemIds>
 		<string>ConveyorSorter/ARYXFlechetteLauncher</string>
 		<string>LargeMissileTurret/ARYX_ChordAutocannon</string>
+		<string>LargeMissileTurret/ARYX_EchoAutocannon</string>		
 		<string>LargeMissileTurret/ARYXBurstTurret</string>		
 		<string>LargeMissileTurret/ARYXFlakTurret</string>		
 		<string>LargeMissileTurret/ARYXPulseTurret</string>	
@@ -79,6 +80,7 @@
       <ItemIds>
 		<string>ConveyorSorter/ARYXFlechetteLauncher</string>
 		<string>LargeMissileTurret/ARYX_ChordAutocannon</string>
+		<string>LargeMissileTurret/ARYX_EchoAutocannon</string>			
 		<string>LargeMissileTurret/ARYXBurstTurret</string>		
 		<string>LargeMissileTurret/ARYXFlakTurret</string>		
 		<string>LargeMissileTurret/ARYXPulseTurret</string>	
@@ -145,6 +147,7 @@
       <ItemIds>
 		<string>ConveyorSorter/ARYXFlechetteLauncher</string>
 		<string>LargeMissileTurret/ARYX_ChordAutocannon</string>
+		<string>LargeMissileTurret/ARYX_EchoAutocannon</string>			
 		<string>LargeMissileTurret/ARYXBurstTurret</string>		
 		<string>LargeMissileTurret/ARYXFlakTurret</string>		
 		<string>LargeMissileTurret/ARYXPulseTurret</string>	
@@ -212,6 +215,7 @@
       <ItemIds>
 		<string>ConveyorSorter/ARYXFlechetteLauncher</string>
 		<string>LargeMissileTurret/ARYX_ChordAutocannon</string>
+		<string>LargeMissileTurret/ARYX_EchoAutocannon</string>			
 		<string>LargeMissileTurret/ARYXBurstTurret</string>		
 		<string>LargeMissileTurret/ARYXFlakTurret</string>		
 		<string>LargeMissileTurret/ARYXPulseTurret</string>	

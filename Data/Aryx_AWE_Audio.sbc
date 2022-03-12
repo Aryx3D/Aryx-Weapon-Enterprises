@@ -7,7 +7,7 @@
         <SubtypeId>ArcWepShipARYXAutocannon_Fire</SubtypeId>
       </Id>
       <Category>SHOT</Category>
-      <MaxDistance>200</MaxDistance>
+      <MaxDistance>400</MaxDistance>
       <PreventSynchronization>0</PreventSynchronization>
       <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
       <DynamicMusicAmount>3</DynamicMusicAmount>
@@ -27,10 +27,33 @@
     <Sound>
       <Id>
         <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcWepShipARYXHeavyAutocannon_Fire</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>600</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>3</DynamicMusicAmount>
+      <Volume>1</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Aryx\heavy_cannons\aryx_echo_fire_01.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Aryx\heavy_cannons\aryx_echo_fire_02.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Aryx\heavy_cannons\aryx_echo_fire_03.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound> 	
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
         <SubtypeId>ArcWepShipARYXATLAS_Fire</SubtypeId>
       </Id>
       <Category>SHOT</Category>
-      <MaxDistance>400</MaxDistance>
+      <MaxDistance>500</MaxDistance>
       <PreventSynchronization>0</PreventSynchronization>
       <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
       <DynamicMusicAmount>3</DynamicMusicAmount>
