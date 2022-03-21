@@ -967,9 +967,9 @@
         <TypeId>LargeGatlingTurret</TypeId>
         <SubtypeId>ARYXAtlasPDC</SubtypeId>
       </Id> 		<!-- subpart_RotorBarrel -->
-      <DisplayName>MG50 "Guardian" Point Defence Cannon</DisplayName>
+      <DisplayName>MG50 "ATLAS" Point Defence Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxAtlasPDC.dds</Icon>	  
-      <Description>Guardian PDCs are point defence cannons designed to shoot down incoming torpedoes, missiles and small strike craft. A high rate of fire and high tracking allows this turret to easily intercept incoming threats. [ 1.2KM RANGE - Accepts 40mm GUARDIAN ammo (Kinetic).]</Description>
+      <Description>ATLAS PDCs are point defence cannons designed to shoot down incoming torpedoes, missiles and small strike craft. A high rate of fire and high tracking allows this turret to easily intercept incoming threats. [ 1.2KM RANGE - Accepts 40mm ATLAS ammo (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1013,6 +1013,59 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>	
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+      <Id>
+        <TypeId>ConveyorSorter</TypeId>
+        <SubtypeId>ARYXSlantedAtlasPDC</SubtypeId>
+      </Id> 		<!-- subpart_RotorBarrel -->
+      <DisplayName>MG50 "ATLAS" Slanted Point Defence Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\AryxSlantedAtlasPDC.dds</Icon>	  
+      <Description>ATLAS PDCs are point defence cannons designed to shoot down incoming torpedoes, missiles and small strike craft. A high rate of fire and high tracking allows this turret to easily intercept incoming threats. [ 1.2KM RANGE - Accepts 40mm ATLAS ammo (Kinetic).]</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="2" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+	  <Model>Models\AWE_Atlas\Aryx_AtlasGatlingSlant.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="150" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="LargeTube" Count="4" />		
+        <Component Subtype="MetalGrid" Count="24" />
+        <Component Subtype="SmallTube" Count="24" />		
+        <Component Subtype="Motor" Count="24" />
+        <Component Subtype="Detector" Count="5" />		
+        <Component Subtype="Computer" Count="100" />
+        <Component Subtype="SteelPlate" Count="50" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.50"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Atlas\Aryx_AtlasGatlingSlant_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Atlas\Aryx_AtlasGatlingSlant_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Atlas\Aryx_AtlasGatlingSlant_BS3.mwm"/>
+			</BuildProgressModels>
+      <BlockPairName>AryxAtlasSlanted</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>60</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.2</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>		
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeGatlingTurret</TypeId>
@@ -1581,12 +1634,13 @@
         <TypeId>SmallGatlingGun</TypeId>
         <SubtypeId>ARYX_FixedAtlasGatling</SubtypeId>
       </Id>
-      <DisplayName>MG50 Coaxial Guardian Gatling gun</DisplayName>
+      <DisplayName>MG50 Coaxial ATLAS Gatling gun</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_FixedAtlas.dds</Icon>
-      <Description>Guardian Gatling guns are compact rotary cannons designed to tear apart opposing strike craft. A high rate of fire and large magazine allows this weapon to easily intercept incoming threats. [ 1.2KM RANGE - Accepts 40mm GUARDIAN ammo. (Kinetic)]</Description>
+      <Description>ATLAS Gatling guns are compact rotary cannons designed to tear apart opposing strike craft. A high rate of fire and large magazine allows this weapon to easily intercept incoming threats. [ 1.2KM RANGE - Accepts 40mm ATLAS ammo. (Kinetic)]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="3" z="9"/>
+	  <Center x="0" y="1" z="8" />		  
       <ModelOffset x="0" y="0" z="0" />
       <Model>Models\AWE_Atlas\SG_AryxGuardianGatling.mwm</Model>
       <Components>
@@ -3138,6 +3192,62 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXLightRailgun</SubtypeId>
+		</Id>
+		<DisplayName>Antaeus-115 Railgun</DisplayName>
+		<Description>The Antaeus is a lightweight railgun designed to facilitate ship-to-ship combat of fighters and bombardment of larger vessels. [10KM TRAVEL - Accepts 115mm Ferrous. (Kinetic)]</Description>	
+		<Icon>Textures\GUI\Icons\Aryx_AWE_LightRailgun.dds</Icon>
+		<CubeSize>Small</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="1" y="3" z="8"/>
+		<Center x="0" y="1" z="6" />	
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWERailgun\ARYXLightStaticRailGun.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="40" />
+			<Component Subtype="Construction" Count="20" />
+			<Component Subtype="PowerCell" Count="10" />	
+			<Component Subtype="Superconductor" Count="15" />				
+			<Component Subtype="SmallTube" Count="30" />
+			<Component Subtype="Motor" Count="5" />		
+			<Component Subtype="ElectromagnetAWE" Count ="10" />	
+			<Component Subtype="Computer" Count="100" />
+			<Component Subtype="Construction" Count="10" />
+			<Component Subtype="SteelPlate" Count="10" />
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="3.00"/>
+				<MountPoint Side="Left" StartX="5.00" StartY="0.00" EndX="8.00" EndY="3.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="3.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="5.00" EndX="1.00" EndY="8.00"/>
+			</MountPoints>
+
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWERailgun\ARYXLightStaticRailGun_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWERailgun\ARYXLightStaticRailGun_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWERailgun\ARYXLightStaticRailGun_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>ARYXLightRailGun</BlockPairName>
+			<MirroringX>Z</MirroringX>
+			<MirroringZ>Y</MirroringZ>
+
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>30</BuildTimeSeconds>
+		<InventoryMaxVolume>1</InventoryMaxVolume>
+		<DamageEffectId>213</DamageEffectId>
+		<DamagedSound>ParticleWeapExpl</DamagedSound>
+		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		<EmissiveColorPreset>Default</EmissiveColorPreset>
+      <PCU>300</PCU>   		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -3410,9 +3520,9 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
         <TypeId>ConveyorSorter</TypeId>
         <SubtypeId>AWE_MarkV_SuperLaser_Large_CB</SubtypeId>
       </Id>
-      <DisplayName>M5-WT0 Atlas Laser</DisplayName>
+      <DisplayName>CO-P3 Sunderer Heavy Lance</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMarkVAtlasLaser.dds</Icon>
-      <Description>The Mark-V ATLAS laser is an apex of energy weapon technology, adapting high-power charge coils and an extended projector array. Unlike its predecessor, this weapon fires a manmade phased energy pulse, able to cut through even the strongest hulls. [Energy Weapon]</Description>
+      <Description>The Sunderer is an apex of energy weapon technology, adapting high-power charge coils and an extended projector array. Unlike its predecessor, this weapon fires a manmade phased energy pulse, able to cut through even the strongest hulls. [Energy Weapon]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="9"/>

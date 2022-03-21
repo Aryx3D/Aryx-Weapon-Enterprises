@@ -148,8 +148,8 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3f, // Meters
-                    Damage = (float)(AWEHeavyCannonBaseDMG * 3.5f) * 3,
-                    Depth = 3f,
+                    Damage = (float)(AWEHeavyCannonBaseDMG * 3.5f),
+                    Depth = 2f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius

@@ -27,7 +27,14 @@ namespace Scripts
                         ElevationPartId = "GatlingTurretBase2",
                         DurabilityMod = 0.2f,	 
 					},
-
+                    new MountPointDef {
+                        SubtypeId = "ARYXSlantedAtlasPDC",
+                        SpinPartId = "GatlingBarrel", //For weapons with a spinning barrel such as Gatling Guns
+                        MuzzlePartId = "GatlingBarrel",
+                        AzimuthPartId = "GatlingTurretBase1",
+                        ElevationPartId = "GatlingTurretBase2",
+                        DurabilityMod = 0.2f,
+                    },
                 },
                 Muzzles = new[] {
                     "muzzle_projectile_1",
@@ -60,7 +67,7 @@ namespace Scripts
             },
             HardPoint = new HardPointDef
             {
-                PartName = "40mm GUARDIAN PDC", // name of weapon in terminal
+                PartName = "ATLAS PDC", // name of weapon in terminal
                 DeviateShotAngle = 0.05f, // Inaccuracy in degrees
                 AimingTolerance = 5f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced

@@ -67,7 +67,8 @@ namespace Scripts
             AryxTsunamiTurret,
             AryxHeavyCoilgun,
             AryxTeslaLance,
-            AryxEchoAutocannon
+            AryxEchoAutocannon,
+            AryxLightRailgunSmall
             );
           
         }

@@ -17,6 +17,24 @@
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="54mmAmmoMagazine" />
       <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
     </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AWE85mmAmmoBP</SubtypeId>
+      </Id>
+      <DisplayName>85mm Autocannon Ammo</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\AWEEchoAmmo.dds</Icon>
+      <Prerequisites>
+        <Item Amount="6" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="1.5" TypeId="Ingot" SubtypeId="Magnesium" />
+		
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE85mmAmmoMagazine" />
+      <BaseProductionTimeInSeconds>19</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+
 
     <Blueprint>
       <Id>
@@ -523,7 +541,7 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>40mmATLASBP</SubtypeId>
       </Id>
-      <DisplayName>300x40mm GUARDIAN Ammo</DisplayName>
+      <DisplayName>300x40mm ATLAS Ammo</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEATLASAmmo.dds</Icon>
       <Prerequisites>
         <Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />

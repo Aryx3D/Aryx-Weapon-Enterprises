@@ -146,9 +146,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 6f, // Meters
-                    Damage = (float)((AWEHeavyCannonBaseDMG * 5) * 2.5) * 3,
-                    Depth = 5f,
+                    Radius = 5f, // Meters
+                    Damage = (float)((AWEHeavyCannonBaseDMG * 5) * 2.5f),
+                    Depth = 2.5f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius

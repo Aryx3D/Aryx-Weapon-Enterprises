@@ -67,5 +67,16 @@
             </Blocks>
         </BlockVariantGroup>
 		
+        <BlockVariantGroup>
+            <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="AWEAtlasPDC" />
+			<Icon>Textures\GUI\Icons\AryxSlantedAtlasPDC.dds</Icon>	
+            <DisplayName>Atlas PDC</DisplayName>
+            <Description>Variants of the MG50 Atlas.</Description>
+            <Blocks>
+				<Block Type="LargeGatlingTurret" Subtype="ARYXAtlasPDC" />
+				<Block Type="ConveyorSorter" Subtype="ARYXSlantedAtlasPDC" />	
+            </Blocks>
+        </BlockVariantGroup>
+		
     </BlockVariantGroups>
 </Definitions>

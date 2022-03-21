@@ -60,7 +60,7 @@ namespace Scripts
             },
             HardPoint = new HardPointDef
             {
-                PartName = "40mm GUARDIAN Gatling", // name of weapon in terminal
+                PartName = "ATLAS Gatling", // name of weapon in terminal
                 DeviateShotAngle = 0.125f, // Inaccuracy in degrees
                 AimingTolerance = 5f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced

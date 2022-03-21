@@ -30,6 +30,34 @@
         <AmmoMagazine>
             <Id>
                 <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>AWE85mmAmmoMagazine</SubtypeId>
+            </Id>
+            <DisplayName>54mm Ammo</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\AWEEchoAmmo.dds</Icon>
+            <Size>
+                <X>0.4</X>
+                <Y>0.1</Y>
+                <Z>0.04</Z>
+            </Size>
+            <Mass>12</Mass>
+            <Volume>9</Volume>
+            <Model>Models\AWE_Ammo\AryxEchoAmmo.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>30</Capacity>
+            <AmmoDefinitionId Subtype="AryxAutocannonAmmo" />
+
+            <MinimumOfferAmount>100</MinimumOfferAmount>
+            <MaximumOfferAmount>1000</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>2000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>	
+	
+	
+	
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>60mmFlakMagazine</SubtypeId>
             </Id>
             <DisplayName>65mm Riptide Flak Ammo</DisplayName>
@@ -734,7 +762,7 @@
                 <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>ATLASAmmoMagazine</SubtypeId>
             </Id>
-            <DisplayName>40mm GUARDIAN Ammo</DisplayName>
+            <DisplayName>40mm ATLAS Ammo</DisplayName>
             <Icon>Textures\GUI\Icons\ammo\AWEATLASAmmo.dds</Icon>
             <Size>
                 <X>0.2</X>

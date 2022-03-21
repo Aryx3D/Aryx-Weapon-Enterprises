@@ -13,6 +13,7 @@
 	<Entry Class="Consumables" BlueprintSubtypeId="AWEWhirlwind120AmmoBP" />		
 	<Entry Class="Consumables" BlueprintSubtypeId="AWESabreMissileBP" />	
 	<Entry Class="Consumables" BlueprintSubtypeId="AWELancerMissileBP" />
+	<Entry Class="Consumables" BlueprintSubtypeId="AWE85mmAmmoBP" />
 
 	<Entry Class="Consumables" BlueprintSubtypeId="AWEStormriderDroneBP" />		
 	<Entry Class="Consumables" BlueprintSubtypeId="AWESidekickDroneBP" />	
@@ -24,7 +25,7 @@
 
 
 
-
+	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWE85mmAmmoBP" />
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="54mmAutocannonBP" />
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="60mmFlakBP" />
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="GaussAmmoBP" />
@@ -125,7 +126,8 @@
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="SmallGatlingGun/ARYX_SmallChaingun" />	
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYX_FocusBeam_CompactSG" />	
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXSmallPulseLaser_Fixed" />		
-	
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXLightRailgun" />		
+
 		<!--COMPONENTS-->			
 	<Entry Class="Components" BlueprintSubtypeId="AWE_ElectromagnetBP" />
    </BlueprintClassEntries>
