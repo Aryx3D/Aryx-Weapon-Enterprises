@@ -514,9 +514,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 50, // Meters
-                    Damage = 750000,
-                    Depth = 30f,
+                    Radius = 30, // Meters
+                    Damage = 350000,
+                    Depth = 15,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -528,7 +528,7 @@ namespace Scripts
                     MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
-                    ParticleScale = 1.5f,
+                    ParticleScale = 0.85f,
                     CustomParticle = "AryxAWESupernova", // Particle SubtypeID, from your Particle SBC
                     CustomSound = "ArcWepShipARYXExplosionLarge", // SubtypeID from your Audio SBC, not a filename
                     Shape = Round, // Round or Diamond
@@ -1191,7 +1191,7 @@ namespace Scripts
                 FallOff = new FallOffDef
                 {
                     Distance = 100000f, // Distance at which max damage begins falling off.
-                    MinMultipler = 0.1f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    MinMultipler = 1, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -1207,7 +1207,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 0.1f,
+                    Modifier = 0.000001f,
                     Type = Default,
                     BypassModifier = -1f,
                 },
@@ -1352,7 +1352,7 @@ namespace Scripts
                 MaxTrajectoryTime = 0, // No fucking clue what this does, but it breaks things if it's > 0
                 Smarts = new SmartsDef
                 {
-                    Inaccuracy = 0f, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
+                    Inaccuracy = 80, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
                     Aggressiveness = 2f, // controls how responsive tracking is.
                     MaxLateralThrust = 0.30f, // controls how sharp the trajectile may turn
                     TrackingDelay = 0.001f, // doesn't actually work
@@ -2976,7 +2976,7 @@ namespace Scripts
             AmmoRound = "Broadsword Disruptor FullSpeed",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 1f,
+            BaseDamage = 1000f,
             Mass = 3000, // in kilograms
             Health = 40, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -3040,14 +3040,14 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.005f,
-                    Light = 0.005f,
-                    Heavy = 0.005f,
-                    NonArmor = 0.05f,
+                    Armor = 0.00005f,
+                    Light = 0.00005f,
+                    Heavy = 0.00005f,
+                    NonArmor = 0.0005f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 2f,
+                    Modifier = 250f,
                     Type = Default,
                     BypassModifier = -1f,
                 },
@@ -3090,9 +3090,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 50, // Meters
-                    Damage = 7500,
-                    Depth = 50f,
+                    Radius = 10, // Meters
+                    Damage = 75000,
+                    Depth = 5f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -4080,7 +4080,7 @@ namespace Scripts
             AmmoRound = "AryxDesolatorFieldCharge",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 50f,
+            BaseDamage = 5000000f,
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
