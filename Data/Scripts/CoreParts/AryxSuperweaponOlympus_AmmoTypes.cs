@@ -52,7 +52,7 @@ namespace Scripts
             },
             Fragment = new FragmentDef
             {
-                AmmoRound = "Antimatter Bolt", // AmmoRound field of the ammo to spawn.
+                AmmoRound = "Heavy Antimatter Bolt", // AmmoRound field of the ammo to spawn.
                 Fragments = 1, // Number of projectiles to spawn.
                 Degrees = 5, // Cone in which to randomize direction of spawned projectiles.
                 Reverse = false, // Spawn projectiles backward instead of forward.
@@ -393,9 +393,9 @@ namespace Scripts
         private AmmoDef AryxObliteratorShrap => new AmmoDef
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "Antimatter Bolt",
+            AmmoRound = "Heavy Antimatter Bolt",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = 1000,
             Mass = 500, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
