@@ -79,7 +79,7 @@ namespace Scripts
                 SelfDamage = false, // true = allow self damage.
                 HealthHitModifier = 0.5f, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
                 VoxelHitModifier = 1,
-                Characters = 15f,
+                Characters = 50,
                 FallOff = new FallOffDef
                 {
                     Distance = 1000f, // Distance at which max damage begins falling off.
@@ -92,10 +92,10 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.5f,
+                    Armor = 1.2f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 3f,
+                    NonArmor = 2f,
                 },
                 Shields = new ShieldDef
                 {

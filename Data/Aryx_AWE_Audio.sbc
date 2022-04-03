@@ -1361,6 +1361,32 @@
       <Volume>0.7</Volume>
       <Waves>
         <Wave Type="D3">
+          <Start>Audio\Aryx\misc\aryx_nova_fire_01.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Aryx\misc\aryx_nova_fire_02.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Aryx\misc\aryx_nova_fire_03.wav</Start>
+        </Wave>
+        <Wave Type="D3">
+          <Start>Audio\Aryx\misc\aryx_nova_fire_04.wav</Start>
+        </Wave>		
+      </Waves>
+    </Sound> 
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcWepShipARYX_SpartanFire</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>500</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>3</DynamicMusicAmount>
+      <Volume>1</Volume>
+      <Waves>
+        <Wave Type="D3">
           <Start>Audio\Aryx\aryx_nova_fire_01.wav</Start>
         </Wave>
         <Wave Type="D3">
@@ -1374,7 +1400,6 @@
         </Wave>		
       </Waves>
     </Sound> 
-
     <Sound>
       <Id>
         <TypeId>MyObjectBuilder_AudioDefinition</TypeId>

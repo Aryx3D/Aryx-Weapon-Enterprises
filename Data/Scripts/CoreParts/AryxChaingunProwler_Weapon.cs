@@ -98,14 +98,14 @@ namespace Scripts
                 },
                 Other = new OtherDef
                 {
-                    ConstructPartCap = 0, // Maximum number of blocks with this weapon on a grid; 0 = unlimited.
-                    RotateBarrelAxis = 0, // For spinning barrels, which axis to spin the barrel around; 0 = none.
-                    EnergyPriority = 0, // Deprecated.
-                    MuzzleCheck = true, // Whether the weapon should check LOS from each individual muzzle in addition to the scope.
-                    Debug = false, // Force enables debug mode.
-                    RestrictionRadius = 0, // Prevents other blocks of this type from being placed within this distance of the centre of the block.
-                    CheckInflatedBox = false, // If true, the above distance check is performed from the edge of the block instead of the centre.
-                    CheckForAnyWeapon = false, // If true, the check will fail if ANY weapon is present, not just weapons of the same subtype.
+                    ConstructPartCap = 0,
+                    RotateBarrelAxis = 3,
+                    EnergyPriority = 0,
+                    MuzzleCheck = false,
+                    Debug = false,
+                    RestrictionRadius = 0, // Meters, radius of sphere disable this gun if another is present
+                    CheckInflatedBox = false, // if true, the bounding box of the gun is expanded by the RestrictionRadius
+                    CheckForAnyWeapon = false, // if true, the check will fail if ANY gun is present, false only looks for this subtype
                 },
                 Loading = new LoadingDef
                 {

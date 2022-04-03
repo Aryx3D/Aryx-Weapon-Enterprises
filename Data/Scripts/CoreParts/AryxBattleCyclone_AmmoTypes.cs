@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "240mm Heavy Shell",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (AWEHeavyCannonBaseDMG * 2.18181818f),
+            BaseDamage = 4500,
             Mass = 120, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 25f,
@@ -92,7 +92,7 @@ namespace Scripts
                 {
                     Armor = -1f,
                     Light = -1f,
-                    Heavy = -1f,
+                    Heavy = 1.5f,
                     NonArmor = 1.5f,
                 },
                 Shields = new ShieldDef
@@ -148,7 +148,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3f, // Meters
-                    Damage = (float)(AWEHeavyCannonBaseDMG * 3.5f),
+                    Damage = 9000,
                     Depth = 2f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius

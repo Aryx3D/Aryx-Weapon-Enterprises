@@ -187,6 +187,10 @@ namespace Scripts {
             Ammos = new[] {
                 AryxStrikerMissileAmmoWC,
                 AryxStrikerMissileGuidedWC,
+
+                AryxCasabaMissileAmmoWC,
+                AryxCasabaMissileGuidedWC,
+                AryxCasabaMissileShotWC,
             },
             //Animations = AryxFenrirAnims,
             //Upgrades = UpgradeModules,

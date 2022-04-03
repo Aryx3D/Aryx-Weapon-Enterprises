@@ -165,7 +165,7 @@ namespace Scripts
                 },
             },
             Ammos = new [] {
-                AryxEchoAPAmmo,
+                AryxEchoAPAmmo, AryxEchoHEAmmo, AryxEchoHEFrags,
             },
             Animations = AryxEchoAnimations,
             // Don't edit below this line

@@ -32,7 +32,7 @@ namespace Scripts
             AmmoMagazine = "AWEKingswordMagazine",
             AmmoRound = "5200mm Ferrous Round",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 10f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 20f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = 25000,
             Mass = 300f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.

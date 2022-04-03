@@ -7,7 +7,7 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXCycloneCannon</SubtypeId>
       </Id>
-      <DisplayName>240mm Cyclone Heavy Cannon</DisplayName>
+      <DisplayName>240mm Cyclone Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>
       <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
@@ -57,7 +57,7 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXCycloneCannon_SG</SubtypeId>
       </Id>
-      <DisplayName>240mm Cyclone Heavy Cannon</DisplayName>
+      <DisplayName>240mm Cyclone Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>	  
       <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
@@ -107,7 +107,7 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXHurricaneCannon</SubtypeId>
       </Id>
-      <DisplayName>480mm Hurricane Heavy Cannon</DisplayName>
+      <DisplayName>480mm Hurricane Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxHurricaneCannon.dds</Icon>	  
       <Description>The Hurricane is a turreted, double barrel artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
@@ -162,7 +162,7 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXTsunamiCannon</SubtypeId>
       </Id>
-      <DisplayName>480mm Tsunami Heavy Cannon</DisplayName>
+      <DisplayName>480mm Tsunami Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxTsunamiCannon.dds</Icon>	  
       <Description>The Tsunami is a casemate single-barrel barrel artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
@@ -217,7 +217,7 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXTyphoonCannon</SubtypeId>
       </Id>
-      <DisplayName>600mm Typhoon Heavy Cannon</DisplayName>
+      <DisplayName>600mm Typhoon Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxTyphoonCannon.dds</Icon>	  
       <Description>The Typhoon is a gargantuan armoured triple barrel artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
@@ -272,7 +272,7 @@
         <TypeId>SmallMissileLauncher</TypeId>
         <SubtypeId>ARYXTempestCannon</SubtypeId>
       </Id>
-      <DisplayName>600mm Tempest Heavy Cannon</DisplayName>
+      <DisplayName>600mm Tempest Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_TempestCannon.dds</Icon>	  
       <Description>The Tempest is a large fixed-mount artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
@@ -326,7 +326,7 @@
         <TypeId>SmallMissileLauncher</TypeId>
         <SubtypeId>ARYXTempestCannon_SG</SubtypeId>
       </Id>
-      <DisplayName>600mm Tempest Heavy Cannon</DisplayName>
+      <DisplayName>600mm Tempest Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_TempestCannon.dds</Icon>	  
       <Description>The Tempest is a large fixed-mount artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
@@ -1371,11 +1371,61 @@
       <DamagedSound>ParticleWeapExpl</DamagedSound>
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>100</PCU>      
+      <PCU>300</PCU>      
       <TargetingGroups>
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXWarriorGatlingGun</SubtypeId>
+		</Id>
+		<DisplayName>LS5-MG100 Warrior Heavy Gatling Gun</DisplayName>
+		<Icon>Textures\GUI\Icons\Aryx_AWE_WarriorGun.dds</Icon>
+		<Description>The Warrior is a devastatingly powerful heavy gatling gun, throwing 100mm slugs at high velocity at extreme rates of fire. [ 5K TRAVEL - ACCEPTS 100MM WARRIOR (Kinetic)]</Description>	
+		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="1" y="2" z="5"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_Warrior\ARYXWarriorGun.mwm</Model>
+		<Components>
+        <Component Subtype="SteelPlate" Count="400" />
+        <Component Subtype="Construction" Count="350" />
+        <Component Subtype="LargeTube" Count="150" />
+        <Component Subtype="Motor" Count="60" />			
+        <Component Subtype="Computer" Count="60" />
+        <Component Subtype="MetalGrid" Count="150" />		
+        <Component Subtype="SteelPlate" Count="100" />
+		
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="3.00" StartY="1.00" EndX="5.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="1.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Warrior\ARYXWarriorGun_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Warrior\ARYXWarriorGun_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Warrior\ARYXWarriorGun_BS3.mwm"/>
+			</BuildProgressModels>		
+			<BlockPairName>AWEWarriorGun</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>50</BuildTimeSeconds>
+		<InventoryMaxVolume>1</InventoryMaxVolume>
+		<DamageEffectId>213</DamageEffectId>
+		<DamagedSound>ParticleWeapExpl</DamagedSound>
+		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		<EmissiveColorPreset>Default</EmissiveColorPreset>
+      <PCU>300</PCU>   		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>			
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -2681,6 +2731,7 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>	
+
 	
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
@@ -2800,8 +2851,8 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXCatalystCannon</SubtypeId>
 		</Id>
-		<Public>false</Public>
-		<DisplayName>AL16-MV50 Izanami Antimatter Catalyst Cannon</DisplayName>
+		<Public>true</Public>
+		<DisplayName>AL16-MV50 Olympus Antimatter Catalyst Cannon</DisplayName>
 		<Icon>Textures\GUI\Icons\Oppenheimer.dds</Icon>
 		<Description>A manmade horror beyond comprehension; The destroyer of worlds. (Energy)</Description>	
 		<CubeSize>Large</CubeSize>
@@ -3882,7 +3933,62 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>	
-
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXSpartanTurret</SubtypeId>
+      </Id>
+      <DisplayName>APL35-G Spartan Plasma Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_SpartanCannon.dds</Icon>	  
+      <Description>The Spartan is a midweight energy weapon that lobs energised plasma bolts at targets, dealing heavy damaged to shields at a high rate of fire. [2KM RANGE - Energy Weapon]</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+			<Model>Models\AWE_Spartan\LG_ARYXSpartan_Base.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="500" />
+        <Component Subtype="Construction" Count="200" />
+        <Component Subtype="PowerCell" Count="50" />
+        <Component Subtype="LargeTube" Count="20" />
+        <Component Subtype="Motor" Count="50" />	
+        <Component Subtype="Superconductor" Count="100" />
+        <Component Subtype="Computer" Count="100" />
+        <Component Subtype="MetalGrid" Count="100" />	
+        <Component Subtype="SteelPlate" Count="500" />		
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="0.50"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="0.50"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="0.50"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="0.50"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Spartan\LG_ARYXSpartan_Base_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Spartan\LG_ARYXSpartan_Base_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Spartan\LG_ARYXSpartan_Base_BS3.mwm"/>
+			</BuildProgressModels>
+      <BlockPairName>AryxSpartanCannon</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>60</BuildTimeSeconds>
+	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxFWEnergyWeaponDefinition" />
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.144</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 
 
 

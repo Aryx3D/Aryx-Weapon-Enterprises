@@ -70,6 +70,9 @@
 		<string>ConveyorSorter/ARYXHeavyTorpedoLauncher</string>		
 		<string>ConveyorSorter/ARYXLightRailgun</string>
 		<string>ConveyorSorter/ARYXSlantedAtlasPDC</string>			
+		<string>ConveyorSorter/ARYXWarriorGatlingGun</string>
+		<string>LargeMissileTurret/ARYXSpartanTurret</string>		
+
       </ItemIds>
     </Category> 
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -137,7 +140,9 @@
 		<string>ConveyorSorter/ARYXHeavyCoilgun</string>
 		<string>ConveyorSorter/ARYXHeavyTorpedoLauncher</string>
 		<string>ConveyorSorter/ARYXLightRailgun</string>
-		<string>ConveyorSorter/ARYXSlantedAtlasPDC</string>			
+		<string>ConveyorSorter/ARYXSlantedAtlasPDC</string>	
+		<string>ConveyorSorter/ARYXWarriorGatlingGun</string>	
+		<string>LargeMissileTurret/ARYXSpartanTurret</string>
 	  </ItemIds>
     </Category>
 	
@@ -207,7 +212,9 @@
 		<string>ConveyorSorter/ARYXHeavyCoilgun</string>
 		<string>ConveyorSorter/ARYXHeavyTorpedoLauncher</string>
 		<string>ConveyorSorter/ARYXLightRailgun</string>	
-		<string>ConveyorSorter/ARYXSlantedAtlasPDC</string>			
+		<string>ConveyorSorter/ARYXSlantedAtlasPDC</string>
+		<string>ConveyorSorter/ARYXWarriorGatlingGun</string>
+		<string>LargeMissileTurret/ARYXSpartanTurret</string>		
 	</ItemIds>
     </Category> 
 
@@ -273,7 +280,9 @@
 		<string>LargeMissileTurret/ARYXTsunamiCannon</string>
 		<string>ConveyorSorter/ARYXHeavyCoilgun</string>		
 		<string>ConveyorSorter/ARYXHeavyTorpedoLauncher</string>				
-		<string>ConveyorSorter/ARYXSlantedAtlasPDC</string>	
+		<string>ConveyorSorter/ARYXSlantedAtlasPDC</string>
+		<string>ConveyorSorter/ARYXWarriorGatlingGun</string>
+		<string>LargeMissileTurret/ARYXSpartanTurret</string>		
 	  </ItemIds>
     </Category>  	
 
