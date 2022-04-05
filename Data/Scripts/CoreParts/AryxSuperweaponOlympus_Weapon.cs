@@ -125,7 +125,7 @@ namespace Scripts
                 Audio = new HardPointAudioDef {
                     PreFiringSound = "ArcWepShipARYXObliteratorWindup",
                     FiringSound = "ArcWepShipARYXObliteratorFire", // WepShipGatlingShot
-                    FiringSoundPerShot = true,
+                    FiringSoundPerShot = false,
                     ReloadSound = "",
                     NoAmmoSound = "",
                     HardPointRotationSound = "",
@@ -153,6 +153,7 @@ namespace Scripts
             Ammos = new [] {
                 AryxObliteratorShot,
                 AryxObliteratorShrap,
+                AryxObliteratorArcShrap,
             },
 
             Animations = AryxObliteratorAnims,
