@@ -3989,7 +3989,60 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
-
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXVulcanTurret</SubtypeId>
+      </Id>
+      <DisplayName>MG65-T Vulcan Gatling Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_VulcanCannon.dds</Icon>	  
+      <Description>The Vulcan is a double-barrelled gatling turret, designed to hurl teflon and tungsten dealings of damage downrange at a staggering rate of fire. The devastating firepower of this weapon can only be sustained for short amounts of time in rapid bursts. [2KM RANGE - Accepts 40mm ATLAS.]</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+			<Model>Models\AWE_Vulcan\ARYXVulcanBase.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="500" />
+        <Component Subtype="Construction" Count="200" />
+        <Component Subtype="SmallTube" Count="120" />
+        <Component Subtype="Motor" Count="120" />	
+        <Component Subtype="Computer" Count="150" />
+        <Component Subtype="MetalGrid" Count="100" />	
+        <Component Subtype="SteelPlate" Count="500" />		
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Vulcan\ARYXVulcanBase_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Vulcan\ARYXVulcanBase_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Vulcan\ARYXVulcanBase_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>ARYXVulcanBase</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>60</BuildTimeSeconds>
+	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxFWEnergyWeaponDefinition" />
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.144</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 
 
 	</CubeBlocks>

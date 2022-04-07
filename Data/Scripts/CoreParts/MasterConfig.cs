@@ -70,7 +70,8 @@ namespace Scripts
             AryxEchoAutocannon,
             AryxLightRailgunSmall,
             AryxFixedWarriorGatling,
-            AryxSpartanTurret
+            AryxSpartanTurret,
+            AryxVulcanTurret
             );
           
         }
