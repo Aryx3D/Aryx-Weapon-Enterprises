@@ -20,7 +20,7 @@ namespace Scripts
             {
                 MountPoints = new[] {
                     new MountPointDef {
-                        SubtypeId = "ARYXTeslaLance",
+                        SubtypeId = "ARYXTeslaLanceFixed",
                         MuzzlePartId = "None",
                         AzimuthPartId = "None",
                         ElevationPartId = "None",

@@ -3882,10 +3882,11 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
-			<SubtypeId>ARYXTeslaLance</SubtypeId>
+			<SubtypeId>ARYXTeslaLanceFixed</SubtypeId>
 		</Id>
 		<DisplayName>NK1-S Masha Tesla Lance</DisplayName>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_FocusBeamLance.dds</Icon>
+	    <Public>false</Public>		
 		<Description>A powerful but inaccurate energy weapon that fires streams of lightning at targets. Most effective at close range. [5KM RANGE - ENERGY WEAPON (Energy)]</Description>	
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -3903,7 +3904,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 			<Component Subtype="BulletproofGlass" Count ="120" />	
 			<Component Subtype="Computer" Count="300" />
 			<Component Subtype="Construction" Count="150" />
-			<Component Subtype="SteelPlate" Count="200" />
+			<Component Subtype="SteelPlate" Count="9999999" />
 		</Components>
 		<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -3996,7 +3997,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       </Id>
       <DisplayName>MG65-T Vulcan Gatling Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_VulcanCannon.dds</Icon>	  
-      <Description>The Vulcan is a double-barrelled gatling turret, designed to hurl teflon and tungsten dealings of damage downrange at a staggering rate of fire. The devastating firepower of this weapon can only be sustained for short amounts of time in rapid bursts. [2KM RANGE - Accepts 40mm ATLAS.]</Description>
+      <Description>The Vulcan is a double-barrelled gatling turret designed to hurl teflon and tungsten dealings of bad days downrange at a staggering rate of fire. The devastating firepower of this weapon can only be sustained for short amounts of time in rapid bursts. [2KM RANGE - Accepts 40mm ATLAS.]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="3" />

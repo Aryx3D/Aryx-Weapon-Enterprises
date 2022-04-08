@@ -59,7 +59,7 @@ namespace Scripts
             HardPoint = new HardPointDef
             {
                 PartName = "Vulcan Turret", // name of weapon in terminal
-                DeviateShotAngle = 0.05f, // Inaccuracy in degrees
+                DeviateShotAngle = 0.1f, // Inaccuracy in degrees
                 AimingTolerance = 5f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 1, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
