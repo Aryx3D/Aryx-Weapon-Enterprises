@@ -32,7 +32,7 @@
                 <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>AWE85mmAmmoMagazine</SubtypeId>
             </Id>
-            <DisplayName>54mm Ammo</DisplayName>
+            <DisplayName>85mm Ammo</DisplayName>
             <Icon>Textures\GUI\Icons\ammo\AWEEchoAmmo.dds</Icon>
             <Size>
                 <X>0.4</X>

@@ -1073,7 +1073,7 @@
       </Id>
       <DisplayName>MG25 "Avalanche" Heavy Machine Gun</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCodexPDC.dds</Icon>	  
-      <Description>Avalanche MGs are medium-weight gatling cannons designed to shoot down incoming missiles, strike craft, and act as an anti armour. Extremely high rate of fire. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
+      <Description>Avalanche MGs are lightweight gatling turrets designed to shoot down incoming missiles and strike craft. Extremely high rate of fire. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1122,7 +1122,7 @@
       </Id>
       <DisplayName>MG25 "Avalanche" Slanted Heavy Machine Gun</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Avalanche.dds</Icon>	  
-      <Description>Avalanche MGs are medium-weight gatling cannons designed to shoot down incoming missiles, strike craft, and act as an anti armour. Extremely high rate of fire. This version is embedded into a slanted armour plate. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
+      <Description>Avalanche MGs are lightweight gatling turrets designed to shoot down incoming missiles and strike craft. This version is embedded into a slanted armour plate. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1173,7 +1173,7 @@
       </Id>
       <DisplayName>MG25 "Avalanche" Slanted Heavy Machine Gun</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Avalanche_Inv.dds</Icon>	  
-      <Description>Avalanche MGs are medium-weight gatling cannons designed to shoot down incoming missiles, strike craft, and act as an anti armour. Extremely high rate of fire. This version is embedded into a slanted armour plate. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
+      <Description>Avalanche MGs are lightweight gatling turrets designed to shoot down incoming missiles and strike craft. This version is embedded into a slanted armour plate. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1224,7 +1224,7 @@
       </Id>
       <DisplayName>MG25 "Avalanche" Heavy Machine Gun</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCodexPDC.dds</Icon>	  
-      <Description>Avalanche MGs are medium-weight gatling cannons designed to shoot down incoming missiles, strike craft, and act as an anti armour. Extremely high rate of fire. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
+      <Description>Avalanche MGs are lightweight gatling turrets designed to shoot down incoming missiles and strike craft. Extremely high rate of fire. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="3" />
@@ -1949,9 +1949,9 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXFlakTurret</SubtypeId>
       </Id>
-      <DisplayName>70mm Riptide Flak Turret</DisplayName>
+      <DisplayName>Riptide Flak Turret</DisplayName>
       <Icon>Textures\GUI\Icons\AryxRiptideFlak.dds</Icon>
-      <Description>Riptide FT's fire heavy flak shells that deal massive explosive damage to lightly armoured ships and strike craft, but poor damage against armoured targets. [800M RANGE - Accepts 70mm Riptide Shells (Kinetic).]</Description>
+      <Description>Riptides fire midweight flak shells that deal massive explosive damage to lightly armoured ships and strike craft, but poor damage against armoured targets. [800M RANGE - Accepts 70mm Riptide Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -2527,7 +2527,7 @@
 				<SubtypeId>ARYXPlasmaPulser</SubtypeId>
 			</Id>
 			<!--Highly Energised Lance Integrated Offensive System-->	
-			<DisplayName>M5D-4E HELIOS Plasma Pulser</DisplayName>
+			<DisplayName>M5D-4E Helios Plasma Pulser</DisplayName>
 			<Description>The Helios fires disruptive bolts of highly energised, white hot plasma. Extremely effective against shields, struggles against armour. Warranty void if used as a thruster and/or cooking appliance. [10KM TRAVEL - Energy Weapon.]</Description>
 			<Icon>Textures\GUI\Icons\AryxPlasmaGun.dds</Icon>
 			<CubeSize>Large</CubeSize>
@@ -2851,7 +2851,7 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXCatalystCannon</SubtypeId>
 		</Id>
-		<Public>true</Public>
+		<Public>false</Public>
 		<DisplayName>AL16-MV50 Olympus Antimatter Catalyst Cannon</DisplayName>
 		<Icon>Textures\GUI\Icons\Oppenheimer.dds</Icon>
 		<Description>A manmade horror beyond comprehension; The destroyer of worlds. (Energy)</Description>	
@@ -2862,17 +2862,17 @@
 		<Center x="1" y="0" z="7" />
 		<Model>Models\Gauss\LG_AryxGaussCannon.mwm</Model>
 		<Components>
-			<Component Subtype="SteelPlate" Count="1250" />
-			<Component Subtype="Construction" Count="600" />
-			<Component Subtype="MetalGrid" Count="250" />
-			<Component Subtype="PowerCell" Count="168" />	
-			<Component Subtype="Superconductor" Count="336" />				
-			<Component Subtype="SmallTube" Count="500" />
-			<Component Subtype="Motor" Count="250" />		
-			<Component Subtype="ElectromagnetAWE" Count ="328" />	
-			<Component Subtype="Computer" Count="820" />
-			<Component Subtype="Construction" Count="400" />
-			<Component Subtype="SteelPlate" Count="750" />
+			<Component Subtype="SteelPlate" Count="9999" />
+			<Component Subtype="Construction" Count="9999" />
+			<Component Subtype="MetalGrid" Count="9999" />
+			<Component Subtype="PowerCell" Count="9999" />	
+			<Component Subtype="Superconductor" Count="9999" />				
+			<Component Subtype="SmallTube" Count="9999" />
+			<Component Subtype="Motor" Count="9999" />		
+			<Component Subtype="ElectromagnetAWE" Count ="9999" />	
+			<Component Subtype="Computer" Count="9999" />
+			<Component Subtype="Construction" Count="9999" />
+			<Component Subtype="SteelPlate" Count="9999" />
 		</Components>
 		<CriticalComponent Subtype="Computer" Index="0" />
 		<!--lmao this is how you comment in xml-->		
@@ -3904,7 +3904,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 			<Component Subtype="BulletproofGlass" Count ="120" />	
 			<Component Subtype="Computer" Count="300" />
 			<Component Subtype="Construction" Count="150" />
-			<Component Subtype="SteelPlate" Count="9999999" />
+			<Component Subtype="SteelPlate" Count="9999" />
 		</Components>
 		<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>

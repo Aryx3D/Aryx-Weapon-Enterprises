@@ -1,0 +1,492 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ResearchBlocks>
+	
+		<!--Unsorted Default Tree-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXBurstTurret" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXBurstTurret_SG" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>	
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXBurstTurretSlanted" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXMace" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXLargeRadar" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXSmallRadar" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+	
+	
+		<!--Autocannon Tree-->
+		<!--T1-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="SmallMissileLauncher" Subtype="ARYX_Fixed_Chord_auto" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYX_ChordAutocannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		<!--T2-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYX_EchoAutocannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Autocannons_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+
+		<!--Flak Tree-->
+		<!--T1-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXFlakTurret" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		<!--T2-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXHeavyFlakTurret" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Flak_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+
+
+		<!--Gatling Tree-->
+		<!--T1-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="SmallGatlingGun" Subtype="ARYX_SmallChaingun" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeGatlingTurret" Subtype="ARYXCodexPDC" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeGatlingTurret" Subtype="ARYXCodexPDC_SG" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>	
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXSlantedCodexPDC" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>	
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXSlantedInvCodexPDC" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>	
+
+		<!--T2-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="SmallGatlingGun" Subtype="ARYX_FixedAtlasGatling" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_GatlingGuns_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeGatlingTurret" Subtype="ARYXAtlasPDC" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_GatlingGuns_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		
+		<!--T3-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXVulcanTurret" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_GatlingGuns_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXWarriorGatling" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_GatlingGuns_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXWarriorGatlingGun" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_GatlingGuns_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>				
+
+		<!--Laser Tree-->
+		<!--T1-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXSmallPulseLaser_Fixed" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		<!--T2-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXNucleonShotgun" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Lasers_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXAuroraLaser" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Lasers_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYX_FocusBeam_CompactSG" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Lasers_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		<!--T3-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXOculusLaserBase" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Lasers_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>				
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXPulseTurret" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Lasers_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>			
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXCompactPulseTurret" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Lasers_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>					
+		<!--T2 ALT-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYX_FocusBeam_CompactTurret" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_FocusLasers_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXFocusLance" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_FocusLasers_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="AWE_MarkV_SuperLaser_Large_CB" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_FocusLasers_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+		
+
+		<!--Plasma Tree-->
+		<!--T1-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXPlasmaPulser" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Lasers_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		<!--T2-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXQuasarCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Plasmas_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXSpartanTurret" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Plasmas_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>			
+		<!--T3-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXMagnetarCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Plasmas_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		<!--ALT T3-->		
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXPlasmaBeamCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Plasmas_T3</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>			
+		
+		
+		<!--Exotic Tree-->
+		<!--T1-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYX_FW_NovaBlaster" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Plasmas_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		<!--T2-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXReaperPulseCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Exotics_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+		
+		
+		<!--T2-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXTacticalModule" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Plasmas_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXSpartanTurret" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Plasmas_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>			
+		<!--T3-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXMagnetarCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Plasmas_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>	
+
+		<!--Selfguided Tree-->
+		<!--T1-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXSentinel" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		<!--T2-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYX_Small_Sidekick_Hangar" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Selfguideds_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		
+		
+		
+		<!--Lorentz Tree-->
+		<!--T1-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXLightRailgun" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		<!--T2-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXPicketRailgun" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Lorentz_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+	    <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXRailgun" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Lorentz_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>	
+		<!--T3-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXRailgunTurret" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Lorentz_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+		<!--T4-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXGaussCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Lorentz_T3</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+		<!--T5-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXGaussTurret" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Lorentz_T4</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>			
+		
+		
+		<!--Gauss Tree-->
+		<!--T1-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXLightCoilgun" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Lorentz_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		<!--T2-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXHeavyCoilgun" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Gauss_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+	    <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXKingswordSupercannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Gauss_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+		
+		<!--Cannon Tree-->
+		<!--T1-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXJuryCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		<!--T2-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXCycloneCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Cannon_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXCycloneCannon_SG" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Cannon_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+		<!--T2-->
+	    <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXHurricaneCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Cannon_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>	
+	    <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXTsunamiCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Cannon_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+		<!--T4-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXTyphoonCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Cannon_T3</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="SmallMissileLauncher" Subtype="ARYXTempestCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Cannon_T3</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>	
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="SmallMissileLauncher" Subtype="ARYXTempestCannon_SG" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Cannon_T3</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+
+		<!--Missile Tree-->
+		<!--T1-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXFlechetteLauncher" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXInterceptorPDGun" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+		<!--T2-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXHydraTurret" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Missiles_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXLongbowLauncher" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Missiles_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		<!--T3-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXMissileBattery" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Missiles_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXHeavyMissileSalvoLauncher" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Missiles_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+		<!--T4-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXTorpLauncher" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Missiles_T3</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXInlineTorpLauncher" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Missiles_T3</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>			
+		<!--T5-->
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXHeavyTorpedoLauncher" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Missiles_T4</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+		
+    </ResearchBlocks>
+</Definitions>

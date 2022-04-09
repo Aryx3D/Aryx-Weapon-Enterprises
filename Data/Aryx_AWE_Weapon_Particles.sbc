@@ -19453,7 +19453,7 @@
 						<ValueFloat>0.01875</ValueFloat>
 					</Property>
 					<Property Name="Enabled" AnimationType="Const" Type="Bool">
-						<ValueBool>true</ValueBool>
+						<ValueBool>false</ValueBool>
 					</Property>
 					<Property Name="Particles per second" AnimationType="Animated" Type="Float">
 						<Keys />

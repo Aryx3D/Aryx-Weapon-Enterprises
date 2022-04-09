@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ResearchGroups>
+
+
+	
+		<!--Autocannon Tree-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Autocannons_T1" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYX_ChordAutocannon" />
+                <BlockId Type="SmallMissileLauncher" Subtype="ARYX_Fixed_Chord_auto" />
+            </Members>
+        </ResearchGroup>
+
+		<!--Flak Tree-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Flak_T1" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXFlakTurret" />
+            </Members>
+        </ResearchGroup>
+		
+		<!--Gatling Tree-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_GatlingGuns_T1" />
+            <Members>
+                <BlockId Type="SmallGatlingGun" Subtype="ARYX_SmallChaingun" />
+                <BlockId Type="LargeGatlingTurret" Subtype="ARYXCodexPDC" />
+                <BlockId Type="ConveyorSorter" Subtype="ARYXSlantedCodexPDC" />
+                <BlockId Type="ConveyorSorter" Subtype="ARYXSlantedInvCodexPDC" />
+                <BlockId Type="LargeGatlingTurret" Subtype="ARYXCodexPDC_SG" />
+            </Members>
+        </ResearchGroup>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_GatlingGuns_T2" />
+            <Members>
+                <BlockId Type="SmallGatlingGun" Subtype="ARYX_FixedAtlasGatling" />
+                <BlockId Type="LargeGatlingTurret" Subtype="ARYXAtlasPDC" />
+            </Members>
+        </ResearchGroup>
+		
+		<!--Laser Tree-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Lasers_T1" />
+            <Members>
+                <BlockId Type="ConveyorSorter" Subtype="ARYXSmallPulseLaser_Fixed" />
+            </Members>
+        </ResearchGroup>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Lasers_T2" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXNucleonShotgun" />
+				<BlockId Type="LargeMissileTurret" Subtype="ARYXAuroraLaser" />				
+            </Members>
+        </ResearchGroup>		
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_FocusLasers_T1" />
+            <Members>
+                <BlockId Type="ConveyorSorter" Subtype="ARYX_FocusBeam_CompactSG" />			
+            </Members>
+        </ResearchGroup>		
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_FocusLasers_T2" />
+            <Members>
+                <BlockId Type="ConveyorSorter" Subtype="ARYXFocusLance" />			
+            </Members>
+        </ResearchGroup>			
+		
+		
+		<!--Plasma Tree-->
+		<!--T1-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Plasmas_T1" />
+            <Members>
+                <BlockId Type="ConveyorSorter" Subtype="ARYXPlasmaPulser" />		
+            </Members>
+        </ResearchGroup>
+		<!--T2-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Plasmas_T2" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXQuasarCannon" />		
+            </Members>
+        </ResearchGroup>		
+		<!--T3-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Plasmas_T2" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXQuasarCannon" />		
+            </Members>
+        </ResearchGroup>			
+
+		<!--Exotic Tree-->
+		<!--T1-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Exotics_T1" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYX_FW_NovaBlaster" />		
+            </Members>
+        </ResearchGroup>
+		<!--T2-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Exotics_T2" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXReaperPulseCannon" />		
+            </Members>
+        </ResearchGroup>		
+		<!--T3-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Plasmas_T2" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXQuasarCannon" />		
+            </Members>
+        </ResearchGroup>
+		<!--ALT T3-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Plasmas_T3" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXSpartanTurret" />		
+            </Members>
+        </ResearchGroup>
+
+
+		<!--Selfguided Tree-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Selfguideds_T1" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXSentinel" />
+            </Members>
+        </ResearchGroup>
+
+
+		<!--Lorentz Tree-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Lorentz_T1" />
+            <Members>
+                <BlockId Type="ConveyorSorter" Subtype="ARYXLightRailgun" />
+            </Members>
+        </ResearchGroup>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Lorentz_T2" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXPicketRailgun" />
+				<BlockId Type="ConveyorSorter" Subtype="ARYXRailgun" />
+            </Members>
+        </ResearchGroup>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Lorentz_T3" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXRailgunTurret" />
+            </Members>
+        </ResearchGroup>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Lorentz_T4" />
+            <Members>
+                <BlockId Type="ConveyorSorter" Subtype="ARYXGaussCannon" />
+            </Members>
+        </ResearchGroup>
+		<!--Gauss Tree-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Gauss_T1" />
+            <Members>
+                <BlockId Type="ConveyorSorter" Subtype="ARYXLightCoilgun" />
+            </Members>
+        </ResearchGroup>	
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Gauss_T2" />
+            <Members>
+                <BlockId Type="ConveyorSorter" Subtype="ARYXHeavyCoilgun" />
+            </Members>
+        </ResearchGroup>
+
+		<!--Cannon Tree-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Cannon_T1" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXJuryCannon" />
+            </Members>
+        </ResearchGroup>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Cannon_T2" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXCycloneCannon" />
+				<BlockId Type="LargeMissileTurret" Subtype="ARYXCycloneCannon_SG" />
+            </Members>
+        </ResearchGroup>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Cannon_T3" />
+            <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXHurricaneCannon" />
+				<BlockId Type="LargeMissileTurret" Subtype="ARYXTsunamiCannon" />
+            </Members>
+        </ResearchGroup>
+
+
+		<!--Missile Tree-->
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Missiles_T1" />
+            <Members>
+                <BlockId Type="ConveyorSorter" Subtype="ARYXFlechetteLauncher" />
+				<BlockId Type="ConveyorSorter" Subtype="ARYXInterceptorPDGun" />
+            </Members>
+        </ResearchGroup>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Missiles_T2" />
+            <Members>
+                <BlockId Type="ConveyorSorter" Subtype="ARYXHydraTurret" />
+				<BlockId Type="ConveyorSorter" Subtype="ARYXLongbowLauncher" />
+            </Members>
+        </ResearchGroup>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Missiles_T3" />
+            <Members>
+                <BlockId Type="ConveyorSorter" Subtype="ARYXMissileBattery" />
+				<BlockId Type="ConveyorSorter" Subtype="ARYXHeavyMissileSalvoLauncher" />
+            </Members>
+        </ResearchGroup>
+        <ResearchGroup xsi:type="ResearchGroup">
+            <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Missiles_T4" />
+            <Members>
+                <BlockId Type="ConveyorSorter" Subtype="ARYXTorpLauncher" />
+				<BlockId Type="ConveyorSorter" Subtype="ARYXInlineTorpLauncher" />
+            </Members>
+        </ResearchGroup>				
+				
+				
+    </ResearchGroups>
+</Definitions>

@@ -94,8 +94,8 @@
         <Item Amount="2000" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="700" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="500" TypeId="Ingot" SubtypeId="Cobalt" />
-        <Item Amount="50" TypeId="Ingot" SubtypeId="Uranium" />		
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Platinum" />			
+        <Item Amount="25" TypeId="Ingot" SubtypeId="Uranium" />		
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Platinum" />			
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="GaussAmmoMagDef" />
@@ -133,8 +133,7 @@
         <Item Amount="500" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="100" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="50" TypeId="Ingot" SubtypeId="Cobalt" />
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Uranium" />		
-        <Item Amount="2" TypeId="Ingot" SubtypeId="Platinum" />			
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Uranium" />				
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AryxRailgunMagDef" />
@@ -151,8 +150,7 @@
         <Item Amount="700" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="150" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="75" TypeId="Ingot" SubtypeId="Cobalt" />
-        <Item Amount="17.5" TypeId="Ingot" SubtypeId="Uranium" />		
-        <Item Amount="5" TypeId="Ingot" SubtypeId="Platinum" />			
+        <Item Amount="17.5" TypeId="Ingot" SubtypeId="Uranium" />			
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AryxLightCoilgunAmmo" />
@@ -169,8 +167,7 @@
         <Item Amount="1500" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="400" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="150" TypeId="Ingot" SubtypeId="Cobalt" />
-        <Item Amount="30" TypeId="Ingot" SubtypeId="Uranium" />		
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Platinum" />			
+        <Item Amount="30" TypeId="Ingot" SubtypeId="Uranium" />				
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AryxHeavyCoilgunAmmo" />
@@ -188,9 +185,8 @@
       <Prerequisites>
         <Item Amount="250" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="50" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="25" TypeId="Ingot" SubtypeId="Cobalt" />
-        <Item Amount="5" TypeId="Ingot" SubtypeId="Uranium" />		
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Platinum" />			
+        <Item Amount="25" TypeId="Ingot" SubtypeId="Cobalt" />	
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Uranium" />			
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AryxSmallRailgunMagDef" />
@@ -227,7 +223,7 @@
         <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="10" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="5" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="5" TypeId="Ingot" SubtypeId="Uranium" />				
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Uranium" />				
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE100mmWarrorMag" />
       <BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
@@ -240,11 +236,10 @@
       <DisplayName>120mm Heavy Shell</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEWhirlwindAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="25" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="8" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="5" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="5" TypeId="Ingot" SubtypeId="Silver" />
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Uranium" />				
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Cobalt" />			
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE120mmCannonMag" />
       <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
@@ -260,8 +255,7 @@
         <Item Amount="50" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="10" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="10" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Silver" />
-        <Item Amount="5" TypeId="Ingot" SubtypeId="Uranium" />				
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Silver" />			
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE240mmCannonMag" />
       <BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
@@ -278,8 +272,7 @@
         <Item Amount="100" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="20" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="20" TypeId="Ingot" SubtypeId="Magnesium" />
-        <Item Amount="20" TypeId="Ingot" SubtypeId="Silver" />
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Uranium" />				
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Silver" />			
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE480mmCannonMag" />
       <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
@@ -296,7 +289,7 @@
         <Item Amount="25" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="25" TypeId="Ingot" SubtypeId="Magnesium" />
         <Item Amount="25" TypeId="Ingot" SubtypeId="Silver" />
-        <Item Amount="12.5" TypeId="Ingot" SubtypeId="Uranium" />				
+        <Item Amount="6" TypeId="Ingot" SubtypeId="Uranium" />				
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE600mmCannonMag" />
       <BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
@@ -315,8 +308,6 @@
         <Item Amount="5" TypeId="Ingot" SubtypeId="Nickel" />
 	    <Item Amount="2" TypeId="Ingot" SubtypeId="Cobalt" />	
         <Item Amount="2" TypeId="Ingot" SubtypeId="Magnesium" />		
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Silver" />
-        <Item Amount="0.5" TypeId="Ingot" SubtypeId="Gold" />
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="50mmSmartMag" />
@@ -335,9 +326,7 @@
         <Item Amount="8" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="5" TypeId="Ingot" SubtypeId="Nickel" />
 	    <Item Amount="2" TypeId="Ingot" SubtypeId="Cobalt" />	
-        <Item Amount="2" TypeId="Ingot" SubtypeId="Magnesium" />		
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Silver" />
-        <Item Amount="0.5" TypeId="Ingot" SubtypeId="Platinum" />
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Silver" />		
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="50mmSmartEnergyMag" />
@@ -376,9 +365,7 @@
       <Prerequisites>
         <Item Amount="3" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="0.5" TypeId="Ingot" SubtypeId="Nickel" />
-	    <Item Amount="0.25" TypeId="Ingot" SubtypeId="Cobalt" />	
-        <Item Amount="0.25" TypeId="Ingot" SubtypeId="Silver" />
-        <Item Amount="0.1" TypeId="Ingot" SubtypeId="Uranium" />		
+	    <Item Amount="0.25" TypeId="Ingot" SubtypeId="Magnesium" />	
 				
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="84mmFlechetteMissileMagDef" />
@@ -394,10 +381,7 @@
       <Prerequisites>
         <Item Amount="3" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="0.5" TypeId="Ingot" SubtypeId="Nickel" />
-	    <Item Amount="0.25" TypeId="Ingot" SubtypeId="Cobalt" />	
-        <Item Amount="0.25" TypeId="Ingot" SubtypeId="Silver" />
-        <Item Amount="0.25" TypeId="Ingot" SubtypeId="Platinum" />
-        <Item Amount="0.2" TypeId="Ingot" SubtypeId="Uranium" />		
+        <Item Amount="0.25" TypeId="Ingot" SubtypeId="Silver" />	
 				
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="84mmDisruptorMissileMagDef" />
@@ -413,11 +397,10 @@
       <DisplayName>Striker Missile</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEStrikerMissile.dds</Icon>
       <Prerequisites>
-        <Item Amount="8" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Nickel" />
-	    <Item Amount="0.8" TypeId="Ingot" SubtypeId="Cobalt" />	
-        <Item Amount="0.6" TypeId="Ingot" SubtypeId="Silver" />
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Uranium" />						
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Nickel" />
+	    <Item Amount="2" TypeId="Ingot" SubtypeId="Cobalt" />	
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Silver" />					
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWEStrikerMissileMagDef" />
       <BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
@@ -432,10 +415,9 @@
       <Icon>Textures\GUI\Icons\ammo\AWESabreMissile.dds</Icon>
       <Prerequisites>
         <Item Amount="6" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="0.6" TypeId="Ingot" SubtypeId="Nickel" />
-	    <Item Amount="0.6" TypeId="Ingot" SubtypeId="Cobalt" />	
-        <Item Amount="0.4" TypeId="Ingot" SubtypeId="Silver" />
-        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Uranium" />						
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Nickel" />
+	    <Item Amount="1" TypeId="Ingot" SubtypeId="Cobalt" />	
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Magnesium" />					
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWESabreMissileMagDef" />
       <BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
@@ -449,11 +431,9 @@
       <Icon>Textures\GUI\Icons\ammo\AWELancerMissile.dds</Icon>
       <Prerequisites>
         <Item Amount="6" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="0.6" TypeId="Ingot" SubtypeId="Nickel" />
-	    <Item Amount="0.6" TypeId="Ingot" SubtypeId="Cobalt" />	
-	    <Item Amount="0.8" TypeId="Ingot" SubtypeId="Gold" />			
-        <Item Amount="0.4" TypeId="Ingot" SubtypeId="Platinum" />
-        <Item Amount="0.8" TypeId="Ingot" SubtypeId="Uranium" />						
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Nickel" />
+	    <Item Amount="1" TypeId="Ingot" SubtypeId="Cobalt" />	
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Silver" />						
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWELancerMissileMagDef" />
       <BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
@@ -504,7 +484,7 @@
       <DisplayName>Annihilator Torpedo</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEAntimatterMissile.dds</Icon>
       <Prerequisites>
-        <Item Amount="1500" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="2500" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="1000" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="750" TypeId="Ingot" SubtypeId="Cobalt" />
         <Item Amount="100" TypeId="Ingot" SubtypeId="Gold" />		
@@ -544,9 +524,8 @@
       <DisplayName>300x40mm ATLAS Ammo</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEATLASAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="2.5" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="0.75" TypeId="Ingot" SubtypeId="Uranium" />
+        <Item Amount="8" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="1" TypeId="Ingot" SubtypeId="Magnesium" />		
 		
       </Prerequisites>
@@ -562,9 +541,9 @@
       <DisplayName>150x25mm AVALANCHE Ammo</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEATLASAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="2.5" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="1.0" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="0.25" TypeId="Ingot" SubtypeId="Magnesium" />		
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Silicon" />		
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="CODEXAmmoMagazine" />
