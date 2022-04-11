@@ -1951,7 +1951,7 @@
       </Id>
       <DisplayName>Riptide Flak Turret</DisplayName>
       <Icon>Textures\GUI\Icons\AryxRiptideFlak.dds</Icon>
-      <Description>Riptides fire midweight flak shells that deal massive explosive damage to lightly armoured ships and strike craft, but poor damage against armoured targets. [800M RANGE - Accepts 70mm Riptide Shells (Kinetic).]</Description>
+      <Description>Riptides fire lightweight flak shells that deal massive explosive damage to lightly armoured ships and strike craft, but poor damage against armoured targets. [800M RANGE - Accepts 38mm Riptide Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />

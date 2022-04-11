@@ -60,7 +60,7 @@
                 <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>60mmFlakMagazine</SubtypeId>
             </Id>
-            <DisplayName>65mm Riptide Flak Ammo</DisplayName>
+            <DisplayName>38mm Riptide Flak Ammo</DisplayName>
             <Icon>Textures\GUI\Icons\ammo\AWEFlak.dds</Icon>
             <Size>
                 <X>0.2</X>
