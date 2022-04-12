@@ -188,9 +188,9 @@ namespace Scripts {
                 AryxStrikerMissileAmmoWC,
                 AryxStrikerMissileGuidedWC,
 
-                AryxCasabaMissileAmmoWC,
-                AryxCasabaMissileGuidedWC,
-                AryxCasabaMissileShotWC,
+                //AryxCasabaMissileAmmoWC,
+                //AryxCasabaMissileGuidedWC,
+                //AryxCasabaMissileShotWC,
             },
             //Animations = AryxFenrirAnims,
             //Upgrades = UpgradeModules,

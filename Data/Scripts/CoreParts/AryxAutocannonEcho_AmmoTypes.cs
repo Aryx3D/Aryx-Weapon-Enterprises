@@ -287,7 +287,7 @@ namespace Scripts
                     },
                     Hit = new ParticleDef
                     {
-                        Name = "WaterBulletHit", //MaterialHit_Metal_GatlingGun                       
+                        Name = "MaterialHit_Metal_GatlingGun", //MaterialHit_Metal_GatlingGun    //WaterBulletHit                   
                         ApplyToShield = false,
                         ShrinkByDistance = false,
                         Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
