@@ -80,9 +80,9 @@ namespace Scripts
                 DamageType = new DamageTypes
                 {
                     Base = Kinetic,
-                    AreaEffect = Energy,
-                    Detonation = Energy,
-                    Shield = Energy,
+                    AreaEffect = Kinetic,
+                    Detonation = Kinetic,
+                    Shield = Kinetic,
                 },
                 // modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01 = 1% damage, 2 = 200% damage.
                 Characters = -1f,
@@ -442,7 +442,7 @@ namespace Scripts
                 SelfDamage = false, // true = allow self damage.
                 DamageType = new DamageTypes
                 {
-                    Base = Energy,
+                    Base = Kinetic,
                     AreaEffect = Kinetic,
                     Detonation = Kinetic,
                     Shield = Kinetic,

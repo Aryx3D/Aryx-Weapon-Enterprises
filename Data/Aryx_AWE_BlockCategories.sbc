@@ -6,7 +6,7 @@
         <TypeId>GuiBlockCategoryDefinition</TypeId>
         <SubtypeId/>
       </Id>
-      <DisplayName>AryxErin Weapon Enterprises</DisplayName>
+      <DisplayName>AryxCami Weapon Enterprises</DisplayName>
       <Name>ARYXWeapons</Name>
       <ItemIds>
 		<string>ConveyorSorter/ARYXFlechetteLauncher</string>
@@ -72,6 +72,7 @@
 		<string>ConveyorSorter/ARYXSlantedAtlasPDC</string>			
 		<string>ConveyorSorter/ARYXWarriorGatlingGun</string>
 		<string>LargeMissileTurret/ARYXSpartanTurret</string>		
+		<string>LargeMissileTurret/ARYXVulcanTurret</string>	
 
       </ItemIds>
     </Category> 
@@ -143,6 +144,7 @@
 		<string>ConveyorSorter/ARYXSlantedAtlasPDC</string>	
 		<string>ConveyorSorter/ARYXWarriorGatlingGun</string>	
 		<string>LargeMissileTurret/ARYXSpartanTurret</string>
+		<string>LargeMissileTurret/ARYXVulcanTurret</string>			
 	  </ItemIds>
     </Category>
 	
@@ -214,7 +216,8 @@
 		<string>ConveyorSorter/ARYXLightRailgun</string>	
 		<string>ConveyorSorter/ARYXSlantedAtlasPDC</string>
 		<string>ConveyorSorter/ARYXWarriorGatlingGun</string>
-		<string>LargeMissileTurret/ARYXSpartanTurret</string>		
+		<string>LargeMissileTurret/ARYXSpartanTurret</string>	
+		<string>LargeMissileTurret/ARYXVulcanTurret</string>			
 	</ItemIds>
     </Category> 
 
@@ -282,7 +285,8 @@
 		<string>ConveyorSorter/ARYXHeavyTorpedoLauncher</string>				
 		<string>ConveyorSorter/ARYXSlantedAtlasPDC</string>
 		<string>ConveyorSorter/ARYXWarriorGatlingGun</string>
-		<string>LargeMissileTurret/ARYXSpartanTurret</string>		
+		<string>LargeMissileTurret/ARYXSpartanTurret</string>
+		<string>LargeMissileTurret/ARYXVulcanTurret</string>			
 	  </ItemIds>
     </Category>  	
 
