@@ -38,7 +38,7 @@ namespace Scripts
             BackKickForce = 0f, // Recoil.
             DecayPerShot = 0f, // Damage to the firing weapon itself.
             HardPointUsable = true, // Whether this is a primary ammo type fired directly by the turret. Set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
-            EnergyMagazineSize = 180, // For energy weapons, how many shots to fire before reloading.
+            EnergyMagazineSize = 360, // For energy weapons, how many shots to fire before reloading.
             IgnoreWater = false, // Whether the projectile should be able to penetrate water when using WaterMod.
 
             Shape = new ShapeDef // Defines the collision shape of the projectile, defaults to LineShape and uses the visual Line Length if set to 0.
@@ -345,7 +345,7 @@ namespace Scripts
                                 "AryxPulseLaserEffectL2",
                             },
                             SegmentLength = 65f, // Uses the values below.
-                            SegmentGap = 15f, // Uses Tracer textures and values
+                            SegmentGap = 0, // Uses Tracer textures and values
                             Speed = 100f, // meters per second
                             Color = Color(red: 10, green: 20, blue: 25f, alpha: 0.8f),
                             WidthMultiplier = 0.25f,

@@ -526,8 +526,8 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 6000, // Meters
-                    Damage = 2.5f,
+                    Radius = 2.5, // Meters
+                    Damage = 3500f,
                     Depth = 3f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius

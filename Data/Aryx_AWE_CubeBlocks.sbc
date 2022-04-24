@@ -655,9 +655,9 @@
         <TypeId>ConveyorSorter</TypeId>
         <SubtypeId>ARYXTacticalModule</SubtypeId>
       </Id>
-      <DisplayName>Aegis Tactical Field Module</DisplayName>
+      <DisplayName>Aegis Tactical Module</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_TacticalModule.dds</Icon>  
-      <Description>The Aegis is a short-range tactical device designed to provide an array of fire support types at close-range, being able to repel, emit a large EMP pulse, disable thrusters and gyros, and more.[500M RANGE - ENERGY-BASED TACTICAL WEAPON]</Description>
+      <Description>The Aegis is a tactical device designed as a final-resort measure to scuttle a ship. The primary method provides a defensive EMP field to disable nearby grids, and the secondary mode will make the core go supercritical, destroying everything within 500m. [500M RANGE - ENERGY-BASED TACTICAL WEAPON]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="3" y="3" z="3"/>
@@ -1837,11 +1837,56 @@
     </Definition>	
 	
 	
-	
-	
-	
-	
-	
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+      <Id>
+        <TypeId>ConveyorSorter</TypeId>
+        <SubtypeId>ARYX_SmallFlareLauncher</SubtypeId>
+      </Id>
+      <DisplayName>F9-B Flare Launcher</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_FlareLauncher.dds</Icon>
+      <Description>Flare launchers fire high-intensity flares that [4KM RANGE - Accepts 54mm AC (Kinetic).]</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+	  <Size x="1" y="2" z="2"/>
+	  <ModelOffset x="0" y="0" z="0"/>
+	  <Model>Models\AWE_FlareLauncher\ARYX_SmallFlareLauncher.mwm</Model>
+      <Components>
+		<Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="Construction" Count="5" />
+		<Component Subtype="LargeTube" Count="4" />
+		<Component Subtype="Motor" Count="8" />
+		<Component Subtype="Computer" Count="5" />
+		<Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.40" StartY="0.39" EndX="0.60" EndY="0.70"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="1.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="1.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_FlareLauncher\ARYX_SmallFlareLauncher_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_FlareLauncher\ARYX_SmallFlareLauncher_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_FlareLauncher\ARYX_SmallFlareLauncher_BS3.mwm"/>
+			</BuildProgressModels>
+      <BlockPairName>AryxFlareLauncher</BlockPairName>
+	  <MirroringY>Z</MirroringY>
+	  <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.06</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>150</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
       <Id>
         <TypeId>SmallMissileLauncher</TypeId>

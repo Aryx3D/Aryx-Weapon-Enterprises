@@ -130,6 +130,8 @@
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYX_FocusBeam_CompactSG" />	
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXSmallPulseLaser_Fixed" />		
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXLightRailgun" />		
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYX_SmallFlareLauncher" />		
+
 
 		<!--COMPONENTS-->			
 	<Entry Class="Components" BlueprintSubtypeId="AWE_ElectromagnetBP" />
