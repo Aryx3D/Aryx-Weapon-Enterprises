@@ -1844,7 +1844,7 @@
       </Id>
       <DisplayName>F9-B Flare Launcher</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_FlareLauncher.dds</Icon>
-      <Description>Flare launchers fire high-intensity flares that [4KM RANGE - Accepts 54mm AC (Kinetic).]</Description>
+      <Description>Flare launchers are utility modules that fire high-intensity flares that burn brightly and illuminate the surrounding area. They  can also be used to scramble missile targeting to an extent. [100m RANGE - BURN TIME OF 10 SECONDS. ACCEPTS FLARE CANISTERS]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="2" z="2"/>
