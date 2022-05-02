@@ -177,6 +177,7 @@ namespace Scripts
             },
             Ammos = new[] {
                 AryxHurricaneAmmoWC,
+                AryxKineticFrags,
             },
             Animations = AryxHurricaneAnims,
             // Don't edit below this line

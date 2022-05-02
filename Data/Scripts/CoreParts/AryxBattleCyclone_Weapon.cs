@@ -182,6 +182,7 @@ namespace Scripts
             },
             Ammos = new[] {
                 AryxCycloneAmmoWC,
+                AryxKineticFrags,
             },
             Animations = AryxCycloneAnims,
             // Don't edit below this line

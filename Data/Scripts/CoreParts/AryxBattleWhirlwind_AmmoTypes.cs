@@ -51,13 +51,12 @@ namespace Scripts
                 MaxObjectsHit = 0, // Limits the number of entities (grids, players, projectiles) the projectile can penetrate; 0 = unlimited.
                 CountBlocks = false, // Counts individual blocks, not just entities hit.
             },
-            Fragment = new FragmentDef // Formerly known as Shrapnel. Spawns specified ammo fragments on projectile death (via hit or detonation).
+            Fragment = new FragmentDef
             {
-                AmmoRound = "", // AmmoRound field of the ammo to spawn.
-                Fragments = 100, // Number of projectiles to spawn.
-                Degrees = 15, // Cone in which to randomise direction of spawned projectiles.
-                Reverse = false, // Spawn projectiles backward instead of forward.
-                
+                AmmoRound = "AryxKineticFrags",
+                Fragments = 10,
+                Degrees = 360,
+                Reverse = true,
             },
             Pattern = new PatternDef
             {

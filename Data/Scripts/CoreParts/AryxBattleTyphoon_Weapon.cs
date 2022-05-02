@@ -178,6 +178,7 @@ namespace Scripts
             },
             Ammos = new[] {
                 AryxTyphoonAmmoWC,
+                AryxKineticFrags,
             },
             Animations = AryxTyphoonAnims,
             // Don't edit below this line

@@ -183,6 +183,7 @@ namespace Scripts {
             },
             Ammos = new[] {
                 AryxWhirlwindAmmoWC, // Must list all primary, shrapnel, and pattern ammos.
+                AryxKineticFrags,
             },
             //Animations = AryxWarriorAnimations,
             //Upgrades = UpgradeModules,

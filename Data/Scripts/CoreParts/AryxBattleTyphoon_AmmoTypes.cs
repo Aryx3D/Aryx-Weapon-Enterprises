@@ -51,11 +51,10 @@ namespace Scripts
             },
             Fragment = new FragmentDef
             {
-                AmmoRound = "",
-                Fragments = 100,
-                Degrees = 15,
-                Reverse = false,
-                
+                AmmoRound = "AryxKineticFrags",
+                Fragments = 30,
+                Degrees = 360,
+                Reverse = true,               
             },
             Pattern = new PatternDef
             {
