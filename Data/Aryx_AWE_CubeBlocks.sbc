@@ -1425,7 +1425,63 @@
       <TargetingGroups>
 		<string>Weapons</string>
       </TargetingGroups>      
-    </Definition>			
+    </Definition>	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXVariableLaser</SubtypeId>
+      </Id>
+      <DisplayName>VL6 Modulus Variable-Laser</DisplayName>
+      <Icon>Textures\GUI\Icons\AWEModulusLaser.dds</Icon>	  
+      <Description>The Modulus is a laser weapon that can change its damage rating based on the wavelength it emits. Shorter wavelengths give higher damage, but shorter range. [ 2.5KM RANGE - Ammo drops falloff in 500m increments from max WL - Energy Weapon]</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+	  <Size x="3" y="3" z="3"/>
+	  <ModelOffset x="0" y="0" z="0"/>
+	  <Model>Models\AWE_Modulus\LG_ARYXModulus_Base.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="450" />
+        <Component Subtype="Construction" Count="150" />
+        <Component Subtype="PowerCell" Count="80" />
+        <Component Subtype="SmallTube" Count="60" />
+        <Component Subtype="Motor" Count="40" />
+        <Component Subtype="Superconductor" Count="60" />
+        <Component Subtype="BulletproofGlass" Count="60" />
+        <Component Subtype="Computer" Count="200" />
+		<Component Subtype="Construction" Count="100" />
+        <Component Subtype="SteelPlate" Count="250" />	
+      </Components>
+	  <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Modulus\LG_ARYXModulus_Base_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Modulus\LG_ARYXModulus_Base_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Modulus\LG_ARYXModulus_Base_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>ARYXVariableLaser</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>40</BuildTimeSeconds>
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture> 
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxPulseLaserWepDef" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>150</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>

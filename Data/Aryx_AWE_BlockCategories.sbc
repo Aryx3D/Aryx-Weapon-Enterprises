@@ -73,7 +73,8 @@
 		<string>ConveyorSorter/ARYXWarriorGatlingGun</string>
 		<string>LargeMissileTurret/ARYXSpartanTurret</string>		
 		<string>LargeMissileTurret/ARYXVulcanTurret</string>	
-		<string>ConveyorSorter/ARYX_SmallFlareLauncher</string>		
+		<string>ConveyorSorter/ARYX_SmallFlareLauncher</string>
+		<string>LargeMissileTurret/ARYXVariableLaser</string>			
 
       </ItemIds>
     </Category> 
@@ -146,7 +147,8 @@
 		<string>ConveyorSorter/ARYXWarriorGatlingGun</string>	
 		<string>LargeMissileTurret/ARYXSpartanTurret</string>
 		<string>LargeMissileTurret/ARYXVulcanTurret</string>	
-		<string>ConveyorSorter/ARYX_SmallFlareLauncher</string>				
+		<string>ConveyorSorter/ARYX_SmallFlareLauncher</string>	
+		<string>LargeMissileTurret/ARYXVariableLaser</string>			
 	  </ItemIds>
     </Category>
 	
@@ -220,7 +222,8 @@
 		<string>ConveyorSorter/ARYXWarriorGatlingGun</string>
 		<string>LargeMissileTurret/ARYXSpartanTurret</string>	
 		<string>LargeMissileTurret/ARYXVulcanTurret</string>
-		<string>ConveyorSorter/ARYX_SmallFlareLauncher</string>				
+		<string>ConveyorSorter/ARYX_SmallFlareLauncher</string>	
+		<string>LargeMissileTurret/ARYXVariableLaser</string>			
 	</ItemIds>
     </Category> 
 
@@ -289,7 +292,9 @@
 		<string>ConveyorSorter/ARYXSlantedAtlasPDC</string>
 		<string>ConveyorSorter/ARYXWarriorGatlingGun</string>
 		<string>LargeMissileTurret/ARYXSpartanTurret</string>
-		<string>LargeMissileTurret/ARYXVulcanTurret</string>				
+		<string>LargeMissileTurret/ARYXVulcanTurret</string>	
+		<string>LargeMissileTurret/ARYXVariableLaser</string>	
+		
 	  </ItemIds>
     </Category>  	
 

@@ -72,7 +72,8 @@ namespace Scripts
             AryxFixedWarriorGatling,
             AryxSpartanTurret,
             AryxVulcanTurret,
-            AryxSmallFlareLauncher
+            AryxSmallFlareLauncher,
+            AryxModulusLaser
             );
           
         }

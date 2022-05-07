@@ -91,7 +91,25 @@
 			<End>Audio\Aryx\gatlings\aryx_guardian_gatling_stop_01.wav</End>
         </Wave>		
       </Waves>
-    </Sound>	
+    </Sound>
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcWepShipARYXModulus_LoopFire</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>200</MaxDistance>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>3</DynamicMusicAmount>
+      <Volume>1</Volume>
+      <Loopable>true</Loopable>
+      <PreventSynchronization>0</PreventSynchronization>	   
+      <Waves>
+        <Wave Type="D3">
+			<Loop>Audio\Aryx\lasers\aryx_modulus_fire_loop.wav</Loop>
+        </Wave>		
+      </Waves>
+    </Sound>		
     <Sound>
       <Id>
         <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
