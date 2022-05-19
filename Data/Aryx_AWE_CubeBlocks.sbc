@@ -160,61 +160,6 @@
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
-        <SubtypeId>ARYXTsunamiCannon</SubtypeId>
-      </Id>
-      <DisplayName>480mm Tsunami Strike Cannon</DisplayName>
-      <Icon>Textures\GUI\Icons\AryxTsunamiCannon.dds</Icon>	  
-      <Description>The Tsunami is a casemate single-barrel barrel artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]</Description>
-      <CubeSize>Large</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="3" z="7"/>
-      <ModelOffset x="0" y="0" z="0" />
-	  <Model>Models\AWE_HeavyCannon\ARYX_TsunamiCannon.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="550" />
-        <Component Subtype="Construction" Count="320" />
-        <Component Subtype="MetalGrid" Count="400" />
-        <Component Subtype="LargeTube" Count="60" />	
-        <Component Subtype="Motor" Count="200" />
-        <Component Subtype="Computer" Count="250" />
-        <Component Subtype="Construction" Count="100" />		
-        <Component Subtype="SteelPlate" Count="450" />
-      </Components>
-      <CriticalComponent Subtype="Computer" Index="0" />
-			<MountPoints>
-				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
-				<MountPoint Side="Left" StartX="5.00" StartY="0.00" EndX="7.00" EndY="3.00"/>
-				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="3.00"/>
-				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
-				<MountPoint Side="Bottom" StartX="0.00" StartY="4.00" EndX="3.00" EndY="7.00"/>
-			</MountPoints>
-			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.33" File="Models\AWE_HeavyCannon\ARYX_TsunamiCannon_BS1.mwm"/>
-				<Model BuildPercentUpperBound="0.67" File="Models\AWE_HeavyCannon\ARYX_TsunamiCannon_BS2.mwm"/>
-				<Model BuildPercentUpperBound="1.00" File="Models\AWE_HeavyCannon\ARYX_TsunamiCannon_BS3.mwm"/>
-			</BuildProgressModels>		
-      <BlockPairName>AryxTsunamiCannon</BlockPairName>
-		<MirroringY>Z</MirroringY>
-		<MirroringZ>Y</MirroringZ>
-      <BuildTimeSeconds>100</BuildTimeSeconds>
-	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
-      <EdgeType>Light</EdgeType>
-      <WeaponDefinitionId Subtype="AryxHurricaneWepDef" />
-	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
-      <ResourceSinkGroup>Defense</ResourceSinkGroup>
-      <InventoryMaxVolume>0.576</InventoryMaxVolume>
-      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
-      <DamagedSound>ParticleWeapExpl</DamagedSound>
-      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>500</PCU>      
-      <TargetingGroups>
-		<string>Weapons</string>
-      </TargetingGroups>      
-    </Definition>	
-	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
-      <Id>
-        <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXTyphoonCannon</SubtypeId>
       </Id>
       <DisplayName>600mm Typhoon Strike Cannon</DisplayName>
@@ -267,6 +212,61 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXTsunamiCannon</SubtypeId>
+      </Id>
+      <DisplayName>480mm Tsunami Strike Cannon</DisplayName> 
+      <Icon>Textures\GUI\Icons\AryxTsunamiCannon.dds</Icon>	  
+      <Description>The Tsunami is a casemate single-barrel barrel artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="7"/>
+      <ModelOffset x="0" y="0" z="0" />
+	  <Model>Models\AWE_HeavyCannon\ARYX_TsunamiCannon.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="550" />
+        <Component Subtype="Construction" Count="320" />
+        <Component Subtype="MetalGrid" Count="400" />
+        <Component Subtype="LargeTube" Count="60" />	
+        <Component Subtype="Motor" Count="200" />
+        <Component Subtype="Computer" Count="250" />
+        <Component Subtype="Construction" Count="100" />		
+        <Component Subtype="SteelPlate" Count="450" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Left" StartX="5.00" StartY="0.00" EndX="7.00" EndY="3.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="3.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="4.00" EndX="3.00" EndY="7.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_HeavyCannon\ARYX_TsunamiCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_HeavyCannon\ARYX_TsunamiCannon_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_HeavyCannon\ARYX_TsunamiCannon_BS3.mwm"/>
+			</BuildProgressModels>		
+      <BlockPairName>AryxTsunamiCannon</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>100</BuildTimeSeconds>
+	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxHurricaneWepDef" />
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.576</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>500</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>		
 	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
       <Id>
         <TypeId>SmallMissileLauncher</TypeId>
@@ -374,7 +374,59 @@
       <TargetingGroups>
 		<string>Weapons</string>
       </TargetingGroups>      
-    </Definition>		
+    </Definition>	
+	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>ARYXWindfallCannon</SubtypeId>
+      </Id>
+      <DisplayName>M240 Windfall Strike Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_Windfall.dds</Icon>	  
+      <Description>The Windfall is a heavy artillery piece for strike craft. This fearsome weapon allows for fighters to deal massive damage to larger vessels.  [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
+	  <CubeSize>Small</CubeSize>
+	  <BlockTopology>TriangleMesh</BlockTopology>
+	  <Size x="3" y="2" z="12"/>
+	  <ModelOffset x="0" y="0" z="0"/>
+	  <Model>Models\AWE_Windfall\ARYX_WindfallCannon.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="MetalGrid" Count="10" />
+        <Component Subtype="LargeTube" Count="30" />	
+        <Component Subtype="Motor" Count="10" />
+        <Component Subtype="Computer" Count="25" />
+        <Component Subtype="Construction" Count="10" />		
+        <Component Subtype="SteelPlate" Count="25" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="9.00" StartY="0.00" EndX="12.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="9.00" EndX="3.00" EndY="12.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\AWE_Windfall\ARYX_WindfallCannon_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Windfall\ARYX_WindfallCannon_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>ARYX_WindfallCannon</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxCycloneWepDef" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.6</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -4034,7 +4086,63 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <TargetingGroups>
 		<string>Weapons</string>
       </TargetingGroups>      
-    </Definition>	
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXPlasmaFlamethrower</SubtypeId>
+		</Id>
+		<DisplayName>FS-PT2 Furion Plasma-Thrower</DisplayName>
+		<Icon>Textures\GUI\Icons\Aryx_AWE_FocusBeamLance.dds</Icon>
+	    <Public>false</Public>		
+		<Description>An extremely powerful flamethrower-type weapon that fires a stream of blue-hot expanding plasma. Slow velocity, but highly damaging. [1.5KM RANGE - ENERGY WEAPON (Energy)]</Description>	
+		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="1" y="1" z="6"/>
+		<Center x="0" y="0" z="5" />	
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_FocusBeam\ARYX_FocusBeam.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="300" />
+			<Component Subtype="Construction" Count="200" />
+			<Component Subtype="MetalGrid" Count="50" />
+			<Component Subtype="PowerCell" Count="40" />	
+			<Component Subtype="Superconductor" Count="120" />				
+			<Component Subtype="LargeTube" Count="150" />	
+			<Component Subtype="BulletproofGlass" Count ="120" />	
+			<Component Subtype="Computer" Count="300" />
+			<Component Subtype="Construction" Count="150" />
+			<Component Subtype="SteelPlate" Count="9999" />
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="1.00" StartY="0.00" EndX="6.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="5.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="1.00" EndX="1.00" EndY="6.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_FocusBeam\ARYX_FocusBeam_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\AWE_FocusBeam\ARYX_FocusBeam_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\AWE_FocusBeam\ARYX_FocusBeam_BS3.mwm"/>
+			</BuildProgressModels>			
+			<BlockPairName>AWEFurionPlasmaThrower</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>90</BuildTimeSeconds>
+		<InventoryMaxVolume>1</InventoryMaxVolume>
+		<DamageEffectId>213</DamageEffectId>
+		<DamagedSound>ParticleWeapExpl</DamagedSound>
+		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		<EmissiveColorPreset>Default</EmissiveColorPreset>
+      <PCU>400</PCU>   		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>		
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>

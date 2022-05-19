@@ -55,9 +55,9 @@ namespace Scripts
             HardPoint = new HardPointDef 
             {
                 PartName = "AC-85 Echo", // name of weapon in terminal
-                DeviateShotAngle = 0,
+                DeviateShotAngle = 0.005f,
                 AimingTolerance = 1f, // 0 - 180 firing angle
-                AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
+                AimLeadingPrediction = Advanced, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
                 CanShootSubmerged = true,

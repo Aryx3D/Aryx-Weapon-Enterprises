@@ -13,23 +13,22 @@ namespace Scripts
     partial class Parts
     {
         // Don't edit above this line
-        WeaponDefinition AryxHurricaneTurret => new WeaponDefinition
+        WeaponDefinition AryxWindfallCannon => new WeaponDefinition
         {
 
             Assignments = new ModelAssignmentsDef
             {
                 MountPoints = new[] {
                     new MountPointDef {
-                        SubtypeId = "ARYXHurricaneCannon",
+                        SubtypeId = "ARYXWindfallCannon",
                         SpinPartId = "None",
-                        MuzzlePartId = "MissileTurretBarrels",
-                        AzimuthPartId = "MissileTurretBase1",
-                        ElevationPartId = "MissileTurretBarrels",
+                        MuzzlePartId = "None",
+                        AzimuthPartId = "None",
+                        ElevationPartId = "None",
                     },
                 },
                 Muzzles = new[] {
                     "muzzle_projectile_1",
-                    "muzzle_projectile_2",
                 },
                 Ejector = "",
                 Scope = "",
@@ -55,10 +54,10 @@ namespace Scripts
             },
             HardPoint = new HardPointDef
             {
-                PartName = "Hurricane Heavy Cannon", // name of weapon in terminal
-                DeviateShotAngle = 0.25f,
+                PartName = "Windfall Heavy Cannon", // name of weapon in terminal
+                DeviateShotAngle = 0.125f,
                 AimingTolerance = 1f, // 0 - 180 firing angle
-                AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
+                AimLeadingPrediction = Off, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
                 CanShootSubmerged = true,
@@ -72,22 +71,22 @@ namespace Scripts
                 },
                 Ai = new AiDef
                 {
-                    TrackTargets = true,
-                    TurretAttached = true,
-                    TurretController = true,
-                    PrimaryTracking = true,
+                    TrackTargets = false,
+                    TurretAttached = false,
+                    TurretController = false,
+                    PrimaryTracking = false,
                     LockOnFocus = false,
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.0025f,
-                    ElevateRate = 0.0025f,
-                    MinAzimuth = -180,
-                    MaxAzimuth = 180,
-                    MinElevation = -5,
-                    MaxElevation = 45,
+                    RotateRate = 0,
+                    ElevateRate = 0,
+                    MinAzimuth = 0,
+                    MaxAzimuth = 0,
+                    MinElevation = 0,
+                    MaxElevation = 0,
                     FixedOffset = false,
-                    InventorySize = 0.576f,
+                    InventorySize = 0.12f,
                     Offset = Vector(x: 0, y: 0, z: 0),
                     Type = BlockWeapon, // BlockWeapon, HandWeapon, Phantom 
                     CriticalReaction = new CriticalDef
@@ -116,23 +115,22 @@ namespace Scripts
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 600, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 300, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 0, //heat generated per shot
-                    MagsToLoad = 2,
                     MaxHeat = 70000, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .95f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
                     HeatSinkRate = 9000, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
-                    ShotsInBurst = 2,
-                    DelayAfterBurst = 600, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ShotsInBurst = 1,
+                    DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     FireFull = false,
-                    GiveUpAfter = true,
+                    GiveUpAfter = false,
                 },
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "",
-                    FiringSound = "ArcWepShipARYXHurricane_Fire", // WepShipGatlingShot
+                    FiringSound = "ArcWepShipARYXCyclone_Fire", // WepShipGatlingShot
                     FiringSoundPerShot = true,
                     ReloadSound = "",
                     NoAmmoSound = "",
@@ -155,7 +153,7 @@ namespace Scripts
                             Restart = true,
                             MaxDistance = 1000,
                             MaxDuration = 0,
-                            Scale = 1.75f,
+                            Scale = 1f,
                         },
                     },
                     Effect2 = new ParticleDef
@@ -176,10 +174,10 @@ namespace Scripts
                 },
             },
             Ammos = new[] {
-                AryxHurricaneAmmoWC,
+                AryxWindfallAmmoWC,
                 AryxKineticFrags,
             },
-            Animations = AryxHurricaneAnims,
+            Animations = AryxWindfallAnims,
             // Don't edit below this line
         };
     }

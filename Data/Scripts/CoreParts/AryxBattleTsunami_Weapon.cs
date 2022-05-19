@@ -56,7 +56,7 @@ namespace Scripts
             HardPoint = new HardPointDef
             {
                 PartName = "Tsunami Heavy Cannon", // name of weapon in terminal
-                DeviateShotAngle = 0.1f,
+                DeviateShotAngle = 0.25f,
                 AimingTolerance = 1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -80,8 +80,8 @@ namespace Scripts
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.0021f,
-                    ElevateRate = 0.0021f,
+                    RotateRate = 0.0025f,
+                    ElevateRate = 0.0025f,
                     MinAzimuth = -42,
                     MaxAzimuth = 42,
                     MinElevation = -30,

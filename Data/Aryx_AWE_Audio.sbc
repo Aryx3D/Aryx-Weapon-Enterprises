@@ -107,6 +107,8 @@
       <Waves>
         <Wave Type="D3">
 			<Loop>Audio\Aryx\lasers\aryx_modulus_fire_loop.wav</Loop>
+			<End>Audio\Aryx\lasers\aryx_modulus_fire_loop_end.wav</End>			
+			
         </Wave>		
       </Waves>
     </Sound>		

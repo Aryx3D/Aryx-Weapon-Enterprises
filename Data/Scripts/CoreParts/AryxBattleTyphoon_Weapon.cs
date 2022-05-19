@@ -58,7 +58,7 @@ namespace Scripts
             HardPoint = new HardPointDef
             {
                 PartName = "Typhoon Heavy Cannon", // name of weapon in terminal
-                DeviateShotAngle = 0.1f,
+                DeviateShotAngle = 0.4f,
                 AimingTolerance = 1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
@@ -81,8 +81,8 @@ namespace Scripts
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.0015f,
-                    ElevateRate = 0.0015f,
+                    RotateRate = 0.002f,
+                    ElevateRate = 0.002f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -5,
