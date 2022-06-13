@@ -30,7 +30,7 @@ namespace Scripts
         private AmmoDef AryxPlasmaCannonAmmoWC => new AmmoDef
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "ZS-2H Energy Bolt",
+            AmmoRound = "Helios Energy Bolt",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.24230508f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = 4000,
@@ -98,7 +98,7 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.5f,
+                    Armor = 0.75f,
                     Light = -1f,
                     Heavy = -1f,
                     NonArmor = -1f,

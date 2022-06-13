@@ -80,9 +80,9 @@ namespace Scripts
                 DamageType = new DamageTypes
                 {
                     Base = Kinetic,
-                    AreaEffect = Energy,
-                    Detonation = Energy,
-                    Shield = Energy,
+                    AreaEffect = Kinetic,
+                    Detonation = Kinetic,
+                    Shield = Kinetic,
                 },
                 // modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01 = 1% damage, 2 = 200% damage.
                 Characters = -1f,
@@ -397,7 +397,7 @@ namespace Scripts
             AmmoRound = "AryxLightCoilgunPiercingAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 135000,
+            BaseDamage = 67500,
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 500f,

@@ -278,7 +278,7 @@
             <Volume>5</Volume>
             <Model>Models\Weapons\Ammo_Box.mwm</Model>
             <PhysicalMaterial>Ammo</PhysicalMaterial>
-            <Capacity>10</Capacity>
+            <Capacity>6</Capacity>
             <AmmoDefinitionId Subtype="50mmSmartAmmoDef" />
 
             <MinimumOfferAmount>100</MinimumOfferAmount>
@@ -304,7 +304,7 @@
             <Volume>5</Volume>
             <Model>Models\Weapons\Ammo_Box.mwm</Model>
             <PhysicalMaterial>Ammo</PhysicalMaterial>
-            <Capacity>10</Capacity>
+            <Capacity>6</Capacity>
             <AmmoDefinitionId Subtype="50mmSmartAmmoDef" />
 
             <MinimumOfferAmount>100</MinimumOfferAmount>

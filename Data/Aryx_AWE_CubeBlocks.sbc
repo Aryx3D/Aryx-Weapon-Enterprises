@@ -7,7 +7,7 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXCycloneCannon</SubtypeId>
       </Id>
-      <DisplayName>240mm Cyclone Strike Cannon</DisplayName>
+      <DisplayName>M240 Cyclone Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>
       <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
@@ -57,7 +57,7 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXCycloneCannon_SG</SubtypeId>
       </Id>
-      <DisplayName>240mm Cyclone Strike Cannon</DisplayName>
+      <DisplayName>M240 Cyclone Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>	  
       <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
@@ -107,7 +107,7 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXHurricaneCannon</SubtypeId>
       </Id>
-      <DisplayName>480mm Hurricane Strike Cannon</DisplayName>
+      <DisplayName>M480 Hurricane Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxHurricaneCannon.dds</Icon>	  
       <Description>The Hurricane is a turreted, double barrel artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
@@ -162,7 +162,7 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXTyphoonCannon</SubtypeId>
       </Id>
-      <DisplayName>600mm Typhoon Strike Cannon</DisplayName>
+      <DisplayName>M600 Typhoon Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxTyphoonCannon.dds</Icon>	  
       <Description>The Typhoon is a gargantuan armoured triple barrel artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
@@ -217,7 +217,7 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXTsunamiCannon</SubtypeId>
       </Id>
-      <DisplayName>480mm Tsunami Strike Cannon</DisplayName> 
+      <DisplayName>M480 Tsunami Strike Cannon</DisplayName> 
       <Icon>Textures\GUI\Icons\AryxTsunamiCannon.dds</Icon>	  
       <Description>The Tsunami is a casemate single-barrel barrel artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
@@ -272,7 +272,7 @@
         <TypeId>SmallMissileLauncher</TypeId>
         <SubtypeId>ARYXTempestCannon</SubtypeId>
       </Id>
-      <DisplayName>600mm Tempest Strike Cannon</DisplayName>
+      <DisplayName>M600 Tempest Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_TempestCannon.dds</Icon>	  
       <Description>The Tempest is a large fixed-mount artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
@@ -326,7 +326,7 @@
         <TypeId>SmallMissileLauncher</TypeId>
         <SubtypeId>ARYXTempestCannon_SG</SubtypeId>
       </Id>
-      <DisplayName>600mm Tempest Strike Cannon</DisplayName>
+      <DisplayName>M600 Tempest Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_TempestCannon.dds</Icon>	  
       <Description>The Tempest is a large fixed-mount artillery piece capable of dealing monstrous ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 600mm Heavy Shells (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>

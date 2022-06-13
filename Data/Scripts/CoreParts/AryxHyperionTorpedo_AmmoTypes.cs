@@ -514,9 +514,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 30, // Meters
-                    Damage = 350000,
-                    Depth = 15,
+                    Radius = 20, // Meters
+                    Damage = 250000,
+                    Depth = 7,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -1138,7 +1138,7 @@ namespace Scripts
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = 9999999f,
             Mass = 3000, // in kilograms
-            Health = 80, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
+            Health = 40, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
             DecayPerShot = 0f,
             HardPointUsable = false, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
@@ -1358,7 +1358,7 @@ namespace Scripts
                     TrackingDelay = 0.001f, // doesn't actually work
                     MaxChaseTime = 12000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
-                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
+                    MaxTargets = 1, // Number of targets allowed before ending, 0 = unlimited
                     NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
                     Roam = false, // Roam current area after target loss                    
                 },
@@ -3035,19 +3035,19 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = 1f,
-                    Small = 1f,
+                    Large = -1f,
+                    Small = -1f,
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.00005f,
-                    Light = 0.00005f,
-                    Heavy = 0.00005f,
-                    NonArmor = 0.0005f,
+                    Armor = -1f,
+                    Light = -1f,
+                    Heavy = -1f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 250f,
+                    Modifier = 1,
                     Type = Default,
                     BypassModifier = -1f,
                 },
@@ -3112,13 +3112,13 @@ namespace Scripts
             },
             Ewar = new EwarDef
             {
-                Enable = false, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
-                Type = Dot, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
-                Mode = Field, // Effect , Field
-                Strength = 100f,
-                Radius = 5f, // Meters
-                Duration = 900, // In Ticks
-                StackDuration = false, // Combined Durations
+                Enable = true, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
+                Type = Emp, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
+                Mode = Effect, // Effect , Field
+                Strength = 100000000f,
+                Radius = 50f, // Meters
+                Duration = 600, // In Ticks
+                StackDuration = true, // Combined Durations
                 Depletable = false,
                 MaxStacks = 5, // Max Debuffs at once
                 NoHitParticle = false,

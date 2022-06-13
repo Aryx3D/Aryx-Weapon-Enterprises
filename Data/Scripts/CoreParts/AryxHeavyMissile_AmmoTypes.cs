@@ -253,9 +253,9 @@ namespace Scripts
                 Smarts = new SmartsDef
                 {
                     Inaccuracy = 0, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
-                    Aggressiveness = 3, // controls how responsive tracking is.
-                    MaxLateralThrust = 0.5f, // controls how sharp the trajectile may turn
-                    TrackingDelay = 0.01f, // Measured in Shape diameter units traveled.
+                    Aggressiveness = 0, // controls how responsive tracking is.
+                    MaxLateralThrust = 0f, // controls how sharp the trajectile may turn
+                    TrackingDelay = 10f, // Measured in Shape diameter units traveled.
                     MaxChaseTime = 2400, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
                     MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
@@ -459,15 +459,10 @@ namespace Scripts
                 MaxIntegrity = 0f, // Blocks with integrity higher than this value will be immune to damage from this projectile; 0 = disabled.
                 DamageVoxels = false, // Whether to damage voxels.
                 SelfDamage = false, // Whether to damage the weapon's own grid.
-                HealthHitModifier = 1, // How much Health to subtract from another projectile on hit; defaults to 1 if zero or less.
+                HealthHitModifier = 15, // How much Health to subtract from another projectile on hit; defaults to 1 if zero or less.
                 VoxelHitModifier = -1, // Voxel damage multiplier; defaults to 1 if zero or less.
-                Characters = -1f, // Character damage multiplier; defaults to 1 if zero or less.
+                Characters = 1000f, // Character damage multiplier; defaults to 1 if zero or less.
                 // For the following modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01f = 1% damage, 2 = 200% damage.
-                FallOff = new FallOffDef
-                {
-                    Distance = 0f, // Distance at which damage begins falling off.
-                    MinMultipler = 1f, // Value from 0.0001f to 1f where 0.1f would be a min damage of 10% of base damage.
-                },
                 Grids = new GridSizeDef
                 {
                     Large = -1f, // Multiplier for damage against large grids.
@@ -513,21 +508,6 @@ namespace Scripts
             },
 			AreaOfDamage = new AreaOfDamageDef
             {
-                ByBlockHit = new ByBlockHitDef
-                {
-                    Enable = false,
-                    Radius = 0f, // Meters
-                    Damage = 0,
-                    Depth = 1f, // Meters
-                    MaxAbsorb = 0f,
-                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
-                    //.Linear drops evenly by distance from center out to max radius
-                    //.Curve drops off damage sharply as it approaches the max radius
-                    //.InvCurve drops off sharply from the middle and tapers to max radius
-                    //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
-                    //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
-                    Shape = Diamond, // Round or Diamond
-                },
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
@@ -551,77 +531,15 @@ namespace Scripts
                     Shape = Diamond, // Round or Diamond
                 }, 
             },
-            Ewar = new EwarDef
-            {
-                Enable = false, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
-                Type = Emp, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
-                Mode = Field, // Effect , Field
-                Strength = 100000000f,
-                Radius = 25, // Meters
-                Duration = 480, // In Ticks
-                StackDuration = false, // Combined Durations
-                Depletable = false,
-                MaxStacks = 2, // Max Debuffs at once
-                NoHitParticle = false,
-                /*
-                EnergySink : Targets & Shutdowns Power Supplies, such as Batteries & Reactor
-                Emp : Targets & Shutdown any Block capable of being powered
-                Offense : Targets & Shutdowns Weaponry
-                Nav : Targets & Shutdown Gyros, Thrusters, or Locks them down
-                Dot : Deals Damage to Blocks in radius
-                AntiSmart : Effects & Scrambles the Targeting List of Affected Missiles
-                JumpNull : Shutdown & Stops any Active Jumps, or JumpDrive Units in radius
-                Tractor : Affects target with Physics
-                Pull : Affects target with Physics
-                Push : Affects target with Physics
-                Anchor : Affects target with Physics
-                
-                */
-                Force = new PushPullDef
-                {
-                    ForceFrom = ProjectileLastPosition, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
-                    ForceTo = HitPosition, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
-                    Position = TargetCenterOfMass, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
-                    DisableRelativeMass = false,
-                    TractorRange = 0,
-                    ShooterFeelsForce = false,
-                },
-                Field = new FieldDef
-                {
-                    Interval = 30, // Time between each pulse, in game ticks (60 == 1 second).
-                    PulseChance = 100, // Chance from 0 - 100 that an entity in the field will be hit by any given pulse.
-                    GrowTime = 10, // How many ticks it should take the field to grow to full size.
-                    HideModel = false, // Hide the projectile model if it has one.
-                    ShowParticle = true, // Show Block damage effect.
-                    TriggerRange = 250f, //range at which fields are triggered
-                    Particle = new ParticleDef // Particle effect to generate at the field's position.
-                    {
-                        Name = "", // SubtypeId of field particle effect.
-                        Extras = new ParticleOptionDef
-                        {
-                            Scale = 1, // Scale of effect.
-                        },
-                    },
-                },
-            },
-            Beams = new BeamDef
-            {
-                Enable = false, // Enable beam behaviour.
-                VirtualBeams = false, // Only one damaging beam, but with the effectiveness of the visual beams combined (better performance).
-                ConvergeBeams = false, // When using virtual beams, converge the visual beams to the location of the real beam.
-                RotateRealBeam = false, // The real beam is rotated between all visual beams, instead of centered between them.
-                OneParticle = false, // Only spawn one particle hit per beam weapon.
-            },
             Trajectory = new TrajectoryDef
             {
                 Guidance = Smart, // None, Remote, TravelTo, Smart, DetectTravelTo, DetectSmart, DetectFixed
                 TargetLossDegree = 0,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 6000, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                AccelPerSec = 400f,
-                DesiredSpeed = 800, // voxel phasing if you go above 5100
+                AccelPerSec = 350,
+                DesiredSpeed = 600, // voxel phasing if you go above 5100
                 MaxTrajectory = 10000,
-                //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0.05f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
                 RangeVariance = Random(start: 0, end: 0), // subtracts value from MaxTrajectory
@@ -629,9 +547,9 @@ namespace Scripts
                 Smarts = new SmartsDef
                 {
                     Inaccuracy = 0, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
-                    Aggressiveness = 3, // controls how responsive tracking is.
+                    Aggressiveness = 1, // controls how responsive tracking is.
                     MaxLateralThrust = 0.5f, // controls how sharp the trajectile may turn
-                    TrackingDelay = 0, // Measured in Shape diameter units traveled.
+                    TrackingDelay = 20, // Measured in Shape diameter units traveled.
                     MaxChaseTime = 2400, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     OverideTarget = false, // when set to true ammo picks its own target, does not use hardpoint's.
                     MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
@@ -640,14 +558,6 @@ namespace Scripts
                     KeepAliveAfterTargetLoss = false, // Whether to stop early death of projectile on target loss
                     OffsetRatio = 0f, // The ratio to offset the random dir (0 to 1) 
                     OffsetTime = 0, // how often to offset degree, measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..)
-                },
-                Mines = new MinesDef
-                {
-                    DetectRadius = 0,
-                    DeCloakRadius = 0,
-                    FieldTime = 0,
-                    Cloak = false,
-                    Persist = false,
                 },
             },
             AmmoGraphics = new GraphicDef
@@ -670,38 +580,6 @@ namespace Scripts
                             MaxDistance = 1000,
                             MaxDuration = 0,
                             Scale = 1,
-                        },
-                    },
-                    Hit = new ParticleDef
-                    {
-                        Name = "",
-                        ApplyToShield = true,
-                        ShrinkByDistance = false,
-                        Color = Color(red: 2.5f, green: 2f, blue: 1f, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: 0),
-                        Extras = new ParticleOptionDef
-                        {
-                            Restart = false,
-                            MaxDistance = 500,
-                            MaxDuration = 0,
-                            Scale = 1,
-                            HitPlayChance = 0.75f,
-                        },
-                    },
-                    Eject = new ParticleDef
-                    {
-                        Name = "",
-                        ApplyToShield = true,
-                        ShrinkByDistance = false,
-                        Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: 0),
-                        Extras = new ParticleOptionDef
-                        {
-                            Restart = false,
-                            MaxDistance = 5000,
-                            MaxDuration = 30,
-                            Scale = 1,
-                            HitPlayChance = 1f,
                         },
                     },
                 },
@@ -760,29 +638,6 @@ namespace Scripts
                     },
                 },
             },
-            AmmoAudio = new AmmoAudioDef
-            {
-                TravelSound = "",
-                HitSound = "",
-                ShieldHitSound = "",
-                PlayerHitSound = "",
-                VoxelHitSound = "",
-                FloatingHitSound = "",
-                HitPlayChance = 0.5f,
-                HitPlayShield = true,
-            },
-            Ejection = new EjectionDef
-            {
-                Type = Particle, // Particle or Item (Inventory Component)
-                Speed = 100f, // Speed inventory is ejected from in dummy direction
-                SpawnChance = 0.5f, // chance of triggering effect (0 - 1)
-                CompDef = new ComponentDef
-                {
-                    ItemName = "", //InventoryComponent name
-                    ItemLifeTime = 0, // how long item should exist in world
-                    Delay = 0, // delay in ticks after shot before ejected
-                }
-            }, // Don't edit below this line
         };
 
 

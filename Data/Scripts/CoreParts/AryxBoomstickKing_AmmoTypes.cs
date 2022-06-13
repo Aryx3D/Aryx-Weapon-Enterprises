@@ -36,7 +36,7 @@ namespace Scripts
             BaseDamage = 25000,
             Mass = 300f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 20000000f,
+            BackKickForce = 120000000f,
             DecayPerShot = 0,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             IgnoreWater = true,
@@ -79,11 +79,6 @@ namespace Scripts
                 HealthHitModifier = 800000, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
                 VoxelHitModifier = 1,
                 Characters = 250000000,
-                FallOff = new FallOffDef
-                {
-                    Distance = 5000f, // Distance at which max damage begins falling off.
-                    MinMultipler = 1, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
-                },
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
@@ -100,7 +95,7 @@ namespace Scripts
                 {
                     Modifier = 5f,
                     Type = Default,
-                    BypassModifier = 1f,
+                    BypassModifier = -1f,
                 },
                 DamageType = new DamageTypes
                 {

@@ -29,7 +29,7 @@ namespace Scripts
         private AmmoDef AryxMagnetarAmmo => new AmmoDef
         {
             AmmoMagazine = "Energy", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo
-            AmmoRound = "ZS-3 Energy Bolt", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
+            AmmoRound = "Quasar Energy Bolt", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.149995f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = 20000f,
@@ -93,9 +93,9 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.25f,
-                    Light = 1f,
-                    Heavy = 1f,
+                    Armor = -1f,
+                    Light = -1f,
+                    Heavy = 0.5f,
                     NonArmor = 1f,
                 },
                 Shields = new ShieldDef
