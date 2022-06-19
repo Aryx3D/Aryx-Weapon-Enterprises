@@ -38,7 +38,7 @@ namespace Scripts
         {
             baseDefs = new Parts().Container;
         }
-
+        
         internal static void SetModPath(ContainerDefinition baseDefs, string modContext)
         {
             if (baseDefs.WeaponDefs != null)
@@ -104,7 +104,7 @@ namespace Scripts
                 CycleEmissivesParts = CycleEmissiveParts,
                 LeavePreviousOn = LeavePreviousOn,
                 EmissivePartNames = EmissivePartNames,
-                IntensityRange = new[] { IntensityFrom, IntensityTo }
+                IntensityRange = new[]{ IntensityFrom, IntensityTo }
             };
         }
 

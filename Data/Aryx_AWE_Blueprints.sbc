@@ -9,9 +9,9 @@
       <DisplayName>54mm Autocannon Ammo</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEChordAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="3" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Cobalt" />
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Magnesium" />
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="54mmAmmoMagazine" />
@@ -25,9 +25,9 @@
       <DisplayName>85mm Autocannon Ammo</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEEchoAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="6" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="2" TypeId="Ingot" SubtypeId="Cobalt" />
-        <Item Amount="1.5" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="40" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium" />
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE85mmAmmoMagazine" />
@@ -44,9 +44,9 @@
       <DisplayName>38mm Riptide Flak Ammo</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEFlak.dds</Icon>
       <Prerequisites>
-        <Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="25" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium" />
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="60mmFlakMagazine" />
@@ -60,9 +60,9 @@
       <DisplayName>135mm Thrasher Flak Ammo</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEFlak.dds</Icon>
       <Prerequisites>
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="2" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="1.5" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Magnesium" />
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE135mmFlakMagazine" />
@@ -202,10 +202,10 @@
       <DisplayName>70mm AP/HE Punisher Cartridge</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEJudgeAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="6" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="2" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="2" TypeId="Ingot" SubtypeId="Magnesium" />		
-        <Item Amount="2" TypeId="Ingot" SubtypeId="Cobalt" />			
+        <Item Amount="24" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="8" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="8" TypeId="Ingot" SubtypeId="Magnesium" />		
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Cobalt" />			
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="70mmBurstMag" />
       <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
@@ -236,9 +236,9 @@
       <DisplayName>120mm Heavy Shell</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEWhirlwindAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="8" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="5" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="25" TypeId="Ingot" SubtypeId="Magnesium" />
         <Item Amount="5" TypeId="Ingot" SubtypeId="Cobalt" />			
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE120mmCannonMag" />
@@ -252,9 +252,9 @@
       <DisplayName>240mm Heavy Shell</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWECycloneAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="50" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="100" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="100" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Magnesium" />
         <Item Amount="10" TypeId="Ingot" SubtypeId="Silver" />			
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE240mmCannonMag" />
@@ -269,9 +269,9 @@
       <DisplayName>480mm Heavy Shell</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEHurricaneAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="100" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="20" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="20" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="200" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="200" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="200" TypeId="Ingot" SubtypeId="Magnesium" />
         <Item Amount="20" TypeId="Ingot" SubtypeId="Silver" />			
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE480mmCannonMag" />
@@ -285,9 +285,9 @@
       <DisplayName>600mm Heavy Shell</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWETyphoonAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="125" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="25" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="25" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="400" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="250" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="250" TypeId="Ingot" SubtypeId="Magnesium" />
         <Item Amount="25" TypeId="Ingot" SubtypeId="Silver" />
         <Item Amount="6" TypeId="Ingot" SubtypeId="Uranium" />				
       </Prerequisites>
@@ -363,9 +363,9 @@
       <DisplayName>Flechette Rocket</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEFlechetteMissile.dds</Icon>
       <Prerequisites>
-        <Item Amount="3" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="0.5" TypeId="Ingot" SubtypeId="Nickel" />
-	    <Item Amount="0.25" TypeId="Ingot" SubtypeId="Magnesium" />	
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Nickel" />
+	    <Item Amount="1" TypeId="Ingot" SubtypeId="Magnesium" />	
 				
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="84mmFlechetteMissileMagDef" />
@@ -379,9 +379,9 @@
       <DisplayName>Disruptor Rocket</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEDisruptorMissile.dds</Icon>
       <Prerequisites>
-        <Item Amount="3" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="0.5" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="0.25" TypeId="Ingot" SubtypeId="Silver" />	
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Silver" />	
 				
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="84mmDisruptorMissileMagDef" />
@@ -397,10 +397,10 @@
       <DisplayName>Striker Missile</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEStrikerMissile.dds</Icon>
       <Prerequisites>
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="3" TypeId="Ingot" SubtypeId="Nickel" />
-	    <Item Amount="2" TypeId="Ingot" SubtypeId="Cobalt" />	
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Silver" />					
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="30" TypeId="Ingot" SubtypeId="Nickel" />
+	    <Item Amount="20" TypeId="Ingot" SubtypeId="Cobalt" />	
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Silver" />					
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWEStrikerMissileMagDef" />
       <BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
@@ -414,10 +414,10 @@
       <DisplayName>Sabre Missile</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWESabreMissile.dds</Icon>
       <Prerequisites>
-        <Item Amount="6" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="2" TypeId="Ingot" SubtypeId="Nickel" />
-	    <Item Amount="1" TypeId="Ingot" SubtypeId="Cobalt" />	
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Magnesium" />					
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="24" TypeId="Ingot" SubtypeId="Nickel" />
+	    <Item Amount="8" TypeId="Ingot" SubtypeId="Cobalt" />	
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Magnesium" />					
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWESabreMissileMagDef" />
       <BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
@@ -430,10 +430,10 @@
       <DisplayName>Lancer Missile</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWELancerMissile.dds</Icon>
       <Prerequisites>
-        <Item Amount="6" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="2" TypeId="Ingot" SubtypeId="Nickel" />
-	    <Item Amount="1" TypeId="Ingot" SubtypeId="Cobalt" />	
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Silver" />						
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="24" TypeId="Ingot" SubtypeId="Nickel" />
+	    <Item Amount="8" TypeId="Ingot" SubtypeId="Cobalt" />	
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Silver" />						
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWELancerMissileMagDef" />
       <BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
@@ -447,11 +447,11 @@
       <DisplayName>SK99 Devastator Torpedo</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEDevastatorMissile.dds</Icon>
       <Prerequisites>
-        <Item Amount="1200" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="500" TypeId="Ingot" SubtypeId="Nickel" />
-	    <Item Amount="50" TypeId="Ingot" SubtypeId="Cobalt" />	
-        <Item Amount="20" TypeId="Ingot" SubtypeId="Silver" />
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Uranium" />		
+        <Item Amount="2000" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="1000" TypeId="Ingot" SubtypeId="Nickel" />
+	    <Item Amount="100" TypeId="Ingot" SubtypeId="Cobalt" />	
+        <Item Amount="100" TypeId="Ingot" SubtypeId="Silver" />
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Uranium" />		
 			
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AryxTorpMagDef" />
@@ -460,53 +460,14 @@
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
-        <SubtypeId>900mmEnergyTorpedoBP</SubtypeId>
-      </Id>
-      <DisplayName>EB88 Equaliser Torpedo</DisplayName>
-      <Icon>Textures\GUI\Icons\ammo\AWEEqualiserMissile.dds</Icon>
-      <Prerequisites>
-        <Item Amount="1200" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="500" TypeId="Ingot" SubtypeId="Nickel" />
-	    <Item Amount="100" TypeId="Ingot" SubtypeId="Gold" />	
-        <Item Amount="25" TypeId="Ingot" SubtypeId="Platinum" />
-        <Item Amount="50" TypeId="Ingot" SubtypeId="Uranium" />		
-			
-      </Prerequisites>
-      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AryxEnergyTorpMagDef" />
-      <BaseProductionTimeInSeconds>45</BaseProductionTimeInSeconds>
-    </Blueprint>	
-
-    <Blueprint>
-      <Id>
-        <TypeId>BlueprintDefinition</TypeId>
-        <SubtypeId>900mmAntimatterTorpedoBP</SubtypeId>
-      </Id>
-      <DisplayName>Annihilator Torpedo</DisplayName>
-      <Icon>Textures\GUI\Icons\ammo\AWEAntimatterMissile.dds</Icon>
-      <Prerequisites>
-        <Item Amount="2500" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="1000" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="750" TypeId="Ingot" SubtypeId="Cobalt" />
-        <Item Amount="100" TypeId="Ingot" SubtypeId="Gold" />		
-        <Item Amount="100" TypeId="Ingot" SubtypeId="Uranium" />		
-        <Item Amount="50" TypeId="Ingot" SubtypeId="Platinum" />	
-		
-      </Prerequisites>
-      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AryxAntimatterTorpMagDef" />
-      <BaseProductionTimeInSeconds>45</BaseProductionTimeInSeconds>
-    </Blueprint>	
-	
-    <Blueprint>
-      <Id>
-        <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>AWEHyperionTorpedoBP</SubtypeId>
       </Id>
       <DisplayName>Hyperion Variable Torpedo</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEHyperionTorpedo.dds</Icon>
       <Prerequisites>
-        <Item Amount="3000" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="1200" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="1000" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="6000" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="2400" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="2000" TypeId="Ingot" SubtypeId="Cobalt" />
         <Item Amount="500" TypeId="Ingot" SubtypeId="Gold" />		
         <Item Amount="125" TypeId="Ingot" SubtypeId="Uranium" />		
         <Item Amount="75" TypeId="Ingot" SubtypeId="Platinum" />	
@@ -524,9 +485,9 @@
       <DisplayName>300x40mm ATLAS Ammo</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEATLASAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="8" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="4" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Magnesium" />		
+        <Item Amount="16" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="8" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Magnesium" />		
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="ATLASAmmoMagazine" />
@@ -541,9 +502,9 @@
       <DisplayName>150x25mm AVALANCHE Ammo</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEATLASAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="4" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="2" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Silicon" />		
+        <Item Amount="8" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Silicon" />		
 		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="CODEXAmmoMagazine" />
@@ -565,10 +526,10 @@
       <DisplayName>Electromagnet</DisplayName>
       <Icon>Textures\GUI\Icons\component\Electromagnet.dds</Icon>
       <Prerequisites>
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Cobalt" />
-        <Item Amount="10" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="0.5" TypeId="Ingot" SubtypeId="Platinum" />
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="25" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Platinum" />
 		
 		
       </Prerequisites>
@@ -589,13 +550,11 @@
       <DisplayName>"Sidekick" Machine Gun Drone</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWE_Drone_Sidekick.dds</Icon>
       <Prerequisites>
-        <Item Amount="80" TypeId="Component" SubtypeId="SteelPlate" />
-        <Item Amount="120" TypeId="Component" SubtypeId="Computer" />		
-        <Item Amount="40" TypeId="Component" SubtypeId="SmallTube" />
-        <Item Amount="48" TypeId="Component" SubtypeId="Motor" />		
-	    <Item Amount="16" TypeId="Component" SubtypeId="PowerCell" />	
-        <Item Amount="24" TypeId="Component" SubtypeId="Thrust" />
-        <Item Amount="8" TypeId="AmmoMagazine" SubtypeId="ATLASAmmoMagazine" />						
+        <Item Amount="300" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="225" TypeId="Ingot" SubtypeId="Nickel" />
+	    <Item Amount="100" TypeId="Ingot" SubtypeId="Cobalt" />	
+        <Item Amount="150" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Silver" />		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE_SidekickDroneMag" />
       <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
@@ -609,13 +568,11 @@
       <DisplayName>"Falcon" Cannon Drone</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWE_Drone_Falcon.dds</Icon>
       <Prerequisites>
-        <Item Amount="80" TypeId="Component" SubtypeId="SteelPlate" />
-        <Item Amount="120" TypeId="Component" SubtypeId="Computer" />		
-        <Item Amount="8" TypeId="Component" SubtypeId="LargeTube" />
-        <Item Amount="48" TypeId="Component" SubtypeId="Motor" />			
-	    <Item Amount="16" TypeId="Component" SubtypeId="PowerCell" />	
-        <Item Amount="24" TypeId="Component" SubtypeId="Thrust" />
-        <Item Amount="16" TypeId="AmmoMagazine" SubtypeId="AWE120mmCannonMag" />						
+        <Item Amount="300" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="225" TypeId="Ingot" SubtypeId="Nickel" />
+	    <Item Amount="100" TypeId="Ingot" SubtypeId="Cobalt" />	
+        <Item Amount="200" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Uranium" />		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE_FalconDroneMag" />
       <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
@@ -629,12 +586,11 @@
       <DisplayName>"Stormrider" Cannon Drone</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWE_Drone_Stormrider.dds</Icon>
       <Prerequisites>
-        <Item Amount="80" TypeId="Component" SubtypeId="SteelPlate" />
-        <Item Amount="160" TypeId="Component" SubtypeId="Computer" />		
-        <Item Amount="32" TypeId="Component" SubtypeId="Superconductor" />
-        <Item Amount="48" TypeId="Component" SubtypeId="Motor" />			
-	    <Item Amount="48" TypeId="Component" SubtypeId="PowerCell" />	
-        <Item Amount="24" TypeId="Component" SubtypeId="Thrust" />						
+        <Item Amount="300" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="225" TypeId="Ingot" SubtypeId="Nickel" />
+	    <Item Amount="100" TypeId="Ingot" SubtypeId="Cobalt" />	
+        <Item Amount="150" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Platinum" />		
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE_StormriderDroneMag" />
       <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>

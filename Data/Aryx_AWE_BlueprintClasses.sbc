@@ -38,9 +38,6 @@
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEWhirlwind120AmmoBP" />		
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWECyclone240AmmoBP" />	
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWECyclone480AmmoBP" />		
-	<Entry Class="EliteConsumables" BlueprintSubtypeId="84DisruptorMissileBP" />
-	<Entry Class="EliteConsumables" BlueprintSubtypeId="900mmEnergyTorpedoBP" />
-	<Entry Class="EliteConsumables" BlueprintSubtypeId="900mmAntimatterTorpedoBP" />
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="40mmATLASBP" />
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AryxEnergyPulseCell" />
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="aryx150mmBuckshotBP" />
@@ -102,6 +99,7 @@
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXLargeRadar" />
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXMagnetarCannon" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXQuasarCannon" />		
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXPulsarCannon" />		
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXPlasmaBeamCannon" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXHeavyFlakTurret" />
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXWarriorGatling" />	
@@ -121,7 +119,7 @@
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXSpartanTurret" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXVulcanTurret" />		
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXVariableLaser" />	
-
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYX_LargeFlareLauncher" />	
 
     <Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncher/ARYX_Fixed_Chord_auto" />			
     <Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXSmallRadar" />	

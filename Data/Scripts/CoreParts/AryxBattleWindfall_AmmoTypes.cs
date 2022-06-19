@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "240mm Heavy Shell [Windfall]",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 4500,
+            BaseDamage = (float)(4500 * AWEGlobalDamageScalar),
             Mass = 120, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 500,
@@ -147,7 +147,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3f, // Meters
-                    Damage = 9000,
+                    Damage = (float)(9000 * AWEGlobalDamageScalar),
                     Depth = 2f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius

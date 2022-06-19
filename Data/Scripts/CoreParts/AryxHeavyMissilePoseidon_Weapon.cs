@@ -187,6 +187,9 @@ namespace Scripts {
             Ammos = new[] {
                 AryxStrikerMissileAmmoWC,
                 AryxStrikerMissileGuidedWC,
+                AryxStrikerMissileAntiShield,
+                AryxStrikerMissileEnergyDrain,
+                AryxStrikerMissileEnergyDrainEffect,
 
                 //AryxCasabaMissileAmmoWC,
                 //AryxCasabaMissileGuidedWC,

@@ -175,7 +175,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3, // Meters
-                    Damage = 5000,
+                    Damage = (float)(5000 * AWEGlobalDamageScalar),
                     Depth = 2f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
@@ -478,7 +478,7 @@ namespace Scripts
                     ParentDies = false, // Parent dies once after it spawns its last child.
                     PointAtTarget = true, // Start fragment direction pointing at Target
                     PointType = Predict, // Point accuracy, Direct, Lead (always fire), Predict (only fire if it can hit)
-                    GroupSize = 20, // Number of spawns in each group
+                    GroupSize = 6, // Number of spawns in each group
                     GroupDelay = 60, // Delay between each group.
                     DirectAimCone = 5, //Angle cone in which the drone will open fire.
                 },
@@ -575,7 +575,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3, // Meters
-                    Damage = 5000,
+                    Damage = (float)(5000 * AWEGlobalDamageScalar),
                     Depth = 2f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
@@ -975,7 +975,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3, // Meters
-                    Damage = 5000,
+                    Damage = (float)(5000 * AWEGlobalDamageScalar),
                     Depth = 2f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius

@@ -527,8 +527,8 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 2.5, // Meters
-                    Damage = 3500f,
-                    Depth = 3f,
+                    Damage = (float)(3500 * AWEGlobalDamageScalar),
+                    Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -1279,8 +1279,8 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 800, // Meters
-                    Damage = 2.5f,
+                    Radius = 2.5f, // Meters
+                    Damage = (float)(800 * AWEGlobalDamageScalar),
                     Depth = 2.5f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius

@@ -33,10 +33,10 @@ namespace Scripts
             AmmoRound = "850mm Ferrous",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
             EnergyCost = 10f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 10000,
+            BaseDamage = (float)(10000 * AWEGlobalDamageScalar),
             Mass = 9, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 50000f,
+            BackKickForce = 1500000f,
             DecayPerShot = 0,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
 
@@ -88,8 +88,8 @@ namespace Scripts
                 Characters = -1f,
                 FallOff = new FallOffDef
                 {
-                    Distance = 10000000f, // Distance at which max damage begins falling off.
-                    MinMultipler = 0.1f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    Distance = 5000, // Distance at which max damage begins falling off.
+                    MinMultipler = 0f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -149,8 +149,8 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 5f, // Meters
-                    Damage = 35000f,
-                    Depth = 5f,
+                    Damage = (float)(35000 * AWEGlobalDamageScalar),
+                    Depth = 2f,
                     MaxAbsorb = 0f,
                     Falloff = Curve, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -236,8 +236,8 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 6000, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 9000,
-                MaxTrajectory = 10000,
+                DesiredSpeed = 0,
+                MaxTrajectory = 9000,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -397,7 +397,7 @@ namespace Scripts
             AmmoRound = "AryxHeavyCoilgunPiercingAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 135000,
+            BaseDamage = (float)(135000 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 500f,
@@ -451,8 +451,8 @@ namespace Scripts
                 Characters = -1f,
                 FallOff = new FallOffDef
                 {
-                    Distance = 10000000f, // Distance at which max damage begins falling off.
-                    MinMultipler = 0.1f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    Distance = 1000, // Distance at which max damage begins falling off.
+                    MinMultipler = 0f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -599,8 +599,8 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 6000, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 9000,
-                MaxTrajectory = 10000,
+                DesiredSpeed = 0,
+                MaxTrajectory = 1000,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed

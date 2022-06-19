@@ -27,7 +27,7 @@ namespace Scripts
             AmmoRound = "AryxSmallFocusBeamLanceAmmo",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 100, //6000 per pulse
+            BaseDamage = (float)(100 * AWEGlobalDamageScalar), //6000 per pulse
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -365,7 +365,7 @@ namespace Scripts
             AmmoRound = "AryxSmallFocusPulseLanceAmmo",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.05f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 32000,
+            BaseDamage = (float)(32000 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,

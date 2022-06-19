@@ -75,9 +75,12 @@ namespace Scripts
             AryxSmallFlareLauncher,
             AryxModulusLaser,
             AryxWindfallCannon,
-            AryxFlameThrower
+            AryxFlameThrower,
+            AryxPulsarTurret,
+            AryxLargeFlareLauncher
             );
-          
+
+
         }
     }
 }

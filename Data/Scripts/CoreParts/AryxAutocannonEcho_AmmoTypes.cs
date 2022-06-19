@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "85mm AP ECHO",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 900f,
+            BaseDamage = (float)(1100 * AWEGlobalDamageScalar),
             Mass = 40f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 800f,
@@ -519,25 +519,25 @@ namespace Scripts
                 },
                 EndOfLife = new EndOfLifeDef
                 {
-                    Enable = false,
-                    Radius = 0f, // Meters
-                    Damage = 0f,
+                    Enable = true,
+                    Radius = 2f, // Meters
+                    Damage = (float)(2000 * AWEGlobalDamageScalar),
                     Depth = 1f,
                     MaxAbsorb = 0f,
-                    Falloff = Squeeze, //.NoFalloff applies the same damage to all blocks in radius
+                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
                     //.Curve drops off damage sharply as it approaches the max radius
                     //.InvCurve drops off sharply from the middle and tapers to max radius
                     //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
                     //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
-                    ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
+                    ArmOnlyOnHit = true, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
                     MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
                     NoVisuals = false,
                     NoSound = false,
                     ParticleScale = 1,
                     CustomParticle = "particleName", // Particle SubtypeID, from your Particle SBC
                     CustomSound = "soundName", // SubtypeID from your Audio SBC, not a filename
-                    Shape = Round, // Round or Diamond
+                    Shape = Diamond, // Round or Diamond
                 },
             },
             Ewar = new EwarDef

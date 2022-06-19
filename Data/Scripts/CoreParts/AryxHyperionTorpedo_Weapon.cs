@@ -167,6 +167,11 @@ namespace Scripts
 
                 AryxHyperion_BroadswordAmmo,
                 AryxHyperion_BroadswordAmmoFired,
+
+
+                AryxHyperion_AnnihilatorAmmo,
+                AryxHyperion_AnnihilatorAmmoFired,
+                AryxHyperion_AnnihilatorAmmoShrap,
             },
             Animations = AryxHyperionAnims,
             // Don't edit below this line

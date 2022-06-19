@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "AryxNovaAmmo",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.025f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 500,
+            BaseDamage = (float)(500 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -415,7 +415,7 @@ namespace Scripts
             AmmoRound = "AryxEnergyNovaAmmo",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.025f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 800f,
+            BaseDamage = (float)(800 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,

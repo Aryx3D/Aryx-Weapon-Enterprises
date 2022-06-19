@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "MG61T Vulcan Ammo",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 350,
+            BaseDamage = (float)(325 * AWEGlobalDamageScalar),
             Mass = 1, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 25f,
@@ -98,7 +98,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 5f,
+                    Modifier = 2f,
                     Type = Default,
                     BypassModifier = -1f,
                 },

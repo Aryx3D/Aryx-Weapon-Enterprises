@@ -6,7 +6,7 @@
         <TypeId>GuiBlockCategoryDefinition</TypeId>
         <SubtypeId/>
       </Id>
-      <DisplayName>AryxCami Weapon Enterprises</DisplayName>
+      <DisplayName>Aryx Weapon Enterprises</DisplayName>
       <Name>ARYXWeapons</Name>
       <ItemIds>
 		<string>ConveyorSorter/ARYXFlechetteLauncher</string>
@@ -75,7 +75,8 @@
 		<string>LargeMissileTurret/ARYXVulcanTurret</string>	
 		<string>ConveyorSorter/ARYX_SmallFlareLauncher</string>
 		<string>LargeMissileTurret/ARYXVariableLaser</string>
-		<string>SmallMissileLauncher/ARYXWindfallCannon</string>		
+		<string>SmallMissileLauncher/ARYXWindfallCannon</string>
+		<string>ConveyorSorter/ARYX_LargeFlareLauncher</string>				
 
       </ItemIds>
     </Category> 
@@ -140,6 +141,7 @@
 		<string>ConveyorSorter/ARYXSmallPulseLaser_Fixed</string>	
 		<string>ConveyorSorter/ARYXFocusLance</string>
 		<string>LargeMissileTurret/ARYXQuasarCannon</string>
+		<string>LargeMissileTurret/ARYXPulsarCannon</string>		
 		<string>LargeMissileTurret/ARYXTsunamiCannon</string>
 		<string>ConveyorSorter/ARYXHeavyCoilgun</string>
 		<string>ConveyorSorter/ARYXHeavyTorpedoLauncher</string>
@@ -150,7 +152,8 @@
 		<string>LargeMissileTurret/ARYXVulcanTurret</string>	
 		<string>ConveyorSorter/ARYX_SmallFlareLauncher</string>	
 		<string>LargeMissileTurret/ARYXVariableLaser</string>
-		<string>SmallMissileLauncher/ARYXWindfallCannon</string>		
+		<string>SmallMissileLauncher/ARYXWindfallCannon</string>
+		<string>ConveyorSorter/ARYX_LargeFlareLauncher</string>				
 	  </ItemIds>
     </Category>
 	
@@ -226,7 +229,9 @@
 		<string>LargeMissileTurret/ARYXVulcanTurret</string>
 		<string>ConveyorSorter/ARYX_SmallFlareLauncher</string>	
 		<string>LargeMissileTurret/ARYXVariableLaser</string>
-		<string>SmallMissileLauncher/ARYXWindfallCannon</string>		
+		<string>SmallMissileLauncher/ARYXWindfallCannon</string>
+		<string>LargeMissileTurret/ARYXPulsarCannon</string>		
+		<string>ConveyorSorter/ARYX_LargeFlareLauncher</string>				
 	</ItemIds>
     </Category> 
 
@@ -296,7 +301,10 @@
 		<string>ConveyorSorter/ARYXWarriorGatlingGun</string>
 		<string>LargeMissileTurret/ARYXSpartanTurret</string>
 		<string>LargeMissileTurret/ARYXVulcanTurret</string>	
-		<string>LargeMissileTurret/ARYXVariableLaser</string>	
+		<string>LargeMissileTurret/ARYXVariableLaser</string>
+		<string>LargeMissileTurret/ARYXPulsarCannon</string>				
+		<string>ConveyorSorter/ARYX_LargeFlareLauncher</string>		
+		
 		
 	  </ItemIds>
     </Category>  	

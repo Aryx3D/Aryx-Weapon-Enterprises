@@ -29,10 +29,10 @@ namespace Scripts
         private AmmoDef AryxModulusLaser_RedLaser => new AmmoDef //Longest range, lowest dmg.
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "720nm Laser",
+            AmmoRound = "720nm Laser - MODRED",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.5f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 35,
+            BaseDamage = (float)(35 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -386,10 +386,10 @@ namespace Scripts
         private AmmoDef AryxModulusLaser_YellowLaser => new AmmoDef //Longest range, lowest dmg.
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "580nm Laser",
+            AmmoRound = "580nm Laser - MODYEL",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.5f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 75,
+            BaseDamage = (float)(75 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -743,10 +743,10 @@ namespace Scripts
         private AmmoDef AryxModulusLaser_GreenLaser => new AmmoDef //Longest range, lowest dmg.
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "525nm Laser",
+            AmmoRound = "525nm Laser - MODGRN",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.5f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 150,
+            BaseDamage = (float)(150 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -1100,10 +1100,10 @@ namespace Scripts
         private AmmoDef AryxModulusLaser_BlueLaser => new AmmoDef //Longest range, lowest dmg.
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "450nm Laser",
+            AmmoRound = "450nm Laser - MODBLU",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.5f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 200,
+            BaseDamage = (float)(200 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -1457,10 +1457,10 @@ namespace Scripts
         private AmmoDef AryxModulusLaser_VioletLaser => new AmmoDef //Longest range, lowest dmg.
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "380nm Laser",
+            AmmoRound = "380nm Laser - MODVIO",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.5f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 250,
+            BaseDamage = (float)(250 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,

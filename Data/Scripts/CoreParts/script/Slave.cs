@@ -53,7 +53,7 @@ namespace Scripts
 
             public static void Init(string name)
             {
-                _instance = new Log { File = MyAPIGateway.Utilities.WriteFileInLocalStorage(name, typeof(Log)) };
+                _instance = new Log {File = MyAPIGateway.Utilities.WriteFileInLocalStorage(name, typeof(Log))};
             }
 
             public static void CleanLine(string text)
@@ -74,3 +74,4 @@ namespace Scripts
         }
     }
 }
+

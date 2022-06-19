@@ -29,10 +29,10 @@ namespace Scripts
         private AmmoDef AryxSmallRedLaserAmmo => new AmmoDef
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "Type-II Pulse Laser",
+            AmmoRound = "Zarya Pulse Laser",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.5f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 100f,
+            BaseDamage = (float)(100 * AWEGlobalDamageScalar),
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,

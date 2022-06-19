@@ -153,7 +153,7 @@ namespace Scripts {
                     {
                         Name = "AWE_ShockCannon_Flash", // Smoke_LargeGunShot
                         Color = Color(red: 1, green: 1, blue: 0.625f, alpha: 1),
-                        Offset = Vector(x: 0, y: -1, z: 0),
+                        Offset = Vector(x: 0, y: 0, z: 0),
 
                         Extras = new ParticleOptionDef
                         {

@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "600mm Heavy Shell",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 10000,
+            BaseDamage = (float)(7000 * AWEGlobalDamageScalar),
             Mass = 300f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 60f,
@@ -146,8 +146,8 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 5f, // Meters
-                    Damage = 17500,
-                    Depth = 3f,
+                    Damage = (float)(17500 * AWEGlobalDamageScalar),
+                    Depth = 2f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius

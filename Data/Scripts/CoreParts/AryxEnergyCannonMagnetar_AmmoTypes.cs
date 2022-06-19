@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "Quasar Energy Bolt", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.149995f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 20000f,
+            BaseDamage = (float)(20000 * AWEGlobalDamageScalar),
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -151,7 +151,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3f, // Meters
-                    Damage = 50000,
+                    Damage = (float)(50000 * AWEGlobalDamageScalar),
                     Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius

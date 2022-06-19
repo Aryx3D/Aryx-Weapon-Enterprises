@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "MainAmmo", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = 2250f, // Direct damage; one steel plate is worth 100.
+            BaseDamage = (float)(2250 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
             Mass = 0f, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 0f, // Recoil.
@@ -311,8 +311,8 @@ namespace Scripts
                         Length = 1f,
                         Width = 5f,
                         Color = Color(red: 50, green: 15, blue: 100f, alpha: 1),
-                        VisualFadeStart = 300, // Number of ticks the weapon has been firing before projectiles begin to fade their color
-                        VisualFadeEnd = 420, // How many ticks after fade began before it will be invisible.
+                        VisualFadeStart = 420, // Number of ticks the weapon has been firing before projectiles begin to fade their color
+                        VisualFadeEnd = 240, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
                             "AryxPulseLaserEffect",
                         },
@@ -387,7 +387,7 @@ namespace Scripts
             AmmoRound = "AWELightningAmmo", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.88f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = 120f, // Direct damage; one steel plate is worth 100.
+            BaseDamage = (float)(120 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
             Mass = 0f, // In kilograms; how much force the impact will apply to the target.
             Health = 1000, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 0f, // Recoil.

@@ -73,7 +73,8 @@
         <ResearchGroup xsi:type="ResearchGroup">
             <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Plasmas_T1" />
             <Members>
-                <BlockId Type="ConveyorSorter" Subtype="ARYXPlasmaPulser" />		
+                <BlockId Type="ConveyorSorter" Subtype="ARYXPlasmaPulser" />	
+				<BlockId Type="ConveyorSorter" Subtype="ARYXPulsarCannon" />	
             </Members>
         </ResearchGroup>
 		<!--T2-->

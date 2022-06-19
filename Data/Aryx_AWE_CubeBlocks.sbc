@@ -602,7 +602,7 @@
       </Id>
       <DisplayName>RL6 Hydra Rocket Battery</DisplayName>
       <Icon>Textures\GUI\Icons\AryxHydraTurret.dds</Icon>	  
-      <Description>The Hydra is an armoured rocket pod that fires rapid volleys of 6 guided rockets, with high tracking and a long reload, designed to overwhelm enemy PD and destroy small grids. [5KM RANGE - Accepts Flechette (Kinetic) or Disruptor (Energy) Rockets]</Description>
+      <Description>The Hydra is an armoured rocket pod that fires rapid volleys of 6 guided rockets, with high tracking and a long reload, designed to overwhelm enemy PD and destroy small grids. [5KM RANGE - Accepts Flechette Rockets]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="3" y="3" z="3"/>
@@ -814,7 +814,7 @@
       </Id>
       <DisplayName>M8G-LS4 Longsword Missile Battery</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMissileBattery.dds</Icon>	  
-      <Description>The Longsword is a heavy missile battery designed for capital ship combat and base defence, firing 8 powerful rockets in quick succession. [7.5KM RANGE - Accepts Sabre (Kinetic) or Lancer Missiles (Energy)]</Description>
+      <Description>The Longsword is a heavy missile battery designed for capital ship combat and base defence, firing 8 powerful rockets in quick succession. [7.5KM RANGE - Accepts Sabre Missiles]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="5" y="5" z="5"/>
@@ -1702,7 +1702,7 @@
       </Id>
       <DisplayName>Flechette Launcher</DisplayName>
       <Icon>Textures\GUI\Icons\AWEFlechetteLauncher.dds</Icon>  
-      <Description>Flechette Launchers fire guided rockets that track and aim towards targets at high speeds and explode on impact, dealing decent explosive damage. [5KM RANGE - Accepts Flechette (Kinetic) or Disruptor (Energy) Rockets]</Description>
+      <Description>Flechette Launchers fire guided rockets that track and aim towards targets at high speeds and explode on impact, dealing decent explosive damage. [5KM RANGE - Accepts Flechette Rockets]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1995,6 +1995,56 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+      <Id>
+        <TypeId>ConveyorSorter</TypeId>
+        <SubtypeId>ARYX_LargeFlareLauncher</SubtypeId>
+      </Id>
+      <DisplayName>F9-B Flare Launcher</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_FlareLauncherLarge.dds</Icon>
+      <Description>Flare launchers are utility modules that fire high-intensity flares that burn brightly and illuminate the surrounding area. They  can also be used to scramble missile targeting to an extent. [100m RANGE - BURN TIME OF 10 SECONDS. ACCEPTS FLARE CANISTERS]</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+	  <Size x="1" y="1" z="1"/>
+	  <ModelOffset x="0" y="0" z="0"/>
+	  <Model>Models\AWE_FlareLauncher\ARYX_LargeFlareLauncher.mwm</Model>
+      <Components>
+		<Component Subtype="SteelPlate" Count="25" />
+		<Component Subtype="Construction" Count="20" />
+		<Component Subtype="LargeTube" Count="32" />
+		<Component Subtype="Motor" Count="64" />
+		<Component Subtype="Computer" Count="25" />
+		<Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+	  <MountPoints>
+		<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+		<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+		<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+		<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+		<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+	  </MountPoints>
+	  <BuildProgressModels>
+	  	<Model BuildPercentUpperBound="0.50" File="Models\AWE_FlareLauncher\ARYX_LargeFlareLauncher_BS1.mwm"/>
+	  	<Model BuildPercentUpperBound="1.00" File="Models\AWE_FlareLauncher\ARYX_LargeFlareLauncher_BS2.mwm"/>
+	  </BuildProgressModels>
+      <BlockPairName>AryxFlareLauncher</BlockPairName>
+	  <MirroringY>Z</MirroringY>
+	  <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.06</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>200</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
 	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
       <Id>
         <TypeId>SmallMissileLauncher</TypeId>
@@ -2052,7 +2102,7 @@
       </Id>
       <DisplayName>Small Flechette Launcher</DisplayName>
       <Icon>Textures\GUI\Icons\AWESmallFlechetteLauncher.dds</Icon>
-      <Description>Flechette Launchers fire high-speed rockets that track and aim towards targets at high speeds and explode on impact, dealing explosive damage. [5KM RANGE - Accepts Flechette (Kinetic) or Disruptor Rockets (Energy)]</Description>
+      <Description>Flechette Launchers fire high-speed rockets that track and aim towards targets at high speeds and explode on impact, dealing explosive damage. [5KM RANGE - Accepts Flechette Rockets]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="1" z="5"/>
@@ -2358,7 +2408,7 @@
 			<SubtypeId>ARYXTorpLauncher</SubtypeId>
 		</Id>
 		<DisplayName>TL-150 Astraeus Torpedo Launcher</DisplayName>
-		<Description>The Astraeus fires torpedoes capable of demolishing armoured targets. Whilst slow and very vulnerable to point defence, these missiles are extremely deadly if they land a direct hit. [10KM RANGE - Accepts Devastator (Kinetic) and Equaliser (Energy) torpedoes.]</Description>
+		<Description>The Astraeus fires torpedoes capable of demolishing armoured targets. Whilst slow and very vulnerable to point defence, these missiles are extremely deadly if they land a direct hit. [10KM RANGE - Accepts Devastator (EX/DR/IO) torpedoes.]</Description>
 		<Icon>Textures\GUI\Icons\AryxTorpLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2415,7 +2465,7 @@
 			<SubtypeId>ARYXInlineTorpLauncher</SubtypeId>
 		</Id>
 		<DisplayName>TL-150-B Astraeus Inline Torpedo Launcher</DisplayName>
-		<Description>The Astraeus fires torpedoes capable of demolishing armoured targets. Whilst slow and very vulnerable to point defence, these missiles are extremely deadly if they land a direct hit. Yes I am aware the projectile model differs at launch, stfu. [10KM RANGE - Accepts Devastator (Kinetic) and Equaliser (Energy) torpedoes.]</Description>
+		<Description>The Astraeus fires torpedoes capable of demolishing armoured targets. Whilst slow and very vulnerable to point defence, these missiles are extremely deadly if they land a direct hit. Yes I am aware the projectile model differs at launch, stfu. [10KM RANGE - Accepts Devastator (EX/DR/IO) torpedoes.]</Description>
 		<Icon>Textures\GUI\Icons\AryxInlineTorpLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2520,7 +2570,7 @@
 			<SubtypeId>ARYXLongbowLauncher</SubtypeId>
 		</Id>
 		<DisplayName>ML-70 Longbow Missile Launcher</DisplayName>
-		<Description>The Longbow fires medium-weight missiles capable of performing all-around ship-to-ship combat, working in anti-fighter or anti-warship roles. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [7.5KM RANGE - Accepts Sabre (Kinetic) or Lancer (Energy) Missiles.]</Description>
+		<Description>The Longbow fires medium-weight missiles capable of performing all-around ship-to-ship combat, working in anti-fighter or anti-warship roles. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [7.5KM RANGE - Accepts Sabre Missiles.]</Description>
 		<Icon>Textures\GUI\Icons\AWELongbowLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2572,7 +2622,7 @@
 			<SubtypeId>ARYXLongbowLauncher_SG</SubtypeId>
 		</Id>
 		<DisplayName>ML-70 Longbow Missile Launcher</DisplayName>
-		<Description>Fires medium-weight missiles capable of performing all-around ship-to-ship combat. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [7.5KM RANGE - Accepts Sabre (Kinetic) or Lancer (Energy) Missiles.]</Description>
+		<Description>Fires medium-weight missiles capable of performing all-around ship-to-ship combat. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [7.5KM RANGE - Accepts Sabre Missiles.]</Description>
 		<Icon>Textures\GUI\Icons\AWELongbowLauncher.dds</Icon>
 		<CubeSize>Small</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -3120,7 +3170,7 @@
 			<SubtypeId>ARYXLightCoilgun</SubtypeId>
 		</Id>
 		<DisplayName>LC-C7 Hunter-405 Coilgun</DisplayName>
-		<Description>Coilguns are high-velocity ballistic weapons that serve as heavy piercers, punching holes through hulls with little resistance. Unlike railguns, Coilguns have explosive impact and an almost relativistic-speed muzzle velocity. [25KM TRAVEL - Accepts 405mm Ferrous. (Kinetic)]</Description>	
+		<Description>Coilguns are sniper weapons that deliver a hefty punch at relativistic velocity, though the rounds lose velocity over range. [10KM TRAVEL, 6KM FALLOFF - Accepts 405mm Ferrous. (Kinetic)]</Description>	
 		<Icon>Textures\GUI\Icons\Aryx_AWE_LightCoilgun.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -3128,14 +3178,14 @@
 		<ModelOffset x="0" y="0" z="0"/>
 		<Model>Models\AWE_Coilgun\ARYX_LightCoilgun.mwm</Model>
 		<Components>
-			<Component Subtype="SteelPlate" Count="1250" />
-			<Component Subtype="Construction" Count="300" />
-			<Component Subtype="MetalGrid" Count="200" />
-			<Component Subtype="PowerCell" Count="180" />	
+			<Component Subtype="SteelPlate" Count="1750" />
+			<Component Subtype="Construction" Count="750" />
+			<Component Subtype="MetalGrid" Count="500" />
+			<Component Subtype="PowerCell" Count="360" />	
 			<Component Subtype="Superconductor" Count="300" />				
-			<Component Subtype="LargeTube" Count="200" />
+			<Component Subtype="LargeTube" Count="400" />
 			<Component Subtype="Motor" Count="300" />		
-			<Component Subtype="ElectromagnetAWE" Count ="180" />	
+			<Component Subtype="ElectromagnetAWE" Count ="200" />	
 			<Component Subtype="Computer" Count="500" />
 			<Component Subtype="MetalGrid" Count="400" />
 			<Component Subtype="SteelPlate" Count="750" />
@@ -3179,7 +3229,7 @@
 			<SubtypeId>ARYXHeavyCoilgun</SubtypeId>
 		</Id>
 		<DisplayName>EDR-0F Predator-850 Coilgun</DisplayName>
-		<Description>The Predator Coilgun is a heavy kinetic artillery weapon designed for long range strikes on armoured targets. Much like its smaller sister, the Predator has a relativistic-speed muzzle velocity, but consumes large amounts of power. - Accepts 850mm Ferrous. (Kinetic)]</Description>	
+		<Description>The Predator Coilgun is a massive sniper weapon that delivers a massive punch at relativistic velocity, though the rounds lose velocity over range. [10KM TRAVEL, 6KM FALLOFF - Accepts 850mm Ferrous. (Kinetic)]</Description>	
 		<Icon>Textures\GUI\Icons\Aryx_AWE_HeavyCoilgun.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -3188,13 +3238,13 @@
 		<Model>Models\AWE_Coilgun\ARYX_HeavyCoilgun.mwm</Model>
 		<Components>
 			<Component Subtype="SteelPlate" Count="3500" />
-			<Component Subtype="Construction" Count="750" />
-			<Component Subtype="MetalGrid" Count="350" />
-			<Component Subtype="PowerCell" Count="400" />	
-			<Component Subtype="Superconductor" Count="600" />				
-			<Component Subtype="LargeTube" Count="400" />
-			<Component Subtype="Motor" Count="500" />		
-			<Component Subtype="ElectromagnetAWE" Count ="300" />	
+			<Component Subtype="Construction" Count="1250" />
+			<Component Subtype="MetalGrid" Count="800" />
+			<Component Subtype="PowerCell" Count="500" />	
+			<Component Subtype="Superconductor" Count="750" />				
+			<Component Subtype="LargeTube" Count="800" />
+			<Component Subtype="Motor" Count="600" />		
+			<Component Subtype="ElectromagnetAWE" Count ="500" />	
 			<Component Subtype="Computer" Count="700" />
 			<Component Subtype="MetalGrid" Count="600" />
 			<Component Subtype="SteelPlate" Count="1250" />
@@ -3314,7 +3364,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 			<Component Subtype="Superconductor" Count="80" />				
 			<Component Subtype="SmallTube" Count="250" />
 			<Component Subtype="Motor" Count="400" />		
-			<Component Subtype="ElectromagnetAWE" Count ="60" />	
 			<Component Subtype="Computer" Count="300" />
 			<Component Subtype="Construction" Count="220" />
 			<Component Subtype="SteelPlate" Count="600" />		
@@ -3369,7 +3418,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 			<Component Subtype="Superconductor" Count="40" />				
 			<Component Subtype="SmallTube" Count="100" />
 			<Component Subtype="Motor" Count="300" />		
-			<Component Subtype="ElectromagnetAWE" Count ="20" />	
 			<Component Subtype="Computer" Count="240" />
 			<Component Subtype="Construction" Count="125" />
 			<Component Subtype="SteelPlate" Count="150" />		
@@ -3417,7 +3465,6 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 			<Component Subtype="Superconductor" Count="15" />				
 			<Component Subtype="SmallTube" Count="30" />
 			<Component Subtype="Motor" Count="5" />		
-			<Component Subtype="ElectromagnetAWE" Count ="10" />	
 			<Component Subtype="Computer" Count="100" />
 			<Component Subtype="Construction" Count="10" />
 			<Component Subtype="SteelPlate" Count="10" />
@@ -3877,7 +3924,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       </Id>
       <DisplayName>K8A-3SC Magnetar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMagnetarCannon.dds</Icon>
-      <Description>The Magnetar is a gigantic triple barrel shock cannon designed to punch through shields and just about everything behind them.  [1.2km/s muzzle velocity, 5km range - Energy Weapon]</Description>
+      <Description>The Magnetar is a gigantic triple barrel shock cannon designed to punch through shields and just about everything behind them.  [1.8km/s muzzle velocity, 5km range - Energy Weapon]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="7" y="4" z="7"/>
@@ -3912,7 +3959,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <BlockPairName>AryxMagnetarCannon</BlockPairName>
 		<MirroringY>Z</MirroringY>
 		<MirroringZ>Y</MirroringZ>
-      <BuildTimeSeconds>150</BuildTimeSeconds>
+      <BuildTimeSeconds>120</BuildTimeSeconds>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxTyphoonWepDef" />
 	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
@@ -3934,7 +3981,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       </Id>
       <DisplayName>G4A-2SC Quasar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxQuasarCannon.dds</Icon>
-      <Description>The Quasar is a sister weapon to the Hurricane, designed to deal damage to shields in order for the heavy hitters to rip hulls to shreds.  [1.2km/s muzzle velocity, 5km range - Energy Weapon]</Description>
+      <Description>The Quasar is a sister weapon to the Hurricane, designed to deal damage to shields in order for the heavy hitters to rip hulls to shreds.  [1.8km/s muzzle velocity, 5km range - Energy Weapon]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="5" y="4" z="5"/>
@@ -3969,7 +4016,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <BlockPairName>AryxQuasarCannon</BlockPairName>
 		<MirroringY>Z</MirroringY>
 		<MirroringZ>Y</MirroringZ>
-      <BuildTimeSeconds>100</BuildTimeSeconds>
+      <BuildTimeSeconds>60</BuildTimeSeconds>
       <EdgeType>Light</EdgeType>
       <WeaponDefinitionId Subtype="AryxTyphoonWepDef" />
 	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
@@ -3984,6 +4031,59 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXPulsarCannon</SubtypeId>
+      </Id>
+      <DisplayName>L2A-1SC Pulsar Shock Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\AryxPulsarCannon.dds</Icon>
+      <Description>The Pulsar is a light energy cannon that fires explosive globules of plasma at long range. Best against shields and light armour. [1.8km/s muzzle velocity, 5km range - Energy Weapon]</Description>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="3"/>
+      <ModelOffset x="0" y="0" z="0" />
+	  <Model>Models\AWE_ShockCannon\ARYX_PulsarCannonBase.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="475" />
+        <Component Subtype="Construction" Count="200" />
+        <Component Subtype="MetalGrid" Count="150" />
+        <Component Subtype="LargeTube" Count="10" />
+        <Component Subtype="ElectromagnetAWE" Count="50" />		
+        <Component Subtype="Superconductor" Count="50" />
+        <Component Subtype="GravityGenerator" Count="20" />			
+        <Component Subtype="Motor" Count="80" />
+        <Component Subtype="Computer" Count="250" />
+        <Component Subtype="Construction" Count="50" />		
+        <Component Subtype="SteelPlate" Count="225" />		
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+			</MountPoints>
+			<!--BuildProgressModels> //No buildstages because I am a lazy cunt.
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_ShockCannon\ARYX_QuasarCannonBase_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.66" File="Models\AWE_ShockCannon\ARYX_QuasarCannonBase_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.0" File="Models\AWE_ShockCannon\ARYX_QuasarCannonBase_BS3.mwm"/>
+			</BuildProgressModels-->	
+      <BlockPairName>AryxPulsarCannon</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxTyphoonWepDef" />
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.9</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>300</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>		
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -3991,7 +4091,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       </Id>
       <DisplayName>Small Hangar Bay</DisplayName>
       <Icon>Textures\GUI\Icons\AryxSmallHangar.dds</Icon>
-      <Description>A compact hangar bay capable of launching Aryx-brand drones. These drones orbit targets and pelt it with cannon fire. [10KM RANGE - ACCEPTS SIDEKICK (Rapid kinetic), FALCON (Cannon kinetic) OR STORMWING DRONES (Burst energy).]</Description>
+      <Description>A compact hangar bay capable of launching Aryx-brand drones. These drones orbit targets and pelt it with cannon fire. These drones can be given orders via the hangar's ActionFriend/ActionEnemy options. [10KM RANGE - ACCEPTS SIDEKICK (Rapid kinetic), FALCON (Cannon kinetic) OR STORMWING DRONES (Burst energy).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="1" z="3" />

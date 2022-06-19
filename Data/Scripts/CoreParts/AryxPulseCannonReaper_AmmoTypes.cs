@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "AryxReaperAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 10f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 1000,
+            BaseDamage = (float)(1000 * AWEGlobalDamageScalar),
             Mass = 200, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 30f,
@@ -421,7 +421,7 @@ namespace Scripts
             AmmoRound = "Reaper Antimatter Bolt",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 250,
+            BaseDamage = (float)(250 * AWEGlobalDamageScalar),
             Mass = 500, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 200f,

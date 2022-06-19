@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "AryxAuroraAmmo",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 200f,
+            BaseDamage = (float)(200 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,

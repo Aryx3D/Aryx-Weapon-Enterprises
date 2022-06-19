@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "Punisher AP 70mm", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 800,
+            BaseDamage = (float)(800 * AWEGlobalDamageScalar),
             Mass = 25f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 125f,
@@ -407,7 +407,7 @@ namespace Scripts
             AmmoRound = "Punisher HE 70mm", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 20,
+            BaseDamage = (float)(20 * AWEGlobalDamageScalar),
             Mass = 10f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 25f,
@@ -526,7 +526,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 4f, // Meters
-                    Damage = 2500,
+                    Damage = (float)(2500 * AWEGlobalDamageScalar),
                     Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius

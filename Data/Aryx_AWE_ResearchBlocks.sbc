@@ -222,6 +222,12 @@
                 <GroupSubtype>AWE_Lasers_T1</GroupSubtype>
             </UnlockedByGroups>
         </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXPulsarCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Lasers_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>				
 		<!--T2-->
         <ResearchBlock xsi:type="ResearchBlock">
             <Id Type="LargeMissileTurret" Subtype="ARYXQuasarCannon" />

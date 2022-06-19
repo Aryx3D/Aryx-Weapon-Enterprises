@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "120mm Heavy Shell", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = 3500, // Direct damage; one steel plate is worth 100.
+            BaseDamage = (float)(3500 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
             Mass = 60, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 25, // Recoil.
@@ -149,8 +149,8 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3f, // Meters
-                    Damage = 4750,
-                    Depth = 2f,
+                    Damage = (float)(4750 * AWEGlobalDamageScalar),
+                    Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius

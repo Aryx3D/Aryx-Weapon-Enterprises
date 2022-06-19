@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "AryxFlakAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 100f,
+            BaseDamage = (float)(100 * AWEGlobalDamageScalar),
             Mass = 5, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 25f,
@@ -148,9 +148,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 2f, // Meters
-                    Damage = 500,
-                    Depth = 1f,
+                    Radius = 1f, // Meters
+                    Damage = 0,
+                    Depth = 0f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -414,7 +414,7 @@ namespace Scripts
             AmmoRound = "AryxFlakShrapWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 300f,
+            BaseDamage = (float)(150 * AWEGlobalDamageScalar),
             Mass = 25, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 25f,

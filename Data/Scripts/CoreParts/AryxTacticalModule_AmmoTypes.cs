@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "EMP Charge", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 10f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
-            BaseDamage = 1000f, // Direct damage; one steel plate is worth 100.
+            BaseDamage = (float)(1000 * AWEGlobalDamageScalar), // Direct damage; one steel plate is worth 100.
             Mass = 0f, // In kilograms; how much force the impact will apply to the target.
             Health = 0, // How much damage the projectile can take from other projectiles (base of 1 per hit) before dying; 0 disables this and makes the projectile untargetable.
             BackKickForce = 0f, // Recoil.
@@ -174,7 +174,7 @@ namespace Scripts
                 Enable = true, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
                 Type = Emp, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Field, // Effect , Field
-                Strength = 30000000,
+                Strength = (float)(300000000 * AWEGlobalDamageScalar),
                 Radius = 250f, // Meters
                 Duration = 600, // In Ticks
                 StackDuration = false, // Combined Durations

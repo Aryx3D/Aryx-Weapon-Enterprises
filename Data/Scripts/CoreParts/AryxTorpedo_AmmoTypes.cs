@@ -529,7 +529,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 8, // Meters
-                    Damage = 100000,
+                    Damage = (float)(100000 * AWEGlobalDamageScalar),
                     Depth = 5,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
@@ -723,8 +723,8 @@ namespace Scripts
 
         private AmmoDef AryxEnergyTorpAmmoWCDef => new AmmoDef
         {
-            AmmoMagazine = "AryxEnergyTorpMagDef", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
-            AmmoRound = "Equaliser Energy Torpedo", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
+            AmmoMagazine = "AryxTorpMagDef", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
+            AmmoRound = "Shieldbreaker-Devastator Torpedo", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
             BaseDamage = 1f, // Direct damage; one steel plate is worth 100.
@@ -1099,7 +1099,7 @@ namespace Scripts
         };
         private AmmoDef AryxEnergyTorpLaunchedAmmoWCDef => new AmmoDef
         {
-            AmmoMagazine = "AryxEnergyTorpMagDef", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
+            AmmoMagazine = "Energy", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
             AmmoRound = "AryxEnergyTorp", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
@@ -1221,8 +1221,8 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 10, // Meters
-                    Damage = 5000,
-                    Depth = 10f,
+                    Damage = (float)(5000 * AWEGlobalDamageScalar),
+                    Depth = 5f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -1831,10 +1831,13 @@ namespace Scripts
             },
         };
 
+
+
+        //Reworked into the Devastator-Concussion ammotype, cannot rename the AmmoDef itself because WC is allergic to error checking.
         private AmmoDef AryxAntimatterTorpWCDef => new AmmoDef
         {
-            AmmoMagazine = "AryxAntimatterTorpMagDef", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
-            AmmoRound = "Annihilator Antimatter Torpedo", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
+            AmmoMagazine = "AryxTorpMagDef", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
+            AmmoRound = "Ion Devastator Torpedo", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
             BaseDamage = 1f, // Direct damage; one steel plate is worth 100.
@@ -1858,7 +1861,7 @@ namespace Scripts
             },
             Fragment = new FragmentDef // Formerly known as Shrapnel. Spawns specified ammo fragments on projectile death (via hit or detonation).
             {
-                AmmoRound = "Annihilator Torpedo", // AmmoRound field of the ammo to spawn.
+                AmmoRound = "Concussion Devastator Launched", // AmmoRound field of the ammo to spawn.
                 Fragments = 1, // Number of projectiles to spawn.
                 Degrees = 0, // Cone in which to randomise direction of spawned projectiles.
                 Reverse = false, // Spawn projectiles backward instead of forward.
@@ -2210,7 +2213,7 @@ namespace Scripts
         private AmmoDef AryxAntimatterTorpFullSpeed => new AmmoDef
         {
             AmmoMagazine = "AryxTorpMagDef", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
-            AmmoRound = "Annihilator Torpedo", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
+            AmmoRound = "Concussion Devastator Launched", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
             BaseDamage = 1f, // Direct damage; one steel plate is worth 100.
@@ -2234,7 +2237,7 @@ namespace Scripts
             },
             Fragment = new FragmentDef // Formerly known as Shrapnel. Spawns specified ammo fragments on projectile death (via hit or detonation).
             {
-                AmmoRound = "Small Antimatter Bolt", // AmmoRound field of the ammo to spawn.
+                AmmoRound = "Concussion Devastator EMP", // AmmoRound field of the ammo to spawn.
                 Fragments = 1, // Number of projectiles to spawn.
                 Degrees = 1, // Cone in which to randomize direction of spawned projectiles.
                 Reverse = false, // Spawn projectiles backward instead of forward.
@@ -2351,7 +2354,7 @@ namespace Scripts
                     Enable = true,
                     Radius = 1, // Meters
                     Damage = 5,
-                    Depth = 10f,
+                    Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -2371,7 +2374,7 @@ namespace Scripts
             },
             Ewar = new EwarDef
             {
-                Enable = false, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
+                Enable = true, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
                 Type = Emp, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Field, // Effect , Field
                 Strength = 30000000,
@@ -2596,39 +2599,16 @@ namespace Scripts
         private AmmoDef AryxAntimatterTorpShrap => new AmmoDef
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "Small Antimatter Bolt",
+            AmmoRound = "Concussion Devastator EMP",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 250,
+            BaseDamage = 1,
             Mass = 500, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 200f,
             DecayPerShot = 0,
             HardPointUsable = false, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             IgnoreWater = true,
-            Shape = new ShapeDef //defines the collision shape of projectile, defaults line and visual Line Length if set to 0
-            {
-                Shape = LineShape,
-                Diameter = 1,
-            },
-            ObjectsHit = new ObjectsHitDef
-            {
-                MaxObjectsHit = 0, // 0 = disabled
-                CountBlocks = false, // counts gridBlocks and not just entities hit
-            },
-            Fragment = new FragmentDef
-            {
-                AmmoRound = "Small Antimatter Bolt", // AmmoRound field of the ammo to spawn.
-                Fragments = 2, // Number of projectiles to spawn.
-                Degrees = 360, // Cone in which to randomize direction of spawned projectiles.
-                Reverse = false, // Spawn projectiles backward instead of forward.
-                DropVelocity = true, // fragments will not inherit velocity from parent.
-                Offset = 0f, // Offsets the fragment spawn by this amount, in meters (positive forward, negative for backwards).
-                Radial = 0f, // Determines starting angle for Degrees of spread above.  IE, 0 degrees and 90 radial goes perpendicular to travel path
-                MaxChildren = 16,
-                IgnoreArming = false, //Whether shrapnel should spawn regardless of whether the projectile is armed or not.
-            },
-
             Pattern = new PatternDef
             {
                 Patterns = new[] {
@@ -2663,7 +2643,7 @@ namespace Scripts
                 {
                     Armor = 1f,
                     Light = 1f,
-                    Heavy = 2.5f,
+                    Heavy = 1f,
                     NonArmor = 10f,
                 },
                 Shields = new ShieldDef
@@ -2740,12 +2720,12 @@ namespace Scripts
             },
             Ewar = new EwarDef
             {
-                Enable = false, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
+                Enable = true, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
                 Type = EnergySink, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Effect, // Effect , Field
-                Strength = 100f,
-                Radius = 5f, // Meters
-                Duration = 100, // In Ticks
+                Strength = 100000f,
+                Radius = 7.5f, // Meters
+                Duration = 600, // In Ticks
                 StackDuration = true, // Combined Durations
                 Depletable = true,
                 MaxStacks = 10, // Max Debuffs at once

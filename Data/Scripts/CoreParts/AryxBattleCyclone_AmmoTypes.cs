@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "240mm Heavy Shell",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 4500,
+            BaseDamage = (float)(2500 * AWEGlobalDamageScalar),
             Mass = 120, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 25f,
@@ -147,8 +147,8 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3f, // Meters
-                    Damage = 9000,
-                    Depth = 2f,
+                    Damage = (float)(9000 * AWEGlobalDamageScalar),
+                    Depth = 1.5f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -408,7 +408,7 @@ namespace Scripts
             AmmoRound = "AryxKineticFrags",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 2500,
+            BaseDamage = (float)(2000 * AWEGlobalDamageScalar),
             Mass = 80, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 25f,
@@ -420,12 +420,12 @@ namespace Scripts
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
                 HealthHitModifier = 6, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
-                VoxelHitModifier = 130,
-                Characters = 50,
+                VoxelHitModifier = 0,
+                Characters = 88,
                 FallOff = new FallOffDef
                 {
-                    Distance = 5000f, // Distance at which max damage begins falling off.
-                    MinMultipler = 1, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    Distance = 25, // Distance at which max damage begins falling off.
+                    MinMultipler = 0, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -435,9 +435,9 @@ namespace Scripts
                 Armor = new ArmorDef
                 {
                     Armor = -1f,
-                    Light = 0.2f,
-                    Heavy = 3f,
-                    NonArmor = 1.5f,
+                    Light = 0.25f,
+                    Heavy = 2f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
