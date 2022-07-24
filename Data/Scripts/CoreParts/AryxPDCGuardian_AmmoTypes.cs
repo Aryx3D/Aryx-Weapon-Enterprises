@@ -29,7 +29,7 @@ namespace Scripts
         private AmmoDef AryxATLASAmmoWC => new AmmoDef
         {
             AmmoMagazine = "ATLASAmmoMagazine",
-            AmmoRound = "AryxATLASAmmoWC",
+            AmmoRound = "40mm ATLAS",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(200 * AWEGlobalDamageScalar),

@@ -422,23 +422,7 @@
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWESabreMissileMagDef" />
       <BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
     </Blueprint>	
-    <Blueprint>
-      <Id>
-        <TypeId>BlueprintDefinition</TypeId>
-        <SubtypeId>AWELancerMissileBP</SubtypeId>
-      </Id>
-      <DisplayName>Lancer Missile</DisplayName>
-      <Icon>Textures\GUI\Icons\ammo\AWELancerMissile.dds</Icon>
-      <Prerequisites>
-        <Item Amount="20" TypeId="Ingot" SubtypeId="Iron" />
-        <Item Amount="24" TypeId="Ingot" SubtypeId="Nickel" />
-	    <Item Amount="8" TypeId="Ingot" SubtypeId="Cobalt" />	
-        <Item Amount="4" TypeId="Ingot" SubtypeId="Silver" />						
-      </Prerequisites>
-      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWELancerMissileMagDef" />
-      <BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
-    </Blueprint>	
-	
+
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>

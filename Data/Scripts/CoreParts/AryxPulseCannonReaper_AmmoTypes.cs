@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "AryxReaperAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 10f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(1000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(5000 * AWEGlobalDamageScalar),
             Mass = 200, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 30f,
@@ -151,8 +151,8 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 1, // Meters
-                    Damage = 1,
+                    Radius = 5, // Meters
+                    Damage = 25000,
                     Depth = 0f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
@@ -421,7 +421,7 @@ namespace Scripts
             AmmoRound = "Reaper Antimatter Bolt",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(250 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(600 * AWEGlobalDamageScalar),
             Mass = 500, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 200f,

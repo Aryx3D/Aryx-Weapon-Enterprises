@@ -35,7 +35,7 @@ namespace Scripts
             BaseDamage = (float)(2500 * AWEGlobalDamageScalar),
             Mass = 120, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 25f,
+            BackKickForce = 90000,
             DecayPerShot = 0,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             IgnoreWater = true,
@@ -53,7 +53,7 @@ namespace Scripts
             Fragment = new FragmentDef
             {
                 AmmoRound = "AryxKineticFrags",
-                Fragments = 15,
+                Fragments = 25,
                 Degrees = 360,
                 Reverse = true,
             },
@@ -89,7 +89,7 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.5f,
+                    Armor = -1f,
                     Light = -1f,
                     Heavy = -1f,
                     NonArmor = 1.5f,
@@ -115,13 +115,13 @@ namespace Scripts
                     {
                         new CustomBlocksDef
                         {
-                            SubTypeId = "Test1",
-                            Modifier = -1f,
+                            SubTypeId = "LargeBlockGyro",
+                            Modifier = 10,
                         },
                         new CustomBlocksDef
                         {
-                            SubTypeId = "Test2",
-                            Modifier = -1f,
+                            SubTypeId = "SmallBlockGyro",
+                            Modifier = 10,
                         },
                     },
                 },
@@ -408,8 +408,8 @@ namespace Scripts
             AmmoRound = "AryxKineticFrags",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(2000 * AWEGlobalDamageScalar),
-            Mass = 80, // in kilograms
+            BaseDamage = (float)(2500 * AWEGlobalDamageScalar),
+            Mass = 50, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 25f,
             DecayPerShot = 0,
@@ -435,8 +435,8 @@ namespace Scripts
                 Armor = new ArmorDef
                 {
                     Armor = -1f,
-                    Light = 0.25f,
-                    Heavy = 2f,
+                    Light = -1f,
+                    Heavy = 2,
                     NonArmor = -1f,
                 },
                 Shields = new ShieldDef
@@ -473,7 +473,7 @@ namespace Scripts
             },
             Beams = new BeamDef
             {
-                Enable = true,
+                Enable = false,
                 VirtualBeams = false, // Only one hot beam, but with the effectiveness of the virtual beams combined (better performace)
                 ConvergeBeams = false, // When using virtual beams this option visually converges the beams to the location of the real beam.
                 RotateRealBeam = false, // The real (hot beam) is rotated between all virtual beams, instead of centered between them.

@@ -35,7 +35,7 @@ namespace Scripts
             BaseDamage = (float)(4500 * AWEGlobalDamageScalar),
             Mass = 120, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 500,
+            BackKickForce = 90000,
             DecayPerShot = 0,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             IgnoreWater = true,
@@ -53,7 +53,7 @@ namespace Scripts
             Fragment = new FragmentDef
             {
                 AmmoRound = "AryxKineticFrags",
-                Fragments = 15,
+                Fragments = 25,
                 Degrees = 360,
                 Reverse = true,
             },

@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "Punisher AP 70mm", // name of ammo in terminal, should be unique for each ammo type. Used for Name field in server config
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000001f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(800 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(1000 * AWEGlobalDamageScalar),
             Mass = 25f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 125f,
@@ -79,7 +79,7 @@ namespace Scripts
                 SelfDamage = false, // true = allow self damage.
                 HealthHitModifier = 0.5, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
                 VoxelHitModifier = 1,
-                Characters = -1f,
+                Characters = 58f,
                 // modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01 = 1% damage, 2 = 200% damage.
                 FallOff = new FallOffDef
                 {
@@ -88,15 +88,15 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = 1f,
-                    Small = 5f,
+                    Large = -1f,
+                    Small = -1f,
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 3f,
-                    Light = 1f,
-                    Heavy = 1f,
-                    NonArmor = 0.5f,
+                    Armor = -1f,
+                    Light = -1f,
+                    Heavy = 2f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
@@ -238,7 +238,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 900, // voxel phasing if you go above 5100
+                DesiredSpeed = 1200, // voxel phasing if you go above 5100
                 MaxTrajectory = 3000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -426,14 +426,6 @@ namespace Scripts
                 MaxObjectsHit = 0, // 0 = disabled
                 CountBlocks = false, // counts gridBlocks and not just entities hit
             },
-            Fragment = new FragmentDef
-            {
-                AmmoRound = "AryxFlakShrapWC",
-                Fragments = 5,
-                Degrees = 180,
-                Reverse = false,
-                
-            },
             Pattern = new PatternDef
             {
                 Patterns = new[] {
@@ -463,15 +455,15 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = 1f,
-                    Small = 1f,
+                    Large = -1f,
+                    Small = 2f,
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 1f,
-                    Light = 1f,
-                    Heavy = 1f,
-                    NonArmor = 3f,
+                    Armor = -1f,
+                    Light = 1.5f,
+                    Heavy = -1f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
@@ -482,9 +474,9 @@ namespace Scripts
                 DamageType = new DamageTypes
                 {
                     Base = Kinetic,
-                    AreaEffect = Energy,
-                    Detonation = Energy,
-                    Shield = Energy,
+                    AreaEffect = Kinetic,
+                    Detonation = Kinetic,
+                    Shield = Kinetic,
                 },
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
@@ -525,8 +517,8 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 4f, // Meters
-                    Damage = (float)(2500 * AWEGlobalDamageScalar),
+                    Radius = 3.5f, // Meters
+                    Damage = (float)(2000 * AWEGlobalDamageScalar),
                     Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
@@ -613,7 +605,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 750, // voxel phasing if you go above 5100
+                DesiredSpeed = 1200, // voxel phasing if you go above 5100
                 MaxTrajectory = 3000f,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.

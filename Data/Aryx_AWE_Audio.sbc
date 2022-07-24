@@ -733,10 +733,28 @@
       <PreventSynchronization>0</PreventSynchronization>
       <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
       <DynamicMusicAmount>3</DynamicMusicAmount>
-      <Volume>0.7</Volume>
+      <Volume>1</Volume>
       <Waves>
         <Wave Type="D3">
           <Start>Audio\Aryx\lasers\aryx_focus_beam_high_fire_01.wav</Start>
+        </Wave>
+      </Waves>
+    </Sound>	
+	
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcWepShipARYXIonCannonFire</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>1200</MaxDistance>
+      <PreventSynchronization>0</PreventSynchronization>
+      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
+      <DynamicMusicAmount>3</DynamicMusicAmount>
+      <Volume>2</Volume>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Aryx\misc\ion_cannon\aryx_ion_cannon_fire_01.wav</Start>
         </Wave>
       </Waves>
     </Sound>	

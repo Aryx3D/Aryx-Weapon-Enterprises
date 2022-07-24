@@ -6,6 +6,10 @@ using static Scripts.Structure.WeaponDefinition.AmmoDef.ShapeDef.Shapes;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.DamageScaleDef.CustomScalesDef;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.DamageScaleDef.CustomScalesDef.SkipMode;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.GraphicDef;
+using static Scripts.Structure.WeaponDefinition.AmmoDef.FragmentDef;
+using static Scripts.Structure.WeaponDefinition.AmmoDef.PatternDef;
+using static Scripts.Structure.WeaponDefinition.AmmoDef.PatternDef.PatternModes;
+using static Scripts.Structure.WeaponDefinition.AmmoDef.FragmentDef.TimedSpawnDef.PointTypes;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.TrajectoryDef;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.TrajectoryDef.GuidanceType;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.DamageScaleDef;
@@ -3712,7 +3716,7 @@ namespace Scripts
             AmmoRound = "AWE Desolator Supernuke",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 1f,
+            BaseDamage = 50000000f,
             Mass = 3000, // in kilograms
             Health = 40, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -3726,16 +3730,36 @@ namespace Scripts
             },
             ObjectsHit = new ObjectsHitDef
             {
-                MaxObjectsHit = 0, // 0 = disabled
-                CountBlocks = false, // counts gridBlocks and not just entities hit
+                MaxObjectsHit = 1, // 0 = disabled
+                CountBlocks = true, // counts gridBlocks and not just entities hit
             },
-            Fragment = new FragmentDef
+            Fragment = new FragmentDef // Formerly known as Shrapnel. Spawns specified ammo fragments on projectile death (via hit or detonation).
             {
-                AmmoRound = "AryxDesolatorFieldCharge",
-                Fragments = 1,
-                Degrees = 0,
-                Reverse = true,
-                
+                AmmoRound = "AryxDesolatorFieldCharge", // AmmoRound field of the ammo to spawn.
+                Fragments = 1, // Number of projectiles to spawn.
+                Degrees = 1, // Cone in which to randomize direction of spawned projectiles.
+                Reverse = true, // Spawn projectiles backward instead of forward.
+                DropVelocity = true, // fragments will not inherit velocity from parent.
+                Offset = 0f, // Offsets the fragment spawn by this amount, in meters (positive forward, negative for backwards).
+                Radial = 0f, // Determines starting angle for Degrees of spread above.  IE, 0 degrees and 90 radial goes perpendicular to travel path
+                MaxChildren = 0, // number of maximum branches for fragments from the roots point of view, 0 is unlimited
+                IgnoreArming = true, // If true, ignore ArmOnHit or MinArmingTime in EndOfLife definitions
+
+                TimedSpawns = new TimedSpawnDef // disables FragOnEnd in favor of info specified below
+                {
+                    Enable = true, // Enables TimedSpawns mechanism
+                    Interval = 5, // Time between spawning fragments, in ticks
+                    StartTime = 0, // Time delay to start spawning fragments, in ticks, of total projectile life
+                    MaxSpawns = 1, // Max number of fragment children to spawn
+                    Proximity = 10, // Starting distance from target bounding sphere to start spawning fragments, 0 disables this feature.  No spawning outside this distance
+                    ParentDies = false, // Parent dies once after it spawns its last child.
+                    PointAtTarget = true, // Start fragment direction pointing at Target
+                    PointType = Predict, // Point accuracy, Direct, Lead (always fire), Predict (only fire if it can hit)
+                    GroupSize = 1, // Number of spawns in each group
+                    GroupDelay = 60, // Delay between each group.
+                    DirectAimCone = 5, //Angle cone in which the drone will open fire.
+                },
+
             },
             Pattern = new PatternDef
             {
@@ -3783,7 +3807,7 @@ namespace Scripts
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 1f,
+                    Modifier = 0.000001f,
                     Type = Default,
                     
                 },
@@ -3826,9 +3850,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 50, // Meters
+                    Radius = 20f, // Meters
                     Damage = 5000,
-                    Depth = 25f,
+                    Depth = 10f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -4080,7 +4104,7 @@ namespace Scripts
             AmmoRound = "AryxDesolatorFieldCharge",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 5000000f,
+            BaseDamage = 1,
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -4108,9 +4132,9 @@ namespace Scripts
             Pattern = new PatternDef
             {
                 Patterns = new[] {
-                    "AryxDesolatorPullCharge",
+                    "",
                 },
-                Enable = true,
+                Enable = false,
                 TriggerChance = 1f,
                 Random = false,
                 RandomMin = 1,
@@ -4255,7 +4279,7 @@ namespace Scripts
                     GrowTime = 10, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = true, // Show Block damage effect.
-                    TriggerRange = 250f, //range at which fields are triggered
+                    TriggerRange = 5, //range at which fields are triggered
                     Particle = new ParticleDef // Particle effect to generate at the field's position.
                     {
                         Name = "", // SubtypeId of field particle effect.
@@ -4276,14 +4300,14 @@ namespace Scripts
             },
             Trajectory = new TrajectoryDef
             {
-                Guidance = Smart,
+                Guidance = None,
                 TargetLossDegree = 0,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
                 DesiredSpeed = 0f,
-                MaxTrajectory = 1,
-                //FieldTime = 900, // 0 is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
+                MaxTrajectory = 100,
+                DeaccelTime = 1,
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
                 RangeVariance = Random(start: 0, end: 0), // subtracts value from MaxTrajectory
@@ -5295,9 +5319,9 @@ namespace Scripts
                 EndOfLife = new EndOfLifeDef
                 {
                     Enable = true,
-                    Radius = 20, // Meters
-                    Damage = (float)(250000 * AWEGlobalDamageScalar),
-                    Depth = 7,
+                    Radius = 5, // Meters
+                    Damage = (float)(5 * AWEGlobalDamageScalar),
+                    Depth = 1,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
@@ -5574,7 +5598,7 @@ namespace Scripts
                 DropVelocity = true, // fragments will not inherit velocity from parent.
                 Offset = 0f, // Offsets the fragment spawn by this amount, in meters (positive forward, negative for backwards).
                 Radial = 0f, // Determines starting angle for Degrees of spread above.  IE, 0 degrees and 90 radial goes perpendicular to travel path
-                MaxChildren = 16,
+                MaxChildren = 32,
                 IgnoreArming = false, //Whether shrapnel should spawn regardless of whether the projectile is armed or not.
             },
 

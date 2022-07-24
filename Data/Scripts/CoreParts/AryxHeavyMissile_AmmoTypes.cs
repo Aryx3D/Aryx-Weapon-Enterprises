@@ -99,10 +99,10 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 2f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
-                    Light = 1.75f, // Multiplier for damage against light armor.
+                    Armor = -1f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
+                    Light = -1f, // Multiplier for damage against light armor.
                     Heavy = -1f, // Multiplier for damage against heavy armor.
-                    NonArmor = 3f, // Multiplier for damage against every else.
+                    NonArmor = 2f, // Multiplier for damage against every else.
                 },
                 Shields = new ShieldDef
                 {
@@ -471,9 +471,9 @@ namespace Scripts
                 Armor = new ArmorDef
                 {
                     Armor = -1f, // Multiplier for damage against all armor. This is multiplied with the specific armor type multiplier (light, heavy).
-                    Light = 2.5f, // Multiplier for damage against light armor.
+                    Light = -1f, // Multiplier for damage against light armor.
                     Heavy = -1f, // Multiplier for damage against heavy armor.
-                    NonArmor = 2.5f, // Multiplier for damage against every else.
+                    NonArmor = 2f, // Multiplier for damage against every else.
                 },
                 Shields = new ShieldDef
                 {
@@ -538,7 +538,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 6000, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 350,
-                DesiredSpeed = 600, // voxel phasing if you go above 5100
+                DesiredSpeed = 400, // voxel phasing if you go above 5100
                 MaxTrajectory = 10000,
                 GravityMultiplier = 0.05f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -572,7 +572,7 @@ namespace Scripts
                         Name = "AryxStrikerMissileTrail", //ShipWelderArc
                         ShrinkByDistance = false,
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: 0),
+                        Offset = Vector(x: 0, y: 0, z: 2),
                         Extras = new ParticleOptionDef
                         {
                             Loop = true,
@@ -770,7 +770,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 6000, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 350,
-                DesiredSpeed = 600, // voxel phasing if you go above 5100
+                DesiredSpeed = 400, // voxel phasing if you go above 5100
                 MaxTrajectory = 10000,
                 GravityMultiplier = 0.05f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -804,7 +804,7 @@ namespace Scripts
                         Name = "AryxStrikerDISROMissileTrail", //ShipWelderArc
                         ShrinkByDistance = false,
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: 0),
+                        Offset = Vector(x: 0, y: 0, z: 2),
                         Extras = new ParticleOptionDef
                         {
                             Loop = true,
@@ -986,7 +986,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 6000, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 350,
-                DesiredSpeed = 600, // voxel phasing if you go above 5100
+                DesiredSpeed = 400, // voxel phasing if you go above 5100
                 MaxTrajectory = 10000,
                 GravityMultiplier = 0.05f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -1020,7 +1020,7 @@ namespace Scripts
                         Name = "AryxStrikerDRAINMissileTrail", //ShipWelderArc
                         ShrinkByDistance = false,
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: 0),
+                        Offset = Vector(x: 0, y: 0, z: 2),
                         Extras = new ParticleOptionDef
                         {
                             Loop = true,
@@ -1146,9 +1146,9 @@ namespace Scripts
                 Enable = true, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
                 Type = EnergySink, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Effect, // Effect , Field
-                Strength = 5000,
-                Radius = 7.5f, // Meters
-                Duration = 300, // In Ticks
+                Strength = 3000,
+                Radius = 2.5f, // Meters
+                Duration = 100, // In Ticks
                 StackDuration = true, // Combined Durations
                 Depletable = true,
                 MaxStacks = 4, // Max Debuffs at once
@@ -1201,7 +1201,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 10, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0,
-                DesiredSpeed = 600, // voxel phasing if you go above 5100
+                DesiredSpeed = 400, // voxel phasing if you go above 5100
                 MaxTrajectory = 10,
                 GravityMultiplier = 0.0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed

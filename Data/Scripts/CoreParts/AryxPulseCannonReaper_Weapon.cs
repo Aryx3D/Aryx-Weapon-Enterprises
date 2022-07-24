@@ -101,7 +101,7 @@ namespace Scripts
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 90,
+                    RateOfFire = 6,
                     BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
@@ -113,10 +113,10 @@ namespace Scripts
                     Cooldown = 0f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
                     HeatSinkRate = 150, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
-                    ShotsInBurst = 6,
+                    ShotsInBurst = 0,
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    FireFull = true,
-                    GiveUpAfter = true,
+                    FireFull = false,
+                    GiveUpAfter = false,
                 },
                 Audio = new HardPointAudioDef
                 {

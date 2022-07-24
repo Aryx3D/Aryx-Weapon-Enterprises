@@ -109,7 +109,7 @@ namespace Scripts
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
                     MinElevation = -10,
-                    MaxElevation = 55,
+                    MaxElevation = 90,
                     FixedOffset = false,
                     InventorySize = 0.2f,
                     Offset = Vector(x: 0, y: 0, z: 0),
@@ -135,7 +135,7 @@ namespace Scripts
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 1800,
+                    RateOfFire = 1200,
                     BarrelSpinRate = 900, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.

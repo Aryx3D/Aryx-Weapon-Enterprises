@@ -46,7 +46,7 @@ namespace Scripts {
                 MinimumDiameter = 0, // Minimum radius of threat to engage.
                 MaximumDiameter = 0, // Maximum radius of threat to engage; 0 = unlimited.
                 MaxTargetDistance = 10000, // Maximum distance at which targets will be automatically shot at; 0 = unlimited.
-                MinTargetDistance = 0, // Minimum distance at which targets will be automatically shot at.
+                MinTargetDistance = 1000, // Minimum distance at which targets will be automatically shot at.
                 TopTargets = 4, // Maximum number of targets to randomize between; 0 = unlimited.
                 TopBlocks = 4, // Maximum number of blocks to randomize between; 0 = unlimited.
                 StopTrackingSpeed = 0, // Do not track threats traveling faster than this speed; 0 = unlimited.
@@ -187,10 +187,10 @@ namespace Scripts {
                 AryxTorpFullSpeed,
                 AryxEnergyTorpEWARField,
                 AryxEnergyTorpLaunchedAmmoWCDef,
-                AryxKineticFrags,
                 AryxAntimatterTorpWCDef,
                 AryxAntimatterTorpFullSpeed,
                 AryxAntimatterTorpShrap,// Must list all primary, shrapnel, and pattern ammos.
+                AryxKineticFrags,
             },
             //Animations = AryxFlechetteAnims,
             //Upgrades = UpgradeModules,
@@ -372,10 +372,10 @@ namespace Scripts {
                 AryxTorpFullSpeed,
                 AryxEnergyTorpEWARField,
                 AryxEnergyTorpLaunchedAmmoWCDef,
-                //AryxKineticFrags,
                 AryxAntimatterTorpWCDef,
                 AryxAntimatterTorpFullSpeed,
                 AryxAntimatterTorpShrap,// Must list all primary, shrapnel, and pattern ammos.
+                AryxKineticFrags,
             },
             Animations = AryxAstraeusAnims,
             //Upgrades = UpgradeModules,

@@ -32,10 +32,10 @@ namespace Scripts
             AmmoRound = "480mm Heavy Shell",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(3500 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(5000 * AWEGlobalDamageScalar),
             Mass = 240f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 50f,
+            BackKickForce = 100000,
             DecayPerShot = 0,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             IgnoreWater = true,
@@ -53,7 +53,7 @@ namespace Scripts
             Fragment = new FragmentDef
             {
                 AmmoRound = "AryxKineticFrags",
-                Fragments = 20,
+                Fragments = 40,
                 Degrees = 360,
                 Reverse = true,
             },

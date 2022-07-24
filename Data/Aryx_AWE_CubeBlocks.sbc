@@ -709,7 +709,7 @@
       </Id>
       <DisplayName>Aegis Tactical Module</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_TacticalModule.dds</Icon>  
-      <Description>The Aegis is a tactical device designed as a final-resort measure to scuttle a ship. The primary method provides a defensive EMP field to disable nearby grids, and the secondary mode will make the core go supercritical, destroying everything within 500m. [500M RANGE - ENERGY-BASED TACTICAL WEAPON]</Description>
+      <Description> silly goofy aaaaaaaaaaaah placeholder for a stealth module</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="3" y="3" z="3"/>
@@ -744,6 +744,7 @@
 		<MirroringY>Z</MirroringY>
 		<MirroringZ>Y</MirroringZ>
       <BuildTimeSeconds>70</BuildTimeSeconds>
+	  <Public>false</Public>
 	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
       <EdgeType>Light</EdgeType>	  
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
@@ -757,6 +758,62 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXLargeIonCannon</SubtypeId>
+		</Id>
+		<DisplayName>CT500 Centurion Ion Cannon</DisplayName>
+		<Description>The Centurion is a tactical beam weapon that fires an ion pulse which can disable enemy ship systems. It also deals a nasty amount of damage. Building from focus beam technology, it must be held on the target for the duration of its firing period in order to deal damage. The EMP lasts 10 seconds and the Jump disruption lasts 30 seconds. [5KM TRAVEL - ENERGY WEAPON (Disables systems and jump drives! EMP EFFECT DOES NOT STACK)]</Description>	
+		<Icon>Textures\GUI\Icons\Aryx_AWE_IonCannon.dds</Icon>
+		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="3" y="2" z="12"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\Centurion\ARYX_IonCannonStatic.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="1250" />
+			<Component Subtype="Construction" Count="750" />
+			<Component Subtype="PowerCell" Count="150" />
+			<Component Subtype="LargeTube" Count="60" />
+			<Component Subtype="Motor" Count="200" />
+			<Component Subtype="GravityGenerator" Count="150" />	
+			<Component Subtype="Superconductor" Count="600" />
+			<Component Subtype="Computer" Count="900" />
+			<Component Subtype="SteelPlate" Count="500" />
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="9.00" StartY="0.00" EndX="12.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.01" StartY="0.40" EndX="1.99" EndY="1.60"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="10.01" StartY="0.40" EndX="11.99" EndY="1.60"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Top" StartX="0.75" StartY="3.00" EndX="2.25" EndY="4.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="9.00" EndX="3.00" EndY="12.00"/>
+				<MountPoint Side="Bottom" StartX="0.75" StartY="8.00" EndX="2.25" EndY="9.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\Centurion\ARYX_IonCannonStatic_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Centurion\ARYX_IonCannonStatic_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Centurion\ARYX_IonCannonStatic_BS3.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>AWEIonCannonLarge</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>100</BuildTimeSeconds>
+		<InventoryMaxVolume>1</InventoryMaxVolume>
+		<DamageEffectId>213</DamageEffectId>
+		<DamagedSound>ParticleWeapExpl</DamagedSound>
+		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		<EmissiveColorPreset>Default</EmissiveColorPreset>
+      <PCU>1000</PCU>   		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>		
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -964,7 +1021,7 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXJuryCannon</SubtypeId>
       </Id>
-      <DisplayName>120mm Whirlwind Heavy Cannon</DisplayName>
+      <DisplayName>M120 Whirlwind Heavy Cannon</DisplayName>
 	  <Description>The Whirlwind is a compact artillery piece capable of dealing decent ballistic damage to targets from long-range. [800m/s muzzle velocity, 3.5km range - Accepts 120mm Heavy Shells (Kinetic).]</Description>
 	  <Icon>Textures\GUI\Icons\AryxJurycannon.dds</Icon>  
 	  <CubeSize>Large</CubeSize>
@@ -2405,6 +2462,57 @@
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXGladiatorMissileLauncher</SubtypeId>
+		</Id>
+		<Public>true</Public>		
+		<DisplayName>TS-L8 Gladiator Tactical Launcher</DisplayName>
+		<Description>The Gladiator fires specialised tactical missiles that are capable of inflicting a variety of effects on the target, ranging from disabling thrusters or systems, or [8KM RANGE - Accepts Gladius Missiles (EXPL/ION/SLOW)]</Description>
+		<Icon>Textures\GUI\Icons\AryxTorpLauncher.dds</Icon>
+		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="5" y="3" z="3"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_Gladiator\ARYX_GladiatorPod.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="1250" />
+			<Component Subtype="Construction" Count="850" />
+			<Component Subtype="MetalGrid" Count="500" />				
+			<Component Subtype="LargeTube" Count="400" />
+			<Component Subtype="Motor" Count="750" />
+			<Component Subtype="Computer" Count="800" />
+			<Component Subtype="Construction" Count="150" />
+			<Component Subtype="SteelPlate" Count="500" />
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0" />
+	
+		<MountPoints>
+			<MountPoint Side="Front" StartX="1.00" StartY="0.00" EndX="4.00" EndY="3.00"/>
+			<MountPoint Side="Back" StartX="1.00" StartY="0.00" EndX="4.00" EndY="3.00"/>
+			<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+			<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+			<MountPoint Side="Bottom" StartX="1.00" StartY="0.00" EndX="4.00" EndY="3.00"/>
+		</MountPoints>
+			
+		<BlockPairName>ARYX_GladiatorMissileLauncher</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>120</BuildTimeSeconds>
+		<InventoryMaxVolume>0.16</InventoryMaxVolume>
+		<DamageEffectId>213</DamageEffectId>
+		<DamagedSound>ParticleWeapExpl</DamagedSound>
+		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		<EmissiveColorPreset>Default</EmissiveColorPreset>
+	    <PCU>200</PCU>   	
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>		
+	
+    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXTorpLauncher</SubtypeId>
 		</Id>
 		<DisplayName>TL-150 Astraeus Torpedo Launcher</DisplayName>
@@ -2448,7 +2556,7 @@
 		<MirroringZ>X</MirroringZ>
 
 		<EdgeType>Light</EdgeType>
-		<BuildTimeSeconds>120</BuildTimeSeconds>
+		<BuildTimeSeconds>80</BuildTimeSeconds>
 		<InventoryMaxVolume>0.16</InventoryMaxVolume>
 		<DamageEffectId>213</DamageEffectId>
 		<DamagedSound>ParticleWeapExpl</DamagedSound>
@@ -2500,7 +2608,7 @@
 		<MirroringZ>X</MirroringZ>
 
 		<EdgeType>Light</EdgeType>
-		<BuildTimeSeconds>120</BuildTimeSeconds>
+		<BuildTimeSeconds>80</BuildTimeSeconds>
 		<InventoryMaxVolume>0.16</InventoryMaxVolume>
 		<DamageEffectId>213</DamageEffectId>
 		<DamagedSound>ParticleWeapExpl</DamagedSound>
@@ -3054,7 +3162,7 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXCatalystCannon</SubtypeId>
 		</Id>
-		<Public>false</Public>
+		<Public>true</Public>
 		<DisplayName>AL16-MV50 Olympus Antimatter Catalyst Cannon</DisplayName>
 		<Icon>Textures\GUI\Icons\Oppenheimer.dds</Icon>
 		<Description>A manmade horror beyond comprehension; The destroyer of worlds. (Energy)</Description>	
@@ -3291,10 +3399,15 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXKingswordSupercannon</SubtypeId>
 		</Id>
-		<DisplayName>S12A-3KS Kingsword Ultraheavy Gauss Cannon</DisplayName>t
+		<DisplayName>S12A-3KS Kingsword Casaba Beam Lance</DisplayName>
 		<Description>Designated the S12A-3KS KING SWORD, or more commonly, the Boomstick, is a superheavy calibre gauss cannon, firing 5200mm ferrous-tungsten ballistics at near relativistic velocities, guaranteed to tear through any form of armour or energy shielding fielded. At an approximate 153.5m long, it is the largest ship-mounted weapon on the market designated for civilian use.
 
-Wrought forth from the forges of divinity, bring the ultimate arbiter of destruction; Cast down into eternal perdition ye shall send. [Accepts 5200mm Ferrous - 50km range (Kinetic)]</Description>	
+Wrought forth from the forges of divinity, bring the ultimate arbiter of destruction; Cast down into eternal perdition ye shall send. [Accepts 5200mm Ferrous - 50km range (Kinetic)]
+Effects: Fires a large shaped fusion charge that explodes into a beam of nuclear fire, destroying anything unfortunate enough to find itself in front of the barrel.
+Size: 5x9x61
+
+		</Description>	
+
 		<Icon>Textures\GUI\Icons\Aryx_AWE_Kingsword.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -3350,7 +3463,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       </Id>
       <DisplayName>Apollo-250 Railgun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\AWERailgunTurret.dds</Icon>
-      <Description>A turreted version of the Artemis railgun, sporting an armoured base and automatic aiming system. Whilst limited in elevation, the Apollo has full 360 traversal, allowing ship captains to focus on other threats. [2.5KM RANGE - Accepts 250mm Ferrous. (Kinetic)]</Description>
+      <Description>A turreted version of the Artemis railgun, sporting an armoured base and automatic aiming system. Whilst limited in elevation, the Apollo has full 360 traversal, allowing ship captains to focus on other threats. [5KM RANGE - Accepts 250mm Ferrous. (Kinetic)]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="2" z="5"/>
@@ -3557,7 +3670,7 @@ Wrought forth from the forges of divinity, bring the ultimate arbiter of destruc
       <DisplayName>VLX-5000 Reaper Pulse Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AWEReaperPulseCannon.dds</Icon>
 	  <!--"The Reaper is the ultimate heavy weapons platform; Three quantum accelerators rigged to a a series of heavy pulse capacitors, giving the weapon unbridled destructive power. 5 second spin up, followed by a crushing volley of 12 devastatingly-powerful shots, shredding shield and armour alike" -->
-      <Description>The Reaper is an experimental weapon platform designed as the sister project of the Typhoon and Magnetar. Rather than fire ballistic rounds or plasma bolts, the Reaper fires globules of Antimatter, able to crack enemy armour with frightening firepower. [5KM RANGE - Accepts High Density Energy Cells. (Energy)]</Description>
+      <Description>The Reaper is an experimental weapon platform designed as the sister project of the Typhoon and Magnetar. Rather than fire conventional energy bolts, the Reaper fires an unstable antimatter globule that cascades on impact. [5KM RANGE - Accepts High Density Energy Cells. (Energy)]</Description>
 			<CubeSize>Large</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="7" y="4" z="7"/>

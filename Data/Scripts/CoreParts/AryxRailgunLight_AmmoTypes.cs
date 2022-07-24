@@ -291,16 +291,17 @@ namespace Scripts
                     },
                     Hit = new ParticleDef
                     {
-                        Name = "",
-                        ApplyToShield = true,
+                        Name = "AryxAWERailgunStrike",
+                        ApplyToShield = false,
                         ShrinkByDistance = false,
-                        Color = Color(red: 25, green: 20f, blue: 10f, alpha: 1),
+                        Color = Color(red: 0f, green: 0f, blue: 0f, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
                         {
+                            Loop = false,
                             Restart = false,
-                            MaxDistance = 5000,
-                            MaxDuration = 30,
+                            MaxDistance = 1000,
+                            MaxDuration = 0.1f,
                             Scale = 1,
                             HitPlayChance = 1f,
                         },

@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "25mm CODEX Ammunition",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(40 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(60 * AWEGlobalDamageScalar),
             Mass = 0.5f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 8f,

@@ -1459,7 +1459,7 @@ namespace Scripts
             AmmoMagazine = "Energy",
             AmmoRound = "380nm Laser - MODVIO",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 0.5f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 2f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(250 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
