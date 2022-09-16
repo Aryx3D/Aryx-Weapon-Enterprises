@@ -272,7 +272,12 @@
                 <GroupSubtype>AWE_Exotics_T1</GroupSubtype>
             </UnlockedByGroups>
         </ResearchBlock>		
-		
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXGladiatorMissileLauncher" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Exotics_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>			
 		
 		<!--T2-->
         <ResearchBlock xsi:type="ResearchBlock">
@@ -482,6 +487,12 @@
         </ResearchBlock>
         <ResearchBlock xsi:type="ResearchBlock">
             <Id Type="ConveyorSorter" Subtype="ARYXInlineTorpLauncher" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Missiles_T3</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXGladiatorMissileLauncher" />
             <UnlockedByGroups>
                 <GroupSubtype>AWE_Missiles_T3</GroupSubtype>
             </UnlockedByGroups>

@@ -262,7 +262,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 100f,
-                DesiredSpeed = 100, // voxel phasing if you go above 5100
+                DesiredSpeed = 300, // voxel phasing if you go above 5100
                 MaxTrajectory = 400000,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0.2f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -662,7 +662,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 100f,
-                DesiredSpeed = 100, // voxel phasing if you go above 5100
+                DesiredSpeed = 300, // voxel phasing if you go above 5100
                 MaxTrajectory = 400000,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0.2f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -871,15 +871,15 @@ namespace Scripts
                 TimedSpawns = new TimedSpawnDef // disables FragOnEnd in favor of info specified below
                 {
                     Enable = true, // Enables TimedSpawns mechanism
-                    Interval = 5, // Time between spawning fragments, in ticks
+                    Interval = 10, // Time between spawning fragments, in ticks
                     StartTime = 0, // Time delay to start spawning fragments, in ticks, of total projectile life
                     MaxSpawns = 900, // Max number of fragment children to spawn
                     Proximity = 1000, // Starting distance from target bounding sphere to start spawning fragments, 0 disables this feature.  No spawning outside this distance
                     ParentDies = false, // Parent dies once after it spawns its last child.
                     PointAtTarget = true, // Start fragment direction pointing at Target
                     PointType = Predict, // Point accuracy, Direct, Lead (always fire), Predict (only fire if it can hit)
-                    GroupSize = 20, // Number of spawns in each group
-                    GroupDelay = 60, // Delay between each group.
+                    GroupSize = 1, // Number of spawns in each group
+                    GroupDelay = 240, // Delay between each group.
                     DirectAimCone = 5, //Angle cone in which the drone will open fire.
                 },
 
@@ -1062,7 +1062,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 3600, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 100f,
-                DesiredSpeed = 100, // voxel phasing if you go above 5100
+                DesiredSpeed = 300, // voxel phasing if you go above 5100
                 MaxTrajectory = 400000,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0.2f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.

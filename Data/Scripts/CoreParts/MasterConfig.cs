@@ -79,7 +79,9 @@ namespace Scripts
             AryxPulsarTurret,
             AryxLargeFlareLauncher,
             AryxGladiatorLauncher,
-            AryxLargeIonCannon
+            AryxLargeIonCannon,
+            AryxMedusaTurret,
+            AryxSiegeMortarCannon
             );
 
 

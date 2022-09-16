@@ -17,6 +17,7 @@
 		<string>LargeMissileTurret/ARYXPulseTurret</string>	
 		<string>LargeMissileTurret/ARYXCompactPulseTurret</string>	
 		<string>LargeMissileTurret/ARYXMagnetarCannon</string>	
+		<string>LargeMissileTurret/ARYXPulsarCannon</string>			
 		<string>LargeMissileTurret/ARYXQuasarCannon</string>		
 		<string>ConveyorSorter/ARYXGaussCannon</string>	
 		<string>ConveyorSorter/ARYXRailgun</string>			
@@ -78,6 +79,11 @@
 		<string>SmallMissileLauncher/ARYXWindfallCannon</string>
 		<string>ConveyorSorter/ARYX_LargeFlareLauncher</string>				
 		<string>ConveyorSorter/ARYXLargeIonCannon</string>
+		<string>ConveyorSorter/ARYXGladiatorMissileLauncher</string>		
+		<string>LargeMissileTurret/ARYXPhaseRepeaterCannon</string>		
+		<string>ConveyorSorter/ARYXSiegeMortarCannon</string>	
+		
+		
       </ItemIds>
     </Category> 
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -140,8 +146,7 @@
 		<string>ConveyorSorter/ARYXInterceptorPDGun</string>	
 		<string>ConveyorSorter/ARYXSmallPulseLaser_Fixed</string>	
 		<string>ConveyorSorter/ARYXFocusLance</string>
-		<string>LargeMissileTurret/ARYXQuasarCannon</string>
-		<string>LargeMissileTurret/ARYXPulsarCannon</string>			
+		<string>LargeMissileTurret/ARYXQuasarCannon</string>		
 		<string>LargeMissileTurret/ARYXPulsarCannon</string>		
 		<string>LargeMissileTurret/ARYXTsunamiCannon</string>
 		<string>ConveyorSorter/ARYXHeavyCoilgun</string>
@@ -155,7 +160,10 @@
 		<string>LargeMissileTurret/ARYXVariableLaser</string>
 		<string>SmallMissileLauncher/ARYXWindfallCannon</string>
 		<string>ConveyorSorter/ARYX_LargeFlareLauncher</string>	
-		<string>ConveyorSorter/ARYXLargeIonCannon</string>		
+		<string>ConveyorSorter/ARYXLargeIonCannon</string>	
+		<string>ConveyorSorter/ARYXGladiatorMissileLauncher</string>	
+		<string>LargeMissileTurret/ARYXPhaseRepeaterCannon</string>		
+		<string>ConveyorSorter/ARYXSiegeMortarCannon</string>			
 	  </ItemIds>
     </Category>
 	
@@ -235,6 +243,9 @@
 		<string>LargeMissileTurret/ARYXPulsarCannon</string>		
 		<string>ConveyorSorter/ARYX_LargeFlareLauncher</string>	
 		<string>ConveyorSorter/ARYXLargeIonCannon</string>		
+		<string>ConveyorSorter/ARYXGladiatorMissileLauncher</string>	
+		<string>LargeMissileTurret/ARYXPhaseRepeaterCannon</string>		
+		<string>ConveyorSorter/ARYXSiegeMortarCannon</string>			
 	</ItemIds>
     </Category> 
 
@@ -307,7 +318,10 @@
 		<string>LargeMissileTurret/ARYXVariableLaser</string>
 		<string>LargeMissileTurret/ARYXPulsarCannon</string>				
 		<string>ConveyorSorter/ARYX_LargeFlareLauncher</string>		
-		<string>ConveyorSorter/ARYXLargeIonCannon</string>		
+		<string>ConveyorSorter/ARYXLargeIonCannon</string>	
+		<string>ConveyorSorter/ARYXGladiatorMissileLauncher</string>	
+		<string>LargeMissileTurret/ARYXPhaseRepeaterCannon</string>	
+		<string>ConveyorSorter/ARYXSiegeMortarCannon</string>			
 		
 	  </ItemIds>
     </Category>  	

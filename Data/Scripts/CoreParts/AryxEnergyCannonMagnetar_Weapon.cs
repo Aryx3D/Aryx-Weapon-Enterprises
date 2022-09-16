@@ -85,12 +85,12 @@ namespace Scripts {
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.002f,
-                    ElevateRate = 0.002f,
+                    RotateRate = 0.0025f,
+                    ElevateRate = 0.0025f,
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
-                    MinElevation = -5,
-                    MaxElevation = 45,
+                    MinElevation = -10,
+                    MaxElevation = 70,
                     FixedOffset = false,
                     InventorySize = 1f,
                     Offset = Vector(x: 0, y: 0, z: 0),

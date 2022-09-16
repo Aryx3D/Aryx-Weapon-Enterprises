@@ -85,14 +85,14 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
-                    Small = 2f,
+                    Small = -1f,
                 },
                 Armor = new ArmorDef
                 {
                     Armor = 0.5f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 1.5f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
@@ -328,7 +328,7 @@ namespace Scripts
                     {
                         Enable = true,
                         Length = 5f,
-                        Width = 0.001f,
+                        Width = 0.1f,
                         Color = Color(red: 50, green: 10f, blue: 9f, alpha: 1),
                         VisualFadeStart = 30, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 30, // How many ticks after fade began before it will be invisible.
@@ -338,7 +338,7 @@ namespace Scripts
                         TextureMode = Normal, // Normal, Cycle, Chaos, Wave
                         Segmentation = new SegmentDef
                         {
-                            Enable = true, // If true Tracer TextureMode is ignored
+                            Enable = false, // If true Tracer TextureMode is ignored
                             Textures = new[] {
                                 "AryxPulseLaserEffect",
                             },

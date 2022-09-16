@@ -52,14 +52,14 @@ namespace Scripts
                 MinTargetDistance = 0, // 0 = unlimited, Min target distance that targets will be automatically shot at.
                 TopTargets = 4, // 0 = unlimited, max number of top targets to randomize between.
                 TopBlocks = 4, // 0 = unlimited, max number of blocks to randomize between
-                StopTrackingSpeed = 100000, // do not track target threats traveling faster than this speed
+                StopTrackingSpeed = 0, // do not track target threats traveling faster than this speed
             },
             HardPoint = new HardPointDef
             {
-                PartName = "Kingsword Ultraheavy Cannon", // name of weapon in terminal
+                PartName = "Kingsword Casaba Lance", // name of weapon in terminal
                 DeviateShotAngle = 0f,
                 AimingTolerance = 1f, // 0 - 180 firing angle
-                AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
+                AimLeadingPrediction = Off, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
                 CanShootSubmerged = true,
@@ -117,7 +117,7 @@ namespace Scripts
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 3000, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    ReloadTime = 7200, //7200 // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     DelayUntilFire = 340, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 0, //heat generated per shot
                     MaxHeat = 70000, //max heat before weapon enters cooldown (70% of max heat)
@@ -145,17 +145,17 @@ namespace Scripts
 
                     Effect1 = new ParticleDef
                     {
-                        Name = "", // Smoke_LargeGunShot
+                        Name = "AWE_Kingsword_Flash", // Smoke_LargeGunShot
                         Color = Color(red: 1, green: 1, blue: 0.625f, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: 0),
+                        Offset = Vector(x: 0, y: 0, z: -50),
 
                         Extras = new ParticleOptionDef
                         {
                             Loop = false,
-                            Restart = true,
-                            MaxDistance = 1000,
+                            Restart = false,
+                            MaxDistance = 3000,
                             MaxDuration = 0,
-                            Scale = 2f,
+                            Scale = 1f,
                         },
                     },
                     Effect2 = new ParticleDef
@@ -177,7 +177,6 @@ namespace Scripts
             },
             Ammos = new[] {
                 AryxKingswordAmmoWC,
-                AryxKingswordShrapAmmoWC,
             },
             Animations = AryxKingswordAnims,
             // Don't edit below this line

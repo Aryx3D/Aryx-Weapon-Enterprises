@@ -149,10 +149,10 @@ namespace Scripts
                         Extras = new ParticleOptionDef
                         {
                             Loop = false,
-                            Restart = true,
-                            MaxDistance = 1000,
+                            Restart = false,
+                            MaxDistance = 2000,
                             MaxDuration = 0,
-                            Scale = 2f,
+                            Scale = 1f,
                         },
                     },
                     Effect2 = new ParticleDef
@@ -177,6 +177,7 @@ namespace Scripts
                 AryxLargeIonCannonPulse,
                 AryxLargeIonCannonEMP,
                 AryxLargeIonCannonJumpDisruption,
+                AryxLargeIonCannonBeamFlash, //I hate this fucking system
             },
             Animations = AryxLargeIonCannonAnimations,
             // Don't edit below this line

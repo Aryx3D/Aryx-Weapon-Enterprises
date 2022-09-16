@@ -170,7 +170,7 @@ namespace Scripts
                         {
                             Loop = true,
                             Restart = false,
-                            MaxDistance = 50,
+                            MaxDistance = 1000,
                             MaxDuration = 6,
                             Scale = 1f,
                         },
@@ -179,13 +179,13 @@ namespace Scripts
                     {
                         Name = "Aryx_ATLAS_Muzzleflash",//Muzzle_Flash_Large
                         Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: -0.3f),
+                        Offset = Vector(x: 0, y: 0, z: 0f),
 
                         Extras = new ParticleOptionDef
                         {
                             Loop = false,
                             Restart = false,
-                            MaxDistance = 500,
+                            MaxDistance = 1000,
                             MaxDuration = 0,
                             Scale = 1f,
                         },

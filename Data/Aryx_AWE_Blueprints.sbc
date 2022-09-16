@@ -107,7 +107,7 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>AWEKingSwordAmmoBP</SubtypeId>
       </Id>
-      <DisplayName>5200mm Ferrous-Tungsten Cluster Ballistic Projectile</DisplayName>
+      <DisplayName>Kingsword Nuclear Charge</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEKingswordAmmo.dds</Icon>
       <Prerequisites>
         <Item Amount="12000" TypeId="Ingot" SubtypeId="Iron" />
@@ -294,7 +294,23 @@
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE600mmCannonMag" />
       <BaseProductionTimeInSeconds>35</BaseProductionTimeInSeconds>
     </Blueprint>			
-	
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AWEAvalanche1000AmmoBP</SubtypeId>
+      </Id>
+      <DisplayName>1000mm "Fat Man" Mortar Shell</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\AWEMortarAmmo.dds</Icon>
+      <Prerequisites>
+        <Item Amount="800" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="500" TypeId="Ingot" SubtypeId="Magnesium" />
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Uranium" />				
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE1000mmMortarShellAmmoMag" />
+      <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+    </Blueprint>			
+		
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -440,7 +456,27 @@
       </Prerequisites>
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AryxTorpMagDef" />
       <BaseProductionTimeInSeconds>45</BaseProductionTimeInSeconds>
-    </Blueprint>		
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AWEGladiusMissileAmmoBP</SubtypeId>
+      </Id>
+      <DisplayName>Gladius Missile</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\AWEGladiusMissile.dds</Icon>
+      <Prerequisites>
+        <Item Amount="48" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="32" TypeId="Ingot" SubtypeId="Nickel" />
+	    <Item Amount="16" TypeId="Ingot" SubtypeId="Cobalt" />	
+        <Item Amount="8" TypeId="Ingot" SubtypeId="Magnesium" />	
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Uranium" />		
+			
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AryxGladiusMissileMagDef" />
+      <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
@@ -483,7 +519,7 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>25mmCODEXBP</SubtypeId>
       </Id>
-      <DisplayName>150x25mm AVALANCHE Ammo</DisplayName>
+      <DisplayName>150x25mm Prowler Ammo</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEATLASAmmo.dds</Icon>
       <Prerequisites>
         <Item Amount="8" TypeId="Ingot" SubtypeId="Iron" />

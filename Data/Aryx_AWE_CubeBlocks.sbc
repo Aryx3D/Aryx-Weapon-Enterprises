@@ -171,14 +171,14 @@
       <ModelOffset x="0" y="0" z="0" />
 	  <Model>Models\AWE_HeavyCannon\ARYX_TyphoonCannonBase.mwm</Model>
       <Components>
-        <Component Subtype="SteelPlate" Count="1250" />
+        <Component Subtype="SteelPlate" Count="1500" />
         <Component Subtype="Construction" Count="400" />
         <Component Subtype="MetalGrid" Count="400" />
         <Component Subtype="LargeTube" Count="180" />	
         <Component Subtype="Motor" Count="300" />
         <Component Subtype="Computer" Count="325" />
         <Component Subtype="Construction" Count="150" />		
-        <Component Subtype="SteelPlate" Count="750" />
+        <Component Subtype="SteelPlate" Count="1000" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -743,7 +743,7 @@
 		<BlockPairName>LG_AryxTacticalModule</BlockPairName>
 		<MirroringY>Z</MirroringY>
 		<MirroringZ>Y</MirroringZ>
-      <BuildTimeSeconds>70</BuildTimeSeconds>
+      <BuildTimeSeconds>999</BuildTimeSeconds>
 	  <Public>false</Public>
 	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
       <EdgeType>Light</EdgeType>	  
@@ -753,7 +753,7 @@
       <DamagedSound>ParticleWeapExpl</DamagedSound>
       <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
       <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>200</PCU>      
+      <PCU>99999</PCU>      
       <TargetingGroups>
 		<string>Weapons</string>
       </TargetingGroups>      
@@ -968,6 +968,70 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+      <Id>
+        <TypeId>LargeMissileTurret</TypeId>
+        <SubtypeId>ARYXPhaseRepeaterCannon</SubtypeId>
+      </Id>
+      <DisplayName>XM-500 Medusa Phase Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_Medusa.dds</Icon>	  
+      <Description>The Medusa is a powerful energy weapon that fires phasic energy bolts at a good rate of fire. These pass through shields to an extent and deal explosive impact damage. [2KM RANGE - HEAVY ENERGY WEAPON]
+	  Effects: Fires explosive energy bolts at 30rpm.
+	  Reload time: 0.5 seconds.
+	  Size: 5x5x4
+	  Power Draw: 160MW  
+	  </Description>
+ 		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="5" y="4" z="5"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_Medusa\ARYX_PhaseCannonBase.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="1250" />
+			<Component Subtype="Construction" Count="350" />
+			<Component Subtype="PowerCell" Count="250" />
+			<Component Subtype="SmallTube" Count="500" />
+			<Component Subtype="Motor" Count="250" />
+			<Component Subtype="GravityGenerator" Count="150" />	
+			<Component Subtype="Superconductor" Count="200" />
+			<Component Subtype="Computer" Count="250" />
+			<Component Subtype="Construction" Count="200" />		
+			<Component Subtype="SteelPlate" Count="550" />
+		</Components>
+		<CriticalComponent Index="0" Subtype="Computer"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Medusa\ARYX_PhaseCannonBase_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Medusa\ARYX_PhaseCannonBase_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Medusa\ARYX_PhaseCannonBase_BS3.mwm"/>
+			</BuildProgressModels>		
+		<BlockPairName>ARYXPhaseRepeaterCannon</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>90</BuildTimeSeconds>
+	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxPulseLaserWepDef"/>
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.48</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>300</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
+	
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>
@@ -1180,9 +1244,9 @@
         <TypeId>LargeGatlingTurret</TypeId>
         <SubtypeId>ARYXCodexPDC</SubtypeId>
       </Id>
-      <DisplayName>MG25 "Avalanche" Heavy Machine Gun</DisplayName>
+      <DisplayName>MG25 Rampart Chaingun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCodexPDC.dds</Icon>	  
-      <Description>Avalanche MGs are lightweight gatling turrets designed to shoot down incoming missiles and strike craft. Extremely high rate of fire. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
+      <Description>Ramparts are lightweight gun turrets designed to shoot down incoming missiles and strike craft. Extremely high rate of fire. [ 1.2KM RANGE - Accepts 25mm Prowler ammo (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1229,9 +1293,9 @@
         <TypeId>ConveyorSorter</TypeId>
         <SubtypeId>ARYXSlantedCodexPDC</SubtypeId>
       </Id>
-      <DisplayName>MG25 "Avalanche" Slanted Heavy Machine Gun</DisplayName>
+      <DisplayName>MG25 Rampart Chaingun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Avalanche.dds</Icon>	  
-      <Description>Avalanche MGs are lightweight gatling turrets designed to shoot down incoming missiles and strike craft. This version is embedded into a slanted armour plate. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
+      <Description>Ramparts are lightweight gun turrets designed to shoot down incoming missiles and strike craft. This version is embedded into a slanted armour plate. [ 1.2KM RANGE - Accepts 25mm Prowler ammo (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1280,9 +1344,9 @@
         <TypeId>ConveyorSorter</TypeId>
         <SubtypeId>ARYXSlantedInvCodexPDC</SubtypeId>
       </Id>
-      <DisplayName>MG25 "Avalanche" Slanted Heavy Machine Gun</DisplayName>
+      <DisplayName>MG25 Rampart Chaingun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Avalanche_Inv.dds</Icon>	  
-      <Description>Avalanche MGs are lightweight gatling turrets designed to shoot down incoming missiles and strike craft. This version is embedded into a slanted armour plate. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
+      <Description>Ramparts are lightweight gun turrets designed to shoot down incoming missiles and strike craft. This version is embedded into a slanted armour plate. [ 1.2KM RANGE - Accepts 25mm Prowler ammo (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -1331,9 +1395,9 @@
         <TypeId>LargeGatlingTurret</TypeId>
         <SubtypeId>ARYXCodexPDC_SG</SubtypeId>
       </Id>
-      <DisplayName>MG25 "Avalanche" Heavy Machine Gun</DisplayName>
+      <DisplayName>MG25 Rampart Chaingun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCodexPDC.dds</Icon>	  
-      <Description>Avalanche MGs are lightweight gatling turrets designed to shoot down incoming missiles and strike craft. Extremely high rate of fire. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
+      <Description>Ramparts are lightweight gun turrets designed to shoot down incoming missiles and strike craft. Extremely high rate of fire. [ 1.2KM RANGE - Accepts 25mm Prowler ammo (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="3" />
@@ -1382,7 +1446,7 @@
       </Id>
       <DisplayName>Aurora Combat Laser</DisplayName>
       <Icon>Textures\GUI\Icons\AryxLaserGatling.dds</Icon>		  
-      <Description>The Aurora is a compact laser gatling weapon, able to dish out surprising damage to strike craft and shields with its high fire rates. Whilst susceptible to overheating, the weapon is an effective anti-component gun.[1200M RANGE - ENERGY WEAPON]</Description>
+      <Description>Auroras are compact rotary laser weapons able to dish out excellent damage to strike craft and shields with its high fire rates. Excellent tracking allows it to easily nail infantry targets. [1200M RANGE - ENERGY WEAPON]</Description>
 	  <CubeSize>Large</CubeSize>
 	  <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="2" z="1"/>
@@ -1903,9 +1967,9 @@
         <TypeId>SmallGatlingGun</TypeId>
         <SubtypeId>ARYX_SmallChaingun</SubtypeId>
       </Id>
-      <DisplayName>MG22-S Prowler Chaingun</DisplayName>
+      <DisplayName>MG25-S Prowler Chaingun</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_Chaingun.dds</Icon>
-      <Description>Prowlers are light chainguns designed for usage on small drones and interceptor craft with the intention of ship-to-ship combat between small ships. [ 1.2KM RANGE - Accepts 25mm AVALANCHE ammo (Kinetic).]</Description>
+      <Description>Prowlers are light chainguns designed for usage on small drones and interceptor craft with the intention of ship-to-ship combat between small ships. [ 1.2KM RANGE - Accepts 25mm Prowler ammo (Kinetic).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="1" z="4"/>
@@ -2000,8 +2064,61 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>	
-	
-	
+	    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXSiegeMortarCannon</SubtypeId>
+		</Id>
+		<DisplayName>M-1000 Avalanche Siege Mortar</DisplayName>
+		<Icon>Textures\GUI\Icons\Aryx_AWE_SiegeMortar.dds</Icon>
+		<Description>The Avalanche is a tremendously powerful gimballed siege mortar cannon that fires heavy ballistic projectiles with high explosive warheads. Whilst slow on the muzzle velocity and traversal, the mere presence of such a devastating weapon is enough to ensure psychological victory. [5KM RANGE - Accepts Fat Man Mortar Shells (Kinetic)]</Description>	
+		<CubeSize>Large</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="5" y="3" z="8"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\AWE_Avalanche\ARYXSiegeMortarBase.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="2750" />
+				<Component Subtype="Construction" Count="750" />
+				<Component Subtype="MetalGrid" Count="800" />
+				<Component Subtype="LargeTube" Count="500" />	
+				<Component Subtype="Motor" Count="1000" />
+				<Component Subtype="Computer" Count="500" />
+				<Component Subtype="Construction" Count="250" />		
+				<Component Subtype="SteelPlate" Count="1500" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Back" StartX="1.00" StartY="0.00" EndX="4.00" EndY="3.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="1.00" EndX="1.00" EndY="2.00"/>
+				<MountPoint Side="Back" StartX="4.00" StartY="1.00" EndX="5.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="5.00" StartY="1.00" EndX="8.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="4.50" StartY="1.00" EndX="5.00" EndY="1.50"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="1.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="3.00" StartY="1.00" EndX="3.50" EndY="1.50"/>
+				<MountPoint Side="Top" StartX="1.00" StartY="0.00" EndX="4.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="1.00" StartY="4.00" EndX="4.00" EndY="8.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Avalanche\ARYXSiegeMortarBase_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Avalanche\ARYXSiegeMortarBase_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Avalanche\ARYXSiegeMortarBase_BS3.mwm"/>
+			</BuildProgressModels>		
+			<BlockPairName>AWESiegeCannon</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+		<EdgeType>Light</EdgeType>
+		<BuildTimeSeconds>120</BuildTimeSeconds>
+		<InventoryMaxVolume>1</InventoryMaxVolume>
+		<DamageEffectId>213</DamageEffectId>
+		<DamagedSound>ParticleWeapExpl</DamagedSound>
+		<ResourceSinkGroup>Defense</ResourceSinkGroup>
+		<EmissiveColorPreset>Default</EmissiveColorPreset>
+      <PCU>800</PCU>   		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>		
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -2466,11 +2583,11 @@
 		</Id>
 		<Public>true</Public>		
 		<DisplayName>TS-L8 Gladiator Tactical Launcher</DisplayName>
-		<Description>The Gladiator fires specialised tactical missiles that are capable of inflicting a variety of effects on the target, ranging from disabling thrusters or systems, or [8KM RANGE - Accepts Gladius Missiles (EXPL/ION/SLOW)]</Description>
-		<Icon>Textures\GUI\Icons\AryxTorpLauncher.dds</Icon>
+		<Description>The Gladiator fires specialised tactical missiles designed to disrupt enemy operations during combat. [8KM RANGE - Accepts Gladius Missiles (EXPL/IMP)]</Description>
+		<Icon>Textures\GUI\Icons\Aryx_AWE_Gladiator.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
-		<Size x="5" y="3" z="3"/>
+		<Size x="3" y="5" z="3"/>
 		<ModelOffset x="0" y="0" z="0"/>
 		<Model>Models\AWE_Gladiator\ARYX_GladiatorPod.mwm</Model>
 		<Components>
@@ -2484,21 +2601,26 @@
 			<Component Subtype="SteelPlate" Count="500" />
 		</Components>
 		<CriticalComponent Subtype="Computer" Index="0" />
-	
-		<MountPoints>
-			<MountPoint Side="Front" StartX="1.00" StartY="0.00" EndX="4.00" EndY="3.00"/>
-			<MountPoint Side="Back" StartX="1.00" StartY="0.00" EndX="4.00" EndY="3.00"/>
-			<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
-			<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
-			<MountPoint Side="Bottom" StartX="1.00" StartY="0.00" EndX="4.00" EndY="3.00"/>
-		</MountPoints>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="1.00" EndX="3.00" EndY="4.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="5.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="5.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="5.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Gladiator\ARYX_GladiatorPod_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Gladiator\ARYX_GladiatorPod_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Gladiator\ARYX_GladiatorPod_BS3.mwm"/>
+			</BuildProgressModels>
 			
 		<BlockPairName>ARYX_GladiatorMissileLauncher</BlockPairName>
 		<MirroringY>Z</MirroringY>
 		<MirroringZ>Y</MirroringZ>
 
 		<EdgeType>Light</EdgeType>
-		<BuildTimeSeconds>120</BuildTimeSeconds>
+		<BuildTimeSeconds>100</BuildTimeSeconds>
 		<InventoryMaxVolume>0.16</InventoryMaxVolume>
 		<DamageEffectId>213</DamageEffectId>
 		<DamagedSound>ParticleWeapExpl</DamagedSound>
@@ -3115,17 +3237,17 @@
       <ModelOffset x="0" y="0" z="0" />
 	  <Model>Models\Gauss\ARYX_GaussTurretBase.mwm</Model>
 		<Components>
-			<Component Subtype="SteelPlate" Count="2250" />
-			<Component Subtype="Construction" Count="1200" />
-			<Component Subtype="MetalGrid" Count="500" />
+			<Component Subtype="SteelPlate" Count="5000" />
+			<Component Subtype="Construction" Count="1500" />
+			<Component Subtype="MetalGrid" Count="1000" />
 			<Component Subtype="PowerCell" Count="240" />	
 			<Component Subtype="Superconductor" Count="600" />				
 			<Component Subtype="SmallTube" Count="500" />
-			<Component Subtype="Motor" Count="250" />		
+			<Component Subtype="Motor" Count="1000" />		
 			<Component Subtype="ElectromagnetAWE" Count ="400" />	
 			<Component Subtype="Computer" Count="1240" />
-			<Component Subtype="Construction" Count="1400" />
-			<Component Subtype="SteelPlate" Count="1750" />
+			<Component Subtype="Construction" Count="1000" />
+			<Component Subtype="SteelPlate" Count="2500" />
 		</Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -3162,7 +3284,7 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXCatalystCannon</SubtypeId>
 		</Id>
-		<Public>true</Public>
+		<Public>false</Public>
 		<DisplayName>AL16-MV50 Olympus Antimatter Catalyst Cannon</DisplayName>
 		<Icon>Textures\GUI\Icons\Oppenheimer.dds</Icon>
 		<Description>A manmade horror beyond comprehension; The destroyer of worlds. (Energy)</Description>	
@@ -3219,7 +3341,7 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXRailgun</SubtypeId>
 		</Id>
-		<DisplayName>Artemis-250 Railgun</DisplayName>
+		<DisplayName>KR250 Artemis Railgun</DisplayName>
 		<Description>A midweight railgun designed to perforate enemy hulls and strike critical components. Firing a 250mm ferrous slug after a short charge, the weapon is able to strike and penetrate up to 3 blocks of reinforced heavy armour. [10KM TRAVEL - Accepts 250mm Ferrous. (Kinetic)]</Description>	
 		<Icon>Textures\GUI\Icons\AWERailgun.dds</Icon>
 		<CubeSize>Large</CubeSize>
@@ -3277,7 +3399,7 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXLightCoilgun</SubtypeId>
 		</Id>
-		<DisplayName>LC-C7 Hunter-405 Coilgun</DisplayName>
+		<DisplayName>LC7 Hunter-405 Coilgun</DisplayName>
 		<Description>Coilguns are sniper weapons that deliver a hefty punch at relativistic velocity, though the rounds lose velocity over range. [10KM TRAVEL, 6KM FALLOFF - Accepts 405mm Ferrous. (Kinetic)]</Description>	
 		<Icon>Textures\GUI\Icons\Aryx_AWE_LightCoilgun.dds</Icon>
 		<CubeSize>Large</CubeSize>
@@ -3399,11 +3521,12 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXKingswordSupercannon</SubtypeId>
 		</Id>
-		<DisplayName>S12A-3KS Kingsword Casaba Beam Lance</DisplayName>
-		<Description>Designated the S12A-3KS KING SWORD, or more commonly, the Boomstick, is a superheavy calibre gauss cannon, firing 5200mm ferrous-tungsten ballistics at near relativistic velocities, guaranteed to tear through any form of armour or energy shielding fielded. At an approximate 153.5m long, it is the largest ship-mounted weapon on the market designated for civilian use.
+		<DisplayName>S12A-3KS Kingsword Casaba Lance</DisplayName>
+		<Description>Designated the S12A-3KS KING SWORD, or more commonly, the Boomstick, is a superheavy casaba lance. These work by detonating a shaped fusion charge in the barrel, then using high-powered electromagnets to direct the blast into a devastating beam of nuclear fire. At an approximate 153.5m long, it is the largest ship-mounted weapon on the market designated for civilian use.
 
-Wrought forth from the forges of divinity, bring the ultimate arbiter of destruction; Cast down into eternal perdition ye shall send. [Accepts 5200mm Ferrous - 50km range (Kinetic)]
-Effects: Fires a large shaped fusion charge that explodes into a beam of nuclear fire, destroying anything unfortunate enough to find itself in front of the barrel.
+Wrought forth from the forges of divinity, bring the ultimate arbiter of destruction; Cast down into eternal perdition ye shall send. [Accepts Kingsword Nukes - 50km range (Energy)]
+Effects: Fires a beam of nuclear fire that destroys anything it hits.
+Reload time: 120 seconds.
 Size: 5x9x61
 
 		</Description>	
@@ -3416,19 +3539,18 @@ Size: 5x9x61
 		<Model>Models\AWE_Kingsword\ARYX_KingswordBase.mwm</Model>
 		<Components>
 			<Component Subtype="SteelPlate" Count="11250" />
-			<Component Subtype="Construction" Count="3000" />
-			<Component Subtype="MetalGrid" Count="3000" />
-			<Component Subtype="PowerCell" Count="2100" />	
+			<Component Subtype="Construction" Count="7500" />
+			<Component Subtype="MetalGrid" Count="5000" />
+			<Component Subtype="PowerCell" Count="2500" />	
 			<Component Subtype="Superconductor" Count="6000" />				
-			<Component Subtype="LargeTube" Count="2000" />
-			<Component Subtype="Girder" Count="1500" />
+			<Component Subtype="LargeTube" Count="2500" />
+			<Component Subtype="Girder" Count="2500" />
 			<Component Subtype="GravityGenerator" Count="200" />
-			<Component Subtype="Detector" Count="500" />
 			<Component Subtype="Motor" Count="5000" />		
-			<Component Subtype="ElectromagnetAWE" Count ="1500" />	
+			<Component Subtype="ElectromagnetAWE" Count ="2500" />	
 			<Component Subtype="Computer" Count="5000" />
-			<Component Subtype="MetalGrid" Count="2000" />
-			<Component Subtype="SteelPlate" Count="5750" />
+			<Component Subtype="MetalGrid" Count="5000" />
+			<Component Subtype="SteelPlate" Count="9750" />
 		</Components>
 		<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -3461,7 +3583,7 @@ Size: 5x9x61
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXRailgunTurret</SubtypeId>
       </Id>
-      <DisplayName>Apollo-250 Railgun Turret</DisplayName>
+      <DisplayName>KR250 Apollo Railgun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\AWERailgunTurret.dds</Icon>
       <Description>A turreted version of the Artemis railgun, sporting an armoured base and automatic aiming system. Whilst limited in elevation, the Apollo has full 360 traversal, allowing ship captains to focus on other threats. [5KM RANGE - Accepts 250mm Ferrous. (Kinetic)]</Description>
       <CubeSize>Large</CubeSize>
@@ -3476,7 +3598,8 @@ Size: 5x9x61
 			<Component Subtype="PowerCell" Count="40" />	
 			<Component Subtype="Superconductor" Count="80" />				
 			<Component Subtype="SmallTube" Count="250" />
-			<Component Subtype="Motor" Count="400" />		
+			<Component Subtype="Motor" Count="400" />
+			<Component Subtype="ElectromagnetAWE" Count ="60" />			
 			<Component Subtype="Computer" Count="300" />
 			<Component Subtype="Construction" Count="220" />
 			<Component Subtype="SteelPlate" Count="600" />		
@@ -3515,7 +3638,7 @@ Size: 5x9x61
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXPicketRailgun</SubtypeId>
       </Id>
-      <DisplayName>Athena-115 Picket Railgun Turret</DisplayName>
+      <DisplayName>KR115 Athena Picket Railgun Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_PicketRailgun.dds</Icon>
       <Description>The Athena is a medium-weight long range point defence weapon, utilising a revolver drum to fire three shots in rapid succession (Lawsuit from MA pending). Placing multiple in close proximity will cause interference with targeting.[5KM RANGE - Accepts 115mm Ferrous. (Kinetic)]</Description>
       <CubeSize>Large</CubeSize>
@@ -3562,7 +3685,7 @@ Size: 5x9x61
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXLightRailgun</SubtypeId>
 		</Id>
-		<DisplayName>Antaeus-115 Railgun</DisplayName>
+		<DisplayName>KR115 Antaeus Railgun</DisplayName>
 		<Description>The Antaeus is a lightweight railgun designed to facilitate ship-to-ship combat of fighters and bombardment of larger vessels. [10KM TRAVEL - Accepts 115mm Ferrous. (Kinetic)]</Description>	
 		<Icon>Textures\GUI\Icons\Aryx_AWE_LightRailgun.dds</Icon>
 		<CubeSize>Small</CubeSize>
@@ -3677,8 +3800,8 @@ Size: 5x9x61
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Reaper\LG_ReaperPulseCannonBase.mwm</Model>
 			<Components>
-				<Component Subtype="SteelPlate" Count="2800" />
-				<Component Subtype="Construction" Count="1250" />
+				<Component Subtype="SteelPlate" Count="2000" />
+				<Component Subtype="Construction" Count="1000" />
 				<Component Subtype="MetalGrid" Count="800" />
 				<Component Subtype="LargeTube" Count="250" />		
 				<Component Subtype="Girder" Count="300" />					
@@ -3687,8 +3810,8 @@ Size: 5x9x61
 				<Component Subtype="Superconductor" Count="400" />				
 				<Component Subtype="Motor" Count="400" />		
 				<Component Subtype="Computer" Count="900" />
-				<Component Subtype="Construction" Count="250" />
-				<Component Subtype="SteelPlate" Count="700" />
+				<Component Subtype="Construction" Count="500" />
+				<Component Subtype="SteelPlate" Count="1000" />
 			</Components>
 			<CriticalComponent Index="0" Subtype="Computer"/>
 			<MountPoints>
@@ -3940,7 +4063,7 @@ Size: 5x9x61
         <TypeId>ConveyorSorter</TypeId>
         <SubtypeId>ARYXLargeRadar</SubtypeId>
       </Id>
-      <DisplayName>"Doppler" Radar Unit</DisplayName>
+      <DisplayName>Doppler Radar</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_LargeRadar.dds</Icon> 	  
       <Description>Dopplers are non-offensive systems designed for recon and scouting of enemy grids via scrollwheel-scanning. [30KM RANGE]</Description>
       <CubeSize>Large</CubeSize>
@@ -3986,7 +4109,7 @@ Size: 5x9x61
         <TypeId>ConveyorSorter</TypeId>
         <SubtypeId>ARYXSmallRadar</SubtypeId>
       </Id>
-      <DisplayName>"Maxwell" Radar Unit</DisplayName>
+      <DisplayName>Maxwell Radar</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_SmallRadar.dds</Icon>	  
       <Description>Dopplers are non-offensive systems designed for recon and scouting of enemy grids via scrollwheel-scanning. [30KM RANGE]</Description>
       <CubeSize>Small</CubeSize>
@@ -4035,7 +4158,7 @@ Size: 5x9x61
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXMagnetarCannon</SubtypeId>
       </Id>
-      <DisplayName>K8A-3SC Magnetar Shock Cannon</DisplayName>
+      <DisplayName>T600 Magnetar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMagnetarCannon.dds</Icon>
       <Description>The Magnetar is a gigantic triple barrel shock cannon designed to punch through shields and just about everything behind them.  [1.8km/s muzzle velocity, 5km range - Energy Weapon]</Description>
       <CubeSize>Large</CubeSize>
@@ -4044,17 +4167,17 @@ Size: 5x9x61
       <ModelOffset x="0" y="0" z="0" />
 	  <Model>Models\AWE_ShockCannon\ARYX_MagnetarCannonBase.mwm</Model>
       <Components>
-        <Component Subtype="SteelPlate" Count="1250" />
-        <Component Subtype="Construction" Count="300" />
-        <Component Subtype="MetalGrid" Count="200" />
+        <Component Subtype="SteelPlate" Count="1500" />
+        <Component Subtype="Construction" Count="400" />
+        <Component Subtype="MetalGrid" Count="100"/>
         <Component Subtype="LargeTube" Count="70" />
         <Component Subtype="ElectromagnetAWE" Count="200" />		
         <Component Subtype="Superconductor" Count="100" />
         <Component Subtype="GravityGenerator" Count="50" />			
         <Component Subtype="Motor" Count="200" />
         <Component Subtype="Computer" Count="325" />
-        <Component Subtype="Construction" Count="150" />		
-        <Component Subtype="SteelPlate" Count="750" />
+        <Component Subtype="Construction" Count="350" />		
+        <Component Subtype="SteelPlate" Count="1000" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -4092,7 +4215,7 @@ Size: 5x9x61
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXQuasarCannon</SubtypeId>
       </Id>
-      <DisplayName>G4A-2SC Quasar Shock Cannon</DisplayName>
+      <DisplayName>T400 Quasar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxQuasarCannon.dds</Icon>
       <Description>The Quasar is a sister weapon to the Hurricane, designed to deal damage to shields in order for the heavy hitters to rip hulls to shreds.  [1.8km/s muzzle velocity, 5km range - Energy Weapon]</Description>
       <CubeSize>Large</CubeSize>
@@ -4149,7 +4272,7 @@ Size: 5x9x61
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXPulsarCannon</SubtypeId>
       </Id>
-      <DisplayName>L2A-1SC Pulsar Shock Cannon</DisplayName>
+      <DisplayName>T200 Pulsar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxPulsarCannon.dds</Icon>
       <Description>The Pulsar is a light energy cannon that fires explosive globules of plasma at long range. Best against shields and light armour. [1.8km/s muzzle velocity, 5km range - Energy Weapon]</Description>
       <CubeSize>Large</CubeSize>
@@ -4204,7 +4327,7 @@ Size: 5x9x61
       </Id>
       <DisplayName>Small Hangar Bay</DisplayName>
       <Icon>Textures\GUI\Icons\AryxSmallHangar.dds</Icon>
-      <Description>A compact hangar bay capable of launching Aryx-brand drones. These drones orbit targets and pelt it with cannon fire. These drones can be given orders via the hangar's ActionFriend/ActionEnemy options. [10KM RANGE - ACCEPTS SIDEKICK (Rapid kinetic), FALCON (Cannon kinetic) OR STORMWING DRONES (Burst energy).]</Description>
+      <Description>A compact hangar bay capable of launching Aryx-brand drones. These drones orbit targets and pelt it with cannon fire. These drones can be given orders via the hangar's ActionFriend/ActionEnemy options. WARNING: BUGGY IN MP DUE TO WEAPONCORE [10KM RANGE - ACCEPTS SIDEKICK (Rapid kinetic), FALCON (Cannon kinetic) OR STORMWING DRONES (Burst energy).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="1" z="3" />
@@ -4361,7 +4484,7 @@ Size: 5x9x61
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXSpartanTurret</SubtypeId>
       </Id>
-      <DisplayName>APL35-G Spartan Plasma Cannon</DisplayName>
+      <DisplayName>AL35 Spartan Plasma Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_SpartanCannon.dds</Icon>	  
       <Description>The Spartan is a midweight energy weapon that lobs energised plasma bolts at targets, dealing heavy damaged to shields at a high rate of fire. [2KM RANGE - Energy Weapon]</Description>
       <CubeSize>Large</CubeSize>

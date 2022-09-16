@@ -51,17 +51,13 @@
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEKingSwordAmmoBP" />
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEStrikerMissileBP" />	
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEHyperionTorpedoBP" />	
-	
-
-
-
-
-
-
+	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEGladiusMissileAmmoBP" />		
+	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEAvalanche1000AmmoBP" />	
 
 		<!--BLOCKS-->
     <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXFlechetteLauncher" />		
-    <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYX_ChordAutocannon" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXPhaseRepeaterCannon" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYX_ChordAutocannon" />	
     <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXBurstTurret" />
     <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXFlakTurret" />
     <Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXPulseTurret" />
@@ -118,6 +114,8 @@
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="LargeMissileTurret/ARYXVariableLaser" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYX_LargeFlareLauncher" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXLargeIonCannon" />	
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXGladiatorMissileLauncher" />	
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXSiegeMortarCannon" />	
 
 
     <Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncher/ARYX_Fixed_Chord_auto" />			

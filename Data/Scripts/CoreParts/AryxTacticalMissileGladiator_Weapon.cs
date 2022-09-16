@@ -27,17 +27,17 @@ namespace Scripts {
                     },
                 },
                 Muzzles = new[] {
-                    "muzzle_projectile_1",
-                    "muzzle_projectile_2",
-                    "muzzle_projectile_3",
-                    "muzzle_projectile_4",
-                    "muzzle_projectile_5",
-                    "muzzle_projectile_6",
-                    "muzzle_projectile_7",
-                    "muzzle_projectile_8",
+                    "muzzle_missile_1",
+                    "muzzle_missile_2",
+                    "muzzle_missile_3",
+                    "muzzle_missile_4",
+                    "muzzle_missile_5",
+                    "muzzle_missile_6",
+                    "muzzle_missile_7",
+                    "muzzle_missile_8",
                 },
                 Ejector = "", // Optional; empty from which to eject "shells" if specified.
-                Scope = "", // Where line of sight checks are performed from. Must be clear of block collision.
+                Scope = "muzzle_missile_1", // Where line of sight checks are performed from. Must be clear of block collision.
             },
             Targeting = new TargetingDef
             {
@@ -95,7 +95,7 @@ namespace Scripts {
                     MaxElevation = 0,
                     HomeAzimuth = 0, // Default resting rotation angle
                     HomeElevation = 0, // Default resting elevation
-                    InventorySize = 0.08f, // Inventory capacity in kL.
+                    InventorySize = 1.6f, // Inventory capacity in kL.
                     IdlePower = 0.05f, // Power draw in MW while not charging, or for non-energy weapons. Defaults to 0.001.
                     FixedOffset = false, // Deprecated.
                     Offset = Vector(x: 0, y: 0, z: 0), // Offsets the aiming/firing line of the weapon, in metres.
@@ -191,6 +191,8 @@ namespace Scripts {
             Ammos = new[] {
                 AryxGladiatorAmmo_Standard_Stage1,
                 AryxGladiatorAmmo_Standard_Stage2,
+                AryxGladiatorAmmo_Impulse_Stage1,
+                AryxGladiatorAmmo_Impulse_Stage2,
 
             },
             //Animations = AryxFenrirAnims,
