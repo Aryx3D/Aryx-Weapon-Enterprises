@@ -13,30 +13,34 @@ namespace Scripts
     partial class Parts
     {
         // Don't edit above this line
-        WeaponDefinition AryxSiegeMortarCannon => new WeaponDefinition
+        WeaponDefinition AryxArgusLaser => new WeaponDefinition
         {
 
             Assignments = new ModelAssignmentsDef
             {
                 MountPoints = new[] {
                     new MountPointDef {
-                        SubtypeId = "ARYXSiegeMortarCannon",
+                        SubtypeId = "ARYXArgusLaser",
                         SpinPartId = "None",
-                        MuzzlePartId = "MortarElevation",
-                        AzimuthPartId = "MortarAzimuth",
-                        ElevationPartId = "MortarElevation",
+                        MuzzlePartId = "OrbElevation",
+                        AzimuthPartId = "OrbAzimuth",
+                        ElevationPartId = "OrbElevation",
                     },
+
                 },
                 Muzzles = new[] {
-                    "siege_cannon_muzzle_01",
+                    "muzzle_projectile_1",
                 },
                 Ejector = "",
-                Scope = "",
+                Scope = "Scope",
             },
             Targeting = new TargetingDef
             {
                 Threats = new[] {
                     Grids,
+                    Projectiles,
+                    Meteors,
+                    Characters,
                 },
                 SubSystems = new[] {
                     Thrust, Utility, Offense, Power, Production, Any,
@@ -46,21 +50,21 @@ namespace Scripts
                 LockedSmartOnly = false, // Only fire at smart projectiles that are locked on to parent grid.
                 MinimumDiameter = 0, // 0 = unlimited, Minimum radius of threat to engage.
                 MaximumDiameter = 0, // 0 = unlimited, Maximum radius of threat to engage.
-                MaxTargetDistance = 5000, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
+                MaxTargetDistance = 500, // 0 = unlimited, Maximum target distance that targets will be automatically shot at.
                 MinTargetDistance = 0, // 0 = unlimited, Min target distance that targets will be automatically shot at.
-                TopTargets = 16, // 0 = unlimited, max number of top targets to randomize between.
-                TopBlocks = 16, // 0 = unlimited, max number of blocks to randomize between
+                TopTargets = 4, // 0 = unlimited, max number of top targets to randomize between.
+                TopBlocks = 4, // 0 = unlimited, max number of blocks to randomize between
                 StopTrackingSpeed = 0, // do not track target threats traveling faster than this speed
             },
             HardPoint = new HardPointDef
             {
-                PartName = "Avalanche Siege Cannon", // name of weapon in terminal
-                DeviateShotAngle = 1f,
-                AimingTolerance = 0.1f, // 0 - 180 firing angle
-                AimLeadingPrediction = Advanced, // Off, Basic, Accurate, Advanced
+                PartName = "Argus PDL", // name of weapon in terminal
+                DeviateShotAngle = 0.00f,
+                AimingTolerance = 0.15f, // 0 - 180 firing angle
+                AimLeadingPrediction = Off, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
-                CanShootSubmerged = true,
+                CanShootSubmerged = false,
 
                 Ui = new UiDef
                 {
@@ -79,14 +83,14 @@ namespace Scripts
                 },
                 HardWare = new HardwareDef
                 {
-                    RotateRate = 0.0015f,
-                    ElevateRate = 0.0015f,
-                    MinAzimuth = -15,
-                    MaxAzimuth = 15,
+                    RotateRate = 0.12f,
+                    ElevateRate = 0.12f,
+                    MinAzimuth = -180,
+                    MaxAzimuth = 180,
                     MinElevation = -15,
-                    MaxElevation = 15,
+                    MaxElevation = 90,
                     FixedOffset = false,
-                    InventorySize = 1.2f,
+                    InventorySize = 0f,
                     Offset = Vector(x: 0, y: 0, z: 0),
                     Type = BlockWeapon, // BlockWeapon, HandWeapon, Phantom 
                     CriticalReaction = new CriticalDef
@@ -99,85 +103,84 @@ namespace Scripts
                 },
                 Other = new OtherDef
                 {
-                    ConstructPartCap = 0,
-                    RotateBarrelAxis = 0,
-                    EnergyPriority = 0,
-                    MuzzleCheck = false,
-                    Debug = false,
-                    RestrictionRadius = 0, // Meters, radius of sphere disable this gun if another is present
-                    CheckInflatedBox = false, // if true, the bounding box of the gun is expanded by the RestrictionRadius
-                    CheckForAnyWeapon = false, // if true, the check will fail if ANY gun is present, false only looks for this subtype
+                    ConstructPartCap = 0, // Maximum number of blocks with this weapon on a grid; 0 = unlimited.
+                    RotateBarrelAxis = 0, // For spinning barrels, which axis to spin the barrel around; 0 = none.
+                    EnergyPriority = 0, // Deprecated.
+                    MuzzleCheck = true, // Whether the weapon should check LOS from each individual muzzle in addition to the scope.
+                    Debug = false, // Force enables debug mode.
+                    RestrictionRadius = 1.5f, // Prevents other blocks of this type from being placed within this distance of the centre of the block.
+                    CheckInflatedBox = false, // If true, the above distance check is performed from the edge of the block instead of the centre.
+                    CheckForAnyWeapon = false, // If true, the check will fail if ANY weapon is present, not just weapons of the same subtype.
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 60,
+                    RateOfFire = 90,
                     BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
-                    ReloadTime = 1050, // 17.5 second reload time on the avalanche.
-                    DelayUntilFire = 0, 
-                    HeatPerShot = 0, //heat generated per shot
-                    MaxHeat = 70000, //max heat before weapon enters cooldown (70% of max heat)
-                    Cooldown = .95f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
-                    HeatSinkRate = 9000, //amount of heat lost per second
+                    ReloadTime = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    HeatPerShot = 0, //10 heat generated per shot
+                    MaxHeat = 4800, //max heat before weapon enters cooldown (70% of max heat)
+                    Cooldown = 0, //percent of max heat to be under to start firing again after overheat accepts .2-.95
+                    HeatSinkRate = 0, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
-                    ShotsInBurst = 1,
+                    ShotsInBurst = 0, //for beam this is time in ticks
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    FireFull = false,
-                    GiveUpAfter = false,
+                    FireFull = true,
+                    GiveUpAfter = true,
                 },
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "",
-                    FiringSound = "ArcWepShipARYXAvalanche_Fire", // WepShipGatlingShot
-                    FiringSoundPerShot = true,
+                    FiringSound = "ArcWepShipARYXOCULUS_Fire", // WepShipGatlingShot
+                    FiringSoundPerShot = false,
                     ReloadSound = "",
                     NoAmmoSound = "",
-                    HardPointRotationSound = "",
+                    HardPointRotationSound = "WepTurretGatlingRotate",
                     BarrelRotationSound = "",
-                    FireSoundEndDelay = 150, // Measured in game ticks(6 = 100ms, 60 = 1 seconds, etc..).
+                    FireSoundEndDelay = 1, // Measured in game ticks(6 = 100ms, 60 = 1 seconds, etc..).
                 },
                 Graphics = new HardPointParticleDef
                 {
 
                     Effect1 = new ParticleDef
                     {
-                        Name = "AryxAWE_AvalancheMuzzleBlast", // Smoke_LargeGunShot
-                        Color = Color(red: 1, green: 1, blue: 0.625f, alpha: 1),
+                        Name = "", // Smoke_LargeGunShot
+                        Color = Color(red: 0, green: 0, blue: 0, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
 
                         Extras = new ParticleOptionDef
                         {
                             Loop = false,
-                            Restart = true,
-                            MaxDistance = 1000,
-                            MaxDuration = 0,
+                            Restart = false,
+                            MaxDistance = 50,
+                            MaxDuration = 6,
                             Scale = 1f,
                         },
                     },
                     Effect2 = new ParticleDef
                     {
-                        Name = "Muzzle_Flash_LargeCalibre",//Muzzle_Flash_Large
-                        Color = Color(red: 25, green: 5, blue: 0.625f, alpha: 1),
+                        Name = "",//Muzzle_Flash_Large
+                        Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
 
                         Extras = new ParticleOptionDef
                         {
                             Loop = false,
-                            Restart = true,
-                            MaxDistance = 1000,
+                            Restart = false,
+                            MaxDistance = 150,
                             MaxDuration = 1,
-                            Scale = 1f,
+                            Scale = 7f,
                         },
                     },
                 },
             },
             Ammos = new[] {
-                AryxSiegeMortarAmmo,
-                AryxKineticFrags,
+                AryxArgusLaserAmmo,
             },
-            Animations = AryxSiegeMortarAnimations,
+            //Animations = AdvancedAnimation,
             // Don't edit below this line
         };
     }

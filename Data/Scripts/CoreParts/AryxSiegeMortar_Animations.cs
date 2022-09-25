@@ -90,6 +90,18 @@ namespace Scripts
                                     MovementType = Hide, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
                                     LinearPoints = new[]
                                     {
+                                        Transformation(0f, 0, 0f), //linear movement in XYZ axes.
+                                    },
+                                    Rotation = Transformation(0, 0, 0), //degrees
+                                    RotAroundCenter = Transformation(0, 0, 0), //degrees, rotates around CenterEmpty
+                                },
+                                new RelMove
+                                {
+                                    CenterEmpty = "",//Specifiy an empty on the subpart to rotate around
+                                    TicksToMove = 1, //number of ticks to complete motion, 60 = 1 second
+                                    MovementType = Linear, // ExpoGrowth (speedsup),  ExpoDecay (slows down), Linear, Delay, Show, Hide
+                                    LinearPoints = new[]
+                                    {
                                         Transformation(0f, 0, 3f), //linear movement in XYZ axes.
                                     },
                                     Rotation = Transformation(0, 0, 0), //degrees

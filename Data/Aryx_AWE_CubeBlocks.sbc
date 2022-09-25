@@ -1080,6 +1080,109 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXArgusLaser</SubtypeId>
+		</Id>
+		<DisplayName>Argus Orb PD Laser</DisplayName>
+		<Description>The Argus is a ball-axis point defence laser designed to shoot down incoming missiles and suits. Much smaller and shorter ranged than its big sister, the Oculus, but can also target suits. [500M RANGE - Energy Weapon]</Description>
+		<Icon>Textures\GUI\Icons\Aryx_AWE_Argus.dds</Icon>			
+		<CubeSize>Small</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="1" y="2" z="1"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_Argus\ARYX_SmallPDOrb.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="10" />
+			<Component Subtype="Construction" Count="5" />
+			<Component Subtype="PowerCell" Count="1" />
+			<Component Subtype="Motor" Count="8" />
+			<Component Subtype="Superconductor" Count="10" />
+			<Component Subtype="BulletproofGlass" Count="2" />
+			<Component Subtype="Computer" Count="15" />
+			<Component Subtype="SteelPlate" Count="5" />			
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Argus\ARYX_SmallPDOrb_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Argus\ARYX_SmallPDOrb_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Argus\ARYX_SmallPDOrb_BS3.mwm"/>
+			</BuildProgressModels>
+		<BlockPairName>ARYXArgusLaser</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>     		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
+	
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+		<Id>
+			<TypeId>ConveyorSorter</TypeId>
+			<SubtypeId>ARYXSmallBombBay</SubtypeId>
+		</Id>
+		<DisplayName>B2-M Shrike Bomb Bay</DisplayName>
+		<Description>The Shrike is a bomb launcher designed to deliver heavy unguided ordinance onto shielded targets. Powerful warheads and shield modulators allow the bombs to bypass shields and deliver devastating damage on impact. [30s Detonation Fuse - Accepts Shrike Bombs]</Description>
+		<Icon>Textures\GUI\Icons\Aryx_AWE_Shrike.dds</Icon>			
+		<CubeSize>Small</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="2" y="3" z="7"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\AWE_Shrike\ARYX_ShrikeBombBay.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="15" />
+			<Component Subtype="Construction" Count="10" />
+			<Component Subtype="SmallTube" Count="10" />
+			<Component Subtype="Motor" Count="16" />
+			<Component Subtype="Computer" Count="20" />
+			<Component Subtype="SteelPlate" Count="15" />			
+		</Components>
+		<CriticalComponent Subtype="Computer" Index="0"/>
+		<MountPoints>
+			<MountPoint Side="Front" StartX="0.00" StartY="0.60" EndX="2.00" EndY="2.40"/>
+			<MountPoint Side="Back" StartX="0.00" StartY="0.60" EndX="2.00" EndY="2.40"/>
+			<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="7.00" EndY="3.00"/>
+			<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="7.00" EndY="3.00"/>
+			<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="2.00" EndY="7.00"/>
+			<MountPoint Side="Bottom" StartX="0.00" StartY="4.00" EndX="2.00" EndY="7.00"/>
+		</MountPoints>
+		<BuildProgressModels>
+			<Model BuildPercentUpperBound="0.50" File="Models\AWE_Shrike\ARYX_ShrikeBombBay_BS1.mwm"/>
+			<Model BuildPercentUpperBound="1.00" File="Models\AWE_Shrike\ARYX_ShrikeBombBay_BS2.mwm"/>
+		</BuildProgressModels>
+		<BlockPairName>ARYXShrikeBombBay</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>25</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType> 	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>125</PCU>     		
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>		
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -2063,7 +2166,57 @@
       <TargetingGroups>
 		<string>Weapons</string>
       </TargetingGroups>      
+    </Definition>
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+      <Id>
+        <TypeId>ConveyorSorter</TypeId>
+        <SubtypeId>ARYXSmallPhysicsGun</SubtypeId>
+      </Id>
+      <DisplayName>LFTR4 Graviton Traction Beam</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_GravityGun.dds</Icon>
+      <Description>Gravitons are non-offensive modules designed for small tugs and cranes, able to pull and move objects to wherever needed in spaceports or dockyards. [50m RANGE - ENERGY TOOL]</Description>
+	  <CubeSize>Small</CubeSize>
+	  <BlockTopology>TriangleMesh</BlockTopology>
+	  <Size x="3" y="2" z="3"/>
+	  <ModelOffset x="0" y="0" z="0"/>
+	  <Model>Models\AWE_Physgun\AryxGravityGun.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="GravityGenerator" Count="10" />	
+        <Component Subtype="Computer" Count="10" />
+        <Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Left" StartX="1.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="1.00" EndX="3.00" EndY="3.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\AWE_Physgun\AryxGravityGun_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Physgun\AryxGravityGun_BS2.mwm"/>
+			</BuildProgressModels>
+			
+      <BlockPairName>AryxSmallPhysicsGun</BlockPairName>
+	  <MirroringY>Z</MirroringY>
+	  <MirroringZ>X</MirroringZ>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>120</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
     </Definition>	
+	
 	    <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 		<Id>
 			<TypeId>ConveyorSorter</TypeId>

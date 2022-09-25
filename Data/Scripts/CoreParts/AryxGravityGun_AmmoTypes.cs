@@ -6,10 +6,6 @@ using static Scripts.Structure.WeaponDefinition.AmmoDef.ShapeDef.Shapes;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.DamageScaleDef.CustomScalesDef;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.DamageScaleDef.CustomScalesDef.SkipMode;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.GraphicDef;
-using static Scripts.Structure.WeaponDefinition.AmmoDef.FragmentDef;
-using static Scripts.Structure.WeaponDefinition.AmmoDef.PatternDef;
-using static Scripts.Structure.WeaponDefinition.AmmoDef.PatternDef.PatternModes;
-using static Scripts.Structure.WeaponDefinition.AmmoDef.FragmentDef.TimedSpawnDef.PointTypes;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.TrajectoryDef;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.TrajectoryDef.GuidanceType;
 using static Scripts.Structure.WeaponDefinition.AmmoDef.DamageScaleDef;
@@ -30,54 +26,41 @@ namespace Scripts
 {
     partial class Parts
     {
-        private AmmoDef AryxSiegeMortarAmmo => new AmmoDef
+        private AmmoDef AryxGravitonPullAmmo => new AmmoDef
         {
-            AmmoMagazine = "AWE1000mmMortarShellAmmoMag",
-            AmmoRound = "1000mm Avalanche Mortar Shell",
+            AmmoMagazine = "Energy",
+            AmmoRound = "Pull Graviton",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(2000 * AWEGlobalDamageScalar),
-            Mass = 4000, // in kilograms
+            EnergyCost = 0.01f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            BaseDamage = 1,
+            Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 2250000,
+            BackKickForce = 0f,
             DecayPerShot = 0,
+            EnergyMagazineSize = 1,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
-            IgnoreWater = false,
-
             Shape = new ShapeDef //defines the collision shape of projectile, defaults line and visual Line Length if set to 0
             {
                 Shape = LineShape,
-                Diameter = 3,
+                Diameter = 1,
             },
             ObjectsHit = new ObjectsHitDef
             {
                 MaxObjectsHit = 0, // 0 = disabled
                 CountBlocks = false, // counts gridBlocks and not just entities hit
             },
-            Fragment = new FragmentDef // Formerly known as Shrapnel. Spawns specified ammo fragments on projectile death (via hit or detonation).
-            {
-                AmmoRound = "AryxKineticFrags", // AmmoRound field of the ammo to spawn.
-                Fragments = 25, // Number of projectiles to spawn.
-                Degrees = 1, // Cone in which to randomize direction of spawned projectiles.
-                Reverse = false, // Spawn projectiles backward instead of forward.
-                DropVelocity = true, // fragments will not inherit velocity from parent.
-                Offset = -1f, // Offsets the fragment spawn by this amount, in meters (positive forward, negative for backwards).
-                Radial = 90f, // Determines starting angle for Degrees of spread above.  IE, 0 degrees and 90 radial goes perpendicular to travel path
-                MaxChildren = 0, // number of maximum branches for fragments from the roots point of view, 0 is unlimited
-                IgnoreArming = true, // If true, ignore ArmOnHit or MinArmingTime in EndOfLife definitions
-            },
             DamageScales = new DamageScaleDef
             {
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
-                HealthHitModifier = 1000, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
-                VoxelHitModifier = 0,
-                Characters = 10000,
+                HealthHitModifier = 1f, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
+                VoxelHitModifier = 1,
+                Characters = 1f,
                 FallOff = new FallOffDef
                 {
-                    Distance = 5000f, // Distance at which max damage begins falling off.
-                    MinMultipler = 1, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
+                    Distance = 1000f, // Distance at which max damage begins falling off.
+                    MinMultipler = 1f, // value from 0.0f to 1f where 0.1f would be a min damage of 10% of max damage.
                 },
                 Grids = new GridSizeDef
                 {
@@ -86,92 +69,34 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 0.75f,
+                    Armor = -1f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 1f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 8f,
+                    Modifier = -1,
                     Type = Default,
                     BypassModifier = -1f,
                 },
                 DamageType = new DamageTypes
                 {
-                    Base = Kinetic,
-                    AreaEffect = Kinetic,
-                    Detonation = Kinetic,
-                    Shield = Kinetic,
+                    Base = Energy,
+                    AreaEffect = Energy,
+                    Detonation = Energy,
+                    Shield = Energy,
                 },
-                // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
-                Custom = new CustomScalesDef
-                {
-                    IgnoreAllOthers = false,
-                    Types = new[]
-                    {
-                        new CustomBlocksDef
-                        {
-                            SubTypeId = "Test1",
-                            Modifier = -1f,
-                        },
-                        new CustomBlocksDef
-                        {
-                            SubTypeId = "Test2",
-                            Modifier = -1f,
-                        },
-                    },
-                },
-            },
-			AreaOfDamage = new AreaOfDamageDef
-            {
-                ByBlockHit = new ByBlockHitDef
-                {
-                    Enable = false,
-                    Radius = 0f, // Meters
-                    Damage = 0,
-                    Depth = 1f, // Meters
-                    MaxAbsorb = 0f,
-                    Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
-                    //.Linear drops evenly by distance from center out to max radius
-                    //.Curve drops off damage sharply as it approaches the max radius
-                    //.InvCurve drops off sharply from the middle and tapers to max radius
-                    //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
-                    //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
-                    Shape = Diamond, // Round or Diamond
-                },
-                EndOfLife = new EndOfLifeDef
-                {
-                    Enable = true,
-                    Radius = 25f, // Meters
-                    Damage = (float)(50000 * AWEGlobalDamageScalar),
-                    Depth = 1f,
-                    MaxAbsorb = 0f,
-                    Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
-                    //.Linear drops evenly by distance from center out to max radius
-                    //.Curve drops off damage sharply as it approaches the max radius
-                    //.InvCurve drops off sharply from the middle and tapers to max radius
-                    //.Squeeze does little damage to the middle, but rapidly increases damage toward max radius
-                    //.Pooled damage behaves in a pooled manner that once exhausted damage ceases.
-                    ArmOnlyOnHit = false, // Detonation only is available, After it hits something, when this is true. IE, if shot down, it won't explode.
-                    MinArmingTime = 0, // In ticks, before the Ammo is allowed to explode, detonate or similar; This affects shrapnel spawning.
-                    NoVisuals = false,
-                    NoSound = false,
-                    ParticleScale = 1,
-                    CustomParticle = "AryxAWE_AvalancheBlast", // Particle SubtypeID, from your Particle SBC
-                    CustomSound = "ArcWepShipARYX_HeavyCannonHit", // SubtypeID from your Audio SBC, not a filename
-                    Shape = Round, // Round or Diamond
-                }, 
             },
             Ewar = new EwarDef
             {
-                Enable = false, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
-                Type = EnergySink, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
+                Enable = true, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
+                Type = Tractor, // Pull the target towards the firing grid
                 Mode = Effect, // Effect , Field
-                Strength = 100f,
-                Radius = 5f, // Meters
-                Duration = 100, // In Ticks
-                StackDuration = true, // Combined Durations
+                Strength = 500f, //WILL REQUIRE FINE TUNING!
+                Radius = 2f, // Meters
+                Duration = 6, // In Ticks
+                StackDuration = false, // Combined Durations
                 Depletable = true,
                 MaxStacks = 10, // Max Debuffs at once
                 NoHitParticle = false,
@@ -191,12 +116,13 @@ namespace Scripts
                 */
                 Force = new PushPullDef
                 {
-                    ForceFrom = ProjectileLastPosition, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
-                    ForceTo = HitPosition, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
-                    Position = TargetCenterOfMass, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
-                    DisableRelativeMass = false,
-                    TractorRange = 0,
-                    ShooterFeelsForce = false,
+                    ForceFrom = HitPosition, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
+                    ForceTo = ProjectileLastPosition, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
+                    Position = ProjectileOrigin, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
+                    //^^^ Pulls the impacted grid towards the firing grid.
+                    DisableRelativeMass = true, //baby ships can pull around massive ships if this is true.
+                    TractorRange = 50, //range the target is held from the grid
+                    ShooterFeelsForce = false, //The firing grid may get pulled towards the impacted ship.
                 },
                 Field = new FieldDef
                 {
@@ -218,29 +144,50 @@ namespace Scripts
             },
             Beams = new BeamDef
             {
-                Enable = false,
+                Enable = true,
                 VirtualBeams = false, // Only one hot beam, but with the effectiveness of the virtual beams combined (better performace)
                 ConvergeBeams = false, // When using virtual beams this option visually converges the beams to the location of the real beam.
                 RotateRealBeam = false, // The real (hot beam) is rotated between all virtual beams, instead of centered between them.
-                OneParticle = false, // Only spawn one particle hit per beam weapon.
+                OneParticle = true, // Only spawn one particle hit per beam weapon.
             },
             Trajectory = new TrajectoryDef
             {
                 Guidance = None,
                 TargetLossDegree = 80f,
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                MaxLifeTime = 1500, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                MaxLifeTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 400,
-                MaxTrajectory = 10000,
-                GravityMultiplier = 2.5f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
+                DesiredSpeed = 0,
+                MaxTrajectory = 100,
+                //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
+                GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
                 RangeVariance = Random(start: 0, end: 0), // subtracts value from MaxTrajectory
                 MaxTrajectoryTime = 0, // How long the weapon must fire before it reaches MaxTrajectory.
+                Smarts = new SmartsDef
+                {
+                    Inaccuracy = 0f, // 0 is perfect, hit accuracy will be a random num of meters between 0 and this value.
+                    Aggressiveness = 1f, // controls how responsive tracking is.
+                    MaxLateralThrust = 0.5f, // controls how sharp the trajectile may turn
+                    TrackingDelay = 1, // Measured in Shape diameter units traveled.
+                    MaxChaseTime = 1800, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    OverideTarget = true, // when set to true ammo picks its own target, does not use hardpoint's.
+                    MaxTargets = 0, // Number of targets allowed before ending, 0 = unlimited
+                    NoTargetExpire = false, // Expire without ever having a target at TargetLossTime
+                    Roam = false, // Roam current area after target loss
+                },
+                Mines = new MinesDef
+                {
+                    DetectRadius = 200,
+                    DeCloakRadius = 100,
+                    FieldTime = 1800,
+                    Cloak = false,
+                    Persist = false,
+                },
             },
             AmmoGraphics = new GraphicDef
             {
-                ModelName = "\\Models\\AWE_Ammo\\AryxMortarShell.mwm",
+                ModelName = "",
                 VisualProbability = 1f,
                 ShieldHitDraw = true,
                 Particles = new AmmoParticleDef
@@ -262,10 +209,10 @@ namespace Scripts
                     },
                     Hit = new ParticleDef
                     {
-                        Name = "ArcWepSmallMissileExplShip",
+                        Name = "",
                         ApplyToShield = true,
                         ShrinkByDistance = false,
-                        Color = Color(red: 25, green: 10f, blue: 1f, alpha: 1),
+                        Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
                         {
@@ -273,7 +220,7 @@ namespace Scripts
                             Restart = false,
                             MaxDistance = 5000,
                             MaxDuration = 30,
-                            Scale = 5,
+                            Scale = 1,
                             HitPlayChance = 1f,
                         },
                     },
@@ -282,7 +229,7 @@ namespace Scripts
                         Name = "",
                         ApplyToShield = true,
                         ShrinkByDistance = false,
-                        Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
+                        Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef
                         {
@@ -302,46 +249,43 @@ namespace Scripts
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
-                        Length = 25,
-                        Width = 0.4f,
-                        Color = Color(red: 25, green: 8, blue: 2, alpha: 1),
-                        VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
-                        VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
+                        Length = 1f,
+                        Width = 0.0005f,
+                        Color = Color(red: 22, green: 28, blue: 2, alpha: 1f),
+                        VisualFadeStart = 30, // Number of ticks the weapon has been firing before projectiles begin to fade their color
+                        VisualFadeEnd = 30, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
-                            "AryxBallisticTracer",
+                            "AryxPulseLaserEffect",
                         },
                         TextureMode = Normal, // Normal, Cycle, Chaos, Wave
                         Segmentation = new SegmentDef
                         {
-                            Enable = false, // If true Tracer TextureMode is ignored
+                            Enable = true, // If true Tracer TextureMode is ignored
                             Textures = new[] {
-                                "BlackFireSeg1",
-                                "BlackFireSeg2",
-                                "BlackFireSeg3",
-                                "BlackFireSeg4",
-                                "BlackFireSeg5",
-                                "BlackFireSeg6",
-                                "BlackFireSeg7",
-                                "BlackFireSeg8",
+                                "AryxPulseLaserEffect",
                             },
-                            SegmentLength = 30f, // Uses the values below.
+                            SegmentLength = 120f, // Uses the values below.
                             SegmentGap = 0f, // Uses Tracer textures and values
-                            Speed = 800f, // meters per second
-                            Color = Color(red: 2.5f, green: 2, blue: 1f, alpha: 1),
-                            WidthMultiplier = 1f,
+                            Speed = 60f, // meters per second
+                            Color = Color(red: 22, green: 28, blue: 2, alpha: 1f),
+                            WidthMultiplier = 0.5f,
                             Reverse = false,
                             UseLineVariance = true,
-                            WidthVariance = Random(start: 0f, end: 0f),
+                            WidthVariance = Random(start: -0.05f, end: 0f),
                             ColorVariance = Random(start: 0f, end: 0f)
                         }
                     },
                     Trail = new TrailDef
                     {
-                        Enable = true,
-                        Material = "WeaponLaser",
+                        Enable = false,
+                        Textures = new[] {
+                            "AryxPulseLaserEffectL2",
+                        },
+                        TextureMode = Normal,
                         DecayTime = 128,
-                        Color = Color(red: 5f, green: 2f, blue: 1f, alpha: 1f),
-                        CustomWidth = 0.15f,
+                        Color = Color(red: 1, green: 8f, blue: 10f, alpha: 1),
+                        Back = false,
+                        CustomWidth = 0,
                         UseWidthVariance = false,
                         UseColorFade = true,
                     },
@@ -352,29 +296,6 @@ namespace Scripts
                         MaxLength = 3,
                     },
                 },
-            },
-            AmmoAudio = new AmmoAudioDef
-            {
-                TravelSound = "ArcWepShipARYXHeavyShotTravel",
-                HitSound = "ArcWepShipARYX_HeavyCannonHit",
-                ShieldHitSound = "",
-                PlayerHitSound = "",
-                VoxelHitSound = "",
-                FloatingHitSound = "",
-                HitPlayChance = 0.5f,
-                HitPlayShield = true,
-            }, // Don't edit below this line
-            Ejection = new EjectionDef
-            {
-                Type = Particle, // Particle or Item (Inventory Component)
-                Speed = 100f, // Speed inventory is ejected from in dummy direction
-                SpawnChance = 0.5f, // chance of triggering effect (0 - 1)
-                CompDef = new ComponentDef
-                {
-                    ItemName = "", //InventoryComponent name
-                    ItemLifeTime = 0, // how long item should exist in world
-                    Delay = 0, // delay in ticks after shot before ejected
-                }
             },
         };
 

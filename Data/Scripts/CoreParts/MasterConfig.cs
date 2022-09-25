@@ -81,7 +81,10 @@ namespace Scripts
             AryxGladiatorLauncher,
             AryxLargeIonCannon,
             AryxMedusaTurret,
-            AryxSiegeMortarCannon
+            AryxSiegeMortarCannon,
+            AryxGravityGun,
+            AryxArgusLaser,
+            AryxShrikeBombLauncher
             );
 
 

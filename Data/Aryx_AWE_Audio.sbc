@@ -285,9 +285,6 @@
         <Wave Type="D3">
           <Start>Audio\Aryx\railguns\aryx_heavy_coilgun_fire_02.wav</Start>
         </Wave>
-        <Wave Type="D3">
-          <Start>Audio\Aryx\railguns\aryx_heavy_coilgun_fire_03.wav</Start>
-        </Wave>	
       </Waves>
     </Sound>
     <Sound>

@@ -129,6 +129,8 @@
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXLightRailgun" />		
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYX_SmallFlareLauncher" />		
     <Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncher/ARYXWindfallCannon" />	
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXSmallBombBay" />		
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXArgusLaser" />		
 
 		<!--COMPONENTS-->			
 	<Entry Class="Components" BlueprintSubtypeId="AWE_ElectromagnetBP" />
