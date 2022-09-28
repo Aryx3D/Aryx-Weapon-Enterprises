@@ -29,7 +29,7 @@ namespace Scripts
         private AmmoDef AryxGravitonPullAmmo => new AmmoDef
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "Pull Graviton",
+            AmmoRound = "Mini Graviton Traction Beam",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.01f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = 1,
@@ -93,12 +93,12 @@ namespace Scripts
                 Enable = true, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
                 Type = Tractor, // Pull the target towards the firing grid
                 Mode = Effect, // Effect , Field
-                Strength = 500f, //WILL REQUIRE FINE TUNING!
-                Radius = 2f, // Meters
-                Duration = 6, // In Ticks
+                Strength = 0.5f, //WILL REQUIRE FINE TUNING!
+                Radius = 1f, // Meters
+                Duration = 1, // In Ticks
                 StackDuration = false, // Combined Durations
                 Depletable = true,
-                MaxStacks = 10, // Max Debuffs at once
+                MaxStacks = 1, // Max Debuffs at once
                 NoHitParticle = false,
                 /*
                 EnergySink : Targets & Shutdowns Power Supplies, such as Batteries & Reactor
@@ -117,11 +117,11 @@ namespace Scripts
                 Force = new PushPullDef
                 {
                     ForceFrom = HitPosition, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
-                    ForceTo = ProjectileLastPosition, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
-                    Position = ProjectileOrigin, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
+                    ForceTo = ProjectileOrigin, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
+                    Position = TargetCenterOfMass, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
                     //^^^ Pulls the impacted grid towards the firing grid.
-                    DisableRelativeMass = true, //baby ships can pull around massive ships if this is true.
-                    TractorRange = 50, //range the target is held from the grid
+                    DisableRelativeMass = false, //baby ships can pull around massive ships if this is true.
+                    TractorRange = 25, //range the target is held from the grid
                     ShooterFeelsForce = false, //The firing grid may get pulled towards the impacted ship.
                 },
                 Field = new FieldDef

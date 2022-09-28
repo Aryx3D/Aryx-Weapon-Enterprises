@@ -31,7 +31,7 @@ namespace Scripts
             AmmoMagazine = "AWE240mmCannonMag",
             AmmoRound = "240mm Heavy Shell [Windfall]",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(4500 * AWEGlobalDamageScalar),
             Mass = 120, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.

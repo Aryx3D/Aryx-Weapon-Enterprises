@@ -3169,7 +3169,7 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYX_FocusBeam_CompactSG</SubtypeId>
 		</Id>
-		<DisplayName>M98-V Compact Focus Beam</DisplayName>
+		<DisplayName>M98-V Crusader Focus Beam</DisplayName>
 		<Description>Originally a cutting laser, retooled as a devastating energy weapon; Focus Beams are laser weapons that fire a beam of energy at targets, which ends in a high-intensity pulse dealing much more damage. Excellent against shields and small grids. [2KM TRAVEL - ENERGY WEAPON]</Description>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_SmallFocusBeam.dds</Icon>
 		<CubeSize>Small</CubeSize>
@@ -3220,7 +3220,7 @@
 			<TypeId>LargeMissileTurret</TypeId>
 			<SubtypeId>ARYX_FocusBeam_CompactTurret</SubtypeId>
 		</Id>
-		<DisplayName>M98-T Focus Beam Turret</DisplayName>
+		<DisplayName>M98-T Crusader Focus Beam Turret</DisplayName>
 		<Description>Originally a cutting laser, retooled as a devastating energy weapon; Focus Beams are laser weapons that fire a beam of energy at targets, which ends in a high-intensity pulse dealing much more damage. Excellent against shields and small grids. [1.5KM RANGE - ENERGY WEAPON (Energy)]</Description>
 		<Icon>Textures\GUI\Icons\ARYX_AWE_FocusBeamTurret.dds</Icon>
 		<CubeSize>Large</CubeSize>
@@ -3268,7 +3268,7 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXFocusLance</SubtypeId>
 		</Id>
-		<DisplayName>M-100V Prometheus Focus Beam Lance</DisplayName>
+		<DisplayName>M100-V Prometheus Focus Beam Lance</DisplayName>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_FocusBeamLance.dds</Icon>
 		<Description>A heavy drilling laser converted for battle via advanced modification (we upped the voltage). Fires a 1-second T2 equivalent pulse that builds upto a final charge, which delivers a pulse that deals 400% damage. [5KM RANGE - ENERGY WEAPON (Energy)]</Description>	
 		<CubeSize>Large</CubeSize>
@@ -4526,10 +4526,10 @@ Size: 5x9x61
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXTeslaLanceFixed</SubtypeId>
 		</Id>
-		<DisplayName>NK1-S Masha Tesla Lance</DisplayName>
+		<DisplayName>NK1-S Izanami Tesla Lance</DisplayName>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_FocusBeamLance.dds</Icon>
 	    <Public>false</Public>		
-		<Description>A powerful but inaccurate energy weapon that fires streams of lightning at targets. Most effective at close range. [5KM RANGE - ENERGY WEAPON (Energy)]</Description>	
+		<Description>The Izanmi is a powerful tesla weapon that can fire either a homing focused bolt of devastating lightning, or a less powerful scattered bolt of energy that strikes the target from multiple angles. Extremely variable damage depending on hit angle, ranges from "fuck all" to "kill everything". [2KM RANGE - ENERGY WEAPON (Energy)]</Description>	
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="1" y="1" z="6"/>
@@ -4585,7 +4585,7 @@ Size: 5x9x61
 		<DisplayName>FS-PT2 Furion Plasma-Thrower</DisplayName>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_FocusBeamLance.dds</Icon>
 	    <Public>false</Public>		
-		<Description>An extremely powerful flamethrower-type weapon that fires a stream of blue-hot expanding plasma. Slow velocity, but highly damaging. [1.5KM RANGE - ENERGY WEAPON (Energy)]</Description>	
+		<Description>The Furion is an extremely powerful flamethrower-type weapon that fires a stream of blue-hot expanding plasma. Slow velocity, but highly damaging. [1.5KM RANGE - ENERGY WEAPON (Energy)]</Description>	
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="1" y="1" z="6"/>

@@ -29,7 +29,7 @@ namespace Scripts
         private AmmoDef AryxFurionRootAmmo => new AmmoDef
         {
             AmmoMagazine = "Energy", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
-            AmmoRound = "Sunflare-pattern Plasma", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
+            AmmoRound = "Furion Plasma", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.00001f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.
             BaseDamage = 1f, // Direct damage; one steel plate is worth 100.
@@ -238,7 +238,6 @@ namespace Scripts
                 AccelPerSec = 0f,
                 DesiredSpeed = 250, // voxel phasing if you go above 5100
                 MaxTrajectory = 1500,
-                //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
                 RangeVariance = Random(start: 0, end: 1000), // subtracts value from MaxTrajectory
@@ -330,7 +329,7 @@ namespace Scripts
                         Enable = true,
                         Length = 50f,
                         Width = 5f,
-                        Color = Color(red: 2, green: 5, blue: 10, alpha: 0.8f),
+                        Color = Color(red: 14, green: 21, blue: 35, alpha: 0.8f),
                         VisualFadeStart = 30, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 30, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
