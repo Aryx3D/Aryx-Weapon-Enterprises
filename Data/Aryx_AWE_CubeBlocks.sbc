@@ -3611,7 +3611,7 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXHeavyCoilgun</SubtypeId>
 		</Id>
-		<DisplayName>EDR-0F Predator-850 Coilgun</DisplayName>
+		<DisplayName>E0-F Predator-850 Coilgun</DisplayName>
 		<Description>The Predator Coilgun is a massive sniper weapon that delivers a massive punch at relativistic velocity, though the rounds lose velocity over range. [10KM TRAVEL, 6KM FALLOFF - Accepts 850mm Ferrous. (Kinetic)]</Description>	
 		<Icon>Textures\GUI\Icons\Aryx_AWE_HeavyCoilgun.dds</Icon>
 		<CubeSize>Large</CubeSize>
