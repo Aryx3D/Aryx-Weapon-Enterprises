@@ -916,6 +916,63 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+      <Id>
+        <TypeId>ConveyorSorter</TypeId>
+        <SubtypeId>ARYXRocketArtillery</SubtypeId>
+      </Id>
+      <DisplayName>RA-5 Starfall Rocket Artillery</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_Starfall.dds</Icon>	  
+      <Description>The Starfall is a heavy rocket battery designed for plunging fire that launches long-range nuclear missiles at extreme velocity, able to strike targets regardless of cover. The missiles disengage guidance during their final stage and accelerate to massive speeds, able to slip through PD screens and obliterate the delicate hull beneath. Hurricane on the roof; Armageddon on your doorstep. [15km range - Accepts Starfall Nuclear Missiles]</Description>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="9" y="10" z="9"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\AWE_Starfall\ARYXRocketArtillery_Base.mwm</Model>
+		<Components>
+			<Component Subtype="SteelPlate" Count="5250" />
+			<Component Subtype="Construction" Count="4000" />
+			<Component Subtype="MetalGrid" Count="2000" />
+			<Component Subtype="LargeTube" Count="1000" />	
+			<Component Subtype="Motor" Count="800" />
+			<Component Subtype="Detector" Count="500" />			
+			<Component Subtype="Computer" Count="1500" />
+			<Component Subtype="Construction" Count="3500" />
+			<Component Subtype="MetalGrid" Count="2000" />
+			<Component Subtype="SteelPlate" Count="1500" />
+		</Components>
+		<CriticalComponent Index="0" Subtype="Computer"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="9.00" EndY="3.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="9.00" EndY="3.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="9.00" EndY="3.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="9.00" EndY="3.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="9.00" EndY="9.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_Starfall\ARYXRocketArtillery_Base_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_Starfall\ARYXRocketArtillery_Base_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_Starfall\ARYXRocketArtillery_Base_BS3.mwm"/>
+			</BuildProgressModels>
+		<BlockPairName>ARYX_StarfallHIMARS</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>85</BuildTimeSeconds>
+	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+      <EdgeType>Light</EdgeType>
+      <!--WeaponDefinitionId Subtype="AryxBurstCannonWepDef" /-->
+	  <OverlayTexture>Textures\GUI\Screens\turret_overlay.dds</OverlayTexture>	  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.48</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>300</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>

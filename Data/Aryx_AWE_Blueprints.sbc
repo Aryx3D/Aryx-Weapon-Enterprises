@@ -302,7 +302,7 @@
       <DisplayName>1000mm "Fat Man" Mortar Shell</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\AWEMortarAmmo.dds</Icon>
       <Prerequisites>
-        <Item Amount="800" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="1500" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="500" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="500" TypeId="Ingot" SubtypeId="Magnesium" />
         <Item Amount="10" TypeId="Ingot" SubtypeId="Uranium" />				
@@ -310,6 +310,26 @@
       <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWE1000mmMortarShellAmmoMag" />
       <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
     </Blueprint>			
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AWEStarfallMissileAmmooBP</SubtypeId>
+      </Id>
+      <DisplayName>X1 Starfall Rail-Rocket</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\AWEStarfallMissile.dds</Icon>
+      <Prerequisites>
+        <Item Amount="3000" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="1000" TypeId="Ingot" SubtypeId="Nickel" />
+	    <Item Amount="250" TypeId="Ingot" SubtypeId="Silicon" />	
+        <Item Amount="150" TypeId="Ingot" SubtypeId="Gold" />
+        <Item Amount="100" TypeId="Ingot" SubtypeId="Uranium" />	
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Platinum" />		
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWEStarfallMissileAmmoMag" />
+      <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+    </Blueprint>			
+		
+		
 		
     <Blueprint>
       <Id>

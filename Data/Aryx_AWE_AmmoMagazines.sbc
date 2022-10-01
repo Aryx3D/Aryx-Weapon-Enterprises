@@ -517,7 +517,32 @@
             <MaximumOrderAmount>100</MaximumOrderAmount>
             <CanPlayerOrder>true</CanPlayerOrder>
         </AmmoMagazine>	
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>AWEStarfallMissileAmmoMag</SubtypeId>
+            </Id>
+            <DisplayName>X1 Starfall Rail-Rocket</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\AWEStarfallMissile.dds</Icon>
+            <Size>
+                <X>2</X>
+                <Y>12</Y>
+                <Z>2</Z>
+            </Size>
+            <Mass>3000</Mass>
+            <Volume>500</Volume>
+            <Model>Models\AWE_Starfall\ARYXRocketArtillery_StarfallMissile.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="AWE600mmCannonAmmoDef" />
 
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>100</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>100</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>
+		
         <AmmoMagazine>
             <Id>
                 <TypeId>AmmoMagazine</TypeId>

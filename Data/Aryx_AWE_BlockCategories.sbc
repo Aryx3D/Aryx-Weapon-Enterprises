@@ -84,7 +84,7 @@
 		<string>ConveyorSorter/ARYXSiegeMortarCannon</string>	
 		<string>ConveyorSorter/ARYXArgusLaser</string>	
 		<string>ConveyorSorter/ARYXSmallBombBay</string>	
-		
+		<string>ConveyorSorter/ARYXRocketArtillery</string>				
 		
       </ItemIds>
     </Category> 
@@ -168,7 +168,8 @@
 		<string>ConveyorSorter/ARYXSiegeMortarCannon</string>
 		<string>ConveyorSorter/ARYXArgusLaser</string>		
 		<string>ConveyorSorter/ARYXSmallBombBay</string>			
-		
+		<string>ConveyorSorter/ARYXRocketArtillery</string>		
+	
 	  </ItemIds>
     </Category>
 	
@@ -253,7 +254,7 @@
 		<string>ConveyorSorter/ARYXSiegeMortarCannon</string>	
 		<string>ConveyorSorter/ARYXArgusLaser</string>	
 		<string>ConveyorSorter/ARYXSmallBombBay</string>	
-
+		<string>ConveyorSorter/ARYXRocketArtillery</string>		
 		
 	</ItemIds>
     </Category> 
@@ -331,6 +332,8 @@
 		<string>ConveyorSorter/ARYXGladiatorMissileLauncher</string>	
 		<string>LargeMissileTurret/ARYXPhaseRepeaterCannon</string>	
 		<string>ConveyorSorter/ARYXSiegeMortarCannon</string>	
+		<string>ConveyorSorter/ARYXRocketArtillery</string>			
+		
 		
 		
 	  </ItemIds>

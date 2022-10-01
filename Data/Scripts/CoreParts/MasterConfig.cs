@@ -84,7 +84,8 @@ namespace Scripts
             AryxSiegeMortarCannon,
             AryxGravityGun,
             AryxArgusLaser,
-            AryxShrikeBombLauncher
+            AryxShrikeBombLauncher,
+            AryxRocketArtilleryTurret
             );
 
 

@@ -53,6 +53,8 @@
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEHyperionTorpedoBP" />	
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEGladiusMissileAmmoBP" />		
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEAvalanche1000AmmoBP" />	
+	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEStarfallMissileAmmooBP" />	
+
 
 		<!--BLOCKS-->
     <Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXFlechetteLauncher" />		
@@ -116,6 +118,7 @@
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXLargeIonCannon" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXGladiatorMissileLauncher" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXSiegeMortarCannon" />	
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXRocketArtillery" />		
 
 
     <Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncher/ARYX_Fixed_Chord_auto" />			
