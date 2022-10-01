@@ -52,7 +52,7 @@ namespace Scripts {
                 MaxTargetDistance = 15000, // Maximum distance at which targets will be automatically shot at; 0 = unlimited.
                 MinTargetDistance = 3000, // Minimum distance at which targets will be automatically shot at.
                 TopTargets = 0, // Maximum number of targets to randomize between; 0 = unlimited.
-                TopBlocks = 0, // Maximum number of blocks to randomize between; 0 = unlimited.
+                TopBlocks = 5, // Maximum number of blocks to randomize between; 0 = unlimited.
                 StopTrackingSpeed = 0, // Do not track threats traveling faster than this speed; 0 = unlimited.
             },
             HardPoint = new HardPointDef
