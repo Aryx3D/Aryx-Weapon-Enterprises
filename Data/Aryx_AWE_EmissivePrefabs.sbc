@@ -12,7 +12,7 @@
       Autolock - Used by landing gear
       Constraint - Used by connector type block when they are close enough and are not locked
     -->
-
+	<!-- why the fuck is this here-->
     <EmissiveColorStatePreset>
       <Id>
         <TypeId>MyObjectBuilder_EmissiveColorStatePresetDefinition</TypeId>

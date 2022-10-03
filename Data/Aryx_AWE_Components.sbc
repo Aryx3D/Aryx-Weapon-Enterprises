@@ -46,7 +46,7 @@
             <Volume>6</Volume>
             <Model>Models\Components\ARYXHeavyPlate.mwm</Model>
             <PhysicalMaterial>Metal</PhysicalMaterial>
-            <MaxIntegrity>200</MaxIntegrity>
+            <MaxIntegrity>225</MaxIntegrity>
             <DropProbability>0.9</DropProbability>
             <Health>200</Health>
             <MinimumOfferAmount>250</MinimumOfferAmount>
