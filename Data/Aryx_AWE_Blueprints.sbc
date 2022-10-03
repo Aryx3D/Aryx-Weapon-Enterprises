@@ -569,15 +569,43 @@
         <Item Amount="50" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="50" TypeId="Ingot" SubtypeId="Cobalt" />
         <Item Amount="25" TypeId="Ingot" SubtypeId="Nickel" />
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Platinum" />
-		
-		
       </Prerequisites>
       <Result Amount="1" TypeId="Component" SubtypeId="ElectromagnetAWE" />
       <BaseProductionTimeInSeconds>6</BaseProductionTimeInSeconds>
     </Blueprint>		
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AWE_SuperchargerBP</SubtypeId>
+      </Id>
+      <DisplayName>Electromagnet</DisplayName>
+      <Icon>Textures\GUI\Icons\component\Supercharger.dds</Icon>
+      <Prerequisites>
+        <Item Amount="150" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="100" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="25" TypeId="Ingot" SubtypeId="Gold" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Platinum" />		
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="SuperchargerAWE" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+    </Blueprint>		
 	
-	
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AWE_MilitaryPlateBP</SubtypeId>
+      </Id>
+      <DisplayName>Military Plate</DisplayName>
+      <Icon>Textures\GUI\Icons\component\MilitaryPlate.dds</Icon>
+      <Prerequisites>
+        <Item Amount="50" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="25" TypeId="Ingot" SubtypeId="Cobalt" />
+        <Item Amount="12" TypeId="Ingot" SubtypeId="Silver" />	
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="MilitaryPlateAWE" />
+      <BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+    </Blueprint>		
 	
 	
 			<!-- COMPONENTS ABOVE, DRONES BELOW -->

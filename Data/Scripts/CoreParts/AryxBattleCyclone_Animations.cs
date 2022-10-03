@@ -17,7 +17,7 @@ namespace Scripts
 				#region Barrels Animations
                 new PartAnimationSetDef()
                 {
-                    SubpartId = Names("salvo_barrel_1"), //Remember to remove subpart_ from these names!
+                    SubpartId = Names("barrel"), //Remember to remove subpart_ from these names!
                     BarrelId = "muzzle_projectile_1", //Trigger anim when this muzzle does something.
                     StartupFireDelay = 0, //Delay in ticks until anim starts.
                     AnimationDelays = Delays(FiringDelay : 0, ReloadingDelay: 0, OverheatedDelay: 0, TrackingDelay: 0, LockedDelay: 0, OnDelay: 0, OffDelay: 0, BurstReloadDelay: 0, OutOfAmmoDelay: 0, PreFireDelay: 0),//Delay before animation starts
@@ -37,7 +37,7 @@ namespace Scripts
                                     MovementType = ExpoDecay, //Linear,ExpoDecay,ExpoGrowth,Delay,Show, //instant or fade Hide, //instant or fade
                                     LinearPoints = new[]
                                     {
-                                        Transformation(0f, 0, 1f), //linear movement in XYZ axes.
+                                        Transformation(0f, 0, 0.25f), //linear movement in XYZ axes.
                                     },
                                     Rotation = Transformation(0, 0, 0), //degrees
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees
@@ -61,7 +61,7 @@ namespace Scripts
                                     MovementType = Linear, //Linear,ExpoDecay,ExpoGrowth,Delay,Show, //instant or fade Hide, //instant or fade
                                     LinearPoints = new[]
                                     {
-                                        Transformation(0f, 0, -1f), //linear movement in XYZ axes.
+                                        Transformation(0f, 0, -0.25f), //linear movement in XYZ axes.
                                     },
                                     Rotation = Transformation(0, 0, 0), //degrees
                                     RotAroundCenter = Transformation(0, 0, 0), //degrees

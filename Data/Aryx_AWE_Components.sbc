@@ -29,5 +29,56 @@
             <MinimumAcquisitionAmount>10</MinimumAcquisitionAmount>
             <MaximumAcquisitionAmount>200</MaximumAcquisitionAmount>
         </Component> 
+
+        <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>MilitaryPlateAWE</SubtypeId>
+            </Id>
+            <DisplayName>Military Plate</DisplayName>
+            <Icon>Textures\GUI\Icons\component\MilitaryPlate.dds</Icon>
+            <Size>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>0.025</Z>
+            </Size>
+            <Mass>50</Mass>
+            <Volume>6</Volume>
+            <Model>Models\Components\ARYXHeavyPlate.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>200</MaxIntegrity>
+            <DropProbability>0.9</DropProbability>
+            <Health>200</Health>
+            <MinimumOfferAmount>250</MinimumOfferAmount>
+            <MaximumOfferAmount>2500</MaximumOfferAmount>
+            <MinimumOrderAmount>100</MinimumOrderAmount>
+            <MaximumOrderAmount>1000</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>					
+        </Component> 
+        <Component>
+            <Id>
+                <TypeId>Component</TypeId>
+                <SubtypeId>SuperchargerAWE</SubtypeId>
+            </Id>
+            <DisplayName>Supercharger</DisplayName>
+            <Icon>Textures\GUI\Icons\component\Supercharger.dds</Icon>
+            <Size>
+                <X>1</X>
+                <Y>1</Y>
+                <Z>2</Z>
+            </Size>
+            <Mass>100</Mass>
+            <Volume>50</Volume>
+            <Model>Models\Components\ARYX_Supercharger.mwm</Model>
+            <PhysicalMaterial>Metal</PhysicalMaterial>
+            <MaxIntegrity>350</MaxIntegrity>
+            <DropProbability>0.3</DropProbability>
+            <Health>350</Health>
+            <MinimumOfferAmount>10</MinimumOfferAmount>
+            <MaximumOfferAmount>150</MaximumOfferAmount>
+            <MinimumOrderAmount>10</MinimumOrderAmount>
+            <MaximumOrderAmount>150</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>			
+        </Component> 		
     </Components>
 </Definitions>

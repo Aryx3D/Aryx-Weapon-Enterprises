@@ -38,7 +38,7 @@ namespace Scripts
                     "muzzle_projectile_1",
                 },
                 Ejector = "",
-                Scope = "",
+                Scope = "muzzle_projectile_1",
             },
             Targeting = new TargetingDef
             {

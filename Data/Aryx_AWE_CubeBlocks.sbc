@@ -14,7 +14,7 @@
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="2" z="3" />
       <ModelOffset x="0" y="0" z="0" />
-	  <Model>Models\AWE_HeavyCannon\ARYX_CycloneCannonBase.mwm</Model>
+	  <Model>Models\AWE_HeavyCannon\ARYX_1xCyclone.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="500" />
         <Component Subtype="Construction" Count="200" />
@@ -23,17 +23,17 @@
         <Component Subtype="Motor" Count="120" />
         <Component Subtype="Computer" Count="200" />
         <Component Subtype="Construction" Count="50" />		
-        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="MilitaryPlateAWE" Count="250" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Bottom" StartX="0.25" StartY="0.25" EndX="2.75" EndY="2.75"/>
 			</MountPoints>
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.33" File="Models\AWE_HeavyCannon\ARYX_CycloneCannonBase_BS1.mwm"/>
-				<Model BuildPercentUpperBound="0.66" File="Models\AWE_HeavyCannon\ARYX_CycloneCannonBase_BS2.mwm"/>
-				<Model BuildPercentUpperBound="1.0" File="Models\AWE_HeavyCannon\ARYX_CycloneCannonBase_BS3.mwm"/>
-			</BuildProgressModels>			
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_HeavyCannon\ARYX_1xCyclone_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_HeavyCannon\ARYX_1xCyclone_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_HeavyCannon\ARYX_1xCyclone_BS3.mwm"/>
+			</BuildProgressModels>	
       <BlockPairName>AryxCycloneCannon</BlockPairName>
 		<MirroringY>Z</MirroringY>
 		<MirroringZ>Y</MirroringZ>
@@ -64,7 +64,7 @@
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="15" y="10" z="15" />
       <ModelOffset x="0" y="0" z="0" />
-	  <Model>Models\AWE_HeavyCannon\ARYX_CycloneCannonBase.mwm</Model>
+	  <Model>Models\AWE_HeavyCannon\ARYX_1xCyclone.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="500" />
         <Component Subtype="Construction" Count="200" />
@@ -73,17 +73,17 @@
         <Component Subtype="Motor" Count="120" />
         <Component Subtype="Computer" Count="200" />
         <Component Subtype="Construction" Count="50" />		
-        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="MilitaryPlateAWE" Count="250" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
 				<MountPoint Side="Bottom" StartX="1.25" StartY="1.25" EndX="13.75" EndY="13.75"/>
 			</MountPoints>
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.33" File="Models\AWE_HeavyCannon\ARYX_CycloneCannonBase_BS1.mwm"/>
-				<Model BuildPercentUpperBound="0.66" File="Models\AWE_HeavyCannon\ARYX_CycloneCannonBase_BS2.mwm"/>
-				<Model BuildPercentUpperBound="1.0" File="Models\AWE_HeavyCannon\ARYX_CycloneCannonBase_BS3.mwm"/>
-			</BuildProgressModels>			
+				<Model BuildPercentUpperBound="0.33" File="Models\AWE_HeavyCannon\ARYX_1xCyclone_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\AWE_HeavyCannon\ARYX_1xCyclone_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\AWE_HeavyCannon\ARYX_1xCyclone_BS3.mwm"/>
+			</BuildProgressModels>		
       <BlockPairName>AryxCycloneCannon</BlockPairName>
 		<MirroringY>Z</MirroringY>
 		<MirroringZ>Y</MirroringZ>
@@ -123,7 +123,7 @@
         <Component Subtype="Motor" Count="240" />
         <Component Subtype="Computer" Count="250" />
         <Component Subtype="Construction" Count="100" />		
-        <Component Subtype="SteelPlate" Count="500" />
+        <Component Subtype="MilitaryPlateAWE" Count="500" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -178,7 +178,7 @@
         <Component Subtype="Motor" Count="300" />
         <Component Subtype="Computer" Count="325" />
         <Component Subtype="Construction" Count="150" />		
-        <Component Subtype="SteelPlate" Count="1000" />
+        <Component Subtype="MilitaryPlateAWE" Count="1000" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -233,7 +233,7 @@
         <Component Subtype="Motor" Count="200" />
         <Component Subtype="Computer" Count="250" />
         <Component Subtype="Construction" Count="100" />		
-        <Component Subtype="SteelPlate" Count="450" />
+        <Component Subtype="MilitaryPlateAWE" Count="450" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -289,7 +289,7 @@
         <Component Subtype="Motor" Count="60" />
         <Component Subtype="Computer" Count="100" />
         <Component Subtype="Construction" Count="150" />		
-        <Component Subtype="SteelPlate" Count="350" />
+        <Component Subtype="MilitaryPlateAWE" Count="350" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -343,7 +343,7 @@
         <Component Subtype="Motor" Count="60" />
         <Component Subtype="Computer" Count="100" />
         <Component Subtype="Construction" Count="150" />		
-        <Component Subtype="SteelPlate" Count="350" />
+        <Component Subtype="MilitaryPlateAWE" Count="350" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -396,7 +396,7 @@
         <Component Subtype="Motor" Count="10" />
         <Component Subtype="Computer" Count="25" />
         <Component Subtype="Construction" Count="10" />		
-        <Component Subtype="SteelPlate" Count="25" />
+        <Component Subtype="MilitaryPlateAWE" Count="25" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -426,7 +426,58 @@
       <TargetingGroups>
 		<string>Weapons</string>
       </TargetingGroups>      
-    </Definition>	
+    </Definition>
+	<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>ARYXStormCannon</SubtypeId>
+      </Id>
+      <DisplayName>M120 Storm Light Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_Storm.dds</Icon>	  
+      <Description>The Storm is a compact 120mm assault cannon designed for tanks, turrets and spacefighters, able to deal accurate high damage in spite of its slow muzzle velocity. [800m/s muzzle velocity, 4km range - Accepts 120mm Heavy Shells (Kinetic).]</Description>
+	  <CubeSize>Small</CubeSize>
+	  <BlockTopology>TriangleMesh</BlockTopology>
+	  <Size x="1" y="1" z="7"/>
+	  <ModelOffset x="0" y="0" z="0"/>
+	  <Model>Models\AWE_Storm\ARYXSmallStormCannon.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="5" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="MetalGrid" Count="1" />
+        <Component Subtype="LargeTube" Count="3" />	
+        <Component Subtype="Motor" Count="3" />
+        <Component Subtype="Computer" Count="5" />	
+        <Component Subtype="MilitaryPlateAWE" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+		<MountPoints>
+			<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			<MountPoint Side="Left" StartX="5.20" StartY="0.00" EndX="7.00" EndY="1.00"/>
+			<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.80" EndY="1.00"/>
+			<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.80"/>
+			<MountPoint Side="Bottom" StartX="0.00" StartY="5.20" EndX="1.00" EndY="7.00"/>
+		</MountPoints>
+		<BuildProgressModels>
+			<Model BuildPercentUpperBound="0.50" File="Models\AWE_Storm\ARYXSmallStormCannon_BS1.mwm"/>
+			<Model BuildPercentUpperBound="1.00" File="Models\AWE_Storm\ARYXSmallStormCannon_BS2.mwm"/>
+		</BuildProgressModels>
+		<BlockPairName>ARYX_StormCannon</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="AryxCycloneWepDef" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.6</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>80</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -449,7 +500,7 @@
         <Component Subtype="Motor" Count="80" />
         <Component Subtype="Computer" Count="100" />
         <Component Subtype="MetalGrid" Count="100" />		
-        <Component Subtype="SteelPlate" Count="500" />
+        <Component Subtype="MilitaryPlateAWE" Count="500" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -505,7 +556,7 @@
         <Component Subtype="Motor" Count="80" />
         <Component Subtype="Computer" Count="100" />
         <Component Subtype="MetalGrid" Count="100" />		
-        <Component Subtype="SteelPlate" Count="500" />
+        <Component Subtype="MilitaryPlateAWE" Count="500" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -561,7 +612,7 @@
         <Component Subtype="Motor" Count="90" />
         <Component Subtype="Computer" Count="100" />
         <Component Subtype="MetalGrid" Count="120" />		
-        <Component Subtype="SteelPlate" Count="550" />
+        <Component Subtype="MilitaryPlateAWE" Count="550" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -602,7 +653,7 @@
       </Id>
       <DisplayName>RL6 Hydra Rocket Battery</DisplayName>
       <Icon>Textures\GUI\Icons\AryxHydraTurret.dds</Icon>	  
-      <Description>The Hydra is an armoured rocket pod that fires rapid volleys of 6 guided rockets, with high tracking and a long reload, designed to overwhelm enemy PD and destroy small grids. [5KM RANGE - Accepts Flechette Rockets]</Description>
+      <Description>The Hydra is an armoured rocket pod that fires rapid volleys of 6 guided rockets, with high tracking and a long reload, designed to overwhelm enemy PD and destroy small grids. [1KM MIN RANGE, 5KM MAX RANGE - Accepts Flechette Rockets]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="3" y="3" z="3"/>
@@ -616,7 +667,7 @@
 			<Component Subtype="Motor" Count="80" />
 			<Component Subtype="Detector" Count="40" />			
 			<Component Subtype="Computer" Count="200" />
-			<Component Subtype="SteelPlate" Count="135" />		
+			<Component Subtype="MilitaryPlateAWE" Count="135" />		
 		</Components>
 		<CriticalComponent Index="0" Subtype="Computer"/>
 			<MountPoints>
@@ -778,9 +829,10 @@
 			<Component Subtype="LargeTube" Count="60" />
 			<Component Subtype="Motor" Count="200" />
 			<Component Subtype="GravityGenerator" Count="150" />	
+			<Component Subtype="SuperchargerAWE" Count="250" />				
 			<Component Subtype="Superconductor" Count="600" />
 			<Component Subtype="Computer" Count="900" />
-			<Component Subtype="SteelPlate" Count="500" />
+			<Component Subtype="MilitaryPlateAWE" Count="500" />
 		</Components>
 		<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -834,7 +886,7 @@
         <Component Subtype="LargeTube" Count="80" />	
         <Component Subtype="Motor" Count="40" />
         <Component Subtype="Computer" Count="150" />
-        <Component Subtype="SteelPlate" Count="250" />
+        <Component Subtype="MilitaryPlateAWE" Count="250" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -871,7 +923,7 @@
       </Id>
       <DisplayName>M8G-LS4 Longsword Missile Battery</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMissileBattery.dds</Icon>	  
-      <Description>The Longsword is a heavy missile battery designed for capital ship combat and base defence, firing 8 powerful rockets in quick succession. [7.5KM RANGE - Accepts Sabre Missiles]</Description>
+      <Description>The Longsword is a heavy missile battery designed for capital ship combat and base defence, firing 8 powerful rockets in quick succession. [1KM MIN RANGE, 7.5KM MAX RANGE - Accepts Sabre Missiles]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="5" y="5" z="5"/>
@@ -887,7 +939,7 @@
 			<Component Subtype="Computer" Count="300" />
 			<Component Subtype="Construction" Count="125" />
 			<Component Subtype="MetalGrid" Count="200" />
-			<Component Subtype="SteelPlate" Count="500" />
+			<Component Subtype="MilitaryPlateAWE" Count="500" />
 		</Components>
 		<CriticalComponent Index="0" Subtype="Computer"/>
 		<MountPoints>
@@ -930,16 +982,17 @@
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\AWE_Starfall\ARYXRocketArtillery_Base.mwm</Model>
 		<Components>
-			<Component Subtype="SteelPlate" Count="5250" />
+			<Component Subtype="SteelPlate" Count="7500" />
 			<Component Subtype="Construction" Count="4000" />
 			<Component Subtype="MetalGrid" Count="2000" />
 			<Component Subtype="LargeTube" Count="1000" />	
 			<Component Subtype="Motor" Count="800" />
-			<Component Subtype="Detector" Count="500" />			
+			<Component Subtype="Detector" Count="500" />
+			<Component Subtype="SuperchargerAWE" Count="100" />			
 			<Component Subtype="Computer" Count="1500" />
 			<Component Subtype="Construction" Count="3500" />
 			<Component Subtype="MetalGrid" Count="2000" />
-			<Component Subtype="SteelPlate" Count="1500" />
+			<Component Subtype="MilitaryPlateAWE" Count="2500" />
 		</Components>
 		<CriticalComponent Index="0" Subtype="Computer"/>
 			<MountPoints>
@@ -994,9 +1047,10 @@
 			<Component Subtype="Motor" Count="200" />
 			<Component Subtype="Superconductor" Count="200" />
 			<Component Subtype="ElectromagnetAWE" Count="50" />
+			<Component Subtype="SuperchargerAWE" Count="10" />
 			<Component Subtype="Computer" Count="200" />
 			<Component Subtype="Construction" Count="200" />		
-			<Component Subtype="SteelPlate" Count="550" />
+			<Component Subtype="MilitaryPlateAWE" Count="550" />
 		</Components>
 		<CriticalComponent Index="0" Subtype="Computer"/>
 		<MountPoints>
@@ -1050,11 +1104,12 @@
 			<Component Subtype="PowerCell" Count="250" />
 			<Component Subtype="SmallTube" Count="500" />
 			<Component Subtype="Motor" Count="250" />
-			<Component Subtype="GravityGenerator" Count="150" />	
+			<Component Subtype="GravityGenerator" Count="150" />
+			<Component Subtype="SuperchargerAWE" Count="5" />			
 			<Component Subtype="Superconductor" Count="200" />
 			<Component Subtype="Computer" Count="250" />
 			<Component Subtype="Construction" Count="200" />		
-			<Component Subtype="SteelPlate" Count="550" />
+			<Component Subtype="MilitaryPlateAWE" Count="550" />
 		</Components>
 		<CriticalComponent Index="0" Subtype="Computer"/>
 			<MountPoints>
@@ -1245,8 +1300,8 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXJuryCannon</SubtypeId>
       </Id>
-      <DisplayName>M120 Whirlwind Heavy Cannon</DisplayName>
-	  <Description>The Whirlwind is a compact artillery piece capable of dealing decent ballistic damage to targets from long-range. [800m/s muzzle velocity, 3.5km range - Accepts 120mm Heavy Shells (Kinetic).]</Description>
+      <DisplayName>M120 Whirlwind Light Cannon</DisplayName>
+	  <Description>The Whirlwind is a compact cannon turret capable of dealing powerful blast damage to targets from medium range. Excels against light armour and smaller vessels. [800m/s muzzle velocity, 3.5km range - Accepts 120mm Heavy Shells (Kinetic).]</Description>
 	  <Icon>Textures\GUI\Icons\AryxJurycannon.dds</Icon>  
 	  <CubeSize>Large</CubeSize>
 	  <BlockTopology>TriangleMesh</BlockTopology>
@@ -1677,7 +1732,7 @@
         <Component Subtype="Motor" Count="100" />			
         <Component Subtype="Computer" Count="120" />
         <Component Subtype="MetalGrid" Count="300" />		
-        <Component Subtype="SteelPlate" Count="300" />
+        <Component Subtype="MilitaryPlateAWE" Count="300" />
 		
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
@@ -1729,7 +1784,7 @@
         <Component Subtype="Motor" Count="60" />			
         <Component Subtype="Computer" Count="60" />
         <Component Subtype="MetalGrid" Count="150" />		
-        <Component Subtype="SteelPlate" Count="100" />
+        <Component Subtype="MilitaryPlateAWE" Count="100" />
 		
 		</Components>
 		<CriticalComponent Subtype="Computer" Index="0" />
@@ -2295,7 +2350,7 @@
 				<Component Subtype="Motor" Count="1000" />
 				<Component Subtype="Computer" Count="500" />
 				<Component Subtype="Construction" Count="250" />		
-				<Component Subtype="SteelPlate" Count="1500" />
+				<Component Subtype="MilitaryPlateAWE" Count="1500" />
 			</Components>
 			<CriticalComponent Subtype="Computer" Index="0"/>
 			<MountPoints>
@@ -2793,7 +2848,7 @@
 		</Id>
 		<Public>true</Public>		
 		<DisplayName>TS-L8 Gladiator Tactical Launcher</DisplayName>
-		<Description>The Gladiator fires specialised tactical missiles designed to disrupt enemy operations during combat. [8KM RANGE - Accepts Gladius Missiles (EXPL/IMP)]</Description>
+		<Description>The Gladiator fires specialised tactical missiles designed to disrupt enemy operations during combat. [1KM MIN RANGE, 8KM MAX RANGE - Accepts Gladius Missiles (EXPL/IMP)]</Description>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_Gladiator.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2848,7 +2903,7 @@
 			<SubtypeId>ARYXTorpLauncher</SubtypeId>
 		</Id>
 		<DisplayName>TL-150 Astraeus Torpedo Launcher</DisplayName>
-		<Description>The Astraeus fires torpedoes capable of demolishing armoured targets. Whilst slow and very vulnerable to point defence, these missiles are extremely deadly if they land a direct hit. [10KM RANGE - Accepts Devastator (EX/DR/IO) torpedoes.]</Description>
+		<Description>The Astraeus fires torpedoes capable of demolishing armoured targets. Whilst slow and very vulnerable to point defence, these missiles are extremely deadly if they land a direct hit. [1KM MIN RANGE, 10KM MAX RANGE - Accepts Devastator (EX/DR/IO) torpedoes.]</Description>
 		<Icon>Textures\GUI\Icons\AryxTorpLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -2905,7 +2960,7 @@
 			<SubtypeId>ARYXInlineTorpLauncher</SubtypeId>
 		</Id>
 		<DisplayName>TL-150-B Astraeus Inline Torpedo Launcher</DisplayName>
-		<Description>The Astraeus fires torpedoes capable of demolishing armoured targets. Whilst slow and very vulnerable to point defence, these missiles are extremely deadly if they land a direct hit. Yes I am aware the projectile model differs at launch, stfu. [10KM RANGE - Accepts Devastator (EX/DR/IO) torpedoes.]</Description>
+		<Description>The Astraeus fires torpedoes capable of demolishing armoured targets. Whilst slow and very vulnerable to point defence, these missiles are extremely deadly if they land a direct hit. Yes I am aware the projectile model differs at launch, stfu. [1KM MIN RANGE, 10KM MAX RANGE - Accepts Devastator (EX/DR/IO) torpedoes.]</Description>
 		<Icon>Textures\GUI\Icons\AryxInlineTorpLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -3010,7 +3065,7 @@
 			<SubtypeId>ARYXLongbowLauncher</SubtypeId>
 		</Id>
 		<DisplayName>ML-70 Longbow Missile Launcher</DisplayName>
-		<Description>The Longbow fires medium-weight missiles capable of performing all-around ship-to-ship combat, working in anti-fighter or anti-warship roles. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [7.5KM RANGE - Accepts Sabre Missiles.]</Description>
+		<Description>The Longbow fires medium-weight missiles capable of performing all-around ship-to-ship combat, working in anti-fighter or anti-warship roles. Whilst susceptible to point defence, these missiles are capable of dealing heavy damage. [1KM MIN RANGE, 7.5KM MAX RANGE - Accepts Sabre Missiles.]</Description>
 		<Icon>Textures\GUI\Icons\AWELongbowLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -3114,7 +3169,7 @@
 			<SubtypeId>ARYXHeavyMissileSalvoLauncher</SubtypeId>
 		</Id>
 		<DisplayName>HA-4ML2 Poseidon Salvo Launcher</DisplayName>
-		<Description>The Poseidon launches powerful missiles in volleys of four, designed for suppression of targets and dealing deadly explosive damage. [8KM RANGE - Accepts Striker Missiles. (Kinetic)]</Description>
+		<Description>The Poseidon launches powerful missiles in volleys of four, designed for suppression of targets and dealing deadly explosive damage. [1KM MIN RANGE, 8KM MAX RANGE - Accepts Striker Missiles. (Kinetic)]</Description>
 		<Icon>Textures\GUI\Icons\AryxFenrirLauncher.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -3755,12 +3810,12 @@ Size: 5x9x61
 			<Component Subtype="Superconductor" Count="6000" />				
 			<Component Subtype="LargeTube" Count="2500" />
 			<Component Subtype="Girder" Count="2500" />
-			<Component Subtype="GravityGenerator" Count="200" />
+			<Component Subtype="ElectromagnetAWE" Count="2000" />
 			<Component Subtype="Motor" Count="5000" />		
-			<Component Subtype="ElectromagnetAWE" Count ="2500" />	
+			<Component Subtype="SuperchargerAWE" Count ="2500" />	
 			<Component Subtype="Computer" Count="5000" />
 			<Component Subtype="MetalGrid" Count="5000" />
-			<Component Subtype="SteelPlate" Count="9750" />
+			<Component Subtype="MilitaryPlateAWE" Count="9750" />
 		</Components>
 		<CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -3965,8 +4020,7 @@ Size: 5x9x61
         <Component Subtype="SmallTube" Count="16" />
         <Component Subtype="Motor" Count="100" />
         <Component Subtype="Computer" Count="100" />
-        <Component Subtype="SteelPlate" Count="10" />
-		
+        <Component Subtype="SteelPlate" Count="10" />	
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 	  <MountPoints>
@@ -4021,7 +4075,7 @@ Size: 5x9x61
 				<Component Subtype="Motor" Count="400" />		
 				<Component Subtype="Computer" Count="900" />
 				<Component Subtype="Construction" Count="500" />
-				<Component Subtype="SteelPlate" Count="1000" />
+				<Component Subtype="MilitaryPlateAWE" Count="1000" />
 			</Components>
 			<CriticalComponent Index="0" Subtype="Computer"/>
 			<MountPoints>
@@ -4056,7 +4110,7 @@ Size: 5x9x61
 			<SubtypeId>ARYXMace</SubtypeId>
 		</Id>
 		<DisplayName>L82 Mace Combat Shotgun</DisplayName>
-		<Description>The Mace is a heavy combat shotgun that fires 150mm Buckshot rounds, dealing unfathomable damage to close-up enemies. This fire comes at the cost of substantial falloff beyond 100m range, however. [Accepts 150mm Buckshot (Kinetic).]</Description>	
+		<Description>The Mace is a heavy combat shotgun that fires 150mm Buckshot rounds, dealing massive damage to close-up enemies. This fire comes at the cost of substantial falloff beyond 100m range, however. [Accepts 150mm Buckshot (Kinetic).]</Description>	
 		<Icon>Textures\GUI\Icons\AWEMaceShotgun.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -4070,7 +4124,7 @@ Size: 5x9x61
 			<Component Subtype="LargeTube" Count="8" />					
 			<Component Subtype="Computer" Count="150" />
 			<Component Subtype="Construction" Count="90" />
-			<Component Subtype="SteelPlate" Count="100" />
+			<Component Subtype="MilitaryPlateAWE" Count="100" />
 		</Components>
 		<CriticalComponent Subtype="Computer" Index="0" />
 		<MountPoints>
@@ -4229,7 +4283,7 @@ Size: 5x9x61
         <Component Subtype="SteelPlate" Count="3500" />
         <Component Subtype="Construction" Count="1000" />
         <Component Subtype="Superconductor" Count="4000" />
-        <Component Subtype="ElectromagnetAWE" Count="1500" />		
+        <Component Subtype="SuperchargerAWE" Count="500" />		
         <Component Subtype="MetalGrid" Count="600" />
         <Component Subtype="LargeTube" Count="200" />
         <Component Subtype="Motor" Count="400" />
@@ -4387,7 +4441,7 @@ Size: 5x9x61
         <Component Subtype="Motor" Count="200" />
         <Component Subtype="Computer" Count="325" />
         <Component Subtype="Construction" Count="350" />		
-        <Component Subtype="SteelPlate" Count="1000" />
+        <Component Subtype="MilitaryPlateAWE" Count="1000" />
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -4444,7 +4498,7 @@ Size: 5x9x61
         <Component Subtype="Motor" Count="200" />
         <Component Subtype="Computer" Count="250" />
         <Component Subtype="Construction" Count="100" />		
-        <Component Subtype="SteelPlate" Count="500" />	
+        <Component Subtype="MilitaryPlateAWE" Count="500" />	
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -4501,7 +4555,7 @@ Size: 5x9x61
         <Component Subtype="Motor" Count="80" />
         <Component Subtype="Computer" Count="250" />
         <Component Subtype="Construction" Count="50" />		
-        <Component Subtype="SteelPlate" Count="225" />		
+        <Component Subtype="MilitaryPlateAWE" Count="225" />		
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>
@@ -4765,7 +4819,7 @@ Size: 5x9x61
         <Component Subtype="Motor" Count="120" />	
         <Component Subtype="Computer" Count="150" />
         <Component Subtype="MetalGrid" Count="100" />	
-        <Component Subtype="SteelPlate" Count="500" />		
+        <Component Subtype="SteelPlate" Count="250" />		
       </Components>
       <CriticalComponent Subtype="Computer" Index="0" />
 			<MountPoints>

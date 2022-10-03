@@ -134,8 +134,11 @@
     <Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncher/ARYXWindfallCannon" />	
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXSmallBombBay" />		
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXArgusLaser" />		
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncher/ARYXStormCannon" />
 
 		<!--COMPONENTS-->			
 	<Entry Class="Components" BlueprintSubtypeId="AWE_ElectromagnetBP" />
+	<Entry Class="Components" BlueprintSubtypeId="AWE_SuperchargerBP" />	
+	<Entry Class="Components" BlueprintSubtypeId="AWE_MilitaryPlateBP" />	
    </BlueprintClassEntries>
 </Definitions>
