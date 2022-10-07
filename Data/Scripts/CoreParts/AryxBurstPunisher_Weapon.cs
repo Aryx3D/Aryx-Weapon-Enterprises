@@ -76,7 +76,7 @@ namespace Scripts {
                 PartName = "Punisher Burst Cannon", // name of weapon in terminal, should be unique for each weapon definition that shares a SubtypeId (i.e. multiweapons)
                 DeviateShotAngle = 0.1f,
                 AimingTolerance = 1f, // 0 - 180 firing angle
-                AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
+                AimLeadingPrediction = Advanced, // Off, Basic, Accurate, Advanced
                 DelayCeaseFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AddToleranceToTracking = false,
                 CanShootSubmerged = false,
@@ -190,7 +190,7 @@ namespace Scripts {
                             Restart = false,
                             MaxDistance = 500,
                             MaxDuration = 0,
-                            Scale = 1f,
+                            Scale = 0.5f,
                         },
                     },
                 },
