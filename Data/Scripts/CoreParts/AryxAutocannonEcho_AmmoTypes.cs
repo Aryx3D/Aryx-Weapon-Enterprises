@@ -323,7 +323,7 @@ namespace Scripts
                 Lines = new LineDef
                 {
                     ColorVariance = Random(start: -0.75f, end: 2f), // multiply the color by random values within range.
-                    WidthVariance = Random(start: 0f, end: 0.1f), // adds random value to default width (negatives shrinks width)
+                    WidthVariance = Random(start: 0f, end: 0.2f), // adds random value to default width (negatives shrinks width)
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
