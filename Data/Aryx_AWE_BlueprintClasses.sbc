@@ -12,7 +12,9 @@
 	<Entry Class="Consumables" BlueprintSubtypeId="AWEWhirlwind120AmmoBP" />		
 	<Entry Class="Consumables" BlueprintSubtypeId="AWESabreMissileBP" />	
 	<Entry Class="Consumables" BlueprintSubtypeId="AWE85mmAmmoBP" />
+	<Entry Class="Consumables" BlueprintSubtypeId="AWEShrikeBombBP" />	
 
+	
 	<Entry Class="Consumables" BlueprintSubtypeId="AWEStormriderDroneBP" />		
 	<Entry Class="Consumables" BlueprintSubtypeId="AWESidekickDroneBP" />	
 	<Entry Class="Consumables" BlueprintSubtypeId="AWEFalconDroneBP" />
@@ -53,7 +55,8 @@
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEHyperionTorpedoBP" />	
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEGladiusMissileAmmoBP" />		
 	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEAvalanche1000AmmoBP" />	
-	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEStarfallMissileAmmooBP" />	
+	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEStarfallMissileAmmooBP" />
+	<Entry Class="EliteConsumables" BlueprintSubtypeId="AWEShrikeBombBP" />		
 
 
 		<!--BLOCKS-->

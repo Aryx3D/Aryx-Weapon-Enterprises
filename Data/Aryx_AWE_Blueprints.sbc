@@ -462,6 +462,26 @@
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AWEShrikeBombBP</SubtypeId>
+      </Id>
+      <DisplayName>Shrike Fusion Bomb</DisplayName>
+      <Icon>Textures\GUI\Icons\ammo\AWEShrikeAmmo.dds</Icon>
+      <Prerequisites>
+        <Item Amount="200" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="100" TypeId="Ingot" SubtypeId="Nickel" />
+	    <Item Amount="35" TypeId="Ingot" SubtypeId="Cobalt" />	
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Silver" />
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Uranium" />		
+			
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="AWEShrikeBombAmmoMag" />
+      <BaseProductionTimeInSeconds>32</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>900mmTorpedoBP</SubtypeId>
       </Id>
       <DisplayName>SK99 Devastator Torpedo</DisplayName>

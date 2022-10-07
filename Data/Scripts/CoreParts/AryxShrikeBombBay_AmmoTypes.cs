@@ -31,7 +31,7 @@ namespace Scripts
 
         private AmmoDef AryxShrikeBomb => new AmmoDef
         {
-            AmmoMagazine = "AWE1000mmMortarShellAmmoMag", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
+            AmmoMagazine = "AWEShrikeBombAmmoMag", // SubtypeId of physical ammo magazine. Use "Energy" for weapons without physical ammo.
             AmmoRound = "Shrike Bomb", // Name of ammo in terminal, should be different for each ammo type used by the same weapon.
             HybridRound = false, // Use both a physical ammo magazine and energy per shot.
             EnergyCost = 0.1f, // Scaler for energy per shot (EnergyCost * BaseDamage * (RateOfFire / 3600) * BarrelsPerShot * TrajectilesPerBarrel). Uses EffectStrength instead of BaseDamage if EWAR.

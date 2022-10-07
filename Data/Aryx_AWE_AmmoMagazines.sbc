@@ -495,6 +495,31 @@
         <AmmoMagazine>
             <Id>
                 <TypeId>AmmoMagazine</TypeId>
+                <SubtypeId>AWEShrikeBombAmmoMag</SubtypeId>
+            </Id>
+            <DisplayName>Shrike Fusion Bomb</DisplayName>
+            <Icon>Textures\GUI\Icons\ammo\AWEShrikeAmmo.dds</Icon>
+            <Size>
+                <X>0.25</X>
+                <Y>1</Y>
+                <Z>0.25</Z>
+            </Size>
+            <Mass>180</Mass>
+            <Volume>80</Volume>
+            <Model>Models\AWE_Shrike\ARYX_ShrikeBomb.mwm</Model>
+            <PhysicalMaterial>Ammo</PhysicalMaterial>
+            <Capacity>1</Capacity>
+            <AmmoDefinitionId Subtype="AWE600mmCannonAmmoDef" />
+
+            <MinimumOfferAmount>50</MinimumOfferAmount>
+            <MaximumOfferAmount>500</MaximumOfferAmount>
+            <MinimumOrderAmount>50</MinimumOrderAmount>
+            <MaximumOrderAmount>500</MaximumOrderAmount>
+            <CanPlayerOrder>true</CanPlayerOrder>
+        </AmmoMagazine>			
+        <AmmoMagazine>
+            <Id>
+                <TypeId>AmmoMagazine</TypeId>
                 <SubtypeId>AWE1000mmMortarShellAmmoMag</SubtypeId>
             </Id>
             <DisplayName>1000mm "Fat Man" Mortar Shell</DisplayName>
