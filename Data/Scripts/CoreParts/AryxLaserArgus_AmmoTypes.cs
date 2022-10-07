@@ -190,13 +190,13 @@ namespace Scripts
                 },
                 Lines = new LineDef
                 {
-                    ColorVariance = Random(start: 0.75f, end: 2f), // multiply the color by random values within range.
-                    WidthVariance = Random(start: 0f, end: 1.025f), // adds random value to default width (negatives shrinks width)
+                    ColorVariance = Random(start: -0.75f, end: 2f), // multiply the color by random values within range.
+                    WidthVariance = Random(start: 0f, end: 0.1f), // adds random value to default width (negatives shrinks width)
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
                         Length = 1f,
-                        Width = 0.00025f,
+                        Width = 0.025f,
                         Color = Color(red: 25, green: 7f, blue: 7, alpha: 1),
                         VisualFadeStart = 30, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 30, // How many ticks after fade began before it will be invisible.
@@ -214,7 +214,7 @@ namespace Scripts
                             SegmentGap = 0, // Uses Tracer textures and values
                             Speed = 120f, // meters per second
                             Color = Color(red: 25, green: 7, blue: 7, alpha: 0.75f),
-                            WidthMultiplier = 0.25f,
+                            WidthMultiplier = 0.125f,
                             Reverse = false,
                             UseLineVariance = true,
                             WidthVariance = Random(start: -0.05f, end: 0f),
