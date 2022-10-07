@@ -191,7 +191,7 @@ namespace Scripts
                         Name = "AryxAWE_StarfallTrail", //AryxAWE_StarfallTrail
                         ShrinkByDistance = false,
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: 6),
+                        Offset = Vector(x: 0, y: 0, z: 7),
                         Extras = new ParticleOptionDef
                         {
                             Loop = true,
@@ -424,7 +424,7 @@ namespace Scripts
                         Name = "AryxAWE_StarfallTrail", //ShipWelderArc
                         ShrinkByDistance = false,
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: 6),
+                        Offset = Vector(x: 0, y: 0, z: 7),
                         Extras = new ParticleOptionDef
                         {
                             Loop = true,
@@ -675,15 +675,15 @@ namespace Scripts
                 {
                     Ammo = new ParticleDef
                     {
-                        Name = "AryxLargeMissileTrail", //AryxAWE_StarfallTrail
+                        Name = "AryxAWE_StarfallTrail", //AryxAWE_StarfallTrail
                         ShrinkByDistance = false,
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: 6),
+                        Offset = Vector(x: 0, y: 0, z: 7),
                         Extras = new ParticleOptionDef
                         {
                             Loop = true,
                             Restart = false,
-                            MaxDistance = 2000,
+                            MaxDistance = 5000,
                             MaxDuration = 0,
                             Scale = 1f,
                         },
