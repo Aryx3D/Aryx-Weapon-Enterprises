@@ -599,7 +599,7 @@
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>AWE_SuperchargerBP</SubtypeId>
       </Id>
-      <DisplayName>Electromagnet</DisplayName>
+      <DisplayName>Supercharger</DisplayName>
       <Icon>Textures\GUI\Icons\component\Supercharger.dds</Icon>
       <Prerequisites>
         <Item Amount="150" TypeId="Ingot" SubtypeId="Iron" />
