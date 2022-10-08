@@ -52,7 +52,7 @@ namespace Scripts {
                 MaxTargetDistance = 15000, // Maximum distance at which targets will be automatically shot at; 0 = unlimited.
                 MinTargetDistance = 3000, // Minimum distance at which targets will be automatically shot at.
                 TopTargets = 1, // Maximum number of targets to randomize between; 0 = unlimited.
-                TopBlocks = 10, // Maximum number of blocks to randomize between; 0 = unlimited.
+                TopBlocks = 24, // Maximum number of blocks to randomize between; 0 = unlimited.
                 StopTrackingSpeed = 0, // Do not track threats traveling faster than this speed; 0 = unlimited.
             },
             HardPoint = new HardPointDef
@@ -88,7 +88,7 @@ namespace Scripts {
                     ElevateRate = 0.001f, // Max traversal speed of elevation subpart in radians per tick.
                     MinAzimuth = -180,
                     MaxAzimuth = 180,
-                    MinElevation = 22,
+                    MinElevation = 0,
                     MaxElevation = 90,
                     HomeAzimuth = 0, // Default resting rotation angle
                     HomeElevation = 22, // Default resting elevation
