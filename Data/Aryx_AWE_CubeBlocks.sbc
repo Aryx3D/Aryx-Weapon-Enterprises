@@ -485,7 +485,7 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxJudgeCannon.dds</Icon>	  
-      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. [2KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP - Energy HE).]</Description>
+      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. [3KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP - Energy HE).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="2" z="3" />
@@ -541,7 +541,7 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxJudgeCannon.dds</Icon>  
-      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. [2KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP - Energy HE).]</Description>
+      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. [3KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP - Energy HE).]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="15" y="10" z="15" />
@@ -597,7 +597,7 @@
       </Id>
       <DisplayName>BR-RT7 "Punisher" Slanted Burst Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_SlantedBurstCannon.dds</Icon>	  
-      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. This variant is slanted for 2x1 slopes. [2KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP / Energy HE).]</Description>
+      <Description>The Punisher is a heavy armoured cannon that fires bursts of eight 70mm rounds, providing high fire density in order to take down lightly-armoured enemy grids. This variant is slanted for 2x1 slopes. [3KM RANGE - Accepts 70mm Punisher Rounds (Kinetic AP / Energy HE).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="3" />
