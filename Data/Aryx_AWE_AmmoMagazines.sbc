@@ -348,9 +348,9 @@
             <DisplayName>70mm AP/HE Punisher Cartridge</DisplayName>
             <Icon>Textures\GUI\Icons\ammo\AWEJudgeAmmo.dds</Icon>
             <Size>
-                <X>0.6</X>
-                <Y>0.2</Y>
-                <Z>0.2</Z>
+                <X>0.2</X>
+                <Y>0.120</Y>
+                <Z>0.120</Z>
             </Size>
             <Mass>100</Mass>
             <Volume>6</Volume>
@@ -374,9 +374,9 @@
             <DisplayName>120mm Heavy Shell</DisplayName>
             <Icon>Textures\GUI\Icons\ammo\AWEWhirlwindAmmo.dds</Icon>
             <Size>
-                <X>0.4</X>
-                <Y>0.2</Y>
-                <Z>0.2</Z>
+                <X>0.2</X>
+                <Y>0.120</Y>
+                <Z>0.120</Z>
             </Size>
             <Mass>250</Mass>
             <Volume>6</Volume>
