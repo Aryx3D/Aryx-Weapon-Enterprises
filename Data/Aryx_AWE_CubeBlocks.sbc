@@ -1033,7 +1033,7 @@
       </Id>
       <DisplayName>NC7-5F Trident Plasma Beam Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_PlasmaBeamCannon.dds</Icon>	  
-      <Description>The Trident is a heavy energy weapon that fires a dual stream of scorching plasma at targets, dealing huge shield damage and melting armour with ease. [2KM RANGE - HEAVY ENERGY WEAPON]</Description>
+      <Description>The Trident is a heavy energy weapon that fires a dual stream of scorching plasma at targets, dealing huge shield damage and melting armour with ease. [4KM RANGE - HEAVY ENERGY WEAPON]</Description>
  		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="5" y="5" z="5"/>
@@ -1149,14 +1149,16 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXOculusLaserBase</SubtypeId>
 		</Id>
-		<DisplayName>Oculus Orb-PD Laser</DisplayName>
+		<!--DisplayName>Oculus Orb-PD Laser</DisplayName-->
+		<DisplayName>Jack-O Laser</DisplayName>		
 		<Description>The Oculus is a ball-axis point defence laser designed to shoot down incoming missiles and lightly armoured targets. In non-PD roles, it serves as an anti-shield laser. [1.5KM RANGE - Energy Weapon]</Description>
 		<Icon>Textures\GUI\Icons\AWEOculusPD.dds</Icon>			
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="1" y="1" z="1"/>
 		<ModelOffset x="0" y="0" z="0"/>
-		<Model>Models\AWE_Oculus\ARYXOculusLaserBase.mwm</Model>
+		<!--Model>Models\AWE_Oculus\ARYXOculusLaserBase.mwm</Model-->
+		<Model>Models\AWE_Memes\ARYXOculusLaserBase_Halloween.mwm</Model>		
 		<Components>
 			<Component Subtype="SteelPlate" Count="100" />
 			<Component Subtype="Construction" Count="50" />
@@ -3224,9 +3226,8 @@
 			<Id>
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>ARYXPlasmaPulser</SubtypeId>
-			</Id>
-			<!--Highly Energised Lance Integrated Offensive System-->	
-			<DisplayName>M5D-4E Helios Plasma Pulser</DisplayName>
+			</Id>	
+			<DisplayName>M5D-4E Helios Plasma Rifle</DisplayName>
 			<Description>The Helios fires disruptive bolts of highly energised, white hot plasma. Extremely effective against shields, struggles against armour. Warranty void if used as a thruster and/or cooking appliance. [10KM TRAVEL - Energy Weapon.]</Description>
 			<Icon>Textures\GUI\Icons\AryxPlasmaGun.dds</Icon>
 			<CubeSize>Large</CubeSize>

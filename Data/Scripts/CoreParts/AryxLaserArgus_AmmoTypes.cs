@@ -29,7 +29,7 @@ namespace Scripts
         private AmmoDef AryxArgusLaserAmmo => new AmmoDef
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "Argus 600nm Laser",
+            AmmoRound = "Argus Laser",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(75f * AWEGlobalDamageScalar),

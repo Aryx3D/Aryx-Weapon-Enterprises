@@ -271,6 +271,12 @@
             <UnlockedByGroups>
                 <GroupSubtype>AWE_Exotics_T1</GroupSubtype>
             </UnlockedByGroups>
+        </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXPhaseRepeaterCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Exotics_T1</GroupSubtype>
+            </UnlockedByGroups>
         </ResearchBlock>		
         <ResearchBlock xsi:type="ResearchBlock">
             <Id Type="ConveyorSorter" Subtype="ARYXGladiatorMissileLauncher" />
@@ -392,6 +398,13 @@
                 <GroupSubtype>0</GroupSubtype>
             </UnlockedByGroups>
         </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="SmallMissileLauncher" Subtype="ARYXStormCannon" />
+            <UnlockedByGroups>
+                <GroupSubtype>0</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+				
 		<!--T2-->
         <ResearchBlock xsi:type="ResearchBlock">
             <Id Type="LargeMissileTurret" Subtype="ARYXCycloneCannon" />
@@ -433,6 +446,12 @@
         </ResearchBlock>	
         <ResearchBlock xsi:type="ResearchBlock">
             <Id Type="SmallMissileLauncher" Subtype="ARYXTempestCannon_SG" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Cannon_T3</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="LargeMissileTurret" Subtype="ARYXSiegeMortarCannon" />
             <UnlockedByGroups>
                 <GroupSubtype>AWE_Cannon_T3</GroupSubtype>
             </UnlockedByGroups>
@@ -504,6 +523,11 @@
                 <GroupSubtype>AWE_Missiles_T4</GroupSubtype>
             </UnlockedByGroups>
         </ResearchBlock>
-		
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYXRocketArtillery" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Missiles_T4</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
     </ResearchBlocks>
 </Definitions>

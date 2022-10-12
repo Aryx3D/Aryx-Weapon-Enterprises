@@ -104,6 +104,7 @@
         <ResearchGroup xsi:type="ResearchGroup">
             <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Exotics_T2" />
             <Members>
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXPhaseRepeaterCannon" />				
                 <BlockId Type="LargeMissileTurret" Subtype="ARYXReaperPulseCannon" />		
             </Members>
         </ResearchGroup>		
@@ -177,6 +178,7 @@
             <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Cannon_T1" />
             <Members>
                 <BlockId Type="LargeMissileTurret" Subtype="ARYXJuryCannon" />
+				<BlockId Type="SmallMissileLauncher" Subtype="ARYXStormCannon" />
             </Members>
         </ResearchGroup>
         <ResearchGroup xsi:type="ResearchGroup">

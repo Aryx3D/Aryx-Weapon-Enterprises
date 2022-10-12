@@ -29,7 +29,7 @@ namespace Scripts
         private AmmoDef AryxEyeballLaserAmmo => new AmmoDef
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "590nm Laser",
+            AmmoRound = "Spooky Laser",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(6.25f * AWEGlobalDamageScalar),
@@ -310,7 +310,7 @@ namespace Scripts
                         Enable = true,
                         Length = 1f,
                         Width = 0.0005f,
-                        Color = Color(red: 25, green: 7f, blue: 7, alpha: 1),
+                        Color = Color(red: 25, green: 12f, blue: 7, alpha: 1),
                         VisualFadeStart = 30, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 30, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
