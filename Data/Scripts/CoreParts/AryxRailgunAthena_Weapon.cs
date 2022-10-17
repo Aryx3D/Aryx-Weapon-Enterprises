@@ -23,14 +23,13 @@ namespace Scripts {
                         AzimuthPartId = "MissileTurretBase1",
                         ElevationPartId = "MissileTurretBarrels",
                         DurabilityMod = 0.25f, // GeneralDamageMultiplier, 0.25f = 25% damage taken.
-                        IconName = "TestIcon.dds" // Overlay for block inventory slots, like reactors, refineries, etc.
                     },
                 },
                 Muzzles = new[] {
                     "muzzle_projectile_1",
                 },
                 Ejector = "", // Optional; empty from which to eject "shells" if specified.
-                Scope = "", // Where line of sight checks are performed from. Must be clear of block collision.
+                Scope = "muzzle_projectile_1", // Where line of sight checks are performed from. Must be clear of block collision.
             },
             Targeting = new TargetingDef
             {
@@ -49,7 +48,7 @@ namespace Scripts {
                 MinTargetDistance = 0, // Minimum distance at which targets will be automatically shot at.
                 TopTargets = 4, // Maximum number of targets to randomize between; 0 = unlimited.
                 TopBlocks = 4, // Maximum number of blocks to randomize between; 0 = unlimited.
-                StopTrackingSpeed = 1000, // Do not track threats traveling faster than this speed; 0 = unlimited.
+                StopTrackingSpeed = 0, // Do not track threats traveling faster than this speed; 0 = unlimited.
             },
             HardPoint = new HardPointDef
             {
@@ -89,7 +88,7 @@ namespace Scripts {
                     HomeAzimuth = 0, // Default resting rotation angle
                     HomeElevation = 0, // Default resting elevation
                     InventorySize = 1f, // Inventory capacity in kL.
-                    IdlePower = 0.05f, // Constant base power draw in MW.
+                    IdlePower = 1, // Constant base power draw in MW.
                     FixedOffset = false, // Deprecated.
                     Offset = Vector(x: 0, y: 0, z: 0), // Offsets the aiming/firing line of the weapon, in metres.
                     Type = BlockWeapon, // What type of weapon this is; BlockWeapon, HandWeapon, Phantom 

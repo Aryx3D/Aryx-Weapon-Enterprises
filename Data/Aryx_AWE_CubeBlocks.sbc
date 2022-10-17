@@ -9,7 +9,11 @@
       </Id>
       <DisplayName>M240 Cyclone Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>
-      <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
+      <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]
+	  Effects: Fires low velocity shells that explode on impact and deal heavy fragmentation damage.
+	  Size: 3x2x3
+	  Role: Assault
+	  </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="2" z="3" />
@@ -59,7 +63,11 @@
       </Id>
       <DisplayName>M240 Cyclone Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxCycloneCannon.dds</Icon>	  
-      <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]</Description>
+      <Description>The Cyclone is a turreted artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 240mm Heavy Shells (Kinetic).]
+	  Effects: Fires low velocity shells that explode on impact and deal heavy fragmentation damage.
+	  Size: 15x10x15 (lol)
+	  Role: Assault
+	  </Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="15" y="10" z="15" />
@@ -109,7 +117,11 @@
       </Id>
       <DisplayName>M480 Hurricane Strike Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxHurricaneCannon.dds</Icon>	  
-      <Description>The Hurricane is a turreted, double barrel artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]</Description>
+      <Description>The Hurricane is a turreted, double barrel artillery piece capable of dealing massive ballistic damage to targets from long-range. [800m/s muzzle velocity, 4km range - Accepts 480mm Heavy Shells (Kinetic).]
+	  Effects: Fires low velocity shells that explode on impact and deal heavy fragmentation damage.
+	  Size: 5x3x5
+	  Role: Assault
+	  </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="5" y="3" z="5"/>
@@ -3667,7 +3679,11 @@
 			<SubtypeId>ARYXLightCoilgun</SubtypeId>
 		</Id>
 		<DisplayName>LC7 Hunter-405 Coilgun</DisplayName>
-		<Description>Coilguns are sniper weapons that deliver a hefty punch at relativistic velocity, though the rounds lose velocity over range. [10KM TRAVEL, 6KM FALLOFF - Accepts 405mm Ferrous. (Kinetic)]</Description>	
+		<Description>Coilguns are sniper weapons that deliver a hefty punch at relativistic velocity, though the rounds lose velocity over range. [10KM TRAVEL, 6KM FALLOFF - Accepts 405mm Ferrous. (Kinetic)]
+		Effects: Fires a hitscan kinetic slug that explodes on impact and penetrates 5 blocks of heavy armour.
+		Size: 1x2x15
+		Role: Sniper
+		</Description>	
 		<Icon>Textures\GUI\Icons\Aryx_AWE_LightCoilgun.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -3726,7 +3742,11 @@
 			<SubtypeId>ARYXHeavyCoilgun</SubtypeId>
 		</Id>
 		<DisplayName>E0-F Predator-850 Coilgun</DisplayName>
-		<Description>The Predator Coilgun is a massive sniper weapon that delivers a massive punch at relativistic velocity, though the rounds lose velocity over range. [10KM TRAVEL, 6KM FALLOFF - Accepts 850mm Ferrous. (Kinetic)]</Description>	
+		<Description>The Predator Coilgun is a massive sniper weapon that delivers a massive punch at relativistic velocity, though the rounds lose damage over range. [10KM TRAVEL, 6KM FALLOFF - Accepts 850mm Ferrous. (Kinetic)]
+		Effects: Fires a hitscan kinetic slug that explodes on impact and penetrates 8 blocks of heavy armour.
+		Size: 3x2x21
+		Role: Heavy Sniper
+		</Description>	
 		<Icon>Textures\GUI\Icons\Aryx_AWE_HeavyCoilgun.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>

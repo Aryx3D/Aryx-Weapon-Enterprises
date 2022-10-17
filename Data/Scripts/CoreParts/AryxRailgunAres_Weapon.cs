@@ -53,7 +53,7 @@ namespace Scripts
             },
             HardPoint = new HardPointDef 
             {
-                PartName = "Ares 1200mm Gauss Cannon", // name of weapon in terminal
+                PartName = "Ares 1200mm Heavy Railgun", // name of weapon in terminal
                 DeviateShotAngle = 0,
                 AimingTolerance = 1f, // 0 - 180 firing angle
                 AimLeadingPrediction = Accurate, // Off, Basic, Accurate, Advanced
