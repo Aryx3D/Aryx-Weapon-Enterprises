@@ -5111,7 +5111,7 @@ Size: 5x9x61
 			</Id>
 			<DisplayName>Sabre Missile</DisplayName>
 			<Icon>Textures\GUI\Icons\Aryx_AWE_SabreMissile.dds</Icon>	  
-			<Description>Sabres are guided missiles that deal a decent punch of explosive damage on impact. Whilst vulnerable to point defence, these missiles can spell a death sentence if a direct hit is scored. [5KM RANGE - SINGLE USE.]
+			<Description>Sabres are guided missiles that deal a decent punch of explosive damage on impact. Whilst vulnerable to point defence, these missiles can spell a death sentence if a direct hit is scored. [5KM RANGE - SINGLE USE. NO MIN-DISTANCE.]
 			Effects: Fires a single explosive missile then despawns its block.
 			Size: 1x1x6
 			Role: Guided Anti-armour
