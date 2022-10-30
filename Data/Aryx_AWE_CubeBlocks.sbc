@@ -2548,7 +2548,13 @@
 		</Id>
 		<DisplayName>M-1000 Avalanche Siege Mortar</DisplayName>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_SiegeMortar.dds</Icon>
-		<Description>The Avalanche is a tremendously powerful gimballed siege mortar cannon that fires heavy ballistic projectiles with high explosive warheads. Whilst slow on the muzzle velocity and traversal, the mere presence of such a devastating weapon is enough to ensure psychological victory. [5KM RANGE - Accepts Fat Man Mortar Shells (Kinetic)]</Description>	
+		<Description>The Avalanche is a tremendously powerful gimballed siege mortar cannon that fires heavy ballistic projectiles with high explosive warheads. Whilst slow on the muzzle velocity and traversal, the mere presence of such a devastating weapon is enough to ensure psychological victory. [5KM RANGE - Accepts Fat Man Mortar Shells (Kinetic)]
+		Effects: If you thought the Tempest does a shitload of damage per shot, this thing does ten shitloads.
+		Size: 5x3x8
+		Role: Assault
+		Hardpoint: Limited-angle
+		Type: Mortar Cannon	
+		</Description>	
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="5" y="3" z="8"/>

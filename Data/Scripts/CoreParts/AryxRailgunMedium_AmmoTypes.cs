@@ -116,13 +116,13 @@ namespace Scripts
                     {
                         new CustomBlocksDef
                         {
-                            SubTypeId = "Test1",
-                            Modifier = -1f,
+                            SubTypeId = "LargeBlockGyro",
+                            Modifier = 5f,
                         },
                         new CustomBlocksDef
                         {
-                            SubTypeId = "Test2",
-                            Modifier = -1f,
+                            SubTypeId = "SmallBlockGyro",
+                            Modifier = 5f,
                         },
                     },
                 },
