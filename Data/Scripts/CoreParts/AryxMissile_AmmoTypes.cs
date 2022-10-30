@@ -169,7 +169,7 @@ namespace Scripts
             },
             AmmoGraphics = new GraphicDef
             {
-                ModelName = "\\Models\\AWE_Ammo\\AryxSabreMissile.mwm",
+                ModelName = "\\Models\\AWE_Ammo\\AryxNewSabreMissile.mwm",
                 VisualProbability = 1f,
                 ShieldHitDraw = true,
                 Particles = new AmmoParticleDef
@@ -624,7 +624,7 @@ namespace Scripts
             },
             AmmoGraphics = new GraphicDef
             {
-                ModelName = "\\Models\\AWE_Ammo\\AryxSabreMissile.mwm",
+                ModelName = "\\Models\\AWE_Ammo\\AryxNewSabreMissile.mwm",
                 VisualProbability = 1f,
                 ShieldHitDraw = true,
                 Particles = new AmmoParticleDef
@@ -949,7 +949,7 @@ namespace Scripts
             },
             AmmoGraphics = new GraphicDef
             {
-                ModelName = "\\Models\\AWE_Ammo\\AryxSabreMissile.mwm",
+                ModelName = "\\Models\\AWE_Ammo\\AryxNewSabreMissile.mwm",
                 VisualProbability = 1f,
                 ShieldHitDraw = true,
                 Particles = new AmmoParticleDef

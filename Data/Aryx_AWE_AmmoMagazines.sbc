@@ -638,7 +638,7 @@
             </Size>
             <Mass>250</Mass>
             <Volume>5</Volume>
-            <Model>Models\AWE_Ammo\AryxSabreMissile.mwm</Model>
+            <Model>Models\AWE_Ammo\AryxNewSabreMissile.mwm</Model>
             <PhysicalMaterial>Ammo</PhysicalMaterial>
             <Capacity>1</Capacity>
             <AmmoDefinitionId Subtype="AWESabreMissileAmmoDef" />

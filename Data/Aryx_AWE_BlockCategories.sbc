@@ -86,7 +86,8 @@
 		<string>ConveyorSorter/ARYXSmallBombBay</string>	
 		<string>ConveyorSorter/ARYXRocketArtillery</string>		
 		<string>SmallMissileLauncher/ARYXStormCannon</string>	
-		
+		<string>ConveyorSorter/ARYX_SabreMissileHardpoint</string>			
+	
       </ItemIds>
     </Category> 
     <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
@@ -171,7 +172,8 @@
 		<string>ConveyorSorter/ARYXSmallBombBay</string>			
 		<string>ConveyorSorter/ARYXRocketArtillery</string>
 		<string>SmallMissileLauncher/ARYXStormCannon</string>			
-	
+		<string>ConveyorSorter/ARYX_SabreMissileHardpoint</string>		
+		
 	  </ItemIds>
     </Category>
 	
@@ -258,6 +260,7 @@
 		<string>ConveyorSorter/ARYXSmallBombBay</string>	
 		<string>ConveyorSorter/ARYXRocketArtillery</string>	
 		<string>SmallMissileLauncher/ARYXStormCannon</string>			
+		<string>ConveyorSorter/ARYX_SabreMissileHardpoint</string>		
 		
 	</ItemIds>
     </Category> 
@@ -364,6 +367,7 @@
 		<string>ConveyorSorter/ARYXArgusLaser</string>	
 		<string>ConveyorSorter/ARYXSmallBombBay</string>
 		<string>SmallMissileLauncher/ARYXStormCannon</string>			
+		<string>ConveyorSorter/ARYX_SabreMissileHardpoint</string>		
 		
       </ItemIds>
     </Category>  	

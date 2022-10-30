@@ -5079,6 +5079,79 @@ Size: 5x9x61
       </TargetingGroups>      
     </Definition>
 
-
+		<Definition >
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>ARYXSabreMissileRail</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_ARYXSabreMissileRail}</DisplayName>
+			<Description>{LOC:Description_ARYXSabreMissileRail}</Description>
+			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="6"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\AWE_Longbow\ARYXSabreMissileRail.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="10"/>
+			</Components>
+			<CriticalComponent Subtype="SteelPlate" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Top" StartX="0.00" StartY="1.50" EndX="1.00" EndY="4.50"/>
+			</MountPoints>
+			<BlockPairName>ARYXSabreMissileRail</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>ARYX_SabreMissileHardpoint</SubtypeId>
+			</Id>
+			<DisplayName>Sabre Missile</DisplayName>
+			<Icon>Textures\GUI\Icons\Aryx_AWE_SabreMissile.dds</Icon>	  
+			<Description>Sabres are guided missiles that deal a decent punch of explosive damage on impact. Whilst vulnerable to point defence, these missiles can spell a death sentence if a direct hit is scored. [5KM RANGE - SINGLE USE.]
+			Effects: Fires a single explosive missile then despawns its block.
+			Size: 1x1x6
+			Role: Guided Anti-armour
+			Hardpoint: Single-use fixed
+			Type: Missile
+			</Description>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="6"/>
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\AWE_Longbow\ARYXSabreMissileRail.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="5" />
+				<Component Subtype="Construction" Count="5" />
+				<Component Subtype="MetalGrid" Count="5" />
+				<Component Subtype="LargeTube" Count="8" />
+				<Component Subtype="Computer" Count="10" />
+				<Component Subtype="Explosives" Count="20" />	
+				<Component Subtype="SteelPlate" Count="5" />			
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Top" StartX="0.00" StartY="1.50" EndX="1.00" EndY="4.50"/>
+			</MountPoints>
+			<BlockPairName>ARYXSabreMissileRail</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<BuildTimeSeconds>15</BuildTimeSeconds>
+			<GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+			<EdgeType>Light</EdgeType>  
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<InventoryMaxVolume>0.144</InventoryMaxVolume>
+			<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<PCU>80</PCU>      
+			<TargetingGroups>
+				<string>Weapons</string>
+			</TargetingGroups>      
+		</Definition>			
 	</CubeBlocks>
 </Definitions>
