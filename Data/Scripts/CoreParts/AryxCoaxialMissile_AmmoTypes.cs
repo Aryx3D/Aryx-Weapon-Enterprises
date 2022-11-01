@@ -129,14 +129,6 @@ namespace Scripts
                     Shape = Diamond, // Round or Diamond
                 },
             },
-            Beams = new BeamDef
-            {
-                Enable = false, // Enable beam behaviour.
-                VirtualBeams = false, // Only one damaging beam, but with the effectiveness of the visual beams combined (better performance).
-                ConvergeBeams = false, // When using virtual beams, converge the visual beams to the location of the real beam.
-                RotateRealBeam = false, // The real beam is rotated between all visual beams, instead of centered between them.
-                OneParticle = false, // Only spawn one particle hit per beam weapon.
-            },
             Trajectory = new TrajectoryDef
             {
                 Guidance = Smart, // None, Remote, TravelTo, Smart, DetectTravelTo, DetectSmart, DetectFixed
@@ -189,38 +181,7 @@ namespace Scripts
                             Scale = 0.75f,
                         },
                     },
-                    Hit = new ParticleDef
-                    {
-                        Name = "",
-                        ApplyToShield = true,
-                        ShrinkByDistance = false,
-                        Color = Color(red: 2.5f, green: 2f, blue: 1f, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: 0),
-                        Extras = new ParticleOptionDef
-                        {
-                            Restart = false,
-                            MaxDistance = 500,
-                            MaxDuration = 0,
-                            Scale = 1,
-                            HitPlayChance = 0.75f,
-                        },
-                    },
-                    Eject = new ParticleDef
-                    {
-                        Name = "",
-                        ApplyToShield = true,
-                        ShrinkByDistance = false,
-                        Color = Color(red: 3, green: 1.9f, blue: 1f, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: 0),
-                        Extras = new ParticleOptionDef
-                        {
-                            Restart = false,
-                            MaxDistance = 5000,
-                            MaxDuration = 30,
-                            Scale = 1,
-                            HitPlayChance = 1f,
-                        },
-                    },
+
                 },
                 Lines = new LineDef
                 {
