@@ -194,13 +194,13 @@
       <Volume>1.5</Volume>
       <Waves>
         <Wave Type="D3">
-          <Start>Audio\Aryx\gatlings\Aryx_Lambda_fire_01.wav</Start>
+          <Start>Audio\Aryx\gatlings\aryx_rampart_fire_01.wav</Start>
         </Wave>
         <Wave Type="D3">
-          <Start>Audio\Aryx\gatlings\Aryx_Lambda_fire_02.wav</Start>
+          <Start>Audio\Aryx\gatlings\aryx_rampart_fire_02.wav</Start>
         </Wave>
         <Wave Type="D3">
-          <Start>Audio\Aryx\gatlings\Aryx_Lambda_fire_03.wav</Start>
+          <Start>Audio\Aryx\gatlings\aryx_rampart_fire_03.wav</Start>
         </Wave>	
       </Waves>
     </Sound>
