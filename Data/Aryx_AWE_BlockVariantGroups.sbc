@@ -57,7 +57,7 @@
 		
         <BlockVariantGroup>
             <Id Type="MyObjectBuilder_BlockVariantGroup" Subtype="AWERadars" />
-			<Icon>Textures\GUI\Icons\ARYX_LargeRadar.dds</Icon>
+			<Icon>Textures\GUI\Icons\Aryx_AWE_LargeRadar.dds</Icon>
             <DisplayName>Radar Systems</DisplayName>
             <Description>Long-range radars.</Description>
             <Blocks>

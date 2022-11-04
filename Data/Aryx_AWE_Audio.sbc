@@ -899,28 +899,7 @@
           <Start>Audio\Aryx\misc\aryx_reaper_fire_02.wav</Start>
         </Wave>
       </Waves>
-    </Sound> 	
-	
-    <Sound>
-      <Id>
-        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
-        <SubtypeId>ArcWepShipARYXReaper_windup</SubtypeId>
-      </Id>
-      <Category>SHOT</Category>
-      <MaxDistance>600</MaxDistance>
-      <PreventSynchronization>0</PreventSynchronization>
-      <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
-      <DynamicMusicAmount>3</DynamicMusicAmount>
-      <Volume>0.9</Volume>
-      <Waves>
-        <Wave Type="D3">
-          <Start>Audio\Aryx\aryx_reaper_windup_01.wav</Start>
-        </Wave>
-
-      </Waves>
     </Sound> 		
-	
-	
     <Sound>
       <Id>
         <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
