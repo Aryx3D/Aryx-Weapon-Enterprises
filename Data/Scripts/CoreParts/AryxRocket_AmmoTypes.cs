@@ -288,7 +288,7 @@ namespace Scripts
                             Restart = false,
                             MaxDistance = 2000,
                             MaxDuration = 0,
-                            Scale = 0.5f,
+                            Scale = 1.15f,
                         },
                     },
                     Hit = new ParticleDef
@@ -349,7 +349,7 @@ namespace Scripts
                             SegmentLength = 0f, // Uses the values below.
                             SegmentGap = 0f, // Uses Tracer textures and values
                             Speed = 1f, // meters per second
-                            Color = Color(red: 1, green: 2, blue: 2.5f, alpha: 1),
+                            Color = Color(red: 2, green: 2, blue: 2, alpha: 0.25f),
                             WidthMultiplier = 1f,
                             Reverse = false,
                             UseLineVariance = true,
@@ -365,7 +365,7 @@ namespace Scripts
                         },
                         TextureMode = Normal,
                         DecayTime = 60,
-                        Color = Color(red: 10, green: 6, blue: 1, alpha: 1),
+                        Color = Color(red: 2, green: 2, blue: 2, alpha: 0.25f),
                         Back = false,
                         CustomWidth = 0.1f,
                         UseWidthVariance = false,
@@ -741,7 +741,7 @@ namespace Scripts
                         },
                         TextureMode = Normal,
                         DecayTime = 60,
-                        Color = Color(red: 10, green: 6, blue: 1, alpha: 1),
+                        Color = Color(red: 2, green: 2, blue: 2, alpha: 0.25f),
                         Back = false,
                         CustomWidth = 0.1f,
                         UseWidthVariance = false,
@@ -1118,7 +1118,7 @@ namespace Scripts
                         },
                         TextureMode = Normal,
                         DecayTime = 60,
-                        Color = Color(red: 10, green: 1, blue: 6, alpha: 1),
+                        Color = Color(red: 2, green: 2, blue: 2, alpha: 0.25f),
                         Back = false,
                         CustomWidth = 0.1f,
                         UseWidthVariance = false,
@@ -1494,7 +1494,7 @@ namespace Scripts
                         },
                         TextureMode = Normal,
                         DecayTime = 60,
-                        Color = Color(red: 10, green: 1, blue: 6, alpha: 1),
+                        Color = Color(red: 2, green: 2, blue: 2, alpha: 0.25f),
                         Back = false,
                         CustomWidth = 0.1f,
                         UseWidthVariance = false,

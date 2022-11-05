@@ -177,7 +177,7 @@ namespace Scripts
                     },
                     Effect2 = new ParticleDef
                     {
-                        Name = "Aryx_ATLAS_Muzzleflash",//Muzzle_Flash_Large
+                        Name = "Aryx_NewATLAS_Muzzleflash",//Muzzle_Flash_Large
                         Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0f),
 

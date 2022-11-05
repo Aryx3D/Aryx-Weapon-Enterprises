@@ -1256,8 +1256,7 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXOculusLaserBase</SubtypeId>
 		</Id>
-		<!--DisplayName>Oculus Orb-PD Laser</DisplayName-->
-		<DisplayName>Jack-O Laser</DisplayName>		
+		<DisplayName>Oculus Orb-PD Laser</DisplayName>
 		<Description>The Oculus is a ball-axis point defence laser designed to shoot down incoming missiles and lightly armoured targets. In non-PD roles, it serves as an anti-shield laser. [1.5KM RANGE - Energy Weapon]
 	  Effects: Fires red lasers at incoming ordinance, shooting lighter threats down at long range. Ineffective against drones.
 	  Size: 1x1x1
@@ -5109,7 +5108,7 @@ Size: 5x9x61
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>ARYX_SabreMissileHardpoint</SubtypeId>
 			</Id>
-			<Public>false</Public>
+			<Public>true</Public>
 			<DisplayName>Sabre Missile</DisplayName>
 			<Icon>Textures\GUI\Icons\Aryx_AWE_SabreMissile.dds</Icon>	  
 			<Description>Sabres are guided missiles that deal a decent punch of explosive damage on impact. Whilst vulnerable to point defence, these missiles can spell a death sentence if a direct hit is scored. [5KM RANGE - SINGLE USE. NO MIN-DISTANCE.]
