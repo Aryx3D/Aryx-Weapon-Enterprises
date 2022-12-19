@@ -717,7 +717,7 @@
       </Id>
       <DisplayName>RL6 Hydra Rocket Battery</DisplayName>
       <Icon>Textures\GUI\Icons\AryxHydraTurret.dds</Icon>	  
-      <Description>The Hydra is an armoured rocket pod that fires rapid volleys of 6 guided rockets, with high tracking and a long reload, designed to overwhelm enemy PD and destroy small grids. [1KM MIN RANGE, 5KM MAX RANGE - Accepts Flechette Rockets]
+      <Description>The Hydra is an armoured rocket pod that fires rapid volleys of 6 guided rockets, with high tracking and a long reload, designed to overwhelm enemy PD and destroy small grids. [5KM MAX RANGE - Accepts Flechette Rockets]
 	  Effects: Fires six high-velocity guided rockets best suited for anti-fighter and anti-armour roles.
 	  Size: 3x3x3
 	  Role: Attrition
@@ -1269,8 +1269,7 @@
 		<BlockTopology>TriangleMesh</BlockTopology>
 		<Size x="1" y="1" z="1"/>
 		<ModelOffset x="0" y="0" z="0"/>
-		<!--Model>Models\AWE_Oculus\ARYXOculusLaserBase.mwm</Model-->
-		<Model>Models\AWE_Memes\ARYXOculusLaserBase_Halloween.mwm</Model>		
+		<Model>Models\AWE_Oculus\ARYXOculusLaserBase.mwm</Model>	
 		<Components>
 			<Component Subtype="SteelPlate" Count="100" />
 			<Component Subtype="Construction" Count="50" />
@@ -2248,7 +2247,13 @@
       </Id>
       <DisplayName>Flechette Launcher</DisplayName>
       <Icon>Textures\GUI\Icons\AWEFlechetteLauncher.dds</Icon>  
-      <Description>Flechette Launchers fire guided rockets that track and aim towards targets at high speeds and explode on impact, dealing decent explosive damage. [5KM RANGE - Accepts Flechette Rockets]</Description>
+      <Description>Flechette Launchers fire guided rockets that track and aim towards targets at high speeds and explode on impact, dealing decent explosive damage. [5KM RANGE - Accepts Flechette Rockets]
+			Effects: Fires three compact swarm rockets designed to overwhelm Point Defence.
+			Size: 1x1x1
+			Role: Guided Anti-PD
+			Hardpoint: Missile Launcher
+			Type: Missile
+	  </Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -5078,37 +5083,13 @@ Size: 5x9x61
       </TargetingGroups>      
     </Definition>
 
-		<Definition >
-			<Id>
-				<TypeId>ConveyorSorter</TypeId>
-				<SubtypeId>ARYXSabreMissileRail</SubtypeId>
-			</Id>
-			<DisplayName>{LOC:DisplayName_ARYXSabreMissileRail}</DisplayName>
-			<Description>{LOC:Description_ARYXSabreMissileRail}</Description>
-			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
-			<CubeSize>Small</CubeSize>
-			<BlockTopology>TriangleMesh</BlockTopology>
-			<Size x="1" y="1" z="6"/>
-			<ModelOffset x="0" y="0" z="0"/>
-			<Model>Models\AWE_Longbow\ARYXSabreMissileRail.mwm</Model>
-			<Components>
-				<Component Subtype="SteelPlate" Count="10"/>
-			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0"/>
-			<MountPoints>
-				<MountPoint Side="Top" StartX="0.00" StartY="1.50" EndX="1.00" EndY="4.50"/>
-			</MountPoints>
-			<BlockPairName>ARYXSabreMissileRail</BlockPairName>
-			<MirroringY>Z</MirroringY>
-			<MirroringZ>Y</MirroringZ>
-		</Definition>
 		
 		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
 			<Id>
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>ARYX_SabreMissileHardpoint</SubtypeId>
 			</Id>
-			<Public>true</Public>
+			<Public>false</Public>
 			<DisplayName>Sabre Missile</DisplayName>
 			<Icon>Textures\GUI\Icons\Aryx_AWE_SabreMissile.dds</Icon>	  
 			<Description>Sabres are guided missiles that deal a decent punch of explosive damage on impact. Whilst vulnerable to point defence, these missiles can spell a death sentence if a direct hit is scored. [5KM RANGE - SINGLE USE. NO MIN-DISTANCE.]
