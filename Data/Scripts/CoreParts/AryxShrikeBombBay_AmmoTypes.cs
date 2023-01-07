@@ -152,7 +152,7 @@ namespace Scripts
                     {
                         Name = "AryxAWETorpedoBlast",
                         ApplyToShield = true,
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 10f, green: 10f, blue: 25f, alpha: 0),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

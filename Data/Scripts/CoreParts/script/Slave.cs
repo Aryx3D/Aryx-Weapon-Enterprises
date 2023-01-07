@@ -1,5 +1,7 @@
 using System;
 using System.IO;
+using System.Runtime.InteropServices.ComTypes;
+using System.Text;
 using Sandbox.ModAPI;
 using VRage.Game.Components;
 using static Scripts.Structure;
@@ -53,7 +55,18 @@ namespace Scripts
 
             public static void Init(string name)
             {
-                _instance = new Log {File = MyAPIGateway.Utilities.WriteFileInLocalStorage(name, typeof(Log))};
+                var sb = new StringBuilder(name);
+                ReplaceAll(sb, Path.GetInvalidFileNameChars(), '_');
+                _instance = new Log {File = MyAPIGateway.Utilities.WriteFileInLocalStorage(sb.ToString(), typeof(Log))};
+            }
+
+            public static void ReplaceAll(StringBuilder sb, char[] charlist, char replacewith)
+            {
+                for (int i = 0; i < sb.Length; i++)
+                {
+                    if (charlist.Contains(sb[i]))
+                        sb[i] = replacewith;
+                }
             }
 
             public static void CleanLine(string text)

@@ -169,7 +169,7 @@ namespace Scripts
                     Ammo = new ParticleDef
                     {
                         Name = "AryxSabreMissileTrail", //ShipWelderArc
-                        ShrinkByDistance = false,
+                        //shrinkbydistance = false, obselete
                         Color = Color(red: 25, green: 25, blue: 25, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
                         Extras = new ParticleOptionDef

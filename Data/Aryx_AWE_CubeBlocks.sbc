@@ -3770,8 +3770,8 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXCatalystCannon</SubtypeId>
 		</Id>
-		<Public>false</Public>
-		<DisplayName>AL16-MV50 Olympus Antimatter Catalyst Cannon</DisplayName>
+		<Public>true</Public>
+		<DisplayName>R16-AV50 Porphyrion Point Singularity Projector</DisplayName>
 		<Icon>Textures\GUI\Icons\Oppenheimer.dds</Icon>
 		<Description>A manmade horror beyond comprehension; The destroyer of worlds. (Energy)</Description>	
 		<CubeSize>Large</CubeSize>
