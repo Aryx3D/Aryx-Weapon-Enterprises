@@ -152,8 +152,10 @@ namespace Scripts
             },
             Ammos = new [] {
                 AryxBlackholeCannon_MainShot,
+                AryxBlackholeCannon_FragParent,
                 AryxBlackholeCannon_Gravity,
                 AryxBlackholeCannon_Horizon,
+                AryxBlackholeCannon_GravDamage
             },
 
             Animations = AryxObliteratorAnims,

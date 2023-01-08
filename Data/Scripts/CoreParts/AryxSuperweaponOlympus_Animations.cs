@@ -24,7 +24,7 @@ namespace Scripts
                            ForceStop = false,
                            Particle = new ParticleDef
                            {
-                               Name = "Aryx_Gauss_Windup_Effect", //Particle subtypeID
+                               Name = "Aryx_Ariadne_Windup_Effect", //Particle subtypeID
                                Color = Color(red: 25, green: 25, blue: 25, alpha: 1), //This is redundant as recolouring is no longer supported.
                                Extras = new ParticleOptionDef //do your particle colours in your particle file instead.
                                {
