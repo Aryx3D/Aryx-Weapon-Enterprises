@@ -583,7 +583,7 @@ namespace Scripts
                     GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = true, // Show Block damage effect.
-                    TriggerRange = 0, //range at which fields are triggered
+                    TriggerRange = 4000, //range at which fields are triggered
                     Particle = new ParticleDef // Particle effect to generate at the field's position.
                     {
                         Name = "", // SubtypeId of field particle effect.
@@ -933,12 +933,12 @@ namespace Scripts
                 },
                 Field = new FieldDef
                 {
-                    Interval = 1, // Time between each pulse, in game ticks (60 == 1 second).
+                    Interval = 5, // Time between each pulse, in game ticks (60 == 1 second).
                     PulseChance = 100, // Chance from 0 - 100 that an entity in the field will be hit by any given pulse.
                     GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = true, // Show Block damage effect.
-                    TriggerRange = 0, //range at which fields are triggered
+                    TriggerRange = 4000, //range at which fields are triggered
                     Particle = new ParticleDef // Particle effect to generate at the field's position.
                     {
                         Name = "", // SubtypeId of field particle effect.
@@ -966,7 +966,7 @@ namespace Scripts
                 AccelPerSec = 0f,
                 DesiredSpeed = 0,
                 MaxTrajectory = 1000,
-                DeaccelTime = 0,
+                DeaccelTime = 1,
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 30), // subtracts value from DesiredSpeed
                 RangeVariance = Random(start: 0, end: 70), // subtracts value from MaxTrajectory
@@ -1294,7 +1294,7 @@ namespace Scripts
                     GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = false, // Show Block damage effect.
-                    TriggerRange = 0, //range at which fields are triggered
+                    TriggerRange = 50, //range at which fields are triggered
                     Particle = new ParticleDef // Particle effect to generate at the field's position.
                     {
                         Name = "", // SubtypeId of field particle effect.
@@ -1322,7 +1322,7 @@ namespace Scripts
                 AccelPerSec = 0f,
                 DesiredSpeed = 0,
                 MaxTrajectory = 1000,
-                DeaccelTime = 0,
+                DeaccelTime = 1,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 30), // subtracts value from DesiredSpeed
@@ -1651,7 +1651,7 @@ namespace Scripts
                     GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = false, // Show Block damage effect.
-                    TriggerRange = 0, //range at which fields are triggered
+                    TriggerRange = 200, //range at which fields are triggered
                     Particle = new ParticleDef // Particle effect to generate at the field's position.
                     {
                         Name = "", // SubtypeId of field particle effect.
@@ -1679,7 +1679,7 @@ namespace Scripts
                 AccelPerSec = 0f,
                 DesiredSpeed = 0,
                 MaxTrajectory = 1000,
-                DeaccelTime = 0,
+                DeaccelTime = 1,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 30), // subtracts value from DesiredSpeed
