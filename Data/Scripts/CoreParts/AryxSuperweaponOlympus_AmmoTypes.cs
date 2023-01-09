@@ -218,7 +218,7 @@ namespace Scripts
                     GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = true, // Show Block damage effect.
-                    TriggerRange = 50, //range at which fields are triggered
+                    TriggerRange = 0, //range at which fields are triggered
                     Particle = new ParticleDef // Particle effect to generate at the field's position.
                     {
                         Name = "", // SubtypeId of field particle effect.
@@ -583,7 +583,7 @@ namespace Scripts
                     GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = true, // Show Block damage effect.
-                    TriggerRange = 4000, //range at which fields are triggered
+                    TriggerRange = 0, //range at which fields are triggered
                     Particle = new ParticleDef // Particle effect to generate at the field's position.
                     {
                         Name = "", // SubtypeId of field particle effect.
@@ -609,12 +609,12 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 1, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 0,
+                DesiredSpeed = 1,
                 MaxTrajectory = 1,
-                DeaccelTime = 0,
+                DeaccelTime = 1,
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
-                SpeedVariance = Random(start: 0, end: 30), // subtracts value from DesiredSpeed
-                RangeVariance = Random(start: 0, end: 70), // subtracts value from MaxTrajectory
+                SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
+                RangeVariance = Random(start: 0, end: 0), // subtracts value from MaxTrajectory
                 MaxTrajectoryTime = 0, // How long the weapon must fire before it reaches MaxTrajectory.
                 Smarts = new SmartsDef
                 {
@@ -938,7 +938,7 @@ namespace Scripts
                     GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = true, // Show Block damage effect.
-                    TriggerRange = 4000, //range at which fields are triggered
+                    TriggerRange = 0, //range at which fields are triggered
                     Particle = new ParticleDef // Particle effect to generate at the field's position.
                     {
                         Name = "", // SubtypeId of field particle effect.
@@ -964,12 +964,12 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 1800, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 0,
+                DesiredSpeed = 1,
                 MaxTrajectory = 1000,
                 DeaccelTime = 1,
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
-                SpeedVariance = Random(start: 0, end: 30), // subtracts value from DesiredSpeed
-                RangeVariance = Random(start: 0, end: 70), // subtracts value from MaxTrajectory
+                SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
+                RangeVariance = Random(start: 0, end: 0), // subtracts value from MaxTrajectory
                 MaxTrajectoryTime = 0, // How long the weapon must fire before it reaches MaxTrajectory.
                 Smarts = new SmartsDef
                 {
@@ -1294,7 +1294,7 @@ namespace Scripts
                     GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = false, // Show Block damage effect.
-                    TriggerRange = 50, //range at which fields are triggered
+                    TriggerRange = 0, //range at which fields are triggered
                     Particle = new ParticleDef // Particle effect to generate at the field's position.
                     {
                         Name = "", // SubtypeId of field particle effect.
@@ -1320,13 +1320,13 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 1800, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 0,
+                DesiredSpeed = 1,
                 MaxTrajectory = 1000,
                 DeaccelTime = 1,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
-                SpeedVariance = Random(start: 0, end: 30), // subtracts value from DesiredSpeed
-                RangeVariance = Random(start: 0, end: 70), // subtracts value from MaxTrajectory
+                SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
+                RangeVariance = Random(start: 0, end: 0), // subtracts value from MaxTrajectory
                 MaxTrajectoryTime = 0, // How long the weapon must fire before it reaches MaxTrajectory.
                 Smarts = new SmartsDef
                 {
@@ -1651,7 +1651,7 @@ namespace Scripts
                     GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = false, // Show Block damage effect.
-                    TriggerRange = 200, //range at which fields are triggered
+                    TriggerRange = 0, //range at which fields are triggered
                     Particle = new ParticleDef // Particle effect to generate at the field's position.
                     {
                         Name = "", // SubtypeId of field particle effect.
@@ -1677,13 +1677,13 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 1800, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 0,
+                DesiredSpeed = 1,
                 MaxTrajectory = 1000,
                 DeaccelTime = 1,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
-                SpeedVariance = Random(start: 0, end: 30), // subtracts value from DesiredSpeed
-                RangeVariance = Random(start: 0, end: 70), // subtracts value from MaxTrajectory
+                SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
+                RangeVariance = Random(start: 0, end: 0), // subtracts value from MaxTrajectory
                 MaxTrajectoryTime = 0, // How long the weapon must fire before it reaches MaxTrajectory.
                 Smarts = new SmartsDef
                 {
