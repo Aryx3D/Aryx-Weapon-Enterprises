@@ -218,7 +218,7 @@ namespace Scripts
                     GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = true, // Show Block damage effect.
-                    TriggerRange = 0, //range at which fields are triggered
+                    TriggerRange = 50, //range at which fields are triggered
                     Particle = new ParticleDef // Particle effect to generate at the field's position.
                     {
                         Name = "", // SubtypeId of field particle effect.
@@ -580,7 +580,7 @@ namespace Scripts
                 {
                     Interval = 1, // Time between each pulse, in game ticks (60 == 1 second).
                     PulseChance = 100, // Chance from 0 - 100 that an entity in the field will be hit by any given pulse.
-                    GrowTime = 60, // How many ticks it should take the field to grow to full size.
+                    GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = true, // Show Block damage effect.
                     TriggerRange = 0, //range at which fields are triggered
@@ -935,7 +935,7 @@ namespace Scripts
                 {
                     Interval = 1, // Time between each pulse, in game ticks (60 == 1 second).
                     PulseChance = 100, // Chance from 0 - 100 that an entity in the field will be hit by any given pulse.
-                    GrowTime = 60, // How many ticks it should take the field to grow to full size.
+                    GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = true, // Show Block damage effect.
                     TriggerRange = 0, //range at which fields are triggered
@@ -1291,7 +1291,7 @@ namespace Scripts
                 {
                     Interval = 30, // Time between each pulse, in game ticks (60 == 1 second).
                     PulseChance = 100, // Chance from 0 - 100 that an entity in the field will be hit by any given pulse.
-                    GrowTime = 10, // How many ticks it should take the field to grow to full size.
+                    GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = false, // Show Block damage effect.
                     TriggerRange = 0, //range at which fields are triggered
@@ -1648,7 +1648,7 @@ namespace Scripts
                 {
                     Interval = 60, // Time between each pulse, in game ticks (60 == 1 second).
                     PulseChance = 90, // Chance from 0 - 100 that an entity in the field will be hit by any given pulse.
-                    GrowTime = 10, // How many ticks it should take the field to grow to full size.
+                    GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = false, // Show Block damage effect.
                     TriggerRange = 0, //range at which fields are triggered

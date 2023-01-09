@@ -5394,7 +5394,7 @@
         </ParticleLight>
       </ParticleLights>
       <DistanceMax>10000</DistanceMax>
-      <Priority>1</Priority>
+      <Priority>0</Priority>
     </ParticleEffect>
   </ParticleEffects>
 </Definitions>
