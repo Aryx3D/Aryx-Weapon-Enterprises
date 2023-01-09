@@ -245,7 +245,7 @@ namespace Scripts
                 MaxLifeTime = 6000, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0,
                 DesiredSpeed = 3000,
-                MaxTrajectory = 5000f,
+                MaxTrajectory = 8000,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -464,10 +464,10 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 1f,
-                    Light = 1f,
-                    Heavy = 5f,
-                    NonArmor = 10f,
+                    Armor = -1f,
+                    Light = -1f,
+                    Heavy = -1f,
+                    NonArmor = -1,
                 },
                 Shields = new ShieldDef
                 {
@@ -485,7 +485,7 @@ namespace Scripts
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
                 {
-                    IgnoreAllOthers = false,
+                    IgnoreAllOthers = true,
                     Types = new[]
                     {
                         new CustomBlocksDef
@@ -609,7 +609,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 1, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 1,
+                DesiredSpeed = 0.1f,
                 MaxTrajectory = 1,
                 DeaccelTime = 0,
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -840,7 +840,7 @@ namespace Scripts
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
                 {
-                    IgnoreAllOthers = false,
+                    IgnoreAllOthers = true,
                     Types = new[]
                     {
                         new CustomBlocksDef
@@ -901,8 +901,8 @@ namespace Scripts
                 Enable = true, // Enables EWAR effects AND DISABLES BASE DAMAGE AND AOE DAMAGE!!
                 Type = Pull, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Field, // Effect , Field
-                Strength = 5000000f,
-                Radius = 4000f, // Meters
+                Strength = 7500000f,
+                Radius = 7000f, // Meters
                 Duration = 1800, // In Ticks
                 StackDuration = false, // Combined Durations
                 Depletable = false,
@@ -919,7 +919,7 @@ namespace Scripts
                 },
                 Field = new FieldDef
                 {
-                    Interval = 5, // Time between each pulse, in game ticks (60 == 1 second).
+                    Interval = 3, // Time between each pulse, in game ticks (60 == 1 second).
                     PulseChance = 100, // Chance from 0 - 100 that an entity in the field will be hit by any given pulse.
                     GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
@@ -950,7 +950,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 1800, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 1,
+                DesiredSpeed = 0.1f,
                 MaxTrajectory = 1000,
                 DeaccelTime = 0,
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
@@ -1182,7 +1182,7 @@ namespace Scripts
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
                 {
-                    IgnoreAllOthers = false,
+                    IgnoreAllOthers = true,
                     Types = new[]
                     {
                         new CustomBlocksDef
@@ -1306,7 +1306,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 1800, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 1,
+                DesiredSpeed = 0.1f,
                 MaxTrajectory = 1000,
                 DeaccelTime = 0,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
@@ -1518,10 +1518,10 @@ namespace Scripts
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 1f,
-                    Light = 1f,
-                    Heavy = 5f,
-                    NonArmor = 10f,
+                    Armor = -1f,
+                    Light = -1f,
+                    Heavy = -1f,
+                    NonArmor = -1,
                 },
                 Shields = new ShieldDef
                 {
@@ -1539,7 +1539,7 @@ namespace Scripts
                 // first true/false (ignoreOthers) will cause projectiles to pass through all blocks that do not match the custom subtypeIds.
                 Custom = new CustomScalesDef
                 {
-                    IgnoreAllOthers = false,
+                    IgnoreAllOthers = true,
                     Types = new[]
                     {
                         new CustomBlocksDef
@@ -1601,7 +1601,7 @@ namespace Scripts
                 Type = Dot, // EnergySink, Emp, Offense, Nav, Dot, AntiSmart, JumpNull, Anchor, Tractor, Pull, Push, 
                 Mode = Field, // Effect , Field
                 Strength = 1000,
-                Radius = 150, // Meters
+                Radius = 1000, // Meters
                 Duration = 1800, // In Ticks
                 StackDuration = false, // Combined Durations
                 Depletable = false,
@@ -1632,8 +1632,8 @@ namespace Scripts
                 },
                 Field = new FieldDef
                 {
-                    Interval = 60, // Time between each pulse, in game ticks (60 == 1 second).
-                    PulseChance = 90, // Chance from 0 - 100 that an entity in the field will be hit by any given pulse.
+                    Interval = 10, // Time between each pulse, in game ticks (60 == 1 second).
+                    PulseChance = 5, // Chance from 0 - 100 that an entity in the field will be hit by any given pulse.
                     GrowTime = 0, // How many ticks it should take the field to grow to full size.
                     HideModel = false, // Hide the projectile model if it has one.
                     ShowParticle = false, // Show Block damage effect.
@@ -1663,7 +1663,7 @@ namespace Scripts
                 TargetLossTime = 0, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 MaxLifeTime = 1800, // 0 is disabled, Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                 AccelPerSec = 0f,
-                DesiredSpeed = 1,
+                DesiredSpeed = 0.1f,
                 MaxTrajectory = 1000,
                 DeaccelTime = 0,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
