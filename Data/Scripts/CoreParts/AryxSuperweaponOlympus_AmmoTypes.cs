@@ -185,7 +185,7 @@ namespace Scripts
                 Radius = 50f, // Meters
                 Duration = 100, // In Ticks
                 StackDuration = true, // Combined Durations
-                Depletable = true,
+                Depletable = false,
                 MaxStacks = 10, // Max Debuffs at once
                 NoHitParticle = false,
                 /*
@@ -611,7 +611,7 @@ namespace Scripts
                 AccelPerSec = 0f,
                 DesiredSpeed = 1,
                 MaxTrajectory = 1,
-                DeaccelTime = 1,
+                DeaccelTime = 0,
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
                 RangeVariance = Random(start: 0, end: 0), // subtracts value from MaxTrajectory
@@ -908,20 +908,6 @@ namespace Scripts
                 Depletable = false,
                 MaxStacks = 1, // Max Debuffs at once
                 NoHitParticle = false,
-                /*
-                EnergySink : Targets & Shutdowns Power Supplies, such as Batteries & Reactor
-                Emp : Targets & Shutdown any Block capable of being powered
-                Offense : Targets & Shutdowns Weaponry
-                Nav : Targets & Shutdown Gyros, Thrusters, or Locks them down
-                Dot : Deals Damage to Blocks in radius
-                AntiSmart : Effects & Scrambles the Targeting List of Affected Missiles
-                JumpNull : Shutdown & Stops any Active Jumps, or JumpDrive Units in radius
-                Tractor : Affects target with Physics
-                Pull : Affects target with Physics
-                Push : Affects target with Physics
-                Anchor : Affects target with Physics
-                
-                */
                 Force = new PushPullDef
                 {
                     ForceFrom = ProjectileLastPosition, // ProjectileLastPosition, ProjectileOrigin, HitPosition, TargetCenter, TargetCenterOfMass
@@ -966,7 +952,7 @@ namespace Scripts
                 AccelPerSec = 0f,
                 DesiredSpeed = 1,
                 MaxTrajectory = 1000,
-                DeaccelTime = 1,
+                DeaccelTime = 0,
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
                 RangeVariance = Random(start: 0, end: 0), // subtracts value from MaxTrajectory
@@ -1322,7 +1308,7 @@ namespace Scripts
                 AccelPerSec = 0f,
                 DesiredSpeed = 1,
                 MaxTrajectory = 1000,
-                DeaccelTime = 1,
+                DeaccelTime = 0,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
@@ -1679,7 +1665,7 @@ namespace Scripts
                 AccelPerSec = 0f,
                 DesiredSpeed = 1,
                 MaxTrajectory = 1000,
-                DeaccelTime = 1,
+                DeaccelTime = 0,
                 //FieldTime was here, it's dead now is disabled, a value causes the projectile to come to rest, spawn a field and remain for a time (Measured in game ticks, 60 = 1 second)
                 GravityMultiplier = 0f, // Gravity multiplier, influences the trajectory of the projectile, value greater than 0 to enable.
                 SpeedVariance = Random(start: 0, end: 0), // subtracts value from DesiredSpeed
