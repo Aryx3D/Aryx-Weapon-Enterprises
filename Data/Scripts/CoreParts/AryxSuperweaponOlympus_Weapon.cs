@@ -155,7 +155,8 @@ namespace Scripts
                 AryxBlackholeCannon_FragParent,
                 AryxBlackholeCannon_Gravity,
                 AryxBlackholeCannon_Horizon,
-                AryxBlackholeCannon_GravDamage
+                AryxBlackholeCannon_GravDamage,
+                AryxBlackholeCannon_MainShotStage2
             },
 
             Animations = AryxObliteratorAnims,

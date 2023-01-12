@@ -121,7 +121,9 @@
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXLargeIonCannon" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXGladiatorMissileLauncher" />	
 	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXSiegeMortarCannon" />	
-	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXRocketArtillery" />		
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXRocketArtillery" />	
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="ConveyorSorter/ARYXCatalystCannon" />
+	
 
 
     <Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncher/ARYX_Fixed_Chord_auto" />			
