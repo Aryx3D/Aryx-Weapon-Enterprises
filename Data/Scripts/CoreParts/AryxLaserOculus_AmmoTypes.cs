@@ -29,7 +29,7 @@ namespace Scripts
         private AmmoDef AryxEyeballLaserAmmo => new AmmoDef
         {
             AmmoMagazine = "Energy",
-            AmmoRound = "Spooky Laser",
+            AmmoRound = "Oculus Laser",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 1f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(6.25f * AWEGlobalDamageScalar),
@@ -74,7 +74,7 @@ namespace Scripts
                 MaxIntegrity = 0f, // 0 = disabled, 1000 = any blocks with currently integrity above 1000 will be immune to damage.
                 DamageVoxels = false, // true = voxels are vulnerable to this weapon
                 SelfDamage = false, // true = allow self damage.
-                HealthHitModifier = 0.25f, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
+                HealthHitModifier = 0.5f, // defaults to a value of 1, this setting modifies how much Health is subtracted from a projectile per hit (1 = per hit).
                 VoxelHitModifier = 1,
                 Characters = 4f,
                 FallOff = new FallOffDef

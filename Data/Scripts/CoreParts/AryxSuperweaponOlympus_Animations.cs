@@ -24,8 +24,9 @@ namespace Scripts
                            ForceStop = false,
                            Particle = new ParticleDef
                            {
-                               Name = "Aryx_Ariadne_Windup_Effect", //Particle subtypeID
+                               Name = "Aryx_Kugelblitz_Windup", //Particle subtypeID
                                Color = Color(red: 25, green: 25, blue: 25, alpha: 1), //This is redundant as recolouring is no longer supported.
+                               Offset = Vector(x: 0, y: 0, z: -20),
                                Extras = new ParticleOptionDef //do your particle colours in your particle file instead.
                                {
                                    Loop = true, //Should match your particle definition.

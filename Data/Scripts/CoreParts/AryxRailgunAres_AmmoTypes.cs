@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "AryxGaussAmmoWC",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.6f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 1000000,
+            BaseDamage = 112500,
             Mass = 200, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 100000f,
@@ -91,19 +91,19 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = 10000f,
-                    Small = 10000f,
+                    Large = -1,
+                    Small = -1,
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = 10000f,
-                    Light = 10000f,
-                    Heavy = 10000f,
-                    NonArmor = 10000f,
+                    Armor = -1,
+                    Light = -1,
+                    Heavy = -1,
+                    NonArmor = -1,
                 },
                 Shields = new ShieldDef
                 {
-                    Modifier = 0.00000000001f,
+                    Modifier = 0.001f,
                     Type = Default,
                     BypassModifier = -1f,
                 },
@@ -132,7 +132,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 1.2f, // Meters
-                    Damage = 10000f,
+                    Damage = 1000f,
                     Depth = 3f, // Meters
                     MaxAbsorb = 0f,
                     Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius

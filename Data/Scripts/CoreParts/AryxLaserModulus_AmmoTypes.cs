@@ -93,7 +93,7 @@ namespace Scripts
                     Armor = 0.75f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 3f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
@@ -450,7 +450,7 @@ namespace Scripts
                     Armor = 0.75f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 3f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
@@ -807,7 +807,7 @@ namespace Scripts
                     Armor = 0.75f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 3f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
@@ -1164,7 +1164,7 @@ namespace Scripts
                     Armor = 0.75f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 3f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
@@ -1459,7 +1459,7 @@ namespace Scripts
             AmmoMagazine = "Energy",
             AmmoRound = "380nm Laser - MODVIO",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
-            EnergyCost = 2f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
+            EnergyCost = 4f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
             BaseDamage = (float)(250 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
@@ -1521,7 +1521,7 @@ namespace Scripts
                     Armor = 0.75f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 3f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {

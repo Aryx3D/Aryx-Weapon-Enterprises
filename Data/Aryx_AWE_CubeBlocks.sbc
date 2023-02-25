@@ -3789,16 +3789,15 @@ Hardpoint: Static
 		<Center x="1" y="0" z="7" />
 		<Model>Models\Gauss\LG_AryxGaussCannon.mwm</Model>
 		<Components>
-			<Component Subtype="SteelPlate" Count="20000" />
-			<Component Subtype="SteelPlate" Count="20000" />
-			<Component Subtype="SteelPlate" Count="20000" />
-			<Component Subtype="SteelPlate" Count="20000" />
-			<Component Subtype="SteelPlate" Count="20000" />
-			<Component Subtype="SteelPlate" Count="20000" />
-			<Component Subtype="SteelPlate" Count="20000" />
-			<Component Subtype="SteelPlate" Count="20000" />
-			<Component Subtype="SteelPlate" Count="20000" />
-			<Component Subtype="SteelPlate" Count="20000" />		
+			<Component Subtype="SteelPlate" Count="25000" />
+			<Component Subtype="SteelPlate" Count="25000" />
+			<Component Subtype="SteelPlate" Count="25000" />
+			<Component Subtype="SteelPlate" Count="25000" />
+			<Component Subtype="SteelPlate" Count="25000" />
+			<Component Subtype="SteelPlate" Count="25000" />
+			<Component Subtype="SteelPlate" Count="25000" />
+			<Component Subtype="SteelPlate" Count="25000" />
+	
 			<Component Subtype="Construction" Count="20000" />
 			<Component Subtype="Construction" Count="20000" />	
 			<Component Subtype="Construction" Count="5000" />					

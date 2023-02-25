@@ -33,7 +33,7 @@ namespace Scripts
             AmmoRound = "850mm Ferrous",
             HybridRound = true, //AmmoMagazine based weapon with energy cost
             EnergyCost = 10f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(10000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(7000 * AWEGlobalDamageScalar),
             Mass = 9, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 1500000f,
@@ -397,7 +397,7 @@ namespace Scripts
             AmmoRound = "AryxHeavyCoilgunPiercingAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(135000 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(75000 * AWEGlobalDamageScalar),
             Mass = 0, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 500f,

@@ -32,10 +32,10 @@ namespace Scripts
             AmmoRound = "25mm CODEX Ammunition",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(60 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(30 * AWEGlobalDamageScalar),
             Mass = 0.5f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 8f,
+            BackKickForce = 600f,
             DecayPerShot = 0,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
 
@@ -85,7 +85,7 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
-                    Small = 2f,
+                    Small = -1f,
                 },
                 Armor = new ArmorDef
                 {

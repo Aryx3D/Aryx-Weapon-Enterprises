@@ -48,8 +48,8 @@ namespace Scripts
             },
             ObjectsHit = new ObjectsHitDef
             {
-                MaxObjectsHit = 0, // Limits the number of entities (grids, players, projectiles) the projectile can penetrate; 0 = unlimited.
-                CountBlocks = false, // Counts individual blocks, not just entities hit.
+                MaxObjectsHit = 1, // Limits the number of entities (grids, players, projectiles) the projectile can penetrate; 0 = unlimited.
+                CountBlocks = true, // Counts individual blocks, not just entities hit.
             },
             Fragment = new FragmentDef
             {
@@ -149,7 +149,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 3f, // Meters
-                    Damage = (float)(4750 * AWEGlobalDamageScalar),
+                    Damage = (float)(1500 * AWEGlobalDamageScalar),
                     Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius

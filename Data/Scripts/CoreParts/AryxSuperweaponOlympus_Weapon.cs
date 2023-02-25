@@ -111,7 +111,7 @@ namespace Scripts
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
                     ReloadTime = 600, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    DelayUntilFire = 300, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    DelayUntilFire = 600, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 0, //heat generated per shot
                     MaxHeat = 70000, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .95f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
@@ -123,7 +123,7 @@ namespace Scripts
                     GiveUpAfter = false,
                 },
                 Audio = new HardPointAudioDef {
-                    PreFiringSound = "ArcWepShipARYXObliteratorWindup",
+                    PreFiringSound = "ArcWepShipARYXKugelblitzWindup",
                     FiringSound = "ArcWepShipARYXObliteratorFire", // WepShipGatlingShot
                     FiringSoundPerShot = false,
                     ReloadSound = "",
@@ -135,7 +135,7 @@ namespace Scripts
                 Graphics = new HardPointParticleDef {
                     Effect1 = new ParticleDef
                     {
-                        Name = "",//Muzzle_Flash_Large
+                        Name = "Aryx_Gauss_firing_effect",//Muzzle_Flash_Large
                         Color = Color(red: 1, green: 1, blue: 1, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
 
@@ -145,7 +145,7 @@ namespace Scripts
                             Restart = false,
                             MaxDistance = 2500,
                             MaxDuration = 480,
-                            Scale = 1f,
+                            Scale = 2f,
                         },
                     },
                 },

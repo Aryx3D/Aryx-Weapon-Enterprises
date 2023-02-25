@@ -32,10 +32,10 @@ namespace Scripts
             AmmoRound = "AryxAutocannonAmmoWC",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.00000000000f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(450 * AWEGlobalDamageScalar),
-            Mass = 1f, // in kilograms
+            BaseDamage = (float)(200 * AWEGlobalDamageScalar),
+            Mass = 2f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 150f,
+            BackKickForce = 4000,
             DecayPerShot = 0f,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             IgnoreWater = true,
@@ -47,8 +47,8 @@ namespace Scripts
             },
             ObjectsHit = new ObjectsHitDef
             {
-                MaxObjectsHit = 0, // 0 = disabled
-                CountBlocks = false, // counts gridBlocks and not just entities hit
+                MaxObjectsHit = 1, // 0 = disabled
+                CountBlocks = true, // counts gridBlocks and not just entities hit
             },
             Fragment = new FragmentDef
             {
@@ -86,14 +86,14 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
-                    Small = 5f,
+                    Small = -1f,
                 },
                 Armor = new ArmorDef
                 {
                     Armor = -1f,
                     Light = 1.25f,
                     Heavy = -1f,
-                    NonArmor = 2f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {

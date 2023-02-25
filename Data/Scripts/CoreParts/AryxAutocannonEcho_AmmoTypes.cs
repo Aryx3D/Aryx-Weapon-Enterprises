@@ -32,10 +32,10 @@ namespace Scripts
             AmmoRound = "85mm AP ECHO",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(1100 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(750 * AWEGlobalDamageScalar),
             Mass = 40f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 800f,
+            BackKickForce = 7000,
             DecayPerShot = 0f,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             IgnoreWater = true,   
@@ -46,8 +46,8 @@ namespace Scripts
             },
             ObjectsHit = new ObjectsHitDef
             {
-                MaxObjectsHit = 0, // 0 = disabled
-                CountBlocks = false, // counts gridBlocks and not just entities hit
+                MaxObjectsHit = 2, // 0 = disabled
+                CountBlocks = true, // counts gridBlocks and not just entities hit
             },
             Fragment = new FragmentDef
             {
@@ -85,14 +85,14 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
-                    Small = 2.5f,
+                    Small = -1f,
                 },
                 Armor = new ArmorDef
                 {
                     Armor = -1f,
                     Light = -1f,
                     Heavy = -1f,
-                    NonArmor = 2f,
+                    NonArmor = -1f,
                 },
                 Shields = new ShieldDef
                 {
@@ -409,7 +409,7 @@ namespace Scripts
             BaseDamage = 100,
             Mass = 40f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
-            BackKickForce = 800f,
+            BackKickForce = 7000,
             DecayPerShot = 0f,
             HardPointUsable = true, // set to false if this is a shrapnel ammoType and you don't want the turret to be able to select it directly.
             IgnoreWater = true,
@@ -420,8 +420,8 @@ namespace Scripts
             },
             ObjectsHit = new ObjectsHitDef
             {
-                MaxObjectsHit = 0, // 0 = disabled
-                CountBlocks = false, // counts gridBlocks and not just entities hit
+                MaxObjectsHit = 1, // 0 = disabled
+                CountBlocks = true, // counts gridBlocks and not just entities hit
             },
             Fragment = new FragmentDef
             {
@@ -459,11 +459,11 @@ namespace Scripts
                 Grids = new GridSizeDef
                 {
                     Large = -1f,
-                    Small = 2.5f,
+                    Small = 0.5f,
                 },
                 Armor = new ArmorDef
                 {
-                    Armor = -1f,
+                    Armor = 0.75f,
                     Light = -1f,
                     Heavy = -1f,
                     NonArmor = 2f,
@@ -521,7 +521,7 @@ namespace Scripts
                 {
                     Enable = true,
                     Radius = 2f, // Meters
-                    Damage = (float)(2000 * AWEGlobalDamageScalar),
+                    Damage = (float)(600 * AWEGlobalDamageScalar),
                     Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Pooled, //.NoFalloff applies the same damage to all blocks in radius
@@ -780,7 +780,7 @@ namespace Scripts
             AmmoRound = "HE Echo Frags",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.0f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = 50,
+            BaseDamage = 10,
             Mass = 5, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0,
