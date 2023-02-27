@@ -153,7 +153,7 @@ namespace Scripts
                             Restart = false,
                             MaxDistance = 1000,
                             MaxDuration = 0,
-                            Scale = 0.4f,
+                            Scale = 1f,
                         },
                     },
                     Effect2 = new ParticleDef

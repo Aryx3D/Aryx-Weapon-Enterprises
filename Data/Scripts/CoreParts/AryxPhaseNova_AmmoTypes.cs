@@ -370,7 +370,7 @@ namespace Scripts
                         },
                         TextureMode = Normal,
                         DecayTime = 30,
-                        Color = Color(red: 0.5f, green: 25f, blue: 12, alpha: 1),
+                        Color = Color(red: 2, green: 25f, blue: 12, alpha: 1),
                         Back = false,
                         CustomWidth = 0,
                         UseWidthVariance = false,

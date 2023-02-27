@@ -32,7 +32,7 @@ namespace Scripts
             AmmoRound = "Zarya Pulse Laser",
             HybridRound = false, //AmmoMagazine based weapon with energy cost
             EnergyCost = 0.5f, //(((EnergyCost * DefaultDamage) * ShotsPerSecond) * BarrelsPerShot) * ShotsPerBarrel
-            BaseDamage = (float)(100 * AWEGlobalDamageScalar),
+            BaseDamage = (float)(35 * AWEGlobalDamageScalar),
             Mass = 0f, // in kilograms
             Health = 0, // 0 = disabled, otherwise how much damage it can take from other trajectiles before dying.
             BackKickForce = 0f,
@@ -322,16 +322,16 @@ namespace Scripts
                 },
                 Lines = new LineDef
                 {
-                    ColorVariance = Random(start: 0.75f, end: 2f), // multiply the color by random values within range.
-                    WidthVariance = Random(start: 0f, end: 1.025f), // adds random value to default width (negatives shrinks width)
+                    ColorVariance = Random(start: 0f, end: 1f), // multiply the color by random values within range.
+                    WidthVariance = Random(start: 0f, end: 0.012f), // adds random value to default width (negatives shrinks width)
                     Tracer = new TracerBaseDef
                     {
                         Enable = true,
                         Length = 5f,
                         Width = 0.1f,
                         Color = Color(red: 50, green: 10f, blue: 9f, alpha: 1),
-                        VisualFadeStart = 30, // Number of ticks the weapon has been firing before projectiles begin to fade their color
-                        VisualFadeEnd = 30, // How many ticks after fade began before it will be invisible.
+                        VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
+                        VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.
                         Textures = new[] {// WeaponLaser, ProjectileTrailLine, WarpBubble, etc..
                             "AryxPulseLaserEffect",
                         },
