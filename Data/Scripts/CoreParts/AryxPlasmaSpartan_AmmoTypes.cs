@@ -329,7 +329,7 @@ namespace Scripts
                     {
                         Enable = true,
                         Length = 25f,
-                        Width = 0.0125f,
+                        Width = 0.125f,
                         Color = Color(red: 3, green: 12, blue: 23, alpha: 1),
                         VisualFadeStart = 0, // Number of ticks the weapon has been firing before projectiles begin to fade their color
                         VisualFadeEnd = 0, // How many ticks after fade began before it will be invisible.

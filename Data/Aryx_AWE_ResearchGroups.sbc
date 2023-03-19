@@ -98,6 +98,7 @@
             <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Exotics_T1" />
             <Members>
                 <BlockId Type="LargeMissileTurret" Subtype="ARYX_FW_NovaBlaster" />		
+				<BlockId Type="ConveyorSorter" Subtype="ARYX_NovaBlaster_SG" />		
             </Members>
         </ResearchGroup>
 		<!--T2-->
@@ -119,7 +120,8 @@
         <ResearchGroup xsi:type="ResearchGroup">
             <Id Type="MyObjectBuilder_ResearchGroupDefinition" Subtype="AWE_Plasmas_T3" />
             <Members>
-                <BlockId Type="LargeMissileTurret" Subtype="ARYXSpartanTurret" />		
+                <BlockId Type="LargeMissileTurret" Subtype="ARYXSpartanTurret" />	
+                <BlockId Type="ConveyorSorter" Subtype="ARYX_SpartanCannonSG" />					
             </Members>
         </ResearchGroup>
 

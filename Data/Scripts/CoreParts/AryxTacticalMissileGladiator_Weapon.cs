@@ -193,6 +193,8 @@ namespace Scripts {
                 AryxGladiatorAmmo_Standard_Stage2,
                 AryxGladiatorAmmo_Impulse_Stage1,
                 AryxGladiatorAmmo_Impulse_Stage2,
+                AryxGladiatorAmmo_Phasic_Stage1,
+                AryxGladiatorAmmo_Phasic_Stage2,
 
             },
             //Animations = AryxFenrirAnims,

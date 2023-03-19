@@ -240,7 +240,13 @@
             <UnlockedByGroups>
                 <GroupSubtype>AWE_Plasmas_T1</GroupSubtype>
             </UnlockedByGroups>
-        </ResearchBlock>			
+        </ResearchBlock>	
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYX_SpartanCannonSG" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Plasmas_T1</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>	
 		<!--T3-->
         <ResearchBlock xsi:type="ResearchBlock">
             <Id Type="LargeMissileTurret" Subtype="ARYXMagnetarCannon" />
@@ -265,6 +271,12 @@
                 <GroupSubtype>AWE_Plasmas_T2</GroupSubtype>
             </UnlockedByGroups>
         </ResearchBlock>
+        <ResearchBlock xsi:type="ResearchBlock">
+            <Id Type="ConveyorSorter" Subtype="ARYX_NovaBlaster_SG" />
+            <UnlockedByGroups>
+                <GroupSubtype>AWE_Plasmas_T2</GroupSubtype>
+            </UnlockedByGroups>
+        </ResearchBlock>		
 		<!--T2-->
         <ResearchBlock xsi:type="ResearchBlock">
             <Id Type="LargeMissileTurret" Subtype="ARYXReaperPulseCannon" />

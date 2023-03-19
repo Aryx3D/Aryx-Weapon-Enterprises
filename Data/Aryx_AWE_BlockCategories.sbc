@@ -86,7 +86,9 @@
 		<string>ConveyorSorter/ARYXSmallBombBay</string>	
 		<string>ConveyorSorter/ARYXRocketArtillery</string>		
 		<string>SmallMissileLauncher/ARYXStormCannon</string>	
-		<string>ConveyorSorter/ARYX_SabreMissileHardpoint</string>			
+		<string>ConveyorSorter/ARYX_SabreMissileHardpoint</string>	
+		<string>ConveyorSorter/ARYX_SpartanCannonSG</string>	
+		<string>ConveyorSorter/ARYX_NovaBlaster_SG</string>			
 	
       </ItemIds>
     </Category> 
@@ -173,6 +175,8 @@
 		<string>ConveyorSorter/ARYXRocketArtillery</string>
 		<string>SmallMissileLauncher/ARYXStormCannon</string>			
 		<string>ConveyorSorter/ARYX_SabreMissileHardpoint</string>		
+		<string>ConveyorSorter/ARYX_SpartanCannonSG</string>	
+		<string>ConveyorSorter/ARYX_NovaBlaster_SG</string>		
 		
 	  </ItemIds>
     </Category>
@@ -261,6 +265,8 @@
 		<string>ConveyorSorter/ARYXRocketArtillery</string>	
 		<string>SmallMissileLauncher/ARYXStormCannon</string>			
 		<string>ConveyorSorter/ARYX_SabreMissileHardpoint</string>		
+		<string>ConveyorSorter/ARYX_SpartanCannonSG</string>	
+		<string>ConveyorSorter/ARYX_NovaBlaster_SG</string>		
 		
 	</ItemIds>
     </Category> 
@@ -368,6 +374,8 @@
 		<string>ConveyorSorter/ARYXSmallBombBay</string>
 		<string>SmallMissileLauncher/ARYXStormCannon</string>			
 		<string>ConveyorSorter/ARYX_SabreMissileHardpoint</string>		
+		<string>ConveyorSorter/ARYX_SpartanCannonSG</string>	
+		<string>ConveyorSorter/ARYX_NovaBlaster_SG</string>		
 		
       </ItemIds>
     </Category>  	

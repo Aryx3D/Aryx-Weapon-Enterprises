@@ -1435,7 +1435,6 @@
       </Id>
       <Category>SHOT</Category>
       <MaxDistance>500</MaxDistance>
-      <PreventSynchronization>0</PreventSynchronization>
       <DynamicMusicCategory>HeavyFight</DynamicMusicCategory>
       <DynamicMusicAmount>3</DynamicMusicAmount>
       <Volume>1</Volume>

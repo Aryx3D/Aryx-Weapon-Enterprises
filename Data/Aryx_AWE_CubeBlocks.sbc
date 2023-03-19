@@ -3069,8 +3069,8 @@
 			<SubtypeId>ARYXGladiatorMissileLauncher</SubtypeId>
 		</Id>
 		<Public>true</Public>		
-		<DisplayName>TS-L8 Gladiator Tactical Launcher</DisplayName>
-		<Description>The Gladiator fires specialised tactical missiles designed to disrupt enemy operations during combat. [1KM MIN RANGE, 8KM MAX RANGE - Accepts Gladius Missiles (EXPL/IMP)]</Description>
+		<DisplayName>ML-T8 Gladiator Tactical Launcher</DisplayName>
+		<Description>The Gladiator fires specialised tactical missiles designed to disrupt enemy operations during combat. [8KM MAX RANGE - Accepts Gladius Missiles (HE/IMPULSE/PHASE)]</Description>
 		<Icon>Textures\GUI\Icons\Aryx_AWE_Gladiator.dds</Icon>
 		<CubeSize>Large</CubeSize>
 		<BlockTopology>TriangleMesh</BlockTopology>
@@ -4407,63 +4407,6 @@ Size: 5x9x61
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
-    <!--<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
-      <Id>
-        <TypeId>ConveyorSorter</TypeId>
-        <SubtypeId>AWE_WL_SuperLaser_Large_CB</SubtypeId>
-      </Id>
-      <DisplayName>Mark-I Atlas Superlaser</DisplayName>
-      <Icon>Textures\GUI\Icons\AryxWLAtlasLaser.dds</Icon>
-      <Description>The downscaled, earlier model of the Mark-V atlas laser. Whilst less powerful, it still packs a massive punch for its size.[Energy Weapon]</Description>
-      <CubeSize>Large</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="3" z="2" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Superlaser\LG_PerditionLancer.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="1500" />
-        <Component Subtype="Construction" Count="500" />
-        <Component Subtype="Superconductor" Count="2000" />
-        <Component Subtype="ElectromagnetAWE" Count="500" />		
-        <Component Subtype="MetalGrid" Count="400" />
-        <Component Subtype="LargeTube" Count="100" />
-        <Component Subtype="Motor" Count="200" />
-        <Component Subtype="Computer" Count="400" />
-        <Component Subtype="SteelPlate" Count="1000" />
-      </Components>
-      <CriticalComponent Subtype="Computer" Index="0" />
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Superlaser\LG_PerditionLancer_BS1.mwm"/>
-        <Model BuildPercentUpperBound="0.66" File="Models\Superlaser\LG_PerditionLancer_BS2.mwm"/>
-        <Model BuildPercentUpperBound="1.0" File="Models\Superlaser\LG_PerditionLancer_BS3.mwm"/>
-      </BuildProgressModels>
-      <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0"/>
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0"/>
-        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="2.0" EndY="3.0"/>
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="2.0" EndY="3.0"/>
-        <MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="3.0" EndY="2.0"/>
-      </MountPoints>
-      <BlockPairName>WL_SuperLaser</BlockPairName>
-      <MirroringX>Z</MirroringX>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>80</BuildTimeSeconds>
-      <DisassembleRatio>50</DisassembleRatio>
-      <NavigationDefinition>Default</NavigationDefinition>
-      <ResourceSinkGroup>Defense</ResourceSinkGroup>
-      <InventoryMaxVolume>1</InventoryMaxVolume>
-      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
-      <DamagedSound>ParticleWeapExpl</DamagedSound>
-      <DestroyEffect>BlockDestroyedExplosion_Large</DestroyEffect>
-      <DestroySound>WepSmallWarheadExpl</DestroySound>
-      <PCU>1500</PCU>
-      <TargetingGroups>
-		<string>Weapons</string>
-      </TargetingGroups>      
-    </Definition>-->
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -4517,6 +4460,57 @@ Size: 5x9x61
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+      <Id>
+        <TypeId>ConveyorSorter</TypeId>
+        <SubtypeId>ARYX_NovaBlaster_SG</SubtypeId>
+      </Id>
+      <DisplayName>EB-5A Nova Phase Blaster</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_MiniNova.dds</Icon>
+      <Description>The Nova is a phasic energy weapon that fires bolts of shield-penetrating energy. Whilst less effective against armour, it excels at stripping unarmoured hulls through their shields. [1.5km range - Energy Weapon]</Description>
+		<CubeSize>Small</CubeSize>
+		<BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="1" y="1" z="4"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\Cubes\AWE_FutureWarfare\ARYX_PhaseBlaster_SG.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="4" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="PowerCell" Count="2" />
+        <Component Subtype="SmallTube" Count="4" />
+	    <Component Subtype="GravityGenerator" Count="1" />	
+        <Component Subtype="Superconductor" Count="2" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="SteelPlate" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+		<MountPoints>
+			<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			<MountPoint Side="Left" StartX="2.00" StartY="0.00" EndX="4.00" EndY="1.00"/>
+			<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00"/>
+			<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			<MountPoint Side="Bottom" StartX="0.00" StartY="2.00" EndX="1.00" EndY="4.00"/>
+		</MountPoints>
+		<BuildProgressModels>
+			<Model BuildPercentUpperBound="0.50" File="Models\Cubes\AWE_FutureWarfare\ARYX_PhaseBlaster_SG_BS1.mwm"/>
+			<Model BuildPercentUpperBound="1.00" File="Models\Cubes\AWE_FutureWarfare\ARYX_PhaseBlaster_SG_BS2.mwm"/>
+		</BuildProgressModels>
+      <BlockPairName>AryxNovaBlasterSG</BlockPairName>
+	  <MirroringY>Z</MirroringY>
+	  <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
     <Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -4673,7 +4667,7 @@ Size: 5x9x61
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXMagnetarCannon</SubtypeId>
       </Id>
-      <DisplayName>T600 Magnetar Shock Cannon</DisplayName>
+      <DisplayName>T600A3 Magnetar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxMagnetarCannon.dds</Icon>
       <Description>The Magnetar is a gigantic triple barrel shock cannon designed to punch through shields and just about everything behind them.  [1.8km/s muzzle velocity, 5km range - Energy Weapon]</Description>
       <CubeSize>Large</CubeSize>
@@ -4730,7 +4724,7 @@ Size: 5x9x61
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXQuasarCannon</SubtypeId>
       </Id>
-      <DisplayName>T400 Quasar Shock Cannon</DisplayName>
+      <DisplayName>T400A2 Quasar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxQuasarCannon.dds</Icon>
       <Description>The Quasar is a sister weapon to the Hurricane, designed to deal damage to shields in order for the heavy hitters to rip hulls to shreds.  [1.8km/s muzzle velocity, 5km range - Energy Weapon]</Description>
       <CubeSize>Large</CubeSize>
@@ -4787,7 +4781,7 @@ Size: 5x9x61
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXPulsarCannon</SubtypeId>
       </Id>
-      <DisplayName>T200 Pulsar Shock Cannon</DisplayName>
+      <DisplayName>T200A1 Pulsar Shock Cannon</DisplayName>
       <Icon>Textures\GUI\Icons\AryxPulsarCannon.dds</Icon>
       <Description>The Pulsar is a light energy cannon that fires explosive globules of plasma at long range. Best against shields and light armour. [1.8km/s muzzle velocity, 5km range - Energy Weapon]</Description>
       <CubeSize>Large</CubeSize>
@@ -5050,6 +5044,58 @@ Size: 5x9x61
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+      <Id>
+        <TypeId>ConveyorSorter</TypeId>
+        <SubtypeId>ARYX_SpartanCannonSG</SubtypeId>
+      </Id>
+      <DisplayName>AL35-R Spartan Plasma Cannon</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_MiniSpartan.dds</Icon>	  
+      <Description>The Spartan is a midweight energy weapon that lobs energised plasma bolts at targets. This version is a lighter variant designed for fitting to fighters. Powerful and reliable plasma autocannon for shield busting. [2KM RANGE - Energy Weapon]</Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+	  <Size x="1" y="2" z="8"/>
+	  <ModelOffset x="0" y="0" z="0"/>
+	  <Model>Models\AWE_Spartan\ARYX_SmallPlasmaRifle.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="8" />
+        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="PowerCell" Count="3" />
+        <Component Subtype="LargeTube" Count="3" />
+        <Component Subtype="Superconductor" Count="5" />
+        <Component Subtype="Computer" Count="5" />
+        <Component Subtype="SteelPlate" Count="8" />		
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+		<MountPoints>
+			<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
+			<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="8.00" EndY="2.00"/>
+			<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="8.00" EndY="2.00"/>
+			<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="3.00"/>
+			<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="8.00"/>
+		</MountPoints>
+		<BuildProgressModels>
+			<Model BuildPercentUpperBound="0.50" File="Models\AWE_Spartan\ARYX_SmallPlasmaRifle_BS1.mwm"/>
+			<Model BuildPercentUpperBound="1.00" File="Models\AWE_Spartan\ARYX_SmallPlasmaRifle_BS2.mwm"/>
+		</BuildProgressModels>
+		<BlockPairName>ARYX_SmallPlasmaRifle</BlockPairName>
+		<MirroringY>Z</MirroringY>
+		<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+	  <GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+      <EdgeType>Light</EdgeType>  	  
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.144</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
+	
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -5111,7 +5157,7 @@ Size: 5x9x61
 				<TypeId>ConveyorSorter</TypeId>
 				<SubtypeId>ARYX_SabreMissileHardpoint</SubtypeId>
 			</Id>
-			<Public>false</Public>
+			<Public>true</Public>
 			<DisplayName>Sabre Missile</DisplayName>
 			<Icon>Textures\GUI\Icons\Aryx_AWE_SabreMissile.dds</Icon>	  
 			<Description>Sabres are guided missiles that deal a decent punch of explosive damage on impact. Whilst vulnerable to point defence, these missiles can spell a death sentence if a direct hit is scored. [5KM RANGE - SINGLE USE. NO MIN-DISTANCE.]
