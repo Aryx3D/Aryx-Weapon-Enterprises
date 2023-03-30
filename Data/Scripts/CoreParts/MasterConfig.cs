@@ -89,7 +89,8 @@ namespace Scripts
             AryxStormCannon,
             AryxSingleUseSabreHardpoint,
             AryxSpartanRifleSG,
-            AryxNovaBlasterSG
+            AryxNovaBlasterSG,
+            AryxNucleonShotgunSG
             );
 
 

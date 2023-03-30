@@ -2188,10 +2188,10 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXNucleonShotgun</SubtypeId>
       </Id>
-      <DisplayName>Nucleon Energy Shotgun</DisplayName>
+      <DisplayName>Nucleon Laser Shotgun</DisplayName>
       <Icon>Textures\GUI\Icons\AryxNucleonShotgun.dds</Icon>	  
       <Description>The Nucleon fires flashes of high intensity energy in a wide cone, dealing rapid damage to enemy shields and unarmoured hulls. [200M RANGE - Energy Weapon]
-	  Effects: Fires a flurry of 24 pulse lasers in a wide cone, dealing huge shield damage and stripping armoured hulls bare.
+	  Effects: Fires a flurry of 8 pulse lasers in a wide cone, dealing huge shield damage and stripping armoured hulls bare.
 	  Size: 1x1x1
 	  Role: Assault
 	  Hardpoint: Full-traverse Turret
@@ -2239,7 +2239,64 @@
       <TargetingGroups>
 		<string>Weapons</string>
       </TargetingGroups>      
-    </Definition>	
+    </Definition>
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+      <Id>
+        <TypeId>ConveyorSorter</TypeId>
+        <SubtypeId>AryxNucleonShotgun_SG</SubtypeId>
+      </Id>
+      <DisplayName>Nucleon Laser Shotgun</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_LaserShotgun.dds</Icon>	  
+      <Description>The Nucleon fires flashes of high intensity energy in a wide cone, dealing rapid damage to enemy shields and unarmoured hulls. [400M RANGE - Energy Weapon]
+	  Effects: Fires a flurry of 8 pulse lasers in a wide cone, dealing huge shield damage and stripping armoured hulls bare.
+	  Size: 1x2x3
+	  Role: Assault
+	  Hardpoint: Static
+	  Type: Laser Shotgun
+	  </Description>
+	  <CubeSize>Small</CubeSize>
+	  <BlockTopology>TriangleMesh</BlockTopology>
+	  <Size x="1" y="2" z="3"/>
+      <ModelOffset x="0" y="0" z="0" />
+	  <Model>Models\Nucleon\AryxLaserShotgun_SG.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="5" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="PowerCell" Count="2" />
+        <Component Subtype="LargeTube" Count="6" />
+        <Component Subtype="Superconductor" Count="2" />
+        <Component Subtype="Computer" Count="3" />
+        <Component Subtype="Construction" Count="1" />		
+        <Component Subtype="SteelPlate" Count="5" />	
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+	  <MountPoints>
+	  	<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
+	  	<MountPoint Side="Left" StartX="1.00" StartY="0.00" EndX="3.00" EndY="2.00"/>
+	  	<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00"/>
+	  	<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00"/>
+	  	<MountPoint Side="Bottom" StartX="0.00" StartY="1.00" EndX="1.00" EndY="3.00"/>
+	  </MountPoints>
+	  <BuildProgressModels>
+	  	<Model BuildPercentUpperBound="0.50" File="Models\Nucleon\AryxLaserShotgun_SG_BS1.mwm"/>
+	  	<Model BuildPercentUpperBound="1.00" File="Models\Nucleon\AryxLaserShotgun_SG_BS2.mwm"/>
+	  </BuildProgressModels>
+	  <BlockPairName>AryxLaserShotgunStatic</BlockPairName>
+	  <MirroringY>Z</MirroringY>
+	  <MirroringZ>Y</MirroringZ>		
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>		
 	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
       <Id>
         <TypeId>ConveyorSorter</TypeId>
@@ -5201,6 +5258,58 @@ Size: 5x9x61
 			<TargetingGroups>
 				<string>Weapons</string>
 			</TargetingGroups>      
-		</Definition>			
+		</Definition>
+		
+		<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+			<Id>
+				<TypeId>ConveyorSorter</TypeId>
+				<SubtypeId>ARYX_NyxMissileHardpoint</SubtypeId>
+			</Id>
+			<Public>true</Public>
+			<DisplayName>Nyx Missile</DisplayName>
+			<Icon>Textures\GUI\Icons\AWEGladiusMissile.dds</Icon>	  
+			<Description>Gladius Missiles are powerful tactical missiles designed to disrupt enemy operations. These are found in the Gladiator tactical launcher, but this form uses the Phasic warhead for small grid bombers. [5KM RANGE - SINGLE USE. NO MIN-DISTANCE.]
+			Effects: Fires a single shield-phasing explosive missile then despawns its block.
+			Size: 1x1x14
+			Role: Guided Phase Anti-armour
+			Hardpoint: Single-use fixed
+			Type: Missile
+			</Description>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="14"/>
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\AWE_Ammo\AryxGladiusMissile_SingleUse.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="15" />
+				<Component Subtype="Construction" Count="10" />
+				<Component Subtype="MetalGrid" Count="8" />
+				<Component Subtype="LargeTube" Count="8" />
+				<Component Subtype="GravityGenerator" Count="1" />						
+				<Component Subtype="Computer" Count="15" />
+				<Component Subtype="Explosives" Count="30" />		
+				<Component Subtype="SteelPlate" Count="15" />			
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="14.00"/>
+			</MountPoints>
+			<BlockPairName>ARYXNyxMissileRail</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<BuildTimeSeconds>20</BuildTimeSeconds>
+			<GeneralDamageMultiplier>0.5</GeneralDamageMultiplier>
+			<EdgeType>Light</EdgeType>  
+			<ResourceSinkGroup>Defense</ResourceSinkGroup>
+			<InventoryMaxVolume>0.144</InventoryMaxVolume>
+			<DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+			<DamagedSound>ParticleWeapExpl</DamagedSound>
+			<DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<PCU>100</PCU>      
+			<TargetingGroups>
+				<string>Weapons</string>
+			</TargetingGroups>      
+		</Definition>					
 	</CubeBlocks>
 </Definitions>
