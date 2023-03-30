@@ -142,6 +142,7 @@
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="SmallMissileLauncher/ARYXStormCannon" />
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYX_SabreMissileHardpoint" />		
 	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/AryxNucleonShotgun_SG" />		
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="ConveyorSorter/ARYX_NyxMissileHardpoint" />	
 
 		<!--COMPONENTS-->			
 	<Entry Class="Components" BlueprintSubtypeId="AWE_ElectromagnetBP" />
