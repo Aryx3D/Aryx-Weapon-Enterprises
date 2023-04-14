@@ -90,7 +90,8 @@
 		<string>ConveyorSorter/ARYX_SpartanCannonSG</string>	
 		<string>ConveyorSorter/ARYX_NovaBlaster_SG</string>			
 		<string>ConveyorSorter/AryxNucleonShotgun_SG</string>
-		<string>ConveyorSorter/ARYX_NyxMissileHardpoint</string>	
+		<string>ConveyorSorter/ARYX_NyxMissileHardpoint</string>
+		<string>ConveyorSorter/ARYXGravPulseLaserSG</string>		
 		
       </ItemIds>
     </Category> 
@@ -181,7 +182,7 @@
 		<string>ConveyorSorter/ARYX_NovaBlaster_SG</string>		
 		<string>ConveyorSorter/AryxNucleonShotgun_SG</string>
 		<string>ConveyorSorter/ARYX_NyxMissileHardpoint</string>	
-		
+		<string>ConveyorSorter/ARYXGravPulseLaserSG</string>				
 	  </ItemIds>
     </Category>
 	
@@ -272,7 +273,8 @@
 		<string>ConveyorSorter/ARYX_SpartanCannonSG</string>	
 		<string>ConveyorSorter/ARYX_NovaBlaster_SG</string>		
 		<string>ConveyorSorter/AryxNucleonShotgun_SG</string>
-		<string>ConveyorSorter/ARYX_NyxMissileHardpoint</string>			
+		<string>ConveyorSorter/ARYX_NyxMissileHardpoint</string>	
+		<string>ConveyorSorter/ARYXGravPulseLaserSG</string>				
 	</ItemIds>
     </Category> 
 
@@ -383,7 +385,7 @@
 		<string>ConveyorSorter/ARYX_NovaBlaster_SG</string>	
 		<string>ConveyorSorter/AryxNucleonShotgun_SG</string>	
 		<string>ConveyorSorter/ARYX_NyxMissileHardpoint</string>			
-
+		<string>ConveyorSorter/ARYXGravPulseLaserSG</string>		
       </ItemIds>
     </Category>  	
 	

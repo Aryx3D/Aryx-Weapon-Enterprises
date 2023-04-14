@@ -2183,6 +2183,63 @@
 		<string>Weapons</string>
       </TargetingGroups>      
     </Definition>
+	<Definition xsi:type="MyObjectBuilder_ConveyorSorterDefinition">
+      <Id>
+        <TypeId>ConveyorSorter</TypeId>
+        <SubtypeId>ARYXGravPulseLaserSG</SubtypeId>
+      </Id>
+      <DisplayName>PL16-S Gravastar Pulse Laser</DisplayName>
+      <Icon>Textures\GUI\Icons\Aryx_AWE_SGGravastar.dds</Icon>	  
+      <Description>The Gravastar is a directed laser weapon that fires high-intensity energy beams that are capable of tearing unarmoured hulls and shields apart. [ 1.2KM RANGE - Energy Weapon]
+	  Effects: Fires pulse lasers at short range to strip weapons and thrusters with ease.
+	  Size: 1x1x4
+	  Role: Assault
+	  Hardpoint: Static Hardpoint
+	  Type: Laser Cannon
+	  </Description>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+		<Size x="1" y="1" z="4"/>
+		<ModelOffset x="0" y="0" z="0"/>
+		<Model>Models\PulseLaser\ARYX_SmallGravastarLaser.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="5" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="PowerCell" Count="3" />
+        <Component Subtype="SmallTube" Count="3" />
+        <Component Subtype="Superconductor" Count="20" />
+        <Component Subtype="BulletproofGlass" Count="1" />
+        <Component Subtype="Computer" Count="5" />
+        <Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.50" StartY="0.00" EndX="4.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.50" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="3.50"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.50" EndX="1.00" EndY="4.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\PulseLaser\ARYX_SmallGravastarLaser_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\PulseLaser\ARYX_SmallGravastarLaser_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>ARYX_SmallGravastarLaser</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>12</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1</InventoryMaxVolume>
+      <DamageEffectName>Damage_WeapExpl_Damaged</DamageEffectName>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+      <DestroySound>WepSmallWarheadExpl</DestroySound>
+      <PCU>100</PCU>      
+      <TargetingGroups>
+		<string>Weapons</string>
+      </TargetingGroups>      
+    </Definition>	
 	<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
@@ -3827,7 +3884,7 @@
 			<TypeId>ConveyorSorter</TypeId>
 			<SubtypeId>ARYXCatalystCannon</SubtypeId>
 		</Id>
-		<Public>true</Public>
+		<Public>false</Public>
 		<DisplayName>R16-AV50 Porphyrion Point Singularity Projector</DisplayName>
 		<Icon>Textures\GUI\Icons\Oppenheimer.dds</Icon>
 		<Description>The victors of war is not often he who fires the first shot, but he who fires the last. This monstrous weapon is designed to be the final word, the slayer of gods, the ender of wars. Fires a singularity at high velocity, which explodes on impact into a small black hole with a massive gravity well, able to destroy any ship in one shot.

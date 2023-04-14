@@ -91,7 +91,8 @@ namespace Scripts
             AryxSpartanRifleSG,
             AryxNovaBlasterSG,
             AryxNucleonShotgunSG,
-            AryxSingleUseNyxHardpoint
+            AryxSingleUseNyxHardpoint,
+            AryxGravPulseLaserSG
             );
 
 

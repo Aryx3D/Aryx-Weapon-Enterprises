@@ -153,7 +153,7 @@ namespace Scripts
                     Enable = true,
                     Radius = 5, // Meters
                     Damage = 25000,
-                    Depth = 0f,
+                    Depth = 1f,
                     MaxAbsorb = 0f,
                     Falloff = Linear, //.NoFalloff applies the same damage to all blocks in radius
                     //.Linear drops evenly by distance from center out to max radius
