@@ -94,8 +94,8 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = -1f, // Multiplier for damage against large grids.
-                    Small = -1f, // Multiplier for damage against small grids.
+                    Large = 1f, // Multiplier for damage against large grids.
+                    Small = 1f, // Multiplier for damage against small grids.
                 },
                 Armor = new ArmorDef
                 {
@@ -465,8 +465,8 @@ namespace Scripts
                 // For the following modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01f = 1% damage, 2 = 200% damage.
                 Grids = new GridSizeDef
                 {
-                    Large = -1f, // Multiplier for damage against large grids.
-                    Small = -1f, // Multiplier for damage against small grids.
+                    Large = 1f, // Multiplier for damage against large grids.
+                    Small = 1f, // Multiplier for damage against small grids.
                 },
                 Armor = new ArmorDef
                 {
@@ -697,8 +697,8 @@ namespace Scripts
                 // For the following modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01f = 1% damage, 2 = 200% damage.
                 Grids = new GridSizeDef
                 {
-                    Large = -1f, // Multiplier for damage against large grids.
-                    Small = -1f, // Multiplier for damage against small grids.
+                    Large = 1f, // Multiplier for damage against large grids.
+                    Small = 1f, // Multiplier for damage against small grids.
                 },
                 Armor = new ArmorDef
                 {
@@ -930,8 +930,8 @@ namespace Scripts
                 // For the following modifier values: -1 = disabled (higher performance), 0 = no damage, 0.01f = 1% damage, 2 = 200% damage.
                 Grids = new GridSizeDef
                 {
-                    Large = -1f, // Multiplier for damage against large grids.
-                    Small = -1f, // Multiplier for damage against small grids.
+                    Large = 1f, // Multiplier for damage against large grids.
+                    Small = 1f, // Multiplier for damage against small grids.
                 },
                 Armor = new ArmorDef
                 {
@@ -1117,8 +1117,8 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = -1f, // Multiplier for damage against large grids.
-                    Small = -1f, // Multiplier for damage against small grids.
+                    Large = 1f, // Multiplier for damage against large grids.
+                    Small = 1f, // Multiplier for damage against small grids.
                 },
                 Armor = new ArmorDef
                 {
@@ -1315,8 +1315,8 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = -1f, // Multiplier for damage against large grids.
-                    Small = -1f, // Multiplier for damage against small grids.
+                    Large = 1f, // Multiplier for damage against large grids.
+                    Small = 1f, // Multiplier for damage against small grids.
                 },
                 Armor = new ArmorDef
                 {
@@ -1711,8 +1711,8 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = -1f, // Multiplier for damage against large grids.
-                    Small = -1f, // Multiplier for damage against small grids.
+                    Large = 1f, // Multiplier for damage against large grids.
+                    Small = 1f, // Multiplier for damage against small grids.
                 },
                 Armor = new ArmorDef
                 {
@@ -2092,8 +2092,8 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = -1f,
-                    Small = -1f,
+                    Large = 1f,
+                    Small = 1f,
                 },
                 Armor = new ArmorDef
                 {

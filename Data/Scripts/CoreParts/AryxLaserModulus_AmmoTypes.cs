@@ -85,8 +85,8 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = -1f,
-                    Small = -1f,
+                    Large = 1f,
+                    Small = 1f,
                 },
                 Armor = new ArmorDef
                 {
@@ -442,8 +442,8 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = -1f,
-                    Small = -1f,
+                    Large = 1f,
+                    Small = 1f,
                 },
                 Armor = new ArmorDef
                 {
@@ -799,8 +799,8 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = -1f,
-                    Small = -1f,
+                    Large = 1f,
+                    Small = 1f,
                 },
                 Armor = new ArmorDef
                 {
@@ -1156,8 +1156,8 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = -1f,
-                    Small = -1f,
+                    Large = 1f,
+                    Small = 1f,
                 },
                 Armor = new ArmorDef
                 {
@@ -1513,8 +1513,8 @@ namespace Scripts
                 },
                 Grids = new GridSizeDef
                 {
-                    Large = -1f,
-                    Small = -1f,
+                    Large = 1f,
+                    Small = 1f,
                 },
                 Armor = new ArmorDef
                 {

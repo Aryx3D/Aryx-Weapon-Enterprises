@@ -2727,7 +2727,7 @@
       </Id>
       <DisplayName>F9-B Flare Launcher</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_FlareLauncher.dds</Icon>
-      <Description>Flare launchers are utility modules that fire high-intensity flares that burn brightly and illuminate the surrounding area. They  can also be used to scramble missile targeting to an extent. [100m RANGE - BURN TIME OF 10 SECONDS. ACCEPTS FLARE CANISTERS]</Description>
+      <Description>Flare launchers are utility modules that fire high-intensity flares that burn brightly and illuminate the surrounding area. They  can also be used to scramble missile targeting to an extent. [100m RANGE - BURN TIME OF 10 SECONDS. ENERGY WEAPON]</Description>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="2" z="2"/>
@@ -2778,7 +2778,7 @@
       </Id>
       <DisplayName>F9-B Flare Launcher</DisplayName>
       <Icon>Textures\GUI\Icons\Aryx_AWE_FlareLauncherLarge.dds</Icon>
-      <Description>Flare launchers are utility modules that fire high-intensity flares that burn brightly and illuminate the surrounding area. They  can also be used to scramble missile targeting to an extent. [100m RANGE - BURN TIME OF 10 SECONDS. ACCEPTS FLARE CANISTERS]</Description>
+      <Description>Flare launchers are utility modules that fire high-intensity flares that burn brightly and illuminate the surrounding area. They  can also be used to scramble missile targeting to an extent. [100m RANGE - BURN TIME OF 10 SECONDS. ENERGY WEAPON]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
 	  <Size x="1" y="1" z="1"/>
@@ -2927,9 +2927,9 @@
         <TypeId>LargeMissileTurret</TypeId>
         <SubtypeId>ARYXFlakTurret</SubtypeId>
       </Id>
-      <DisplayName>Riptide Flak Turret</DisplayName>
+      <DisplayName>R-65 Riptide Flak Turret</DisplayName>
       <Icon>Textures\GUI\Icons\AryxRiptideFlak.dds</Icon>
-      <Description>Riptides fire lightweight flak shells that deal massive explosive damage to lightly armoured ships and strike craft, but poor damage against armoured targets. [800M RANGE - Accepts 38mm Riptide Shells (Kinetic).]</Description>
+      <Description>Riptides fire proximity-based burst shells that deal massive explosive damage to lightly armoured ships and strike craft, but poor damage against armoured targets. [800M RANGE - Accepts 65mm Riptide Shells (Kinetic).]</Description>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />

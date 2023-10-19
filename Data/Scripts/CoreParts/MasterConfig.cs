@@ -52,7 +52,6 @@ namespace Scripts
             AryxQuasarTurret,
             AryxHyperionLauncher,
             AryxKingswordCannon,
-            AryxObliteratorCannon,
             AryxReaperTurret,
             AryxRailgun,
             AryxGaussCannon,
